@@ -5,7 +5,7 @@ import { SectionHero } from '@/components/layout/hero';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { SiteConfig } from '@/lib/site'
-import { Mail, Calendar, Lightbulb, Zap, Code, Users } from 'lucide-react'
+import { Mail, Calendar, Lightbulb, Zap, Code, Users, Workflow } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/hakkinda' },
@@ -14,34 +14,34 @@ export const metadata: Metadata = {
 }
 
 const expertise = [
-  { icon: Zap, title: 'AI Workflow Design', desc: 'LLM tabanlı üretkenlik sistemleri, prompt engineering frameworks, agent orchestration.' },
-  { icon: Code, title: 'Digital Product Development', desc: 'MVP\'den üretime, Next.js, TypeScript, modern web stack ile hızlı iterasyon.' },
-  { icon: Lightbulb, title: 'Prompt Engineering Systems', desc: 'Sistematik prompt tasarımı, evaluation pipelines, production-ready prompt templates.' },
-  { icon: Users, title: 'Automation Engineering', desc: 'No-code/low-code otomasyonlar, API entegrasyonları, veri pipeline\'ları.' },
-  { icon: Calendar, title: 'Technical Content & Education', desc: 'Teknik yazılar, rehberler, workshop\'lar - karmaşık konuları erişilebilir kılmak.' },
+  { icon: Zap, title: 'Yapay Zekâ Destekli Ürünler', desc: 'Fikirleri üretken yapay zekâ araçlarıyla çalışan ve test edilebilir ürünlere dönüştürmek.' },
+  { icon: Workflow, title: 'Prompt Engineering ve AI Workflow', desc: 'Doğru soruları, araçları ve üretim adımlarını bir araya getiren etkili iş akışları tasarlamak.' },
+  { icon: Lightbulb, title: 'SaaS ve Startup Fikirleri', desc: 'Problemleri analiz ederek sade, kullanılabilir ve değer üreten ürün fikirleri geliştirmek.' },
+  { icon: Users, title: 'Otomasyon Sistemleri', desc: 'Tekrarlanan işleri azaltan, süreçleri hızlandıran ve araçları birbirine bağlayan sistemler kurmak.' },
+  { icon: Code, title: 'Modern Web Uygulamaları', desc: 'Next.js ve modern web teknolojileriyle hızlı, erişilebilir ve üretime hazır uygulamalar geliştirmek.' },
+  { icon: Calendar, title: 'Ürün Tasarımı ve Deneyim', desc: 'Çözümü sadeleştirerek kullanıcıların gerçekten kullanmak isteyeceği deneyimler oluşturmak.' },
 ]
 
-const journey = [
-  { year: '2024', title: 'AI Product Builder', desc: 'Kendi dijital ürünlerini (metotlar) geliştirip satışa sunmaya başladım. Newsletter 2000+ aboneye ulaştı.', icon: Lightbulb },
-  { year: '2023', title: 'Senior AI Engineer', desc: 'LLM tabanlı ürünler, RAG sistemleri, prompt optimization üzerine odaklandım.', icon: Zap },
-  { year: '2021', title: 'Full Stack Developer', desc: 'SaaS ürünleri, dashboard\'lar, API\'ler geliştirdim. TypeScript/Next.js ekosistemi.', icon: Code },
-  { year: '2019', title: 'Software Engineer', desc: 'İlk profesyonel deneyim. Backend sistemleri, veritabanı tasarımı, mikroservisler.', icon: Calendar },
-]
-
-const values = [
-  { title: 'Ship Fast, Learn Faster', desc: 'Mükemmeliyetçilik yerine iterasyon. Küçük başla, hızla test et, veriyle iyileştir.' },
-  { title: 'Systems Over Goals', desc: 'Hedefler yön verir, sistemler ilerleme sağlar. Tekrarlanabilir süreçler kur.' },
-  { title: 'Compound Knowledge', desc: 'Her proje bir sonrakinin temel taşı. Not al, belgele, paylaş. Bilgi birikimi büyür.' },
+const aboutParagraphs = [
+  'Tek bir unvanla kendimi tanımlamayı tercih etmiyorum. Çünkü ilgimi çeken şey yalnızca yazılım geliştirmek değil; fikirleri sorgulamak, problemleri analiz etmek ve insanların gerçekten kullanmak isteyeceği dijital ürünler ortaya çıkarmak.',
+  'Yapay zekâ, otomasyon ve modern web teknolojilerini kullanarak fikirleri mümkün olan en kısa sürede çalışan prototiplere dönüştürmeyi seviyorum. Benim için geliştirme süreci yalnızca kod yazmaktan ibaret değil; doğru problemi bulmak, çözümü sadeleştirmek ve kullanıcı deneyimini sürekli iyileştirmek de bu sürecin önemli bir parçası.',
+  'Üretken yapay zekâ araçlarının gelişmesiyle birlikte ürün geliştirme yaklaşımım da değişti. Güçlü bir ürün oluşturmanın yalnızca teknik bilgiyle değil; doğru soruları sormak, doğru araçları seçmek ve etkili bir üretim süreci tasarlamakla mümkün olduğuna inanıyorum.',
 ]
 
 export default function AboutPage() {
   return (
     <section className="relative overflow-hidden bg-atmosphere-studio ambient-spotlight bg-noise border-b border-white/5"><Container className="py-16 sm:py-20 lg:py-24">
       <SectionHero
-        badge='About'
-        title='Hakkımda'
-        subtitle={SiteConfig.author.bio}
+        badge='Hakkımda'
+        title='Ben Kimim?'
+        subtitle='Merhaba, ben Burak Ünlüler.'
       />
+
+      <section className='mt-16 max-w-3xl space-y-6 text-body-lg leading-relaxed text-muted-foreground'>
+        {aboutParagraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </section>
 
       <section className='mt-24'>
         <h2 className='text-heading-lg font-semibold mb-8'>Uzmanlık Alanları</h2>
@@ -62,35 +62,19 @@ export default function AboutPage() {
         </Grid>
       </section>
 
-      <section className='mt-24'>
-        <h2 className='text-heading-lg font-semibold mb-8'>Yolculuk</h2>
-        <div className='relative'>
-          <div className='absolute left-8 top-0 bottom-0 w-0.5 bg-border' />
-          {journey.map((item, index) => (
-            <div key={index} className='relative pl-20 pb-12 last:pb-0'>
-              <div className='absolute left-8 top-0 flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 border-4 border-background' />
-              <div className='text-sm text-muted-foreground mb-1'>{item.year}</div>
-              <h3 className='text-heading-sm font-semibold'>{item.title}</h3>
-              <p className='text-muted-foreground mt-1'>{item.desc}</p>
-            </div>
-          ))}
+      <section className='mt-24 max-w-3xl'>
+        <h2 className='text-heading-lg font-semibold mb-6'>Bu Site Neden Var?</h2>
+        <div className='space-y-6 text-body-lg leading-relaxed text-muted-foreground'>
+          <p>
+            Bu web sitesi yalnızca tamamlanmış projelerimi sergilediğim bir portfolyo değil. Aynı zamanda öğrenme sürecimi, araştırmalarımı, geliştirdiğim sistemleri ve zaman içinde edindiğim deneyimleri paylaştığım yaşayan bir bilgi arşivi.
+          </p>
+          <p>
+            Burada bazen bir proje geliştirme sürecini, bazen üretken yapay zekâ ile ilgili keşiflerimi, bazen de işime yarayan araçları ve çalışma yöntemlerini bulabilirsiniz.
+          </p>
+          <p>
+            Amacım yalnızca ürün geliştirmek değil; öğrendiklerimi açık ve anlaşılır şekilde paylaşarak başkalarının da daha hızlı üretmesine katkı sağlamak. Teknoloji, yapay zekâ ve ürün geliştirme üzerine konuşmayı seviyorsanız, doğru yerdesiniz.
+          </p>
         </div>
-      </section>
-
-      <section className='mt-24'>
-        <h2 className='text-heading-lg font-semibold mb-8'>Değerler</h2>
-        <Grid cols={{ sm: 1, md: 3 }} gap={6}>
-          {values.map((item, index) => (
-            <Card key={index} variant='feature'>
-              <CardHeader>
-                <CardTitle>{item.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>{item.desc}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-        </Grid>
       </section>
 
       <section className='mt-24'>
