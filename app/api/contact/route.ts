@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       await resend.emails.send({
         from: "brkunluer.site <noreply@brkunluer.site>",
-        to: ["merhaba@brkunluer.site"],
+        to: ["mail@brkunluer.site"],
         subject: `[brkunluer.site] ${validation.data.subject}`,
         replyTo: validation.data.email,
         text: `

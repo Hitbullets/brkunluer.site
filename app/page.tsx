@@ -294,14 +294,14 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className='mt-5 space-y-2 text-sm'>
-                  <div className='flex justify-between'><span className='text-white/40'>Konum</span><span className='text-white/70'>Istanbul, Turkiye</span></div>
+                  <div className='flex justify-between'><span className='text-white/40'>Konum</span><span className='text-white/70'>Eskişehir / Türkiye</span></div>
                   <div className='flex justify-between'><span className='text-white/40'>Odak</span><span className='text-white/70'>AI Urun Gelistirme</span></div>
                   <div className='flex justify-between'><span className='text-white/40'>Deneyim</span><span className='text-white/70'>2019&apos;dan beri</span></div>
                 </div>
                 <div className='mt-5 pt-4 border-t border-white/10 flex gap-4'>
-                  <a href='https://github.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>GitHub</a>
-                  <a href='https://twitter.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>Twitter</a>
-                  <a href='https://linkedin.com/in/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>LinkedIn</a>
+                  <a href='https://github.com/Hitbullets' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>GitHub</a>
+                  <a href='https://x.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>X</a>
+                  <a href='https://www.instagram.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>Instagram</a>
                 </div>
               </div>
             </ScrollReveal>

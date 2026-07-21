@@ -13,7 +13,7 @@ export function PersonJsonLd() {
     sameAs: [
       SiteConfig.social.github,
       SiteConfig.social.twitter,
-      SiteConfig.social.linkedin,
+      SiteConfig.social.instagram,
     ],
   }
 

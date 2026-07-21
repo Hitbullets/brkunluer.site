@@ -22,7 +22,7 @@ export const SiteConfig = {
     name: 'Burak Ünlüler',
     role: 'AI Product Developer • AI Factory Kurucusu • Agent Engineering',
     bio: 'Tekrarlanabilir AI ürün geliştirme sistemleri kuruyorum. AI Factory ile bireylerin ve ekiplerin AI destekli ürünlerini hızla üretime taşımasını sağlıyorum.',
-    email: 'merhaba@brkunluer.site',
+    email: 'mail@brkunluer.site',
   },
   nav: [
     { label: 'AI Factory', href: '/ai-factory' },
@@ -32,9 +32,9 @@ export const SiteConfig = {
     { label: 'İletişim', href: '/iletisim' },
   ],
   social: {
-    github: 'https://github.com/brkunluer',
-    twitter: 'https://twitter.com/brkunluer',
-    linkedin: 'https://linkedin.com/in/brkunluer',
+    github: 'https://github.com/Hitbullets',
+    twitter: 'https://x.com/brkunluer',
+    instagram: 'https://www.instagram.com/brkunluer',
   },
 } as const
 

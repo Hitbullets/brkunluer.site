@@ -3,7 +3,7 @@ import { Container } from '@/components/layout/container';
 import { SectionHero } from '@/components/layout/hero'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { ContactForm } from '@/components/forms/contact-form'
-import { Mail, MapPin, Clock, MessageSquare } from 'lucide-react'
+import { AtSign, Camera, Code2, Mail, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/iletisim' },
@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 }
 
 const contactInfo = [
-  { icon: Mail, title: 'E-posta', value: 'merhaba@brkunluer.site', href: 'mailto:merhaba@brkunluer.site' },
-  { icon: MapPin, title: 'Lokasyon', value: 'İstanbul, Türkiye', href: null },
-  { icon: Clock, title: 'Cevap Süresi', value: 'Genellikle 24-48 saat içinde', href: null },
-  { icon: MessageSquare, title: 'Tercih Edilen', value: 'E-posta (detaylı mesajlar için)', href: null },
+  { icon: Mail, title: 'E-posta', value: 'mail@brkunluer.site', href: 'mailto:mail@brkunluer.site' },
+  { icon: AtSign, title: 'X', value: '@brkunluer', href: 'https://x.com/brkunluer' },
+  { icon: Camera, title: 'Instagram', value: '@brkunluer', href: 'https://www.instagram.com/brkunluer' },
+  { icon: Code2, title: 'GitHub', value: 'Hitbullets', href: 'https://github.com/Hitbullets' },
+  { icon: MapPin, title: 'Konum', value: 'Eskişehir / Türkiye', href: null },
 ]
 
 export default function ContactPage() {
