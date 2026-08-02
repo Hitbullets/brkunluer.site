@@ -6,8 +6,8 @@ import { getAllMethods } from "@/lib/content"
 
 export const metadata: Metadata = {
   alternates: { canonical: '/metotlar' },
-  title: "Metotlar",
-  description: "AI iş akışları, otomasyon ve sistemler için hazır metodlar ve dijital ürünler.",
+  title: "AI Metotları ve İş Akışı Şablonları",
+  description: "AI iş akışları, otomasyon ve sistem tasarımı için uygulanabilir metotları, şablonları ve dijital ürünleri keşfedin.",
 }
 
 export default async function MethodsPage() {
@@ -16,9 +16,9 @@ export default async function MethodsPage() {
   return (
     <Container className="py-16 sm:py-20 lg:py-24">
       <PageHeader
-        title="Metotlar"
-        description="�oretkenlişi artıran hazır sistemler, şablonlar ve dijital ürünler. Hemen kullanmaya başla."
-        badge="Digital Products"
+        title="AI Metotları ve Şablonları"
+        description="Üretkenliği artıran hazır sistemleri, iş akışı şablonlarını ve dijital ürünleri inceleyin."
+        badge="Dijital Ürünler"
       />
 
       {methods.length === 0 ? (

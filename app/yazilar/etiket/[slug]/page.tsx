@@ -6,33 +6,45 @@ import { ArticleCard } from '@/components/cards/article-card'
 import { PageHeader } from '@/components/ui/section-header'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
-import { getAllArticles, getAllTags } from '@/lib/content'
+import { getAllTags, getArticlesByTag, getTagInfo } from '@/lib/content'
 
 export async function generateMetadata({
   params,
 }: PageProps<'/yazilar/etiket/[slug]'>): Promise<Metadata> {
   const { slug } = await params
+  const tag = await getTagInfo(slug)
 
   return {
     alternates: { canonical: `/yazilar/etiket/${slug}` },
-    title: 'Yazılar',
-    description: 'AI iş akışları, otomasyon ve metodoloji üzerine makaleler.',
+    title: tag ? `${tag.name} Yazıları` : 'Etiket Bulunamadı',
+    description: tag
+      ? `${tag.name} konusunda AI, otomasyon ve ürün geliştirme odaklı Türkçe makaleleri inceleyin.`
+      : 'Aradığınız etikete ait bir içerik bulunamadı.',
   }
 }
 
-export default async function ArticlesPage() {
-  const [articles, tags] = await Promise.all([getAllArticles(), getAllTags()])
+export async function generateStaticParams() {
+  const tags = await getAllTags()
+  return tags.map((tag) => ({ slug: tag.slug }))
+}
+
+export default async function TaggedArticlesPage({ params }: PageProps<'/yazilar/etiket/[slug]'>) {
+  const { slug } = await params
+  const [articles, tags, activeTag] = await Promise.all([
+    getArticlesByTag(slug),
+    getAllTags(),
+    getTagInfo(slug),
+  ])
 
   return (
     <Container className='py-16 sm:py-20 lg:py-24'>
       <PageHeader
-        title='Yazılar'
-        description='AI, otomasyon ve sistemler üzerine pratik makaleler.'
-        badge='Tüm Makaleler'
+        title={activeTag ? `${activeTag.name} Yazıları` : 'Etiket Bulunamadı'}
+        description={activeTag ? `${activeTag.name} etiketindeki makaleler.` : 'Bu etikete ait yayımlanmış bir içerik bulunmuyor.'}
+        badge='Etiket Arşivi'
       />
 
-      {/* Tag Filter */}
-      <div className='mb-12 flex flex-wrap gap-2' role='group' aria-label='Filter by tag'>
+      <div className='mb-12 flex flex-wrap gap-2' role='group' aria-label='Etikete göre filtrele'>
         <Link
           href='/yazilar'
           className={cn(
@@ -53,12 +65,11 @@ export default async function ArticlesPage() {
         ))}
       </div>
 
-      {/* Articles Grid */}
       {articles.length === 0 ? (
         <div className='text-center py-16'>
-          <p className='text-muted-foreground mb-6'>Henüz yazı eklenmedi.</p>
+          <p className='text-muted-foreground mb-6'>Bu etikete ait henüz bir yazı yayımlanmadı.</p>
           <Button asChild variant='primary'>
-            <Link href='/admin/yazilar/yeni'>İlk yazıyı yaz</Link>
+            <Link href='/yazilar'>Tüm Yazıları Gör</Link>
           </Button>
         </div>
       ) : (

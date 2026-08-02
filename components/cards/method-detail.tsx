@@ -9,6 +9,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/
 import { Button } from '@/components/ui/button'
 import { MdxRendererRsc as MdxRenderer } from '@/components/mdx/mdx-renderer-rsc'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import type { Method } from '@/lib/types'
 import { Check } from 'lucide-react'
@@ -33,7 +34,7 @@ export function MethodDetail({ method, serializedDescription }: Props) {
             {method.currency} {method.price.toLocaleString('tr-TR')}
           </Badge>
         </div>
-        <h1 className='text-4xl font-bold tracking-tight'>{method.title}</h1>
+        <h1 className='text-4xl font-bold tracking-tight'>{method.title.toLocaleUpperCase('tr-TR')}</h1>
         <p className='mt-3 text-lg text-muted-foreground'>{method.tagline}</p>
       </header>
 
@@ -93,10 +94,10 @@ export function MethodDetail({ method, serializedDescription }: Props) {
         <CardContent className='pt-6'>
           <div className='flex flex-col items-center gap-4 text-center'>
             <p className='text-sm text-muted-foreground'>
-              Bu metodu satın almak için iletişime geçin.
+              Bu metodu edinmek ve kullanım ayrıntılarını öğrenmek için iletişime geçin.
             </p>
-            <Button variant='primary' size='lg'>
-              {method.currency} {method.price.toLocaleString('tr-TR')} — Satın Al
+            <Button asChild variant='primary' size='lg'>
+              <Link href='/iletisim'>Satın Almak İçin İletişime Geç</Link>
             </Button>
           </div>
         </CardContent>

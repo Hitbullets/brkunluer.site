@@ -16,7 +16,7 @@ export const articleSchema = articleSchemaBase
 
 export const methodSchema = z.object({
   title: z.string().min(1, "Başlık zorunlu"),
-  tagline: z.string().min(1, "Tagline zorunlu"),
+  tagline: z.string().min(1, "Kısa açıklama zorunlu"),
   coverImage: z.string().min(1, "Kapak görseli zorunlu"),
   price: z.number().positive("Fiyat pozitif olmalı"),
   currency: z.enum(["TRY", "USD"]),
@@ -34,9 +34,9 @@ export const projectSchema = z.object({
   title: z.string().min(1, "Başlık zorunlu"),
   client: z.string().optional(),
   year: z.number().int().min(2010).max(2030),
-  tagline: z.string().min(1, "Tagline zorunlu"),
+  tagline: z.string().min(1, "Kısa açıklama zorunlu"),
   coverImage: z.string().min(1, "Kapak görseli zorunlu"),
-  tags: z.array(z.string()).min(1, "En az bir tag gerekli"),
+  tags: z.array(z.string()).min(1, "En az bir etiket gerekli"),
   liveUrl: z.string().optional(),
   gallery: z.array(z.string()).optional(),
   status: z.enum(["published", "draft"]).default("draft"),
@@ -51,7 +51,7 @@ export const contactSchema = z.object({
   email: z.string().email("Geçerli bir e-posta adresi girin"),
   subject: z.string().min(1, "Konu zorunlu").max(200),
   message: z.string().min(1, "Mesaj zorunlu").max(2000),
-  honeypot: z.string().max(0, "Bot detected").optional(),
+  honeypot: z.string().max(0, "İstenmeyen gönderim algılandı").optional(),
 })
 
 export type ArticleInput = z.infer<typeof articleSchema>

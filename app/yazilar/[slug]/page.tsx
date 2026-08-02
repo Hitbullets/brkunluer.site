@@ -16,9 +16,9 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const article = await getArticleBySlug(slug)
-  
-  if (!article) return { title: 'Yazi bulunamadi' }
-  
+
+  if (!article) return { title: 'Yazı bulunamadı' }
+
   return {
     title: article.title,
     description: article.excerpt,
@@ -49,22 +49,18 @@ export async function generateStaticParams() {
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params
   const article = await getArticleBySlug(slug)
-  
+
   if (!article) notFound()
-  
-  const mdxSource = article.body;
-  
-  // Get all articles for navigation
+
+  const mdxSource = article.body
   const allArticles = await getAllArticles()
   const currentIndex = allArticles.findIndex((a) => a.slug === slug)
   const previousArticle = currentIndex > 0 ? allArticles[currentIndex - 1] : null
   const nextArticle = currentIndex < allArticles.length - 1 ? allArticles[currentIndex + 1] : null
-  
-  // Get related articles by shared tags
   const relatedArticles = allArticles
     .filter((a) => a.slug !== slug && a.tags.some((t) => article.tags.includes(t)))
     .slice(0, 3)
-  
+
   return (
     <Container className='py-12 sm:py-16 lg:py-24'>
       <ArticleJsonLd
@@ -89,12 +85,12 @@ export default async function ArticlePage({ params }: Props) {
         previousArticle={previousArticle}
         nextArticle={nextArticle}
       />
-      
+
       {relatedArticles.length > 0 && (
         <section className='mt-24 max-w-6xl mx-auto'>
           <SectionHeader
-            title='Ilgili Yazilar'
-            description='Benzer konularda diger makaleler.'
+            title='İlgili Yazılar'
+            description='Benzer konulardaki diğer makaleler.'
           />
           <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
             {relatedArticles.map((related) => (

@@ -28,7 +28,7 @@ export function ContactForm() {
     const validation = contactSchema.safeParse(data)
     if (!validation.success) {
       setStatus("error")
-      setMessage(validation.error.issues[0]?.message || "Gecersiz form verisi")
+      setMessage(validation.error.issues[0]?.message || "Form bilgilerini kontrol edin.")
       return
     }
 
@@ -41,51 +41,51 @@ export function ContactForm() {
 
       if (res.ok) {
         setStatus("success")
-        setMessage("Mesajiniz gonderildi. En kisa surede donus yapacagim.")
+        setMessage("Mesajınız gönderildi. En kısa sürede size dönüş yapacağım.")
         formRef.current?.reset()
       } else {
         setStatus("error")
-        setMessage("Bir hata olustu. Lutfen tekrar deneyin.")
+        setMessage("Bir hata oluştu. Lütfen tekrar deneyin.")
       }
     } catch {
       setStatus("error")
-      setMessage("Bir hata olustu. Lutfen tekrar deneyin.")
+      setMessage("Bir hata oluştu. Lütfen tekrar deneyin.")
     }
   }
 
   return (
     <>
-      <h2 className="text-heading-lg font-semibold tracking-tight mb-2">Mesaj Gonder</h2>
-      <p className="text-body text-muted-foreground mb-8">Proje teklifleri, sorulariniz veya isbirligi fikirleriniz icin bu formu doldurun.</p>
+      <h2 className="text-heading-lg font-semibold tracking-tight mb-2">Mesaj Gönder</h2>
+      <p className="text-body text-muted-foreground mb-8">Proje teklifleri, sorularınız veya iş birliği fikirleriniz için formu doldurun.</p>
 
       <form ref={formRef} action={handleSubmit} className="space-y-6">
         <input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" readOnly />
 
         <div>
-          <Label htmlFor="name">Adiniz</Label>
-          <Input id="name" name="name" required placeholder="Adiniz Soyadiniz" />
+          <Label htmlFor="name">Adınız</Label>
+          <Input id="name" name="name" autoComplete="name" required placeholder="Adınız ve soyadınız" />
         </div>
 
         <div>
           <Label htmlFor="email">E-posta</Label>
-          <Input id="email" name="email" type="email" required placeholder="ornek@email.com" />
+          <Input id="email" name="email" type="email" autoComplete="email" required placeholder="ornek@eposta.com" />
         </div>
 
         <div>
           <Label htmlFor="subject">Konu</Label>
-          <Input id="subject" name="subject" required placeholder="Mesajinizin konusu" />
+          <Input id="subject" name="subject" required placeholder="Mesajınızın konusu" />
         </div>
 
         <div>
           <Label htmlFor="message">Mesaj</Label>
-          <Textarea id="message" name="message" required placeholder="Mesajinizi buraya yazin..." />
+          <Textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın." />
         </div>
 
         {message && (
-          <p className={cn("text-sm", status === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400")}>{message}</p>
+          <p aria-live="polite" className={cn("text-sm", status === "success" ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400")}>{message}</p>
         )}
 
-        <Button type="submit" variant="primary" size="lg" loading={status === "loading"}>{status === "loading" ? "Gonderiliyor..." : "Mesaji Gonder"}</Button>
+        <Button type="submit" variant="primary" size="lg" loading={status === "loading"}>{status === "loading" ? "Gönderiliyor..." : "Mesajı Gönder"}</Button>
       </form>
     </>
   )

@@ -6,8 +6,8 @@ import { getAllProjects } from '@/lib/content'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/portfolyo' },
-  title: 'Portfolyo',
-  description: 'Secili projeler ve vaka calismalari.',
+  title: 'AI Ürün Geliştirme Portföyü',
+  description: 'Burak Ünlüler tarafından geliştirilen seçili AI ürünlerini, otomasyon projelerini ve ayrıntılı vaka analizlerini inceleyin.',
 }
 
 export default async function PortfolioPage() {
@@ -19,13 +19,13 @@ export default async function PortfolioPage() {
     <section className='relative overflow-hidden bg-background vignette-light'>
       <Container className='py-24'>
         <SectionHero
-          title='Portfolyo'
-          subtitle='Uzerinde calistigim secili projeler ve vaka calismalari.'
+          title='AI Ürün Geliştirme Portföyü'
+          subtitle='Geliştirdiğim seçili AI ürünleri, otomasyon sistemleri ve vaka analizleri.'
         />
 
         {projects.length === 0 ? (
           <div className='text-center py-16'>
-            <p className='text-muted-foreground'>Yakinda projeler eklenecek.</p>
+            <p className='text-muted-foreground'>Yakında yeni projeler eklenecek.</p>
           </div>
         ) : (
           <div className='space-y-12'>

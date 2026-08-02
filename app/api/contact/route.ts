@@ -34,8 +34,8 @@ ${validation.data.message}
       console.log("[contact] message:", validation.data)
     }
 
-    return NextResponse.json({ success: true, message: "Mesaj gönderildi" })
+    return NextResponse.json({ success: true, message: "Mesajınız gönderildi." })
   } catch {
-    return NextResponse.json({ error: "Bir hata oluştu" }, { status: 500 })
+    return NextResponse.json({ error: "Bir hata oluştu. Lütfen tekrar deneyin." }, { status: 500 })
   }
 }

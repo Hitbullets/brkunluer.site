@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: method.title + ' — AI Factory',
     description: method.tagline,
-    alternates: { canonical: `/ai-factory/${method.slug}` },
+    alternates: { canonical: `/metotlar/${method.slug}` },
     openGraph: {
       title: method.title,
       description: method.tagline,
@@ -52,7 +52,7 @@ export default async function AIFactoryProductPage({ params }: Props) {
             {otherMethods.map((m) => (
               <Link
                 key={m.slug}
-                href={'/ai-factory/' + m.slug}
+                href={'/metotlar/' + m.slug}
                 className='group rounded-xl border border-border p-6 hover:border-brand-300 dark:hover:border-brand-700 transition-all'
               >
                 <p className='font-medium group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{m.title}</p>

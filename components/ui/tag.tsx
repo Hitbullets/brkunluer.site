@@ -21,10 +21,6 @@ export function Tag({
   ...props
 }: TagProps) {
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (removable && e.key === "Enter" || e.key === " ") {
-      e.preventDefault()
-      onRemove?.()
-    }
     if (clickable && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault()
       onClick?.()
@@ -43,7 +39,7 @@ export function Tag({
       )}
       onClick={clickable ? onClick : undefined}
       onKeyDown={handleKeyDown}
-      tabIndex={clickable || removable ? 0 : undefined}
+      tabIndex={clickable ? 0 : undefined}
       role={clickable ? "button" : undefined}
       {...props}
     >
@@ -53,7 +49,7 @@ export function Tag({
           type="button"
           onClick={(e) => { e.stopPropagation(); onRemove?.() }}
           className="flex h-4 w-4 items-center justify-center rounded-full text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors"
-          aria-label="Remove tag"
+          aria-label="Etiketi kaldır"
         >
           <X className="h-3 w-3" />
         </button>

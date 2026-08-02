@@ -10,8 +10,8 @@ import { getAllArticles, getAllTags } from '@/lib/content'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/yazilar' },
-  title: 'Yazılar',
-  description: 'AI iş akışları, otomasyon ve metodoloji üzerine makaleler.',
+  title: 'AI, Otomasyon ve Ürün Geliştirme Yazıları',
+  description: 'AI iş akışları, prompt mühendisliği, otomasyon ve ürün geliştirme üzerine uygulanabilir Türkçe makaleler.',
 }
 
 export default async function ArticlesPage() {
@@ -20,13 +20,12 @@ export default async function ArticlesPage() {
   return (
     <Container className='py-16 sm:py-20 lg:py-24'>
       <PageHeader
-        title='Yazılar'
-        description='AI, otomasyon ve sistemler üzerine pratik makaleler.'
+        title='AI ve Ürün Geliştirme Yazıları'
+        description='AI, otomasyon, prompt mühendisliği ve sistem tasarımı üzerine uygulanabilir makaleler.'
         badge='Tüm Makaleler'
       />
 
-      {/* Tag Filter */}
-      <div className='mb-12 flex flex-wrap gap-2' role='group' aria-label='Filter by tag'>
+      <div className='mb-12 flex flex-wrap gap-2' role='group' aria-label='Etikete göre filtrele'>
         <Link
           href='/yazilar'
           className={cn(
@@ -47,12 +46,11 @@ export default async function ArticlesPage() {
         ))}
       </div>
 
-      {/* Articles Grid */}
       {articles.length === 0 ? (
         <div className='text-center py-16'>
           <p className='text-muted-foreground mb-6'>Henüz yazı eklenmedi.</p>
           <Button asChild variant='primary'>
-            <Link href='/admin/yazilar/yeni'>İlk yazıyı yaz</Link>
+            <Link href='/iletisim'>İçerik Öner</Link>
           </Button>
         </div>
       ) : (

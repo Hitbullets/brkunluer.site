@@ -82,7 +82,9 @@ export function ArticleJsonLd({
   }
 
   if (coverImage) {
-    schema.image = coverImage
+    schema.image = coverImage.startsWith('http')
+      ? coverImage
+      : new URL(coverImage, SiteConfig.url).toString()
   }
 
   return (

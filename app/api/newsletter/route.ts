@@ -17,8 +17,8 @@ export async function POST(request: Request) {
 
     console.log("[newsletter] subscribe:", validation.data.email)
 
-    return NextResponse.json({ success: true, message: "Başarıyla kayıt oldunuz!" })
+    return NextResponse.json({ success: true, message: "Bülten kaydınız tamamlandı." })
   } catch {
-    return NextResponse.json({ error: "Bir hata oluştu" }, { status: 500 })
+    return NextResponse.json({ error: "Bir hata oluştu. Lütfen tekrar deneyin." }, { status: 500 })
   }
 }

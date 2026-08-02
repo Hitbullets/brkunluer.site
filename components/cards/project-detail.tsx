@@ -35,13 +35,13 @@ export function ProjectDetail({ project, serializedBody }: Props) {
             ))}
           </div>
         </div>
-        <h1 className='text-display-sm font-bold tracking-tight'>{project.title}</h1>
+        <h1 className='text-display-sm font-bold tracking-tight'>{project.title.toLocaleUpperCase('tr-TR')}</h1>
         <p className='mt-4 text-body-lg text-muted-foreground max-w-2xl'>{project.tagline}</p>
         {project.liveUrl && (
           <Button asChild variant='outline' className='mt-6'>
             <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
               <ExternalLink className='mr-2 h-4 w-4' />
-              Canli Siteyi Gor
+              Projeyi İncele
             </a>
           </Button>
         )}
@@ -66,7 +66,7 @@ export function ProjectDetail({ project, serializedBody }: Props) {
         <Separator className='my-12' />
         <div className='text-center'>
           <Button asChild variant='outline'>
-            <Link href='/portfolyo'>Tum Projelere Don</Link>
+            <Link href='/portfolyo'>Tüm Projelere Dön</Link>
           </Button>
         </div>
       </div>

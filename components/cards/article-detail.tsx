@@ -36,7 +36,7 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
                 <Badge key={tag} variant='accent'>{tag}</Badge>
               ))}
             </div>
-            <h1 className='text-heading-xl sm:text-display-sm font-bold tracking-tight leading-tight'>{article.title}</h1>
+            <h1 className='text-heading-xl sm:text-display-sm font-bold tracking-tight leading-tight'>{article.title.toLocaleUpperCase('tr-TR')}</h1>
             <p className='mt-4 text-body-lg text-muted-foreground'>{article.excerpt}</p>
             <div className='mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground'>
               <div className='flex items-center gap-1.5'>
@@ -48,7 +48,7 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
                 {readingTime} dk okuma
               </div>
               {article.updatedAt && (
-                <span>Guncellendi: {formatDate(article.updatedAt)}</span>
+                <span>Güncellendi: {formatDate(article.updatedAt)}</span>
               )}
             </div>
           </header>
@@ -79,12 +79,12 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
               <div className='flex items-start gap-4'>
                 <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-600 text-white text-xs font-bold'>AF</div>
                 <div>
-                  <p className='font-semibold'>AI Factory ile tanismadin mi?</p>
+                  <p className='font-semibold'>AI Factory ile Tanışın</p>
                   <p className='text-sm text-muted-foreground mt-1'>
-                    Bu makaledeki tekniklerin hepsi AI Factory sistemi icinde hazir olarak geliyor.
+                    Makaledeki teknikleri uygulanabilir şablonlara dönüştüren AI Factory sistemini inceleyin.
                   </p>
                   <Button asChild variant='primary' size='sm' className='mt-3'>
-                    <Link href='/ai-factory'>AI Factory&apos;yi Kesfet</Link>
+                    <Link href='/ai-factory'>AI Factory&apos;yi Keşfet</Link>
                   </Button>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
                   href='/hakkinda'
                   className='inline-block mt-2 text-sm text-brand-600 dark:text-brand-400 hover:underline'
                 >
-                  Hakkinda daha fazla &rarr;
+                  Burak Ünlüler Hakkında &rarr;
                 </Link>
               </div>
             </div>
@@ -117,14 +117,14 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
             {(previousArticle || nextArticle) && (
               <>
                 <Separator className='my-8' />
-                <nav className='grid grid-cols-2 gap-4' aria-label='Article navigation'>
+                <nav className='grid grid-cols-2 gap-4' aria-label='Yazılar Arası Gezinme'>
                   {previousArticle ? (
                     <Link
                       href={'/yazilar/' + previousArticle.slug}
                       className='group flex flex-col gap-1 rounded-xl border border-border p-4 hover:bg-secondary/50 transition-colors'
                     >
                       <span className='flex items-center gap-1 text-xs text-muted-foreground'>
-                        <ArrowLeft className='h-3 w-3' /> Onceki
+                        <ArrowLeft className='h-3 w-3' /> Önceki
                       </span>
                       <span className='text-sm font-medium line-clamp-2 group-hover:text-foreground transition-colors'>
                         {previousArticle.title}
@@ -156,8 +156,8 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
 
         {tocItems.length > 0 && (
           <aside className='hidden lg:block lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto'>
-            <nav aria-label='Table of contents'>
-              <h2 className='text-sm font-semibold tracking-tight mb-4'>Icerik</h2>
+            <nav aria-label='İçindekiler'>
+              <h2 className='text-sm font-semibold tracking-tight mb-4'>İçerik</h2>
               <ul className='space-y-2.5'>
                 {tocItems.map((item, index) => (
                   <li key={index}>
