@@ -38,11 +38,13 @@ export const metadata: Metadata = {
     siteName: SiteConfig.name,
     title: SiteConfig.title,
     description: SiteConfig.description,
+    images: [{ url: SiteConfig.ogImage, width: 1672, height: 948, alt: SiteConfig.title }],
   },
   twitter: {
     card: 'summary_large_image',
     title: SiteConfig.title,
     description: SiteConfig.description,
+    images: [SiteConfig.ogImage],
   },
   robots: {
     index: true,
@@ -70,7 +72,7 @@ export default function RootLayout({
             href='#content'
             className='sr-only focus:not-sr-only focus:absolute focus:z-50 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:rounded-md'
           >
-            Icerige git
+            İçeriğe Git
           </a>
           <Header />
           <main id='content' className='flex-1'>

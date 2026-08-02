@@ -2,12 +2,13 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/layout/container'
+import { NewsletterForm } from '@/components/forms/newsletter-form'
 import { Search, Home, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/404' },
   title: 'Sayfa Bulunamadı',
   description: 'Aradığınız sayfa mevcut değil.',
+  robots: { index: false, follow: false },
 }
 
 export default function NotFound() {
@@ -19,10 +20,10 @@ export default function NotFound() {
       </div>
 
       <div className='max-w-md'>
-        <h1 className='text-heading-lg font-bold'>Sayfa Bulunamadı</h1>
+        <h1 className='text-heading-lg font-bold'>SAYFA BULUNAMADI</h1>
         <p className='mt-4 text-muted-foreground'>
           Aradığınız sayfa taşınmış, silinmiş ya da hiç var olmamış olabilir.
-          Yazım hatası kontrol edin veya aşağıdaki seçenekleri deneyin.
+          Adresteki yazımı kontrol edin veya aşağıdaki seçeneklerden birini kullanın.
         </p>
       </div>
 
@@ -43,18 +44,9 @@ export default function NotFound() {
       </div>
 
       <div className='w-full max-w-md'>
-        <form className='flex gap-2' action='/api/newsletter' method='POST'>
-          <input
-            type='email'
-            name='email'
-            placeholder='Bültene abone ol...'
-            required
-            className='flex-1 rounded-lg border border-input bg-background px-4 py-3 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'
-          />
-          <Button type='submit' variant='primary'>Abone Ol</Button>
-        </form>
+        <NewsletterForm />
         <p className='mt-3 text-caption text-muted-foreground'>
-          Haftalık AI workflow rehberleri. Spam yok.
+          Haftalık AI iş akışı rehberleri. İstediğiniz zaman abonelikten ayrılabilirsiniz.
         </p>
       </div>
     </Container></section>

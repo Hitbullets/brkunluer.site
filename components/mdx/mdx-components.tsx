@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { slugify } from '@/lib/utils'
 
 const components = {
   ImageFrame: ({ src, alt }: { src?: string; alt?: string }) => {
@@ -13,7 +14,7 @@ const components = {
     )
   },
   h1: ({ children, ...props }: React.HTMLProps<HTMLHeadingElement>) => {
-    const id = typeof children === 'string' ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') : undefined
+    const id = typeof children === 'string' ? slugify(children) : undefined
     return (
       <h1 id={id} className='mt-10 text-3xl font-bold tracking-tight scroll-mt-24' {...props}>
         {children}
@@ -21,7 +22,7 @@ const components = {
     )
   },
   h2: ({ children, ...props }: React.HTMLProps<HTMLHeadingElement>) => {
-    const id = typeof children === 'string' ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') : undefined
+    const id = typeof children === 'string' ? slugify(children) : undefined
     return (
       <h2 id={id} className='mt-10 text-2xl font-semibold tracking-tight scroll-mt-24' {...props}>
         {children}
@@ -29,7 +30,7 @@ const components = {
     )
   },
   h3: ({ children, ...props }: React.HTMLProps<HTMLHeadingElement>) => {
-    const id = typeof children === 'string' ? children.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-') : undefined
+    const id = typeof children === 'string' ? slugify(children) : undefined
     return (
       <h3 id={id} className='mt-8 text-xl font-semibold scroll-mt-24' {...props}>
         {children}

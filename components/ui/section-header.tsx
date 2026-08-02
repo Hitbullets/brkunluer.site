@@ -47,7 +47,7 @@ export function PageHeader({ title, description, badge, className }: PageHeaderP
           {badge}
         </span>
       )}
-      <h1 className="text-display-md font-bold tracking-tight">{title}</h1>
+      <h1 className="text-display-md font-bold tracking-tight">{title.toLocaleUpperCase("tr-TR")}</h1>
       {description && <p className="mt-4 text-body-lg text-muted-foreground max-w-2xl">{description}</p>}
     </header>
   )

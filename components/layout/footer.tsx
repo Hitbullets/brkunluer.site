@@ -2,32 +2,32 @@ import Link from "next/link"
 import { SiteConfig } from "@/lib/site"
 import { Container } from "@/components/layout/container"
 import { NewsletterForm } from "@/components/forms/newsletter-form"
-import { cn } from "@/lib/utils"
 import { Camera } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks: {
-    platform: Array<{ label: string; href: string; comingSoon?: boolean }>
-    company: Array<{ label: string; href: string; comingSoon?: boolean }>
-    resources: Array<{ label: string; href: string; external?: boolean; comingSoon?: boolean }>
+    platform: Array<{ label: string; href: string }>
+    company: Array<{ label: string; href: string }>
+    resources: Array<{ label: string; href: string; external?: boolean }>
   } = {
     platform: [
       { label: "Yazılar", href: "/yazilar" },
       { label: "AI Factory", href: "/ai-factory" },
-      { label: "Portfolyo", href: "/portfolyo" },
-      { label: "AI Factory", href: "/ai-factory", comingSoon: true },
+      { label: "Portföy", href: "/portfolyo" },
+      { label: "Metotlar", href: "/metotlar" },
     ],
     company: [
       { label: "Hakkımda", href: "/hakkinda" },
       { label: "İletişim", href: "/iletisim" },
+      { label: "Gizlilik Politikası", href: "/gizlilik" },
+      { label: "Kullanım Koşulları", href: "/kullanim-kosullari" },
     ],
     resources: [
       { label: "GitHub", href: SiteConfig.social.github, external: true },
       { label: "Twitter / X", href: SiteConfig.social.twitter, external: true },
       { label: "Instagram", href: SiteConfig.social.instagram, external: true },
-      { label: "RSS Feed", href: "/rss.xml", comingSoon: true },
     ],
   }
 
@@ -37,13 +37,13 @@ export function Footer() {
         {/* Newsletter Section */}
         <div className="mb-16 rounded-2xl border border-border bg-muted/50 p-8 lg:p-12 text-center">
           <div className="max-w-xl mx-auto">
-            <h3 className="text-heading-lg font-semibold tracking-tight">Haftalık AI Workflow Kılavuzları</h3>
+            <h2 className="text-heading-lg font-semibold tracking-tight">Haftalık AI İş Akışı Rehberleri</h2>
             <p className="mt-3 text-body text-muted-foreground">
-              Her Pazartesi sabah, pratik AI iş akışları, prompt şablonları ve otomasyon ipuçlarıyla inboxınıza.
+              Her pazartesi sabahı pratik AI iş akışları, prompt şablonları ve otomasyon ipuçları e-posta kutunuzda.
             </p>
             <NewsletterForm className="mt-6 max-w-md mx-auto" />
             <p className="mt-3 text-caption text-muted-foreground">
-              Spam yok. Sadece değerli içerik. İstediğiniz zaman abonelikten çıkabilirsiniz.
+              Gereksiz ileti yok. Yalnızca uygulamaya dönük içerikler. İstediğiniz zaman abonelikten ayrılabilirsiniz.
             </p>
           </div>
         </div>
@@ -90,20 +90,16 @@ export function Footer() {
           </div>
 
           {/* Platform */}
-          <nav>
-            <h4 className="font-medium mb-4">Platform</h4>
+          <nav aria-label="Platform Bağlantıları">
+            <h2 className="font-medium mb-4">Platform</h2>
             <ul className="space-y-3">
               {footerLinks.platform.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={cn(
-                      "text-body-sm text-muted-foreground hover:text-foreground transition-colors",
-                      link.comingSoon && "opacity-50 cursor-not-allowed"
-                    )}
+                    className="text-body-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {link.label}
-                    {link.comingSoon && <span className="ml-1 text-xs text-muted-foreground">(yakında)</span>}
                   </Link>
                 </li>
               ))}
@@ -111,21 +107,35 @@ export function Footer() {
           </nav>
 
           {/* Company */}
-          <nav>
-            <h4 className="font-medium mb-4">Şirket</h4>
+          <nav aria-label="Kurumsal Bağlantılar">
+            <h2 className="font-medium mb-4">Kurumsal</h2>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={cn(
-                      "text-body-sm text-muted-foreground hover:text-foreground transition-colors",
-                      link.comingSoon && "opacity-50 cursor-not-allowed"
-                    )}
+                    className="text-body-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {link.label}
-                    {link.comingSoon && <span className="ml-1 text-xs text-muted-foreground">(yakında)</span>}
                   </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Kaynak Bağlantıları">
+            <h2 className="font-medium mb-4">Kaynaklar</h2>
+            <ul className="space-y-3">
+              {footerLinks.resources.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
+                    className="text-body-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -138,8 +148,6 @@ export function Footer() {
             <p className="text-body-sm text-muted-foreground">
               &copy; {currentYear} {SiteConfig.name}. Tüm hakları saklıdır.
             </p>
-            <div className="flex items-center gap-6 text-body-sm text-muted-foreground">
-            </div>
           </div>
         </div>
       </Container>

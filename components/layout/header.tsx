@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useSyncExternalStore } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { SiteConfig } from '@/lib/site'
@@ -10,9 +10,24 @@ import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { NavLink, MobileNavLink } from '@/components/ui/nav-link'
 
+function subscribeToTheme(callback: () => void) {
+  const observer = new MutationObserver(callback)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+  return () => observer.disconnect()
+}
+
+function getThemeSnapshot() {
+  return document.documentElement.classList.contains('dark')
+}
+
+function getServerThemeSnapshot() {
+  return false
+}
+
 export function Header() {
   const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
+  const isDark = useSyncExternalStore(subscribeToTheme, getThemeSnapshot, getServerThemeSnapshot)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
@@ -21,7 +36,7 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const themeLabel = theme === 'dark' ? 'Aydinlik moda gec' : 'Karanlik moda gec'
+  const themeLabel = isDark ? 'Aydınlık Moda Geç' : 'Karanlık Moda Geç'
   const isHome = pathname === '/'
 
   return (
@@ -33,22 +48,21 @@ export function Header() {
           : 'bg-transparent border-b border-transparent',
       )}
     >
-      <nav className='max-w-5xl mx-auto' aria-label='Ana navigasyon'>
+      <nav className='max-w-5xl mx-auto' aria-label='Ana Menü'>
         <div className='flex h-14 items-center justify-between px-4 sm:px-6'>
           {/* Logo */}
           <Link
             href='/'
             className='flex items-center gap-2.5 group'
-            aria-label='Ana sayfaya git'
           >
-            <span className='h-7 w-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-xs font-bold group-hover:bg-brand-500 transition-colors'>
+            <span aria-hidden='true' className='h-7 w-7 rounded-lg bg-brand-700 flex items-center justify-center text-white text-xs font-bold group-hover:bg-brand-800 dark:bg-brand-500 dark:text-brand-950 dark:group-hover:bg-brand-400 transition-colors'>
               b
             </span>
             <span className={cn(
               'text-sm font-semibold tracking-tight transition-colors',
               scrolled || !isHome ? 'text-foreground' : 'text-white',
             )}>
-              Burak Unluer
+              Burak Ünlüler
             </span>
           </Link>
 
@@ -73,7 +87,7 @@ export function Header() {
               variant='ghost'
               size='icon-sm'
               aria-label={themeLabel}
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(isDark ? 'light' : 'dark')}
               className={cn(
                 'ml-1',
                 !scrolled && isHome && 'text-white/60 hover:text-white hover:bg-white/10',
@@ -90,7 +104,7 @@ export function Header() {
               variant='ghost'
               size='icon-sm'
               aria-label={themeLabel}
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(isDark ? 'light' : 'dark')}
               className={!scrolled && isHome ? 'text-white/60' : ''}
             >
               <Sun className='h-4 w-4' />
@@ -98,7 +112,7 @@ export function Header() {
             <Button
               variant='ghost'
               size='icon-sm'
-              aria-label={mobileOpen ? 'Menuyu kapat' : 'Menuyu ac'}
+              aria-label={mobileOpen ? 'Menüyü Kapat' : 'Menüyü Aç'}
               onClick={() => setMobileOpen(!mobileOpen)}
               className={!scrolled && isHome ? 'text-white/60' : ''}
             >
@@ -122,10 +136,10 @@ export function Header() {
                 variant='outline'
                 size='sm'
                 className='w-full justify-center'
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                onClick={() => setTheme(isDark ? 'light' : 'dark')}
               >
-                {theme === 'dark' ? <Sun className='mr-2 h-4 w-4' /> : <Moon className='mr-2 h-4 w-4' />}
-                {theme === 'dark' ? 'Aydinlik Mod' : 'Karanlik Mod'}
+                {isDark ? <Sun className='mr-2 h-4 w-4' /> : <Moon className='mr-2 h-4 w-4' />}
+                {isDark ? 'Aydınlık Mod' : 'Karanlık Mod'}
               </Button>
             </div>
           </div>

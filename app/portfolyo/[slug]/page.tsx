@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const project = await getProjectBySlug(slug)
   
-  if (!project) return { title: 'Proje bulunamadi' }
+  if (!project) return { title: 'Proje bulunamadı' }
   
   return {
     title: project.title,
@@ -54,7 +54,7 @@ export default async function ProjectPage({ params }: Props) {
       <div className='mb-8'>
         <Button asChild variant='ghost' size='sm'>
           <Link href='/portfolyo'>
-            <ArrowLeft className='mr-2 h-4 w-4' /> Tum Projeler
+            <ArrowLeft className='mr-2 h-4 w-4' /> Tüm Projeler
           </Link>
         </Button>
       </div>
@@ -63,13 +63,13 @@ export default async function ProjectPage({ params }: Props) {
       
       {/* Next / Prev Navigation */}
       {(prevProject || nextProject) && (
-        <nav className='mt-24 grid grid-cols-2 gap-4 max-w-4xl mx-auto' aria-label='Project navigation'>
+        <nav className='mt-24 grid grid-cols-2 gap-4 max-w-4xl mx-auto' aria-label='Projeler Arası Gezinme'>
           {prevProject ? (
             <Link
               href={'/portfolyo/' + prevProject.slug}
               className='group rounded-xl border border-border p-5 hover:border-brand-300 dark:hover:border-brand-700 transition-all'
             >
-              <span className='text-xs text-muted-foreground'>Onceki Proje</span>
+              <span className='text-xs text-muted-foreground'>Önceki Proje</span>
               <p className='font-medium mt-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{prevProject.title}</p>
             </Link>
           ) : <div />}
@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: Props) {
       {/* Other Projects */}
       {otherProjects.length > 0 && (
         <section className='mt-24 max-w-4xl mx-auto'>
-          <h2 className='text-heading-lg font-semibold mb-8'>Diger Projeler</h2>
+          <h2 className='text-heading-lg font-semibold mb-8'>Diğer Projeler</h2>
           <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
             {otherProjects.map((p) => (
               <Link key={p.slug} href={'/portfolyo/' + p.slug} className='group block'>

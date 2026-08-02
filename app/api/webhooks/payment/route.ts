@@ -4,5 +4,5 @@ export const dynamic = "force-dynamic"
 
 export async function POST(request: Request) {
   void request
-  return NextResponse.json({ error: "Payment webhook is not enabled" }, { status: 501 })
+  return NextResponse.json({ error: "Ödeme bildirimi henüz etkin değil." }, { status: 501 })
 }

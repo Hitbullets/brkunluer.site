@@ -1,43 +1,65 @@
 ---
 title: "InkOS"
-client: "Personal Project"
-year: 2024
-tagline: "AI destekli kisisel uretkenlik sistemi"
-coverImage: "/vercel.svg"
-tags: ["AI", "product design", "automation"]
+client: "Kişisel Proje"
+year: 2026
+tagline: "Dövme sanatçılarının fikirden üretime uzanan tasarım sürecini tek bir AI destekli çalışma alanında birleştiren yaratıcı üretim platformu"
+coverImage: "/images/projects/inkos-cover.png"
+tags: ["AI yaratıcı asistan", "dövme tasarımı", "ürün geliştirme"]
+liveUrl: "https://www.inkosone.com"
 status: "published"
-liveUrl: "https://inkos.example.com"
 gallery: []
 ---
 
-# InkOS — AI Destekli Kisisel Uretkenlik Sistemi
+## Proje Hakkında
 
-## Problemi Kesfedin
+InkOS, profesyonel dövme sanatçıları için geliştirilen AI destekli bir tasarım ve üretim platformudur. Bir dövme fikrinin ilk taslaktan uygulanabilir görsele dönüşmesine kadar geçen süreci hızlandırırken sanatçının yaratıcı kontrolünü korumayı amaçlar.
 
-Modern calisanlarin gunluk is akislari cok sayida context switch ve manuel gorev iceriyor. E-posta, mesajlasma, proje yonetimi, dokuman—her araclar arasinda gidip gelirken uretkenlik dusuyor, karar yorgunlugu artiyor.
+Platform, sanatçının yerine karar veren bir otomasyon aracı olarak değil; prompt hazırlama, anatomik kompozisyon planlama, stencil oluşturma, tasarım iyileştirme ve gerçekçi vücut önizlemesi gibi teknik adımları kolaylaştıran bir **yaratıcı yardımcı** olarak konumlanır.
 
-InkOS bu problemin cozumu icin tasarlandi: AI destekli bir kisisel uretkenlik sistemi.
+## Var Oluş Amacı
 
-## Cozum Yaklasimi
+Dövme tasarımı doğası gereği tekrar, karşılaştırma ve revizyon gerektiren bir süreçtir. Sanatçılar fikir üretmek, uygun stili belirlemek, tasarımı vücut bölgesine göre düzenlemek, stencil hazırlamak ve sonucu müşteriye göstermek için çoğu zaman birbirinden kopuk araçlar arasında geçiş yapmak zorunda kalır.
 
-AI destekli otomasyon ve akilli yonlendirmelerle is yukunu azalttik:
+InkOS'un var oluş amacı bu dağınık süreci tek bir üretim akışında birleştirmektir. Yapay zeka teknik hazırlığı hızlandırırken kompozisyon, stil ve son karar üzerindeki yetki sanatçıda kalır. Böylece teknoloji, sanatsal kimliği baskılayan değil; sanatçının zamanını ve üretim kapasitesini güçlendiren bir katmana dönüşür.
 
-- **Gorev onceliklendirme**: AI, deadline ve enerji seviyesine gore gorevleri siraliyor
-- **Context switching azaltma**: Tum arclari tek bir arayuzde birlestiriyor
-- **Akilli bildirimler**: Onemli olmayan bildirimleri filtreleyerek dikkati koruyor
+## Nasıl Çalışır?
 
-## Kullanilan Teknolojiler
+InkOS, fikirden çıktıya uzanan süreci birbirini tamamlayan adımlarla yönetir:
 
-- **Frontend**: Next.js 16, React 19, Tailwind CSS v4
-- **AI**: LLM destekli karar motoru, dogal dil isleme
-- **Backend**: Edge-first mimari, real-time senkronizasyon
+1. **Fikir ve stil seçimi:** Sanatçı tasarım fikrini girer ve 17 profesyonel dövme stili arasından görsel yönünü belirler.
+2. **AI prompt geliştirme:** Basit fikir; gölgelendirme, çizgi dili, kompozisyon ve uygulama bölgesini dikkate alan ayrıntılı bir üretim komutuna dönüştürülür.
+3. **Anatomik yerleşim:** Ön ve arka görünümü destekleyen 13 vücut bölgesi üzerinden tasarımın uygulanacağı alan seçilir.
+4. **Tasarım üretimi:** Seçilen stil, fikir ve yerleşim bilgileri kullanılarak gerçekçi bir dövme önizlemesi oluşturulur.
+5. **Stencil hazırlığı:** Üretilen tasarımdan tarayıcı içinde hızlı bir stencil önizlemesi alınır.
+6. **Arşiv ve takip:** Tasarımlar; stil ve vücut bölgesi filtreleriyle geçmiş ekranında saklanır ve yönetilir.
 
-## Cikti ve Deger
+## Öne Çıkan Özellikler
 
-- **%60 daha hizli gorev tamamlama**: Kullanicilar haftalik planlama suresini 2 saatten 45 dakikaya dusurdu
-- **%40 daha az manuel giris**: AI destekli otomasyon ile tekrarlayan gorevler otomatiklesti
-- **Surdurulebilir kullanici deneyimi**: Kullanicilarin %85'i ilk aydan sonra sistemi kullanmaya devam etti
+- **Sanatçı odaklı yaklaşım:** AI öneri ve üretim desteği sağlar; yaratıcı yönlendirme sanatçıda kalır.
+- **Profesyonel stil kütüphanesi:** Traditional, Blackwork, Fine Line, Realism, Japanese, Geometric ve benzeri 17 stil seçeneği sunar.
+- **Anatomik bağlam:** Tasarım kompozisyonunu seçilen vücut bölgesinin doğal akışına göre şekillendirir.
+- **Gerçekçi önizleme:** Tasarımı yalnızca bağımsız bir görsel olarak değil, vücut üzerindeki uygulama bağlamıyla birlikte gösterir.
+- **Hızlı stencil çıktısı:** Sobel kenar algılama yaklaşımıyla tarayıcı üzerinde anlık stencil önizlemesi üretir.
+- **Tasarım geçmişi:** Üretimleri, temel istatistikleri ve filtreleri tek bir kontrol ekranında toplar.
 
-## Ogrenilenler
+## Teknoloji ve Ürün Mimarisi
 
-Bu proje bana AI urun gelistirmede en onemli seyin kullanici ihtiyacini dogru anlamak oldugunu gosterdi. Teknik olarak zorlayici olan kisim degil, dogru problemi cozmekti.
+InkOS'un çalışan MVP sürümü React tabanlı bir arayüz, Python tabanlı servisler ve Google OAuth kimlik doğrulama akışı üzerine kuruludur. Prompt geliştirme aşamasında Claude, görsel üretim aşamasında OpenAI görüntü modeli kullanılır. Tarayıcı tarafındaki Sobel filtresi ise hızlı stencil üretimini ek bir AI çağrısına ihtiyaç duymadan gerçekleştirir.
+
+Arka uçta stencil, image-to-image ve önizleme adımlarını birbirine bağlayan çok aşamalı üretim hattı da geliştirilmiştir. Bu hattın arayüze tam entegrasyonu, üretilen stencil ile vücut önizlemesi arasındaki görsel tutarlılığı artırmayı hedefleyen ürün yol haritasının öncelikli adımlarından biridir.
+
+## Tasarım Yaklaşımı
+
+InkOS'un arayüzü, uzun yaratıcı çalışma seanslarında odağı koruyacak sade ve yüksek kontrastlı bir yapıya sahiptir. OLED siyahı zemin, kontrollü bordo vurgular ve mat yüzeyler; süsleme yerine işlevi öne çıkaran profesyonel bir çalışma ortamı oluşturur.
+
+Bu yaklaşımın temel ilkesi nettir: Her ekran ve etkileşim, sanatçıyı fikrinden uzaklaştırmadan bir sonraki üretim adımına taşımalıdır.
+
+## Vizyon
+
+InkOS'un uzun vadeli vizyonu, bağımsız bir AI görsel üreticisinden daha fazlasına dönüşmektir. Hedef; prompt engineering, anatomik planlama, stencil hazırlama, iteratif tasarım geliştirme, müşteri iletişimi ve gelecekteki stüdyo iş birliği araçlarını tek bir yaratıcı üretim ortamında buluşturmaktır.
+
+Bu vizyon, yapay zekayı sanatçının yerine koymaz. Aksine teknik uygulamayı hızlandırırken yaratıcı kararların, özgün dilin ve ortaya çıkan eserin kontrolünü sanatçıda bırakır. InkOS böylece modern dövme stüdyoları için fikirden uygulamaya uzanan bütüncül bir dijital çalışma alanı olmayı amaçlar.
+
+## Projeyi İnceleyin
+
+InkOS'un güncel sürümünü ve ürün deneyimini [www.inkosone.com](https://www.inkosone.com) adresinden inceleyebilirsiniz.

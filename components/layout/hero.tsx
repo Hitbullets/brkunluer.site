@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/layout/container'
 import { cn } from '@/lib/utils'
@@ -58,7 +59,7 @@ export function Hero({
           )}
 
           <h1 id='hero-title' className='text-display-md sm:text-display-lg font-bold tracking-tight text-foreground'>
-            {title}
+            {title.toLocaleUpperCase('tr-TR')}
           </h1>
 
           {subtitle && (
@@ -71,12 +72,12 @@ export function Hero({
             <div className='mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4'>
               {primaryCTA && (
                 <Button asChild size='lg' variant='primary' className='w-full sm:w-auto'>
-                  <a href={primaryCTA.href}>{primaryCTA.label}</a>
+                  <Link href={primaryCTA.href}>{primaryCTA.label}</Link>
                 </Button>
               )}
               {secondaryCTA && (
                 <Button asChild size='lg' variant='outline' className='w-full sm:w-auto'>
-                  <a href={secondaryCTA.href}>{secondaryCTA.label}</a>
+                  <Link href={secondaryCTA.href}>{secondaryCTA.label}</Link>
                 </Button>
               )}
             </div>
@@ -120,7 +121,7 @@ export function SectionHero({ title, subtitle, badge, className }: SectionHeroPr
           {badge}
         </span>
       )}
-      <h1 className='text-heading-xl font-bold tracking-tight'>{title}</h1>
+      <h1 className='text-heading-xl font-bold tracking-tight'>{title.toLocaleUpperCase('tr-TR')}</h1>
       {subtitle && <p className='mt-4 text-body-lg text-muted-foreground max-w-2xl'>{subtitle}</p>}
     </header>
   )

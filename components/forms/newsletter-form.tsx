@@ -22,7 +22,7 @@ export function NewsletterForm({ className, variant = 'default' }: { className?:
     const validation = newsletterSchema.safeParse(data)
     if (!validation.success) {
       setStatus('error')
-      setMessage(validation.error.issues[0]?.message || 'Gecersiz e-posta')
+        setMessage(validation.error.issues[0]?.message || 'Geçersiz e-posta')
       return
     }
 
@@ -35,16 +35,16 @@ export function NewsletterForm({ className, variant = 'default' }: { className?:
 
       if (res.ok) {
         setStatus('success')
-        setMessage('Basariyla kaydoldunuz! Ilk haftalik bulten bir sonraki Pazartesi gonderilecek.')
+        setMessage('Kaydınız tamamlandı. İlk haftalık bülten bir sonraki pazartesi gönderilecek.')
         formRef.current?.reset()
       } else {
         const error = await res.json()
         setStatus('error')
-        setMessage(error.error || 'Bir hata olustu. Lutfen tekrar deneyin.')
+        setMessage(error.error || 'Bir hata oluştu. Lütfen tekrar deneyin.')
       }
     } catch {
       setStatus('error')
-      setMessage('Bir hata olustu. Lutfen tekrar deneyin.')
+      setMessage('Bir hata oluştu. Lütfen tekrar deneyin.')
     }
   }
 
@@ -54,16 +54,16 @@ export function NewsletterForm({ className, variant = 'default' }: { className?:
         <Input
           type='email'
           name='email'
-          placeholder='E-posta adresin'
+          placeholder='E-posta adresiniz'
           required
-          aria-label='E-posta adresin'
+          aria-label='E-posta Adresi'
           className='flex-1'
         />
         <Button type='submit' variant='primary' disabled={status === 'loading'}>
           {status === 'loading' ? 'Kaydediliyor...' : 'Abone Ol'}
         </Button>
         {message && (
-          <p className={cn('text-sm', status === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400')}>
+          <p aria-live='polite' className={cn('text-sm', status === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400')}>
             {message}
           </p>
         )}
@@ -76,16 +76,16 @@ export function NewsletterForm({ className, variant = 'default' }: { className?:
       <Input
         type='email'
         name='email'
-        placeholder='E-posta adresin'
+        placeholder='E-posta adresiniz'
         required
-        aria-label='E-posta adresin'
+        aria-label='E-posta Adresi'
         className='flex-1'
       />
       <Button type='submit' variant='primary' size='lg' loading={status === 'loading'}>
         {status === 'loading' ? 'Kaydediliyor...' : 'Abone Ol'}
       </Button>
       {message && (
-        <p className={cn('text-sm text-center sm:text-left', status === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400')}>
+        <p aria-live='polite' className={cn('text-sm text-center sm:text-left', status === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400')}>
           {message}
         </p>
       )}

@@ -40,7 +40,7 @@ export default async function MethodPage({ params }: Props) {
       <MethodDetail method={method} serializedDescription={method.description} />
       {otherMethods.length > 0 && (
         <section className='mt-24'>
-          <h2 className='mb-8 text-heading-lg font-semibold'>Diğer metotlar</h2>
+          <h2 className='mb-8 text-heading-lg font-semibold'>Diğer Metotlar</h2>
           <div className='grid gap-6 sm:grid-cols-2'>
             {otherMethods.map((item) => (
               <Link key={item.slug} href={`/metotlar/${item.slug}`} className='group rounded-xl border border-border p-6 transition-all hover:border-brand-300 dark:hover:border-brand-700'>

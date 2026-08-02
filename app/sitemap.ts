@@ -13,11 +13,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticRoutes = [
     '',
+    '/ai-factory',
     '/yazilar',
     '/metotlar',
     '/portfolyo',
     '/hakkinda',
     '/iletisim',
+    '/gizlilik',
+    '/kullanim-kosullari',
   ]
 
   const articleUrls = articles.map((article) => ({
@@ -29,21 +32,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const methodUrls = methods.map((method) => ({
     url: SiteConfig.url + '/metotlar/' + method.slug,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
   const projectUrls = projects.map((project) => ({
     url: SiteConfig.url + '/portfolyo/' + project.slug,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
   const staticUrls = staticRoutes.map((route) => ({
     url: SiteConfig.url + route,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1 : 0.8,
   }))

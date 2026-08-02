@@ -10,24 +10,24 @@ import { ScrollReveal } from '@/components/ui/scroll-reveal'
 export const metadata: Metadata = {
   alternates: { canonical: '/ai-factory' },
   title: 'AI Factory',
-  description: 'Tekrarlanabilir AI urun gelistirme sistemi. Agent engineering, prompt systems ve AI workflow.',
+  description: 'AI ajan mühendisliği, prompt sistemleri ve iş akışı otomasyonuyla fikirleri üretime taşıyan tekrarlanabilir AI ürün geliştirme sistemi.',
 }
 
 const systemFeatures = [
   {
     icon: Settings,
-    title: 'Agent Engineering',
-    desc: 'LLM tabanli agent orchestration sistemleri, tool calling pipelines, memory management.',
+    title: 'Ajan Mühendisliği',
+    desc: 'LLM tabanlı ajan orkestrasyonu, araç kullanımı ve bellek yönetimi sistemleri.',
   },
   {
     icon: BookOpen,
-    title: 'Prompt Systems',
-    desc: 'Sistematik prompt tasarimi, evaluation pipelines, production-ready template frameworks.',
+    title: 'Prompt Sistemleri',
+    desc: 'Sistematik prompt tasarımı, değerlendirme süreçleri ve üretime hazır şablon çerçeveleri.',
   },
   {
     icon: Cpu,
-    title: 'AI Workflow Design',
-    desc: 'Tekrarlanabilir is akislari, otomasyon zincirleri, AI-native product surecleri.',
+    title: 'AI İş Akışı Tasarımı',
+    desc: 'Tekrarlanabilir iş akışları, otomasyon zincirleri ve AI odaklı ürün geliştirme süreçleri.',
   },
 ]
 
@@ -36,28 +36,26 @@ export default async function AIFactoryPage() {
 
   return (
     <>
-      {/* Hero - Innovation */}
       <section className='bg-hero ambient-spotlight bg-noise light-leak relative overflow-hidden border-b border-white/5'>
-        <div className='float-orb float-orb-1' />
         <Container className='relative py-24 sm:py-32 lg:py-40 z-10'>
           <div className='max-w-3xl'>
             <ScrollReveal>
               <Badge variant='accent' className='mb-6'>AI Factory v1.0</Badge>
               <h1 className='text-display-md sm:text-display-lg font-bold tracking-tight text-white'>
-                Tekrarlanabilir AI urun gelistirme sistemi.
+                TEKRARLANABİLİR AI ÜRÜN GELİŞTİRME SİSTEMİ.
               </h1>
               <p className='mt-6 text-body-lg text-white/60 max-w-2xl'>
-                Agent engineering, prompt systems ve AI workflow tasarimi ile fikirlerini haftalar 
-                degil, gunler icinde uretime tasi.
+                Ajan mühendisliği (agent engineering), prompt sistemleri ve AI iş akışı tasarımıyla
+                fikirlerinizi haftalar değil, günler içinde üretime taşıyın.
               </p>
               <div className='mt-10 flex flex-col sm:flex-row gap-4'>
                 <Button asChild size='xl' variant='primary'>
                   <Link href='/portfolyo'>
-                    Case Study&apos;leri Incele <ArrowRight className='ml-2 h-4 w-4' />
+                    Vaka Analizlerini İncele <ArrowRight className='ml-2 h-4 w-4' />
                   </Link>
                 </Button>
                 <Button asChild size='xl' variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                  <Link href='/yazilar'>Yazilari Oku</Link>
+                  <Link href='/yazilar'>Yazıları Oku</Link>
                 </Button>
               </div>
             </ScrollReveal>
@@ -65,7 +63,6 @@ export default async function AIFactoryPage() {
         </Container>
       </section>
 
-      {/* System Overview - Innovation. Left-aligned editorial hierarchy. */}
       <section className='relative overflow-hidden bg-background ambient-glow-left section-divider-glow'>
         <Container className='py-24 sm:py-32'>
           <ScrollReveal>
@@ -73,19 +70,16 @@ export default async function AIFactoryPage() {
           </ScrollReveal>
 
           <div className='grid gap-16 lg:grid-cols-2 lg:gap-24 items-start'>
-            {/* Left column: stacked hierarchy �?" label, heading, intro, features */}
             <ScrollReveal>
               <div className='space-y-8'>
-                <div>
-                  <div className="space-y-4">
-                  <h2 className="text-display-sm font-bold tracking-tight">AI FACTORY</h2>
-                  <p className="text-heading-md font-semibold text-muted-foreground">Metodoloji Degil. Yasayan Bir Sistemdir.</p>
-                </div>
+                <div className='space-y-4'>
+                  <h2 className='text-display-sm font-bold tracking-tight'>AI Factory Sistemi</h2>
+                  <p className='text-heading-md font-semibold text-muted-foreground'>Teoriden Uygulamaya Uzanan Bir Ürün Sistemi</p>
                 </div>
 
                 <p className='text-body-lg text-muted-foreground max-w-md leading-relaxed'>
-                  AI Factory, teorik cerceveler degil, uretimde test edilmis, tekrarlanabilir 
-                  AI urun gelistirme sureclerinden olusur.
+                  AI Factory; teorik çerçevelerden değil, üretimde test edilmiş ve tekrar kullanılabilir
+                  AI ürün geliştirme süreçlerinden oluşur.
                 </p>
 
                 <div className='space-y-5 pt-2'>
@@ -104,15 +98,14 @@ export default async function AIFactoryPage() {
               </div>
             </ScrollReveal>
 
-            {/* Right column: Neler Icerir card */}
             <ScrollReveal delay={150}>
               <div className='rounded-2xl border border-border bg-card p-8 lg:p-10 card-glow lg:sticky lg:top-24'>
-                <h3 className='text-heading-md font-semibold mb-6 tracking-tight'>Neler Icerir?</h3>
+                <h3 className='text-heading-md font-semibold mb-6 tracking-tight'>Neler İçerir?</h3>
                 <ul className='space-y-3'>
                   {methods.map((m) => (
                     <li key={m.slug}>
                       <Link
-                        href={'/ai-factory/' + m.slug}
+                        href={'/metotlar/' + m.slug}
                         className='group flex items-center justify-between rounded-xl border border-border/60 bg-background p-4 transition-all duration-300 hover:border-brand-300/30 dark:hover:border-brand-700/30 hover:-translate-y-0.5'
                       >
                         <div>
@@ -130,22 +123,21 @@ export default async function AIFactoryPage() {
         </Container>
       </section>
 
-      {/* CTA - Action */}
       <section className='relative overflow-hidden bg-atmosphere-dark ambient-glow-center vignette border-y border-white/5'>
         <Container className='relative py-24 sm:py-32 z-10'>
           <ScrollReveal>
             <div className='max-w-2xl mx-auto text-center'>
-              <h2 className='text-heading-xl font-bold tracking-tight text-white'>AI Factory ile calismaya hazir misin?</h2>
+              <h2 className='text-heading-xl font-bold tracking-tight text-white'>AI Factory İle Çalışmaya Hazır Mısınız?</h2>
               <p className='mt-4 text-body-lg text-white/60'>
-                İster mevcut ürününe AI entegre etmek, ister sıfırdan bir AI sistemi kurmak iste; 
-                AI Factory sana ozel bir yol haritasi sunar.
+                Mevcut ürününüze AI eklemek veya sıfırdan bir AI sistemi kurmak için
+                ihtiyacınıza uygun yol haritasını birlikte oluşturun.
               </p>
               <div className='mt-10 flex flex-col sm:flex-row items-center justify-center gap-4'>
                 <Button asChild size='lg' variant='primary'>
                   <Link href='/iletisim'>Projeni Anlat</Link>
                 </Button>
                 <Button asChild size='lg' variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                  <Link href='/hakkinda'>Beni Tani</Link>
+                  <Link href='/hakkinda'>Beni Tanı</Link>
                 </Button>
               </div>
             </div>

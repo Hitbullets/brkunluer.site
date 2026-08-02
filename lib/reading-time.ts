@@ -18,14 +18,11 @@ export function extractToc(content: string): TocItem[] {
   while (match) {
     const level = match[1]!.length
     const text = match[2]!.replace(/[*_~]/g, '')
-    const id = text
-      .toLowerCase()
-      .replace(/[^a-z0-9\u00c0-\u024f\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
+    const id = slugify(text)
     items.push({ id, text, level })
     match = headingRegex.exec(content)
   }
 
   return items
 }
+import { slugify } from './utils'

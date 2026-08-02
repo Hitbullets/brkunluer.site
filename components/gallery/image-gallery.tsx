@@ -15,9 +15,9 @@ export function ImageGallery({ images, title }: Props) {
 
   return (
     <div>
-      {images[0] && (
+      {images[idx] && (
         <div className="relative mb-4 h-64 w-full overflow-hidden rounded-lg sm:h-80">
-          <Image src={images[0]!} alt={`${title} önizleme`} fill className="object-cover" />
+          <Image src={images[idx]!} alt={`${title} proje görseli ${idx + 1}`} fill className="object-cover" />
         </div>
       )}
       {images.length > 1 && (
@@ -25,12 +25,15 @@ export function ImageGallery({ images, title }: Props) {
           {images.map((img, i) => (
             <button
               key={i}
+              type="button"
               onClick={() => setIdx(i)}
+              aria-label={`${title} görseli ${i + 1}`}
+              aria-pressed={i === idx}
               className={`relative h-16 w-24 shrink-0 overflow-hidden rounded-md border-2 transition-colors ${
                 i === idx ? "border-accent" : "border-border"
               }`}
             >
-              <Image src={img} alt={`Önizleme ${i + 1}`} fill className="object-cover" />
+              <Image src={img} alt="" fill className="object-cover" />
             </button>
           ))}
         </div>

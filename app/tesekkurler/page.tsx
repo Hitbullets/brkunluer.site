@@ -2,12 +2,14 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/layout/container'
-import { CheckCircle, Mail, ArrowLeft } from 'lucide-react'
+import { NewsletterForm } from '@/components/forms/newsletter-form'
+import { CheckCircle, ArrowLeft } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/tesekkurler' },
   title: 'Teşekkürler',
   description: 'İşleminiz başarıyla tamamlandı.',
+  robots: { index: false, follow: false },
 }
 
 export default function ThankYouPage() {
@@ -18,9 +20,9 @@ export default function ThankYouPage() {
       </div>
 
       <div>
-        <h1 className='text-heading-lg font-bold'>Mesajınız Gönderildi</h1>
+        <h1 className='text-heading-lg font-bold'>MESAJINIZ GÖNDERİLDİ</h1>
         <p className='mt-3 text-muted-foreground max-w-md'>
-          Teşekkürler! Mesajınız başarıyla alındı. En kısa sürede (genellikle 24-48 saat içinde) size dönüş yapacağım.
+          Teşekkürler. Mesajınız başarıyla alındı. Genellikle 24 ila 48 saat içinde size dönüş yapacağım.
         </p>
       </div>
 
@@ -36,20 +38,9 @@ export default function ThankYouPage() {
       </div>
 
       <div className='w-full max-w-md'>
-        <form className='flex gap-2' action='/api/newsletter' method='POST'>
-          <input
-            type='email'
-            name='email'
-            placeholder='Bültene abone ol...'
-            required
-            className='flex-1 rounded-lg border border-input bg-background px-4 py-3 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'
-          />
-          <Button type='submit' variant='primary'>
-            <Mail className='mr-2 h-4 w-4' /> Abone Ol
-          </Button>
-        </form>
+        <NewsletterForm />
         <p className='mt-3 text-caption text-muted-foreground'>
-          Haftalık AI workflow rehberleri. Spam yok.
+          Haftalık AI iş akışı rehberleri. İstediğiniz zaman abonelikten ayrılabilirsiniz.
         </p>
       </div>
     </Container></section>

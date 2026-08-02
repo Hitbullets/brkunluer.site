@@ -1,7 +1,7 @@
 ---
-title: "Prompt Mühendisliği: Etkili AI Promptları Yazma Rehberi"
-excerpt: "AI modellerimden daha iyi sonuçlar almak istiyorsunuz? Etkili prompt yazmanın temel prensipleri ve pratik örnekler."
-coverImage: "/vercel.svg"
+title: "Prompt Mühendisliği Rehberi: Etkili AI Promptu Nasıl Yazılır?"
+excerpt: "AI modellerinden daha tutarlı sonuç almak için bağlamı, görevi ve çıktı biçimini nasıl yapılandıracağınızı uygulamalı örneklerle öğrenin."
+coverImage: "/images/covers/prompt-muhendisligi.png"
 publishedAt: "2025-01-20T10:00:00"
 updatedAt: "2025-01-20T10:00:00"
 tags: ["prompt engineering", "AI", "metodoloji"]
@@ -10,23 +10,22 @@ relatedArticles: []
 relatedMethods: ["prompt-engineering-kit"]
 ---
 
-# Prompt Mühendisliği: Etkili AI Promptları Yazma Rehberi
+AI modellerinden iyi sonuç almak yalnızca doğru aracı seçmekle ilgili değildir. Asıl farkı; ne istediğinizi açıkça anlatan, bağlamı netleştiren ve çıktı biçimini belirleyen promptlar yaratır.
 
-AI modellerinden istediğiniz sonucu almak için sadece doğru aracı değil, doğru prompt yazma becerisini de geliştirmelisiniz.
+## Etkili Prompt Yapısı
 
-## Prompt Yapısı
+Güçlü bir prompt üç temel bölümden oluşur:
 
-İyi bir prompt genellikle üç bölümden oluşur:
-
-1. **Bağlam (Context):** Ne hakkında konuştuğumuzu belirtin
-2. **Görev (Task):** Yapılmasını istediğiniz şeyi netleştirin
-3. **Format:** Cevabın nasıl olmasını istediğinizi belirtin
+1. **Bağlam:** Modelin hangi konu, hedef kitle ve durum için yanıt üreteceğini belirtir.
+2. **Görev:** Modelden beklenen işi kısa, net ve ölçülebilir şekilde tarif eder.
+3. **Çıktı biçimi:** Yanıtın uzunluğunu, tonunu, yapısını ve varsa çıktı şablonunu belirler.
 
 ## Pratik Örnek
 
-Instead of: "Yazı yaz"
-Use: "Aşağıdaki konu hakkında 500 kelimelik bir Medium makalesi yaz. Hedef kitle: yapay zekaya ilgi duyan profesyoneller. Ton: pratik ve samimi."
+Zayıf bir istek: "Yazı yaz."
+
+Daha güçlü bir prompt: "Yapay zekâya ilgi duyan profesyoneller için prompt mühendisliği hakkında 500 kelimelik, pratik ve anlaşılır bir blog yazısı hazırla. Yazıda başlık, alt başlıklar ve uygulanabilir örnekler kullan."
 
 ## Sonuç
 
-Prompt mühendisliği bir beceri olduğu için pratikle gelişir. Denemeler yapın ve sonuçları ölçün.
+Prompt mühendisliği (prompt engineering), pratikle gelişen bir beceridir. Her denemede bağlamı, görevi ve çıktı biçimini biraz daha netleştirerek daha tutarlı, ölçülebilir ve işe yarar AI çıktıları alabilirsiniz.
