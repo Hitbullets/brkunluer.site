@@ -21,14 +21,14 @@ export function NavLink({ href, children, className, dark = false, badge }: NavL
     <Link
       href={href}
       className={cn(
-        'inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200',
+        'inline-flex items-center gap-1.5 border-b px-3 py-2 text-sm font-medium transition-colors duration-200',
         isActive
           ? dark
             ? 'text-white bg-white/10'
-            : 'text-accent bg-accent/10'
+            : 'border-accent text-foreground'
           : dark
             ? 'text-white/50 hover:text-white hover:bg-white/10'
-            : 'text-muted-foreground hover:text-foreground hover:bg-secondary/70',
+            : 'border-transparent text-muted-foreground hover:text-foreground',
         className,
       )}
     >
@@ -59,10 +59,10 @@ export function MobileNavLink({ href, children, onClick, className, badge }: Mob
       href={href}
       onClick={onClick}
       className={cn(
-        'flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+        'flex items-center justify-between rounded-[2px] border-l-2 px-3 py-2.5 text-sm font-medium transition-colors',
         isActive
-          ? 'text-accent bg-accent/10'
-          : 'text-foreground/70 hover:bg-secondary hover:text-foreground',
+          ? 'border-accent bg-secondary text-foreground'
+          : 'border-transparent text-foreground/70 hover:bg-secondary hover:text-foreground',
         className,
       )}
     >

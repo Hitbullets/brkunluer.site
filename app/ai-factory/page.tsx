@@ -1,149 +1,35 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { Container } from '@/components/layout/container'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, BookOpen, Settings, Cpu } from 'lucide-react'
+import { ModuleCover } from '@/components/ui/editorial-graphics'
 import { getAllMethods } from '@/lib/content'
-import { ScrollReveal } from '@/components/ui/scroll-reveal'
 
-export const metadata: Metadata = {
-  alternates: { canonical: '/ai-factory' },
-  title: 'AI Factory',
-  description: 'AI ajan mühendisliği, prompt sistemleri ve iş akışı otomasyonuyla fikirleri üretime taşıyan tekrarlanabilir AI ürün geliştirme sistemi.',
-}
+export const metadata: Metadata = { alternates: { canonical: '/ai-factory' }, title: 'AI Factory', description: 'Ajan mühendisliği, prompt sistemleri, değerlendirme ve iş akışı otomasyonunu birleştiren AI ürün geliştirme sistemi.' }
 
-const systemFeatures = [
-  {
-    icon: Settings,
-    title: 'Ajan Mühendisliği',
-    desc: 'LLM tabanlı ajan orkestrasyonu, araç kullanımı ve bellek yönetimi sistemleri.',
-  },
-  {
-    icon: BookOpen,
-    title: 'Prompt Sistemleri',
-    desc: 'Sistematik prompt tasarımı, değerlendirme süreçleri ve üretime hazır şablon çerçeveleri.',
-  },
-  {
-    icon: Cpu,
-    title: 'AI İş Akışı Tasarımı',
-    desc: 'Tekrarlanabilir iş akışları, otomasyon zincirleri ve AI odaklı ürün geliştirme süreçleri.',
-  },
+const modules: Array<['agent' | 'prompt' | 'evaluation' | 'workflow', string, string]> = [
+  ['agent' as const, 'Ajan Mühendisliği', 'Araç kullanımı, bellek, görev ayrıştırma ve kontrollü orkestrasyon.'],
+  ['prompt' as const, 'Prompt Sistemleri', 'Bağlam, şablon, değişken ve yinelemeyi birlikte yöneten üretim katmanı.'],
+  ['evaluation' as const, 'Evaluation Modülleri', 'Çıktıları izleme, ölçme, karşılaştırma ve kabul ölçütleriyle doğrulama.'],
+  ['workflow' as const, 'İş Akışı Tasarımı', 'Girdiden çıktıya tüm adımları okunabilir ve tekrarlanabilir hale getirme.'],
 ]
 
 export default async function AIFactoryPage() {
   const methods = await getAllMethods()
-
   return (
     <>
-      <section className='bg-hero ambient-spotlight bg-noise light-leak relative overflow-hidden border-b border-white/5'>
-        <Container className='relative py-24 sm:py-32 lg:py-40 z-10'>
-          <div className='max-w-3xl'>
-            <ScrollReveal>
-              <Badge variant='accent' className='mb-6'>AI Factory v1.0</Badge>
-              <h1 className='text-display-md sm:text-display-lg font-bold tracking-tight text-white'>
-                TEKRARLANABİLİR AI ÜRÜN GELİŞTİRME SİSTEMİ.
-              </h1>
-              <p className='mt-6 text-body-lg text-white/60 max-w-2xl'>
-                Ajan mühendisliği (agent engineering), prompt sistemleri ve AI iş akışı tasarımıyla
-                fikirlerinizi haftalar değil, günler içinde üretime taşıyın.
-              </p>
-              <div className='mt-10 flex flex-col sm:flex-row gap-4'>
-                <Button asChild size='xl' variant='primary'>
-                  <Link href='/portfolyo'>
-                    Vaka Analizlerini İncele <ArrowRight className='ml-2 h-4 w-4' />
-                  </Link>
-                </Button>
-                <Button asChild size='xl' variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                  <Link href='/yazilar'>Yazıları Oku</Link>
-                </Button>
-              </div>
-            </ScrollReveal>
-          </div>
+      <section className='editorial-dark border-b border-white/15'>
+        <Container className='grid gap-10 py-20 lg:grid-cols-12 lg:py-28'>
+          <div className='lg:col-span-5'><p className='editorial-kicker !text-white/55'>02 / AI Factory</p><h1 className='mt-7 text-display-lg'>AI üretimini bir sisteme dönüştürür.</h1><p className='mt-7 max-w-xl text-body-lg text-white/60'>Ajanlar, promptlar, değerlendirme ve otomasyon adımları aynı ürün mantığında birleşir. Amaç daha fazla araç değil; daha okunabilir ve tekrar edilebilir üretimdir.</p><div className='mt-10 flex flex-wrap gap-3'><Button asChild className='border-[#d66a4c] bg-[#d66a4c] text-[#171613] hover:bg-[#e07a5d]'><Link href='/metotlar'>Sistem kitaplığı <ArrowRight /></Link></Button><Button asChild variant='outline' className='border-white/25 text-white hover:bg-white/10'><Link href='/iletisim'>Projeni anlat</Link></Button></div></div>
+          <div className='relative min-h-[420px] overflow-hidden border border-white/20 lg:col-span-7'><Image src='/images/projects/ai-factory-cover.png' alt='AI Factory sistem kapağı' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 58vw' priority /></div>
         </Container>
       </section>
 
-      <section className='relative overflow-hidden bg-background ambient-glow-left section-divider-glow'>
-        <Container className='py-24 sm:py-32'>
-          <ScrollReveal>
-            <Badge variant='outline' className='mb-4'>Sistem</Badge>
-          </ScrollReveal>
+      <section className='border-b border-border'><Container className='py-20 sm:py-28'><div className='grid gap-10 lg:grid-cols-12'><div className='lg:col-span-4'><p className='editorial-kicker'>Sistem anatomisi</p><h2 className='mt-5 text-heading-xl'>Her başlığın görünür bir modülü var.</h2><p className='mt-5 leading-7 text-muted-foreground'>Temsili kapaklar, soyut “AI” estetiği yerine modülün gerçek işlevini gösteren diyagram dilini kullanır.</p></div><div className='grid gap-8 sm:grid-cols-2 lg:col-span-8'>{modules.map(([variant, title, description]) => <article key={variant}><ModuleCover variant={variant} /><h3 className='mt-5 text-xl font-medium'>{title}</h3><p className='mt-2 text-sm leading-6 text-muted-foreground'>{description}</p></article>)}</div></div></Container></section>
 
-          <div className='grid gap-16 lg:grid-cols-2 lg:gap-24 items-start'>
-            <ScrollReveal>
-              <div className='space-y-8'>
-                <div className='space-y-4'>
-                  <h2 className='text-display-sm font-bold tracking-tight'>AI Factory Sistemi</h2>
-                  <p className='text-heading-md font-semibold text-muted-foreground'>Teoriden Uygulamaya Uzanan Bir Ürün Sistemi</p>
-                </div>
-
-                <p className='text-body-lg text-muted-foreground max-w-md leading-relaxed'>
-                  AI Factory; teorik çerçevelerden değil, üretimde test edilmiş ve tekrar kullanılabilir
-                  AI ürün geliştirme süreçlerinden oluşur.
-                </p>
-
-                <div className='space-y-5 pt-2'>
-                  {systemFeatures.map((feat, i) => (
-                    <div key={i} className='flex items-start gap-4 group'>
-                      <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 transition-transform group-hover:scale-105'>
-                        <feat.icon className='h-5 w-5' />
-                      </div>
-                      <div className='min-w-0 flex-1'>
-                        <h3 className='font-semibold leading-tight'>{feat.title}</h3>
-                        <p className='text-sm text-muted-foreground mt-1 leading-relaxed'>{feat.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={150}>
-              <div className='rounded-2xl border border-border bg-card p-8 lg:p-10 card-glow lg:sticky lg:top-24'>
-                <h3 className='text-heading-md font-semibold mb-6 tracking-tight'>Neler İçerir?</h3>
-                <ul className='space-y-3'>
-                  {methods.map((m) => (
-                    <li key={m.slug}>
-                      <Link
-                        href={'/metotlar/' + m.slug}
-                        className='group flex items-center justify-between rounded-xl border border-border/60 bg-background p-4 transition-all duration-300 hover:border-brand-300/30 dark:hover:border-brand-700/30 hover:-translate-y-0.5'
-                      >
-                        <div>
-                          <p className='font-medium group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{m.title}</p>
-                          <p className='text-sm text-muted-foreground mt-0.5'>{m.tagline}</p>
-                        </div>
-                        <ArrowRight className='h-4 w-4 text-muted-foreground group-hover:text-brand-600 dark:group-hover:text-brand-400 group-hover:translate-x-1 transition-all' />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </ScrollReveal>
-          </div>
-        </Container>
-      </section>
-
-      <section className='relative overflow-hidden bg-atmosphere-dark ambient-glow-center vignette border-y border-white/5'>
-        <Container className='relative py-24 sm:py-32 z-10'>
-          <ScrollReveal>
-            <div className='max-w-2xl mx-auto text-center'>
-              <h2 className='text-heading-xl font-bold tracking-tight text-white'>AI Factory İle Çalışmaya Hazır Mısınız?</h2>
-              <p className='mt-4 text-body-lg text-white/60'>
-                Mevcut ürününüze AI eklemek veya sıfırdan bir AI sistemi kurmak için
-                ihtiyacınıza uygun yol haritasını birlikte oluşturun.
-              </p>
-              <div className='mt-10 flex flex-col sm:flex-row items-center justify-center gap-4'>
-                <Button asChild size='lg' variant='primary'>
-                  <Link href='/iletisim'>Projeni Anlat</Link>
-                </Button>
-                <Button asChild size='lg' variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                  <Link href='/hakkinda'>Beni Tanı</Link>
-                </Button>
-              </div>
-            </div>
-          </ScrollReveal>
-        </Container>
-      </section>
+      <section className='bg-card'><Container className='py-20 sm:py-28'><div className='grid gap-10 lg:grid-cols-12'><div className='lg:col-span-4'><p className='editorial-kicker'>Sistem Kitaplığı</p><h2 className='mt-5 text-heading-lg'>Uygulanabilir parçalar</h2></div><div className='border-t border-border lg:col-span-8'>{methods.map((method, index) => <Link key={method.slug} href={`/metotlar/${method.slug}`} className='group grid gap-4 border-b border-border py-7 sm:grid-cols-[64px_1fr_auto] sm:items-center'><span className='editorial-index'>{String(index + 1).padStart(2, '0')}</span><div><h3 className='text-xl font-medium group-hover:text-accent'>{method.title}</h3><p className='mt-2 text-sm text-muted-foreground'>{method.tagline}</p></div><ArrowRight className='hidden h-4 w-4 sm:block' /></Link>)}</div></div></Container></section>
     </>
   )
 }

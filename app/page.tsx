@@ -1,327 +1,102 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { Container } from '@/components/layout/container'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { ModuleCover, EditorialMark } from '@/components/ui/editorial-graphics'
 import { ArticleCard } from '@/components/cards/article-card'
 import { getAllArticles, getAllMethods, getAllProjects } from '@/lib/content'
-import { NewsletterForm } from '@/components/forms/newsletter-form'
-import { ScrollReveal } from '@/components/ui/scroll-reveal'
-import { ArrowRight, BookOpen, Cpu, Settings, Check } from 'lucide-react'
+
+const expertise: Array<[string, string, string]> = [
+  ['01', 'AI ürün geliştirme', 'Problemi, model davranışını ve ürün deneyimini tek üretim sistemi içinde ele alma.'],
+  ['02', 'Ajan mühendisliği', 'Araç kullanımı, bellek, görev ayrıştırma ve denetlenebilir ajan akışları.'],
+  ['03', 'Prompt sistemleri', 'Tek seferlik komutlar yerine test edilen, izlenen ve geliştirilen prompt mimarileri.'],
+  ['04', 'İş akışı otomasyonu', 'Tekrarlanan üretim adımlarını açık girdiler, kararlar ve çıktılarla bağlama.'],
+  ['05', 'Modern web uygulamaları', 'Ürün fikrini erişilebilir, hızlı ve sürdürülebilir bir uygulamaya dönüştürme.'],
+  ['06', 'Ürün deneyimi', 'Teknik kapasiteyi sade ve anlaşılır bir kullanıcı yolculuğuna çevirme.'],
+]
 
 export default async function Home() {
-  const [articles, methods, projects] = await Promise.all([
-    getAllArticles(),
-    getAllMethods(),
-    getAllProjects(),
-  ])
-
-  const latestArticles = articles.slice(0, 3)
+  const [articles, methods, projects] = await Promise.all([getAllArticles(), getAllMethods(), getAllProjects()])
   const featuredProject = projects[0]
-  const otherProjects = projects.slice(1, 3)
-  const latestMethod = methods[0]
-
-  const systemPillars = [
-    { icon: Cpu, label: 'Ajan Mühendisliği', desc: 'LLM orkestrasyonu, araç kullanımı ve bellek sistemleri', href: '/ai-factory' },
-    { icon: BookOpen, label: 'Prompt Sistemleri', desc: 'Değerlendirme süreçleri ve üretime hazır şablonlar', href: '/ai-factory' },
-    { icon: Settings, label: 'AI İş Akışı Tasarımı', desc: 'Tekrarlanabilir iş akışları ve otomasyon sistemleri', href: '/ai-factory' },
-  ]
 
   return (
     <>
-      {/* Hero — Power. Volumetric light, ambient glow, light leak. */}
-      <section className='bg-hero ambient-spotlight bg-noise light-leak relative overflow-hidden border-b border-border/50'>
-        <Container className='relative py-28 sm:py-36 lg:py-48 z-10'>
-          <div className='grid gap-12 lg:grid-cols-2 lg:gap-20 items-center'>
-            <ScrollReveal>
-              <div className='max-w-xl'>
-                <Badge variant='accent' className='mb-6'>AI Ürün Geliştirici</Badge>
-                <h1 className='text-display-md sm:text-display-lg font-bold tracking-tight leading-tight text-white'>
-                  AI SİSTEMLERİ KURAN,<br />
-                  <span className='text-brand-400'>ÜRÜN GELİŞTİREN</span> BİRİ.
-                </h1>
-                <p className='mt-6 text-body-lg text-white/60'>
-                  AI ajan mühendisliği (agent engineering), prompt sistemleri ve iş akışı
-                  (workflow) tasarımında uzmanlaşmış bir ürün geliştirici. AI Factory kurucusu.
-                </p>
-                <div className='mt-10 flex flex-col sm:flex-row gap-4'>
-                  <Button asChild size='xl' variant='primary'>
-                    <Link href='/ai-factory'>
-                      AI Factory&apos;yi Keşfet <ArrowRight className='ml-2 h-4 w-4' />
-                    </Link>
-                  </Button>
-                  <Button asChild size='xl' variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                    <Link href='/portfolyo'>Projeleri Gör</Link>
-                  </Button>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <div className='rounded-2xl border border-white/10 bg-white/5 p-6 lg:p-8 backdrop-blur-sm'>
-                <p className='text-sm font-medium text-white/40 mb-5 uppercase tracking-wider'>Uzmanlık Alanları</p>
-                <div className='space-y-5'>
-                  {systemPillars.map((pillar, i) => (
-                    <Link
-                      key={i}
-                      href={pillar.href}
-                      className='group flex items-start gap-4 rounded-xl p-3 -mx-3 hover:bg-white/5 transition-colors'
-                    >
-                      <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-500/20 text-brand-400'>
-                        <pillar.icon className='h-5 w-5' />
-                      </div>
-                      <div className='min-w-0'>
-                        <p className='font-medium text-white group-hover:text-brand-400 transition-colors'>{pillar.label}</p>
-                        <p className='text-sm text-white/50 mt-0.5'>{pillar.desc}</p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-                <div className='mt-6 pt-5 border-t border-white/10'>
-                  <Link href='/ai-factory' className='text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors'>
-                    AI Factory hakkında daha fazla bilgi al &rarr;
-                  </Link>
-                </div>
-              </div>
-            </ScrollReveal>
+      <section className='relative overflow-hidden border-b border-border'>
+        <Container className='relative grid min-h-[calc(100svh-4rem)] items-end gap-12 py-16 lg:grid-cols-12 lg:py-24'>
+          <EditorialMark className='pointer-events-none absolute -right-12 top-12 w-64 text-foreground/10 lg:right-8 lg:w-80' />
+          <div className='relative lg:col-span-8'>
+            <p className='editorial-kicker'>AI ürün geliştirici / sistem kurucu</p>
+            <h1 className='mt-8 max-w-5xl text-display-xl'>Fikri, çalışan bir sisteme dönüştürüyorum.</h1>
+            <p className='mt-8 max-w-2xl text-body-lg text-muted-foreground'>Ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve modern web teknolojilerini ürün deneyimi etrafında birleştiriyorum.</p>
+            <div className='mt-10 flex flex-wrap gap-3'>
+              <Button asChild size='lg'><Link href='/portfolyo'>Portföyü incele <ArrowRight /></Link></Button>
+              <Button asChild size='lg' variant='outline'><Link href='/ai-factory'>AI Factory</Link></Button>
+            </div>
+          </div>
+          <div className='relative border-t border-border pt-6 lg:col-span-4'>
+            <p className='editorial-index'>AKTİF ODAK / 2026</p>
+            <p className='mt-4 text-2xl font-medium leading-tight'>AI destekli ürünler, tekrarlanabilir üretim sistemleri ve açık teknik kararlar.</p>
+            <div className='mt-10 grid grid-cols-2 gap-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground'>
+              <span>Eskişehir / TR</span><span>Bağımsız üretim</span><span>Ürün + Sistem</span><span>Türkçe yayın</span>
+            </div>
           </div>
         </Container>
       </section>
 
-      {/* Stats — Confidence. Deep background, subtle top glow. */}
-      <section className='bg-atmosphere-deep ambient-glow-top relative overflow-hidden border-b border-white/5'>
-        <Container>
-          <div className='grid grid-cols-3 gap-8 py-10'>
-            {[
-              { value: '50+', label: 'AI iş akışı' },
-              { value: '3', label: 'Dijital ürün' },
-              { value: '2.000+', label: 'Bülten okuyucusu' },
-            ].map((stat, i) => (
-              <ScrollReveal key={i} delay={i * 100}>
-                <div className='text-center'>
-                  <p className='text-display-sm font-bold text-white'>{stat.value}</p>
-                  <p className='text-sm text-white/50 mt-1'>{stat.label}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Portfolio — Proof. Ambient glow, vignette. */}
       {featuredProject && (
-        <section className='relative overflow-hidden bg-background vignette-light border-b border-border/50'>
-          <Container className='py-24 sm:py-32'>
-            <ScrollReveal>
-              <div className='text-center mb-16'>
-                <Badge variant='outline' className='mb-4'>Son Proje</Badge>
-                <h2 className='text-heading-xl font-bold tracking-tight'>Son Geliştirdiğim Yapay Zekâ Projesi</h2>
-                <p className='mt-4 text-body-lg text-muted-foreground max-w-xl mx-auto'>
-                  Ürün kararlarını, teknik yaklaşımı ve ortaya çıkan değeri birlikte inceleyin.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className='grid gap-8 lg:grid-cols-5'>
-              <ScrollReveal delay={100} className='lg:col-span-3'>
-                <Link href={'/portfolyo/' + featuredProject.slug} className='group block'>
-                  <div className='rounded-2xl border border-border bg-card overflow-hidden transition-all duration-500 card-glow'>
-                    <div className='p-8 lg:p-10'>
-                      <p className='text-sm text-muted-foreground mb-3'>{featuredProject.year} &middot; {featuredProject.client}</p>
-                      <h3 className='text-heading-lg font-bold tracking-tight group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{featuredProject.title}</h3>
-                      <p className='mt-3 text-muted-foreground'>{featuredProject.tagline}</p>
-                      <div className='mt-6 flex flex-wrap gap-2'>
-                        {featuredProject.tags.map((t) => (
-                          <span key={t} className='inline-flex items-center rounded-full border border-border px-3 py-1 text-xs font-medium'>{t}</span>
-                        ))}
-                      </div>
-                      <div className='mt-6 text-sm font-medium text-brand-600 dark:text-brand-400'>
-                        Vaka Analizini İncele &rarr;
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </ScrollReveal>
-
-              <ScrollReveal delay={200} className='lg:col-span-2 space-y-4'>
-                {otherProjects.map((p) => (
-                  <Link key={p.slug} href={'/portfolyo/' + p.slug} className='group block'>
-                    <div className='rounded-xl border border-border bg-card p-5 transition-all duration-300 card-glow'>
-                      <p className='text-xs text-muted-foreground mb-1'>{p.year}</p>
-                      <p className='font-medium group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{p.title}</p>
-                      <p className='text-sm text-muted-foreground mt-1 line-clamp-1'>{p.tagline}</p>
-                    </div>
-                  </Link>
-                ))}
-                <Link href='/portfolyo' className='block rounded-xl border border-dashed border-border p-5 text-center text-sm text-muted-foreground hover:text-foreground hover:border-solid transition-all'>
-                  Tüm projeleri gör &rarr;
-                </Link>
-              </ScrollReveal>
+        <section className='border-b border-border'>
+          <Container className='py-20 sm:py-28'>
+            <div className='mb-10 flex items-end justify-between border-b border-border pb-5'>
+              <div><p className='editorial-kicker'>01 / Portföy</p><h2 className='mt-4 text-heading-xl'>Seçili proje</h2></div>
+              <Link href='/portfolyo' className='editorial-link hidden text-sm sm:block'>Tüm portföy <ArrowUpRight className='ml-1 inline h-4 w-4' /></Link>
             </div>
+            <Link href={`/portfolyo/${featuredProject.slug}`} className='group grid border border-border bg-card lg:grid-cols-12'>
+              <div className='relative min-h-[320px] overflow-hidden lg:col-span-8 lg:min-h-[560px]'>
+                <Image src={featuredProject.coverImage} alt={`${featuredProject.title} proje kapak görseli`} fill className='object-cover transition-transform duration-700 group-hover:scale-[1.015]' sizes='(max-width: 1024px) 100vw, 66vw' priority />
+              </div>
+              <div className='flex flex-col justify-between border-t border-border p-7 lg:col-span-4 lg:border-l lg:border-t-0 lg:p-9'>
+                <div><p className='editorial-index'>{featuredProject.year} / {featuredProject.client}</p><h3 className='mt-5 text-heading-lg'>{featuredProject.title}</h3><p className='mt-5 leading-7 text-muted-foreground'>{featuredProject.tagline}</p></div>
+                <div className='mt-12'><div className='flex flex-wrap gap-2'>{featuredProject.tags.map((tag) => <span key={tag} className='border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-wider'>{tag}</span>)}</div><p className='mt-8 text-sm font-medium text-accent'>Vaka analizini aç →</p></div>
+              </div>
+            </Link>
           </Container>
         </section>
       )}
 
-      {/* AI Factory — Innovation. Warm muted, ambient left glow. */}
-      {latestMethod && (
-        <section className='relative overflow-hidden bg-muted/30 ambient-glow-left section-divider-glow border-y border-border/50'>
-          <Container className='py-24 sm:py-32'>
-            <div className='grid gap-12 lg:grid-cols-2 lg:gap-20 items-center'>
-              <ScrollReveal>
-                <div>
-                  <Badge variant='accent' className='mb-4'>AI Factory</Badge>
-                  <h2 className='text-heading-xl font-bold tracking-tight'>Hazır Sistemlerle Başlayın</h2>
-                  <p className='mt-4 text-body-lg text-muted-foreground'>
-                    AI Factory, teoriden değil, çalışan sistemlerden oluşur.
-                    Her biri üretimde test edilmiş, tekrarlanabilir AI ürün bileşenleri sunar.
-                  </p>
-                  <div className='mt-8 space-y-3'>
-                    {methods.slice(0, 3).map((m, i) => (
-                      <Link
-                        key={m.slug}
-                        href={'/metotlar/' + m.slug}
-                        className='group flex items-center justify-between rounded-xl border border-border bg-card px-5 py-4 transition-all duration-300 card-glow'
-                      >
-                        <div className='flex items-center gap-3'>
-                          <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 text-xs font-bold'>
-                            {String(i + 1).padStart(2, '0')}
-                          </div>
-                          <div>
-                            <p className='font-medium group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors'>{m.title}</p>
-                            <p className='text-sm text-muted-foreground'>{m.tagline}</p>
-                          </div>
-                        </div>
-                        <ArrowRight className='h-4 w-4 text-muted-foreground group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-all' />
-                      </Link>
-                    ))}
-                  </div>
-                  <div className='mt-6'>
-                    <Button asChild variant='outline'>
-                      <Link href='/ai-factory'>AI Factory&apos;nin Tamamını Gör</Link>
-                    </Button>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal delay={150}>
-                <div className='rounded-2xl border border-border bg-card p-8 lg:p-10 card-glow'>
-                  <h3 className='text-heading-md font-semibold mb-6'>AI Factory System Neler İçerir?</h3>
-                  <ul className='space-y-4'>
-                    <li className='flex gap-3'>
-                      <Check className='mt-0.5 h-5 w-5 shrink-0 text-brand-600 dark:text-brand-400' />
-                      <div><p className='font-medium'>Ajan Mühendisliği Çerçevesi</p><p className='text-sm text-muted-foreground'>Araç kullanımı, bellek ve çoklu ajan orkestrasyonu</p></div>
-                    </li>
-                    <li className='flex gap-3'>
-                      <Check className='mt-0.5 h-5 w-5 shrink-0 text-brand-600 dark:text-brand-400' />
-                      <div><p className='font-medium'>Prompt Engineering Kit</p><p className='text-sm text-muted-foreground'>100&apos;den fazla iyileştirilmiş prompt ve değerlendirme süreci</p></div>
-                    </li>
-                    <li className='flex gap-3'>
-                      <Check className='mt-0.5 h-5 w-5 shrink-0 text-brand-600 dark:text-brand-400' />
-                      <div><p className='font-medium'>AI Workflow Templates</p><p className='text-sm text-muted-foreground'>30&apos;dan fazla hazır iş akışı; Notion ve Markdown desteği</p></div>
-                    </li>
-                  </ul>
-                </div>
-              </ScrollReveal>
+      <section className='editorial-dark border-b border-white/15'>
+        <Container className='py-20 sm:py-28'>
+          <div className='grid gap-10 lg:grid-cols-12'>
+            <div className='lg:col-span-4'><p className='editorial-kicker !text-white/55'>02 / AI Factory</p><h2 className='mt-5 text-heading-xl'>Modüler bir üretim sistemi.</h2><p className='mt-6 max-w-sm leading-7 text-white/60'>Fikir, bağlam, araç ve değerlendirme katmanlarını birbirine bağlayan yeniden kullanılabilir sistem parçaları.</p><Button asChild variant='outline' className='mt-8 border-white/25 text-white hover:bg-white/10'><Link href='/ai-factory'>Sistemi incele</Link></Button></div>
+            <div className='grid gap-4 sm:grid-cols-2 lg:col-span-8'>
+              <ModuleCover variant='agent' /><ModuleCover variant='prompt' /><ModuleCover variant='evaluation' /><ModuleCover variant='workflow' />
             </div>
-          </Container>
-        </section>
-      )}
+          </div>
+          {methods.length > 0 && <div className='mt-12 grid border-t border-white/20 md:grid-cols-3'>{methods.slice(0, 3).map((method, index) => <Link key={method.slug} href={`/metotlar/${method.slug}`} className='border-b border-white/20 py-6 pr-6 md:border-b-0 md:border-r md:pl-6 first:pl-0 last:border-r-0'><span className='font-mono text-[10px] text-white/40'>0{index + 1}</span><h3 className='mt-3 font-medium'>{method.title}</h3><p className='mt-2 text-sm leading-6 text-white/55'>{method.tagline}</p></Link>)}</div>}
+        </Container>
+      </section>
 
-      {/* Articles — Learning. Clean, warm neutral. */}
-      {latestArticles.length > 0 && (
-        <section className='relative overflow-hidden bg-background border-b border-border/50'>
-          <Container className='py-24 sm:py-32'>
-            <ScrollReveal>
-              <div className='text-center mb-16'>
-                <Badge variant='outline' className='mb-4'>Yazılar</Badge>
-                <h2 className='text-heading-xl font-bold tracking-tight'>AI Üzerine Pratik Makaleler</h2>
-                <p className='mt-4 text-body-lg text-muted-foreground max-w-xl mx-auto'>
-                  Ajan mühendisliği, prompt sistemleri ve AI iş akışı tasarımı üzerine uygulanabilir yazılar.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-              {latestArticles.map((article, i) => (
-                <ScrollReveal key={article.slug} delay={i * 100}>
-                  <ArticleCard article={article} />
-                </ScrollReveal>
-              ))}
+      <section className='border-b border-border'>
+        <Container className='py-20 sm:py-28'>
+          <div className='grid gap-12 lg:grid-cols-12'>
+            <div className='lg:col-span-4'><p className='editorial-kicker'>03 / Uzmanlık</p><h2 className='mt-5 text-heading-xl'>Teknoloji seçmekten önce sistemi tanımlarım.</h2></div>
+            <div className='grid border-t border-border sm:grid-cols-2 lg:col-span-8'>
+              {expertise.map(([index, title, description]) => <div key={index} className='border-b border-border p-6 sm:odd:border-r'><p className='editorial-index'>{index}</p><h3 className='mt-6 text-xl font-medium'>{title}</h3><p className='mt-3 text-sm leading-6 text-muted-foreground'>{description}</p></div>)}
             </div>
-
-            <ScrollReveal delay={300}>
-              <div className='mt-12 text-center'>
-                <Button asChild variant='outline'>
-                  <Link href='/yazilar'>Tüm Yazıları Gör</Link>
-                </Button>
-              </div>
-            </ScrollReveal>
-          </Container>
-        </section>
-      )}
-
-      {/* About — Human. Dark studio atmosphere. */}
-      <section className='relative overflow-hidden bg-atmosphere-studio ambient-spotlight bg-noise border-y border-white/5'>
-        <Container className='py-24 sm:py-32'>
-          <div className='grid gap-12 lg:grid-cols-5 items-center'>
-            <ScrollReveal className='lg:col-span-3'>
-              <div>
-                <Badge variant='outline' className='mb-4 border-white/10 text-white/60'>Hakkımda</Badge>
-                <h2 className='text-heading-xl font-bold tracking-tight text-white'>AI Ürün Geliştirici. Sistem Kurucu. AI Factory.</h2>
-                <p className='mt-4 text-body-lg text-white/60'>
-                  LLM tabanlı ürünler, ajan orkestrasyonu sistemleri ve tekrarlanabilir AI iş akışları
-                  kuruyorum. AI Factory, bu birikimi uygulanabilir bir sisteme dönüştürüyor.
-                </p>
-                <div className='mt-8 flex flex-col sm:flex-row gap-4'>
-                  <Button asChild variant='primary'>
-                    <Link href='/hakkinda'>Detaylı Bilgi</Link>
-                  </Button>
-                  <Button asChild variant='outline' className='border-white/20 text-white hover:bg-white/10'>
-                    <Link href='/iletisim'>İletişime Geç</Link>
-                  </Button>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={150} className='lg:col-span-2'>
-              <div className='rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm'>
-                <div className='flex items-center gap-3'>
-                  <div className='h-10 w-10 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold text-sm'>BU</div>
-                  <div>
-                    <p className='font-medium text-white'>Burak Ünlüler</p>
-                    <p className='text-sm text-white/50'>AI Factory Kurucusu</p>
-                  </div>
-                </div>
-                <div className='mt-5 space-y-2 text-sm'>
-                  <div className='flex justify-between'><span className='text-white/40'>Konum</span><span className='text-white/70'>Eskişehir / Türkiye</span></div>
-                  <div className='flex justify-between'><span className='text-white/40'>Odak</span><span className='text-white/70'>AI Ürün Geliştirme</span></div>
-                  <div className='flex justify-between'><span className='text-white/40'>Deneyim</span><span className='text-white/70'>2019&apos;dan beri</span></div>
-                </div>
-                <div className='mt-5 pt-4 border-t border-white/10 flex gap-4'>
-                  <a href='https://github.com/Hitbullets' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>GitHub</a>
-                  <a href='https://x.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>X</a>
-                  <a href='https://www.instagram.com/brkunluer' target='_blank' rel='noopener noreferrer' className='text-sm text-white/40 hover:text-white transition-colors'>Instagram</a>
-                </div>
-              </div>
-            </ScrollReveal>
           </div>
         </Container>
       </section>
 
-      {/* Newsletter — Belonging. Ambient center glow. */}
-      <section className='relative overflow-hidden bg-background ambient-glow-center border-b border-border/50'>
-        <Container size='narrow' className='py-24 sm:py-32'>
-          <ScrollReveal>
-            <div className='text-center'>
-              <Badge variant='outline' className='mb-4'>E-posta Bülteni</Badge>
-              <h2 className='text-heading-xl font-bold tracking-tight'>Haftalık AI İş Akışı Rehberleri</h2>
-              <p className='mt-4 text-body-lg text-muted-foreground'>
-                Her pazartesi prompt şablonları, ajan mühendisliği ipuçları ve AI Factory güncellemeleri.
-              </p>
-              <NewsletterForm className='mt-8' />
-            </div>
-          </ScrollReveal>
+      <section className='border-b border-border'>
+        <Container className='py-20 sm:py-28'>
+          <div className='grid gap-10 lg:grid-cols-12'>
+            <div className='relative min-h-[520px] overflow-hidden lg:col-span-5'><Image src='/images/portraits/burak-portrait-close.jpeg' alt='Burak Ünlüler, çalışma ortamında portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' /></div>
+            <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'><div><p className='editorial-kicker'>04 / Hakkımda</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>2015 civarında oyun sunucuları için paket geliştirmeleri ve bootstack geçişleriyle başlayan üretim pratiğim, 2022’de ilk profesyonel projeyle ürün geliştirme odağına taşındı.</p></div><div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Biyografiyi ve çalışma yaklaşımını oku →</Link></div></div>
+          </div>
         </Container>
       </section>
+
+      {articles.length > 0 && <section><Container className='py-20 sm:py-28'><div className='mb-10 flex items-end justify-between border-b border-border pb-5'><div><p className='editorial-kicker'>05 / Yayınlar</p><h2 className='mt-4 text-heading-xl'>Saha notları ve rehberler</h2></div><Link href='/yazilar' className='editorial-link text-sm'>Tüm yayınlar →</Link></div><div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>{articles.slice(0, 3).map((article) => <ArticleCard key={article.slug} article={article} />)}</div></Container></section>}
     </>
   )
 }

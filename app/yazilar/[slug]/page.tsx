@@ -75,7 +75,7 @@ export default async function ArticlePage({ params }: Props) {
       <BreadcrumbJsonLd
         items={[
           { name: 'Ana Sayfa', url: SiteConfig.url },
-          { name: 'Yazılar', url: `${SiteConfig.url}/yazilar` },
+          { name: 'Yayınlar', url: `${SiteConfig.url}/yazilar` },
           { name: article.title, url: `${SiteConfig.url}/yazilar/${article.slug}` },
         ]}
       />
@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: Props) {
       {relatedArticles.length > 0 && (
         <section className='mt-24 max-w-6xl mx-auto'>
           <SectionHeader
-            title='İlgili Yazılar'
+            title='İlgili Yayınlar'
             description='Benzer konulardaki diğer makaleler.'
           />
           <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>

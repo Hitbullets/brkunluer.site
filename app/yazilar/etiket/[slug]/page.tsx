@@ -16,7 +16,7 @@ export async function generateMetadata({
 
   return {
     alternates: { canonical: `/yazilar/etiket/${slug}` },
-    title: tag ? `${tag.name} Yazıları` : 'Etiket Bulunamadı',
+    title: tag ? `${tag.name} Yayınları` : 'Etiket Bulunamadı',
     description: tag
       ? `${tag.name} konusunda AI, otomasyon ve ürün geliştirme odaklı Türkçe makaleleri inceleyin.`
       : 'Aradığınız etikete ait bir içerik bulunamadı.',
@@ -39,7 +39,7 @@ export default async function TaggedArticlesPage({ params }: PageProps<'/yazilar
   return (
     <Container className='py-16 sm:py-20 lg:py-24'>
       <PageHeader
-        title={activeTag ? `${activeTag.name} Yazıları` : 'Etiket Bulunamadı'}
+        title={activeTag ? `${activeTag.name} Yayınları` : 'Etiket Bulunamadı'}
         description={activeTag ? `${activeTag.name} etiketindeki makaleler.` : 'Bu etikete ait yayımlanmış bir içerik bulunmuyor.'}
         badge='Etiket Arşivi'
       />
@@ -69,7 +69,7 @@ export default async function TaggedArticlesPage({ params }: PageProps<'/yazilar
         <div className='text-center py-16'>
           <p className='text-muted-foreground mb-6'>Bu etikete ait henüz bir yazı yayımlanmadı.</p>
           <Button asChild variant='primary'>
-            <Link href='/yazilar'>Tüm Yazıları Gör</Link>
+            <Link href='/yazilar'>Tüm Yayınları Gör</Link>
           </Button>
         </div>
       ) : (

@@ -1,75 +1,31 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import { Separator } from '@/components/ui/separator'
-import { Badge } from '@/components/ui/badge'
+import { ArrowUpRight } from 'lucide-react'
+import { Container } from '@/components/layout/container'
 import { Button } from '@/components/ui/button'
 import { MdxRendererRsc as MdxRenderer } from '@/components/mdx/mdx-renderer-rsc'
-import { ImageGallery } from '@/components/gallery/image-gallery'
-import { ExternalLink, Calendar } from 'lucide-react'
 import type { Project } from '@/lib/types'
 
-interface Props {
-  project: Project
-  serializedBody: string
-}
+const inkosStack = [
+  ['Arayüz', 'React', 'Yaratıcı çalışma alanı'], ['Servisler', 'Python', 'Üretim hattı'], ['Kimlik', 'Google OAuth', 'Oturum akışı'], ['Prompt', 'Claude', 'Prompt geliştirme'], ['Görsel', 'OpenAI görüntü modeli', 'Tasarım üretimi'], ['Tarayıcı', 'Sobel filtresi', 'Stencil önizlemesi'],
+]
 
-export function ProjectDetail({ project, serializedBody }: Props) {
-  const images: string[] = project.gallery && project.gallery.length > 0
-    ? project.gallery
-    : project.coverImage
-      ? [project.coverImage]
-      : []
-
+export function ProjectDetail({ project, serializedBody }: { project: Project; serializedBody: string }) {
   return (
-    <div className='max-w-4xl mx-auto'>
-      {/* Hero Section */}
-      <header className='mb-12'>
-        <div className='flex flex-wrap items-center gap-3 mb-4'>
-          <span className='inline-flex items-center gap-1.5 text-sm text-muted-foreground'>
-            <Calendar className='h-4 w-4' />
-            {project.year}
-          </span>
-          {project.client && <Badge variant='secondary'>{project.client}</Badge>}
-          <div className='flex flex-wrap gap-2'>
-            {project.tags.map((tag) => (
-              <Badge key={tag} variant='outline'>{tag}</Badge>
-            ))}
-          </div>
-        </div>
-        <h1 className='text-display-sm font-bold tracking-tight'>{project.title.toLocaleUpperCase('tr-TR')}</h1>
-        <p className='mt-4 text-body-lg text-muted-foreground max-w-2xl'>{project.tagline}</p>
-        {project.liveUrl && (
-          <Button asChild variant='outline' className='mt-6'>
-            <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
-              <ExternalLink className='mr-2 h-4 w-4' />
-              Projeyi İncele
-            </a>
-          </Button>
-        )}
+    <>
+      <header className='border-b border-border'>
+        <Container className='py-16 sm:py-24'>
+          <p className='editorial-kicker'>{project.year} / {project.client || 'Bağımsız proje'}</p>
+          <div className='mt-7 grid gap-8 lg:grid-cols-12'><div className='lg:col-span-8'><h1 className='text-display-lg'>{project.title}</h1><p className='mt-6 max-w-3xl text-body-lg text-muted-foreground'>{project.tagline}</p></div><div className='flex items-end lg:col-span-4'>{project.liveUrl && <Button asChild variant='outline'><a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>Canlı ürünü aç <ArrowUpRight /></a></Button>}</div></div>
+        </Container>
       </header>
-
-      {/* Gallery */}
-      {images.length > 0 && (
-        <div className='mb-12'>
-          <ImageGallery images={images} title={project.title} />
-        </div>
-      )}
-
-      {/* Content */}
-      <div className='max-w-[680px] mx-auto'>
-        <Separator className='mb-10' />
-
-        <div className='prose-custom'>
-          <MdxRenderer source={serializedBody || project.body} />
-        </div>
-
-        {/* Back Navigation */}
-        <Separator className='my-12' />
-        <div className='text-center'>
-          <Button asChild variant='outline'>
-            <Link href='/portfolyo'>Tüm Projelere Dön</Link>
-          </Button>
-        </div>
-      </div>
-    </div>
+      <Container size='wide' className='py-8 sm:py-12'><div className='relative aspect-[16/9] overflow-hidden border border-border'><Image src={project.coverImage} alt={`${project.title} kapak görseli`} fill className='object-cover' sizes='100vw' priority /></div></Container>
+      <Container className='grid gap-12 pb-20 pt-8 lg:grid-cols-12 lg:pb-28'>
+        <aside className='lg:col-span-3'><p className='editorial-index'>PROJE DİZİNİ</p><div className='mt-5 flex flex-wrap gap-2'>{project.tags.map((tag) => <span key={tag} className='border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-wider'>{tag}</span>)}</div></aside>
+        <article className='lg:col-span-8 lg:col-start-5'><div className='prose-custom'><MdxRenderer source={serializedBody || project.body} /></div></article>
+      </Container>
+      {project.slug === 'inkos' && <section className='border-y border-border bg-card'><Container className='py-16'><p className='editorial-kicker'>Teknoloji dizini</p><h2 className='mt-5 text-heading-lg'>Sistem katmanları</h2><div className='mt-8 overflow-x-auto'><table className='w-full border-collapse text-left text-sm'><thead><tr className='border-y border-border font-mono text-[10px] uppercase tracking-wider text-muted-foreground'><th className='py-4'>Katman</th><th>Teknoloji</th><th>Rol</th></tr></thead><tbody>{inkosStack.map(([layer, tech, role]) => <tr key={layer} className='border-b border-border'><td className='py-5 font-medium'>{layer}</td><td className='font-mono text-xs text-accent'>{tech}</td><td className='text-muted-foreground'>{role}</td></tr>)}</tbody></table></div></Container></section>}
+      <Container className='py-12'><Button asChild variant='outline'><Link href='/portfolyo'>← Portföye dön</Link></Button></Container>
+    </>
   )
 }

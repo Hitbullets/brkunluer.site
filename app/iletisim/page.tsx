@@ -1,90 +1,22 @@
 import { Metadata } from 'next'
 import { Container } from '@/components/layout/container'
-import { SectionHero } from '@/components/layout/hero'
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { ContactForm } from '@/components/forms/contact-form'
-import { AtSign, Camera, Code2, Mail, MapPin } from 'lucide-react'
+import { SiteConfig } from '@/lib/site'
 
-export const metadata: Metadata = {
-  alternates: { canonical: '/iletisim' },
-  title: 'İletişim',
-  description: 'AI ürün geliştirme, iş akışı otomasyonu, prompt mühendisliği ve teknik danışmanlık projeleri için Burak Ünlüler ile iletişime geçin.',
-}
+export const metadata: Metadata = { alternates: { canonical: '/iletisim' }, title: 'İletişim', description: 'AI ürün geliştirme, iş akışı otomasyonu ve teknik ürün projeleri için Burak Ünlüler ile iletişime geçin.' }
 
-const contactInfo = [
-  { icon: Mail, title: 'E-posta', value: 'mail@brkunluer.site', href: 'mailto:mail@brkunluer.site' },
-  { icon: AtSign, title: 'X', value: '@brkunluer', href: 'https://x.com/brkunluer' },
-  { icon: Camera, title: 'Instagram', value: '@brkunluer', href: 'https://www.instagram.com/brkunluer' },
-  { icon: Code2, title: 'GitHub', value: 'Hitbullets', href: 'https://github.com/Hitbullets' },
-  { icon: MapPin, title: 'Konum', value: 'Eskişehir / Türkiye', href: null },
+const links: Array<[string, string, string]> = [
+  ['E-posta', SiteConfig.author.email, `mailto:${SiteConfig.author.email}`],
+  ['GitHub', 'Hitbullets', SiteConfig.social.github],
+  ['X', '@brkunluer', SiteConfig.social.twitter],
+  ['Instagram', '@brkunluer', SiteConfig.social.instagram],
 ]
 
 export default function ContactPage() {
   return (
-    <section className='relative overflow-hidden bg-atmosphere-dark ambient-glow-center vignette border-y border-white/5'>
-      <Container className='py-24 z-10 relative'>
-        <SectionHero
-          badge='İletişim'
-          title='Burak Ünlüler İle İletişim'
-          subtitle='Proje teklifleri, sorularınız veya iş birliği fikirleriniz için formu doldurun. Her mesajı dikkatle okurum.'
-        />
-
-        <div className='grid lg:grid-cols-5 gap-8 lg:gap-12 mt-12'>
-          <div className='lg:col-span-2 space-y-6'>
-            <Card variant='feature' className='h-full'>
-              <CardHeader>
-                <CardTitle>İletişim Bilgileri</CardTitle>
-                <CardDescription>Size nasıl ulaşabilirim?</CardDescription>
-              </CardHeader>
-              <CardContent className='space-y-6'>
-                {contactInfo.map((item, index) => (
-                  <div key={index} className='flex items-start gap-4'>
-                    <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 shrink-0'>
-                      <item.icon className='h-5 w-5' />
-                    </div>
-                    <div>
-                      <p className='font-medium'>{item.title}</p>
-                      {item.href ? (
-                        <a href={item.href} className='text-brand-600 dark:text-brand-400 hover:underline'>{item.value}</a>
-                      ) : (
-                        <p className='text-muted-foreground'>{item.value}</p>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card variant='feature'>
-              <CardHeader>
-                <CardTitle>Sık Sorulanlar</CardTitle>
-              </CardHeader>
-              <CardContent className='space-y-4 text-sm'>
-                <div>
-                  <p className='font-medium'>Ne tür projelerle çalışıyorsun?</p>
-                  <p className='text-muted-foreground mt-1'>AI iş akışı tasarımı, prompt mühendisliği, otomasyon sistemleri, MVP geliştirme ve teknik danışmanlık.</p>
-                </div>
-                <div>
-                  <p className='font-medium'>Ne kadar sürede dönersin?</p>
-                  <p className='text-muted-foreground mt-1'>Genellikle 24-48 saat içinde ilk yanıtı veriyorum. Detaylı teklifler 3-5 iş günü içinde hazırlanır.</p>
-                </div>
-                <div>
-                  <p className='font-medium'>Ücret nasıl belirleniyor?</p>
-                  <p className='text-muted-foreground mt-1'>Proje kapsamına göre sabit fiyat, saatlik çalışma veya danışmanlık modeli belirlenir.</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className='lg:col-span-3'>
-            <Card variant='feature' className='h-full'>
-              <CardContent className='p-6 lg:p-8'>
-                <ContactForm />
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </Container>
-    </section>
+    <>
+      <section className='border-b border-border'><Container className='py-20 sm:py-28'><p className='editorial-kicker'>05 / İletişim</p><div className='mt-7 grid gap-8 lg:grid-cols-12'><h1 className='text-display-lg lg:col-span-8'>Doğru problemle başlayan işler için.</h1><p className='self-end text-body-lg text-muted-foreground lg:col-span-4'>Ürün fikrinizi, çözmeye çalıştığınız problemi ve mevcut durumunuzu paylaşın. İlk temas için kısa bir bağlam yeterli.</p></div></Container></section>
+      <Container className='py-16 sm:py-24'><div className='grid gap-12 lg:grid-cols-12'><aside className='lg:col-span-4'><p className='editorial-index'>DOĞRUDAN BAĞLANTILAR</p><div className='mt-6 border-t border-border'>{links.map(([label, value, href]) => <a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined} className='grid grid-cols-[90px_1fr] border-b border-border py-5 text-sm'><span className='font-mono text-[10px] uppercase tracking-wider text-muted-foreground'>{label}</span><span>{value}</span></a>)}</div><div className='mt-10 border-t border-border pt-6'><p className='font-mono text-[10px] uppercase tracking-wider text-muted-foreground'>Konum</p><p className='mt-3'>Eskişehir / Türkiye</p></div></aside><div className='border border-border bg-card p-6 sm:p-9 lg:col-span-7 lg:col-start-6'><ContactForm /></div></div></Container>
+    </>
   )
 }
