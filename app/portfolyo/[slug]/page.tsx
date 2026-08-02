@@ -3,13 +3,22 @@ import { notFound } from 'next/navigation'
 import { ProjectDetail } from '@/components/cards/project-detail'
 import { getAllProjects, getProjectBySlug } from '@/lib/content'
 
-interface Props { params: Promise<{ slug: string }> }
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<'/portfolyo/[slug]'>): Promise<Metadata> {
   const { slug } = await params
   const project = await getProjectBySlug(slug)
   if (!project) return { title: 'Proje bulunamadı' }
-  return { title: project.title, description: project.tagline, alternates: { canonical: `/portfolyo/${project.slug}` }, openGraph: { title: project.title, description: project.tagline, type: 'website', images: project.coverImage ? [project.coverImage] : [] } }
+  return {
+    title: project.title,
+    description: project.tagline,
+    alternates: { canonical: `/portfolyo/${project.slug}` },
+    robots: project.recordType === 'archive' ? { index: false, follow: true } : undefined,
+    openGraph: {
+      title: project.title,
+      description: project.tagline,
+      type: 'website',
+      images: project.coverImage ? [project.coverImage] : [],
+    },
+  }
 }
 
 export async function generateStaticParams() {
@@ -17,7 +26,7 @@ export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }))
 }
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectPage({ params }: PageProps<'/portfolyo/[slug]'>) {
   const { slug } = await params
   const project = await getProjectBySlug(slug)
   if (!project) notFound()

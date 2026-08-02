@@ -69,6 +69,11 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
+  "coverImage": "/images/projects/covers/atelier-dimora-mockup.png",
+  "coverSourceScreens": [
+    "content/projects/atelier-dimora/assets/homepage-desktop.png",
+    "content/projects/atelier-dimora/assets/homepage-mobile.png"
+  ],
   "demoUrl": "Unknown",
   "relatedDocumentation": "HTML prototipleri",
   "relatedBlogPosts": "Unknown",

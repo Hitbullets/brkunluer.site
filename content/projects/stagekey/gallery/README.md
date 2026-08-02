@@ -1,5 +1,15 @@
 # StageKey — Galeri Referansları
 
+## Portfolyo kapağı
+
+Unknown
+
+## Kapak kaynak ekranları
+
+Unknown
+
+## Diğer ekran referansları
+
 Unknown [S190] [S191]
 
-Medya bu klasöre otomatik kopyalanmaz; sahiplik ve gerçek/AI destekli kaynak doğrulandıktan sonra seçilmelidir.
+Kapaklar kaynak ekran görüntülerinden cihaz mock-up kompozisyonu olarak üretilmiştir. Görsel kanıtı olmayan projelerde değer `Unknown` olarak kalır.

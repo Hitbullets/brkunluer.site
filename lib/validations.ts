@@ -42,6 +42,49 @@ export const projectSchema = z.object({
   status: z.enum(["published", "draft"]).default("draft"),
 })
 
+const archiveValueSchema = z.union([z.string(), z.array(z.string())])
+
+export const portfolioArchiveProjectSchema = z.object({
+  projectName: z.string().min(1),
+  slug: z.string().min(1),
+  client: z.string(),
+  industry: z.string(),
+  projectType: z.string(),
+  currentStatus: z.string(),
+  timeline: z.string(),
+  purpose: z.string(),
+  problemBeingSolved: z.string(),
+  targetUsers: archiveValueSchema,
+  businessGoals: archiveValueSchema,
+  technologyStack: archiveValueSchema,
+  frameworks: archiveValueSchema,
+  backend: archiveValueSchema,
+  database: archiveValueSchema,
+  hosting: archiveValueSchema,
+  cms: archiveValueSchema,
+  integrations: archiveValueSchema,
+  designSystem: archiveValueSchema,
+  brandLanguage: archiveValueSchema,
+  responsiveStrategy: archiveValueSchema,
+  seoStrategy: archiveValueSchema,
+  performanceOptimizations: archiveValueSchema,
+  accessibilityNotes: archiveValueSchema,
+  majorFeatures: archiveValueSchema,
+  pages: archiveValueSchema,
+  architecture: archiveValueSchema,
+  interestingTechnicalDecisions: archiveValueSchema,
+  developmentChallenges: archiveValueSchema,
+  lessonsLearned: archiveValueSchema,
+  productionUrl: z.string(),
+  demoUrl: z.string(),
+  categories: archiveValueSchema,
+  documentationScore: z.number().int().min(0).max(100),
+  priorityScore: z.number().int().min(0).max(100),
+  sourceIds: z.array(z.string()),
+  coverImage: z.string().optional(),
+  coverSourceScreens: archiveValueSchema.optional(),
+}).passthrough()
+
 export const newsletterSchema = z.object({
   email: z.string().email("Geçerli bir e-posta adresi girin").min(1, "E-posta zorunlu"),
 })
@@ -57,5 +100,6 @@ export const contactSchema = z.object({
 export type ArticleInput = z.infer<typeof articleSchema>
 export type MethodInput = z.infer<typeof methodSchema>
 export type ProjectInput = z.infer<typeof projectSchema>
+export type PortfolioArchiveProjectInput = z.infer<typeof portfolioArchiveProjectSchema>
 export type NewsletterInput = z.infer<typeof newsletterSchema>
 export type ContactInput = z.infer<typeof contactSchema>

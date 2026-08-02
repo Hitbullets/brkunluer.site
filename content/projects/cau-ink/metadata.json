@@ -107,6 +107,10 @@
   ],
   "gitRepository": "https://github.com/Hitbullets/cau-ink-gallery.git",
   "productionUrl": "https://cauink.com",
+  "coverImage": "/images/projects/covers/cau-ink-mockup.png",
+  "coverSourceScreens": [
+    "content/projects/cau-ink/assets/homepage-desktop.png"
+  ],
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",

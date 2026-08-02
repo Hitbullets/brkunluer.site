@@ -2,7 +2,13 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { Article, Method, Project, TagInfo } from "./types"
-import { articleSchema, methodSchema, projectSchema } from "./validations"
+import {
+  articleSchema,
+  methodSchema,
+  portfolioArchiveProjectSchema,
+  projectSchema,
+  type PortfolioArchiveProjectInput,
+} from "./validations"
 
 const contentDir = path.join(process.cwd(), "content")
 const markdownFilePattern = /\.(md|mdx)$/
@@ -63,7 +69,104 @@ async function loadMethods(): Promise<Method[]> {
   return methods
 }
 
-async function loadProjects(): Promise<Project[]> {
+const unknownValue = "Unknown"
+
+const isKnown = (value: string) => value.trim().length > 0 && value !== unknownValue
+
+const asList = (value: string | string[]): string[] =>
+  Array.isArray(value) ? value : isKnown(value) ? [value] : []
+
+const asMarkdown = (value: string | string[]): string => {
+  const values = asList(value)
+  if (values.length === 0) return unknownValue
+  if (values.length === 1) return values.at(0) ?? unknownValue
+  return values.map((item) => `- ${item}`).join("\n")
+}
+
+const asInline = (value: string | string[]): string => {
+  const values = asList(value)
+  return values.length > 0 ? values.join(", ") : unknownValue
+}
+
+const extractYear = (timeline: string): number | undefined => {
+  const match = timeline.match(/\b(?:19|20)\d{2}\b/)
+  return match ? Number(match[0]) : undefined
+}
+
+const buildArchiveBody = (project: PortfolioArchiveProjectInput): string => `
+## Proje özeti
+
+${project.purpose}
+
+## Çözülen problem
+
+${project.problemBeingSolved}
+
+## Hedef kullanıcılar
+
+${asMarkdown(project.targetUsers)}
+
+## İş hedefleri
+
+${asMarkdown(project.businessGoals)}
+
+## Başlıca özellikler
+
+${asMarkdown(project.majorFeatures)}
+
+## Sayfalar ve deneyim alanları
+
+${asMarkdown(project.pages)}
+
+## Teknoloji yığını
+
+${asMarkdown(project.technologyStack)}
+
+### Uygulama katmanları
+
+- Framework: ${asInline(project.frameworks)}
+- Backend: ${asInline(project.backend)}
+- Veritabanı: ${asInline(project.database)}
+- Hosting: ${asInline(project.hosting)}
+- CMS: ${asInline(project.cms)}
+- Entegrasyonlar: ${asInline(project.integrations)}
+
+## Mimari
+
+${asMarkdown(project.architecture)}
+
+## Teknik kararlar
+
+${asMarkdown(project.interestingTechnicalDecisions)}
+
+## Tasarım ve marka dili
+
+- Tasarım sistemi: ${asInline(project.designSystem)}
+- Marka dili: ${asInline(project.brandLanguage)}
+- Responsive yaklaşım: ${asInline(project.responsiveStrategy)}
+
+## SEO, performans ve erişilebilirlik
+
+- SEO: ${asInline(project.seoStrategy)}
+- Performans: ${asInline(project.performanceOptimizations)}
+- Erişilebilirlik: ${asInline(project.accessibilityNotes)}
+
+## Geliştirme zorlukları
+
+${asMarkdown(project.developmentChallenges)}
+
+## Çıkarılan dersler
+
+${asMarkdown(project.lessonsLearned)}
+
+## Doğrulama sınırı
+
+${project.currentStatus}
+
+Bu sayfa erişilebilir proje dosyalarından yeniden oluşturulmuş bir arşiv kaydıdır. Kanıtlanamayan bilgiler **Unknown** olarak korunur; teklif, plan veya prototip kayıtları tamamlanmış üretim işi olarak sunulmaz.
+`
+
+async function loadCaseStudyProjects(): Promise<Project[]> {
   const projectsDir = path.join(contentDir, "projects")
   if (!fs.existsSync(projectsDir)) return []
 
@@ -77,6 +180,7 @@ async function loadProjects(): Promise<Project[]> {
     if (parsed.status === "published") {
       projects.push({
         type: "project",
+        recordType: "case-study",
         ...parsed,
         body,
         slug: file.replace(markdownFilePattern, ""),
@@ -85,6 +189,71 @@ async function loadProjects(): Promise<Project[]> {
   }
 
   return projects
+}
+
+async function loadArchiveProjects(): Promise<Project[]> {
+  const projectsDir = path.join(contentDir, "projects")
+  if (!fs.existsSync(projectsDir)) return []
+
+  const directories = fs
+    .readdirSync(projectsDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .sort((a, b) => a.name.localeCompare(b.name, "tr"))
+
+  const projects: Project[] = []
+
+  for (const directory of directories) {
+    const metadataPath = path.join(projectsDir, directory.name, "metadata.json")
+    if (!fs.existsSync(metadataPath)) continue
+
+    const parsed = portfolioArchiveProjectSchema.parse(
+      JSON.parse(fs.readFileSync(metadataPath, "utf-8")),
+    )
+    const categories = asList(parsed.categories)
+
+    projects.push({
+      type: "project",
+      recordType: "archive",
+      title: parsed.projectName,
+      slug: parsed.slug,
+      client: isKnown(parsed.client) ? parsed.client : undefined,
+      year: extractYear(parsed.timeline) ?? 0,
+      tagline: parsed.purpose,
+      coverImage: typeof parsed.coverImage === "string" && isKnown(parsed.coverImage) ? parsed.coverImage : "",
+      tags: categories.length > 0 ? categories : [parsed.projectType],
+      status: "published",
+      body: buildArchiveBody(parsed),
+      archive: {
+        currentStatus: parsed.currentStatus,
+        projectType: parsed.projectType,
+        industry: parsed.industry,
+        documentationScore: parsed.documentationScore,
+        priorityScore: parsed.priorityScore,
+        sourceCount: parsed.sourceIds.length,
+      },
+    })
+  }
+
+  return projects
+}
+
+async function loadProjects(): Promise<Project[]> {
+  const [caseStudies, archiveProjects] = await Promise.all([
+    loadCaseStudyProjects(),
+    loadArchiveProjects(),
+  ])
+  const archiveBySlug = new Map(archiveProjects.map((project) => [project.slug, project]))
+  const caseStudySlugs = new Set(caseStudies.map((project) => project.slug))
+
+  const enrichedCaseStudies = caseStudies.map((project) => ({
+    ...project,
+    archive: archiveBySlug.get(project.slug)?.archive,
+  }))
+  const remainingArchive = archiveProjects
+    .filter((project) => !caseStudySlugs.has(project.slug))
+    .sort((a, b) => (b.archive?.priorityScore ?? 0) - (a.archive?.priorityScore ?? 0))
+
+  return [...enrichedCaseStudies, ...remainingArchive]
 }
 
 async function computeAllTags(): Promise<TagInfo[]> {

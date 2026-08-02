@@ -85,6 +85,10 @@
   ],
   "gitRepository": "https://github.com/Hitbullets/InkOS.git",
   "productionUrl": "https://www.inkosone.com (portföy frontmatter'ında; canlı doğrulama Unknown)",
+  "coverImage": "/images/projects/covers/inkos-mockup.png",
+  "coverSourceScreens": [
+    "content/projects/inkos/assets/product-interface-desktop.png"
+  ],
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\handoff\\CURRENT_STATE.md",
