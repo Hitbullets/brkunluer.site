@@ -1,0 +1,109 @@
+{
+  "aliases": [
+    "8-mart"
+  ],
+  "client": "Kişisel/deneysel çalışma",
+  "industry": "Etkileşimli hikâye",
+  "projectType": "Sesli ve etkileşimli statik web deneyimi",
+  "categories": [
+    "Experimental",
+    "Educational"
+  ],
+  "currentStatus": "Yerel HTML, CSS, JavaScript ve ses dosyaları mevcut; production URL Unknown.",
+  "timeline": "2026: yerel proje; kesin tarih Unknown.",
+  "purpose": "8 Mart için teşekkür, öz-şefkat ve etkileşimli görev deneyimi sunmak.",
+  "problemBeingSolved": "Kutlama mesajını pasif kart yerine sesli ve etkileşimli deneyime dönüştürmek.",
+  "targetUsers": [
+    "8 Mart mesajının alıcıları"
+  ],
+  "businessGoals": "Unknown",
+  "technologyStack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Canvas",
+    "MP3/WebM audio"
+  ],
+  "frameworks": "Yok",
+  "backend": "Yok",
+  "database": "Yok",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "Google Fonts"
+  ],
+  "designSystem": "Cam panel, petal canvas, kart/carousel ve çiçek sayacı",
+  "brandLanguage": "Türkçe; sıcak ve onurlandırıcı",
+  "colorPalette": "CSS içinde; özet Unknown",
+  "typography": [
+    "Cormorant Garamond",
+    "Outfit",
+    "Caveat",
+    "Dancing Script"
+  ],
+  "responsiveStrategy": "Viewport meta ve tek sayfa uygulama düzeni",
+  "seoStrategy": "Temel title/description",
+  "performanceOptimizations": "Yerel ses formatları ve canvas; ölçüm Unknown",
+  "accessibilityNotes": "Ses gerektiren deneyim için metinsel uyarı var; tam klavye/reduced-motion denetimi Unknown",
+  "majorFeatures": [
+    "Kart carousel",
+    "Petal canvas",
+    "Çiçek sayacı",
+    "Arka plan sesi",
+    "Etkileşimli görevler"
+  ],
+  "pages": [
+    "Tek sayfa, çok ekranlı durum akışı"
+  ],
+  "architecture": "Bağımlılıksız statik HTML/CSS/JS ve durum bazlı ekranlar.",
+  "interestingTechnicalDecisions": [
+    "Canvas petal arka planı",
+    "Tek sayfada ekran durumları"
+  ],
+  "developmentChallenges": [
+    "Otomatik ses politikaları",
+    "Mobil performans",
+    "Erişilebilir hareket"
+  ],
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\8-mart",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\8-mart",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "Unknown",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\8-mart"
+  ],
+  "projectName": "8 Mart Dünya Kadınlar Günü Deneyimi",
+  "slug": "8-mart-deneyimi",
+  "sourceIds": [
+    "S201"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 5,
+    "designDocumentation": 7,
+    "screenshots": 5,
+    "deployment": 0,
+    "lessonsLearned": 2,
+    "architecture": 5,
+    "seo": 3,
+    "performance": 4,
+    "maintainability": 4
+  },
+  "priorityBreakdown": {
+    "businessValue": 6,
+    "technicalComplexity": 11,
+    "portfolioValue": 13,
+    "educationalValue": 14
+  },
+  "documentationScore": 42,
+  "priorityScore": 44,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

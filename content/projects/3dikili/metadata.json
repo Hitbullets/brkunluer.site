@@ -1,0 +1,107 @@
+{
+  "aliases": [
+    "3dikili-demo",
+    "3Demo"
+  ],
+  "client": "3Dikili (teklif/demo bağlamı)",
+  "industry": "Moda / e-ticaret",
+  "projectType": "E-ticaret UX demosu",
+  "categories": [
+    "E-commerce",
+    "Experimental",
+    "Landing Page"
+  ],
+  "currentStatus": "Yerel responsive demo mevcut; kaynak belge gerçek backend ve e-ticaret işlevi olmadığını açıkça söylüyor.",
+  "timeline": "2026: demo ve teklif dosyaları; kesin tarih Unknown.",
+  "purpose": "WordPress/WooCommerce mağazası için ürün keşfi, filtreleme ve sepet deneyimini göstermek.",
+  "problemBeingSolved": "Teklif öncesinde mağaza bilgi mimarisi ve kullanıcı akışını somutlaştırmak.",
+  "targetUsers": [
+    "Moda müşterileri",
+    "Proje karar vericileri"
+  ],
+  "businessGoals": [
+    "Teklif/demonstrasyon",
+    "E-ticaret dönüşüm akışını göstermek"
+  ],
+  "technologyStack": [
+    "React",
+    "Vite",
+    "TypeScript"
+  ],
+  "frameworks": [
+    "React",
+    "Vite"
+  ],
+  "backend": "Yok; demo",
+  "database": "Yok; demo",
+  "hosting": "Unknown",
+  "cms": "Hedef WordPress/WooCommerce; demoda yok",
+  "integrations": "Unknown",
+  "designSystem": "Ürün kartları, filtreler, detay ve sepet mockup'ı",
+  "brandLanguage": "Türkçe e-ticaret",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Responsive ürün ızgarası ve akışlar",
+  "seoStrategy": "Hedef mağaza için teklif düzeyinde; demoda Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Ürün kartı",
+    "Filtre",
+    "Ürün detay",
+    "Mock sepet"
+  ],
+  "pages": [
+    "Ana sayfa",
+    "Ürün listeleme",
+    "Ürün detay",
+    "Sepet"
+  ],
+  "architecture": "Frontend-only Vite demosu.",
+  "interestingTechnicalDecisions": "Gerçek ticaret davranışı yerine açıkça demo sınırı koyma.",
+  "developmentChallenges": "Demo ile üretim kapsamını karıştırmama.",
+  "lessonsLearned": "Teklif demosunun yapamadıkları dokümantasyonda açık olmalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo içindeki teklif/görsel ekleri",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo\\3Demo_context.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo"
+  ],
+  "projectName": "3Dikili",
+  "slug": "3dikili",
+  "sourceIds": [
+    "S100",
+    "S101"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 8,
+    "technicalDepth": 5,
+    "designDocumentation": 7,
+    "screenshots": 6,
+    "deployment": 1,
+    "lessonsLearned": 6,
+    "architecture": 5,
+    "seo": 3,
+    "performance": 3,
+    "maintainability": 5
+  },
+  "priorityBreakdown": {
+    "businessValue": 17,
+    "technicalComplexity": 12,
+    "portfolioValue": 17,
+    "educationalValue": 16
+  },
+  "documentationScore": 49,
+  "priorityScore": 62,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

@@ -1,0 +1,58 @@
+---
+title: "SalonIQ"
+slug: "saloniq"
+excerpt: "Salonların randevu, müşteri, üyelik, stok, ödeme ve raporlama süreçlerini tek üründe yönetmek."
+status: "draft"
+archiveSnapshot: "2026-08-02"
+documentationScore: 86
+priorityScore: 99
+---
+
+# SalonIQ
+
+> Bu kayıt, master portföy veritabanının izlenebilir proje görünümüdür. Kanıt bulunmayan alanlar `Unknown` olarak korunur.
+
+| Alan | Değer |
+|---|---|
+| Müşteri | Salon işletmeleri için ürün |
+| Sektör | Güzellik ve salon yönetimi |
+| Proje türü | Çok kiracılı SaaS |
+| Durum | Yerel kanonik belgede v2.2.90 MVP ve production kaydı var; dışarıdan güncel canlı doğrulama yapılamadı. |
+| Zaman | 2026-03: deployment belgesinde v2.2.90; sonraki T2/T3 dalgaları belgeli. |
+| Production | https://saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown) |
+| Demo | https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown) |
+| Git | https://github.com/Hitbullets/SALONIQ.git, https://github.com/Hitbullets/Saloniq-Stagging.git |
+
+## Amaç
+
+Salonların randevu, müşteri, üyelik, stok, ödeme ve raporlama süreçlerini tek üründe yönetmek. [S020] [S021] [S022] [S023]
+
+## Çözülen problem
+
+Parçalı salon operasyonlarını çok kiracılı, izlenebilir bir SaaS akışında birleştirmek. [S020] [S021] [S022] [S023]
+
+## Kullanıcılar ve iş hedefleri
+
+- Hedef kullanıcılar: Salon sahipleri, Çalışanlar, Müşteriler, Platform yöneticileri
+- İş hedefleri: Abonelik geliri, Operasyon verimliliği, Online rezervasyon, Ödeme ve stok kontrolü
+
+## Başlıca özellikler
+
+- Randevu
+- Müşteri/üyelik
+- Kasa
+- Stok
+- Online rezervasyon
+- Ödeme
+- Raporlama
+- Çoklu tenant
+- Admin
+
+## Kaynaklar
+
+- **S020:** `C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\SALONIQ_APP\docs\core\MASTER-CONTEXT-AND-VERSION.md` — SalonIQ kanonik ürün bağlamı
+- **S021:** `C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\SALONIQ_APP\docs\operations\DEPLOYMENT.md` — SalonIQ yerel yayın kaydı
+- **S022:** `C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\SALONIQ_APP\package.json` — SalonIQ monorepo bildirimi
+- **S023:** `C:\Users\Burak\Documents\ByyHit Works\222les\CONTEXT-KASA-EK.md` — SalonIQ kasa modülü ve gerçek zamanlı stok
+
+Tüm alanlar için [merkezi veritabanına](../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json) bakın.

@@ -1,0 +1,109 @@
+{
+  "aliases": [
+    "GOOGLE_DATA"
+  ],
+  "client": "Bağımsız araç",
+  "industry": "Yerel işletme verisi",
+  "projectType": "Web arayüzlü veri çıkarma servisi",
+  "categories": [
+    "Internal Tool",
+    "Open Source"
+  ],
+  "currentStatus": "Yerel Node/Express kaynakları ve README mevcut; production Unknown.",
+  "timeline": "Eski proje arşivi; kesin tarih Unknown.",
+  "purpose": "Google paylaşım URL'sinden Place ID ve yapılandırılmış işletme verisi üretmek.",
+  "problemBeingSolved": "Google Business Profile bağlantılarını tekrar kullanılabilir JSON verisine dönüştürmek.",
+  "targetUsers": [
+    "Ajanslar",
+    "Yerel SEO uzmanları",
+    "Geliştiriciler"
+  ],
+  "businessGoals": [
+    "Yerel veri toplama otomasyonu"
+  ],
+  "technologyStack": [
+    "Node.js",
+    "Express",
+    "Google Places API",
+    "Playwright fallback"
+  ],
+  "frameworks": [
+    "Express"
+  ],
+  "backend": "Node.js/Express",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "Google Places API",
+    "Playwright"
+  ],
+  "designSystem": "Basit yerel web UI",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "API başarısızlığında tarayıcı fallback",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "URL çözümleme",
+    "Place ID",
+    "JSON çıktı",
+    "Web UI",
+    "Fallback"
+  ],
+  "pages": [
+    "Yerel araç arayüzü"
+  ],
+  "architecture": "API-first çözümleyici + Playwright yedeği + Express UI.",
+  "interestingTechnicalDecisions": "API ve tarayıcı yöntemini fallback zincirinde birleştirme.",
+  "developmentChallenges": [
+    "Google sayfa değişiklikleri",
+    "API kotası"
+  ],
+  "lessonsLearned": "Kırılgan web otomasyonu mümkünse resmi API'nin arkasında yedek olmalı.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA\\README.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA"
+  ],
+  "projectName": "Google Business Profile Data Service",
+  "slug": "google-business-profile-service",
+  "sourceIds": [
+    "S180",
+    "S181"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 7,
+    "designDocumentation": 3,
+    "screenshots": 1,
+    "deployment": 0,
+    "lessonsLearned": 6,
+    "architecture": 7,
+    "seo": 3,
+    "performance": 6,
+    "maintainability": 6
+  },
+  "priorityBreakdown": {
+    "businessValue": 12,
+    "technicalComplexity": 17,
+    "portfolioValue": 15,
+    "educationalValue": 20
+  },
+  "documentationScore": 46,
+  "priorityScore": 64,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

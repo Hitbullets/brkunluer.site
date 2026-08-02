@@ -1,0 +1,167 @@
+{
+  "aliases": [
+    "CAUINK v1",
+    "CAU INK redesign",
+    "CAU INK Gallery v2",
+    "CAU_INK_STITCH",
+    "CAU_INK_WHITE_DEMO",
+    "CAU_INK_MEDICAL",
+    "Tattoo-Demo"
+  ],
+  "client": "CAU INK / Ahsen",
+  "industry": "Dövme, piercing ve lazer dövme silme",
+  "projectType": "Kurumsal stüdyo sitesi ve galeri",
+  "categories": [
+    "Tattoo Studio",
+    "Corporate Website",
+    "Portfolio"
+  ],
+  "currentStatus": "Üretim sitesi 2026-08-02 web taramasında erişildi; yerel klasörlerde birden fazla tarihsel yeniden tasarım bulunuyor.",
+  "timeline": "2022: canlı sitede marka başlangıcı; 2026: statik, Stitch/Next.js ve Gallery v2 revizyonları.",
+  "purpose": "CAU INK hizmetlerini, sanatçı kimliğini, galeriyi ve randevu akışını sunmak.",
+  "problemBeingSolved": "Yerel stüdyonun güven, hijyen, uzmanlık ve iş kalitesi sinyallerini dijital randevu talebine dönüştürmek.",
+  "targetUsers": [
+    "Balıkesir'de dövme arayanlar",
+    "Piercing müşterileri",
+    "Lazer dövme silme müşterileri"
+  ],
+  "businessGoals": [
+    "Randevu talebi",
+    "Yerel görünürlük",
+    "Portföy sergileme",
+    "Güven oluşturma"
+  ],
+  "technologyStack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "GSAP",
+    "Three.js / React Three Fiber",
+    "Vercel Blob"
+  ],
+  "frameworks": [
+    "Next.js",
+    "React",
+    "GSAP sahne sistemi"
+  ],
+  "backend": "Next.js Route Handlers ve form akışı; ayrıntı revizyona göre değişiyor",
+  "database": "Unknown",
+  "hosting": "Tarihsel Netlify yapılandırması; güncel uygulamada Vercel/Vercel Blob belgeleri",
+  "cms": "Dosya ve varlık tabanlı",
+  "integrations": [
+    "WhatsApp",
+    "Google yorumları",
+    "Vercel Blob"
+  ],
+  "designSystem": "Sahne bazlı sinematik sistem; koyu galeri ve medikal güven varyantları",
+  "brandLanguage": "Türkçe; sanatsal, güven veren, hijyen ve kişiselleştirme odaklı",
+  "colorPalette": "Revizyona göre siyah/beyaz/krem ve vurgu tonları; kesin kanonik token seti Unknown",
+  "typography": "Revizyona göre değişiyor; kanonik seçim Unknown",
+  "responsiveStrategy": "Sabit sahne/slayt yaklaşımı ile wheel, touch ve klavye girdileri; mobil varlık kırpma planları.",
+  "seoStrategy": "Yerel hizmet sayfaları, Balıkesir odaklı metadata, alt metin, robots/sitemap ve blog çalışmaları.",
+  "performanceOptimizations": [
+    "Vercel Blob varlık göçü",
+    "Görsel/video optimizasyonu",
+    "Sahne bazlı lazy çalışma"
+  ],
+  "accessibilityNotes": "Reduced-motion ve gerçek tarayıcı doğrulaması belgelerde açık iş olarak geçiyor.",
+  "majorFeatures": [
+    "Hizmet sunumu",
+    "Sanatçı hikâyesi",
+    "Filtreli galeri",
+    "Randevu formu",
+    "WhatsApp",
+    "SSS",
+    "Sinematik sahneler"
+  ],
+  "pages": [
+    "Ana sayfa",
+    "Galeri",
+    "Hizmet detayları",
+    "Gizlilik",
+    "Kullanım şartları"
+  ],
+  "architecture": "Revizyonlar tek kanonik proje altında: statik/Netlify döneminden Next.js sahne mimarisine ve Gallery v2 SSR/edge denemelerine.",
+  "interestingTechnicalDecisions": [
+    "Sabit slideshow navigasyonu",
+    "Scene registry",
+    "DOM + WebGL katmanları",
+    "Gerçek varlıklarla AI destek görsellerini ayırma"
+  ],
+  "developmentChallenges": [
+    "iOS Safari ve hareket azaltma doğrulaması",
+    "R3F çalışma zamanı uyumluluğu",
+    "Yüksek hacimli görsel/video arşivi"
+  ],
+  "lessonsLearned": "Derleme başarısı, WebGL ve sahne akışının gerçek tarayıcıda çalıştığını tek başına kanıtlamaz.",
+  "screenshotsReferences": [
+    "DEMO-WORKS/CAUINK-DEMO/001.png",
+    "CAU_INK_STITCH/public",
+    "Konsept Görseller"
+  ],
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\public",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Konsept Görseller"
+  ],
+  "gitRepository": "https://github.com/Hitbullets/cau-ink-gallery.git",
+  "productionUrl": "https://cauink.com",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\ARCHITECTURE.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK\\SEO.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Yerel SEO ve rakip/marka araştırmaları proje klasörlerinde dağınık.",
+  "relatedPrompts": "Stitch ve sahne üretim promptları CAU_INK_STITCH ve yeniden tasarım klasörlerinde.",
+  "relatedAiWorkflows": [
+    "Stitch ekran üretimi",
+    "Higgsfield görsel/video üretimi"
+  ],
+  "relatedMethods": [
+    "Scene Bible",
+    "Sabit slideshow uygulaması"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_MEDICAL",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_WHITE_DEMO",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\HIGGSFIELD SUPERCOMPUTER\\cauink-gallery",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\CAU_INK_REDESING-1"
+  ],
+  "projectName": "CAU INK",
+  "slug": "cau-ink",
+  "sourceIds": [
+    "S010",
+    "S011",
+    "S012",
+    "S013",
+    "S014",
+    "S015"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 10,
+    "designDocumentation": 10,
+    "screenshots": 10,
+    "deployment": 9,
+    "lessonsLearned": 8,
+    "architecture": 10,
+    "seo": 10,
+    "performance": 8,
+    "maintainability": 9
+  },
+  "priorityBreakdown": {
+    "businessValue": 25,
+    "technicalComplexity": 25,
+    "portfolioValue": 25,
+    "educationalValue": 24
+  },
+  "documentationScore": 94,
+  "priorityScore": 99,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

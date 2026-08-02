@@ -1,0 +1,90 @@
+{
+  "aliases": [
+    "Buse_Birthday"
+  ],
+  "client": "Kişisel çalışma",
+  "industry": "Kişisel dijital hediye",
+  "projectType": "Tek dosyalı etkileşimli web deneyimi",
+  "categories": [
+    "Experimental",
+    "Personal Brand"
+  ],
+  "currentStatus": "Yerel index.html ve görsel varlık mevcut; production URL Unknown.",
+  "timeline": "2026-04-12: yerel dosya zamanı; Git tarihçesi Unknown.",
+  "purpose": "Buse için kişisel doğum günü deneyimi oluşturmak.",
+  "problemBeingSolved": "Kişisel mesajı paylaşılabilir etkileşimli web formatına dönüştürmek.",
+  "targetUsers": [
+    "Tek alıcı / kişisel çevre"
+  ],
+  "businessGoals": "Unknown",
+  "technologyStack": [
+    "HTML",
+    "CSS",
+    "JavaScript; büyük ölçüde tek dosya"
+  ],
+  "frameworks": "Unknown",
+  "backend": "Yok",
+  "database": "Yok",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "Tek dosya içi görsel sistem",
+  "brandLanguage": "Kişisel Türkçe",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "HTML içinde; gerçek cihaz doğrulaması Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Kişisel mesaj",
+    "Görsel/animasyonlu deneyim"
+  ],
+  "pages": [
+    "Tek sayfa"
+  ],
+  "architecture": "Self-contained statik HTML.",
+  "interestingTechnicalDecisions": "Dağıtımı kolaylaştırmak için tek dosya yaklaşımı.",
+  "developmentChallenges": "Büyük tek dosya ve medya performansı.",
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "Unknown",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday"
+  ],
+  "projectName": "Buse Birthday Web Experience",
+  "slug": "buse-birthday",
+  "sourceIds": [
+    "S200"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 5,
+    "technicalDepth": 3,
+    "designDocumentation": 5,
+    "screenshots": 6,
+    "deployment": 0,
+    "lessonsLearned": 1,
+    "architecture": 2,
+    "seo": 0,
+    "performance": 2,
+    "maintainability": 2
+  },
+  "priorityBreakdown": {
+    "businessValue": 5,
+    "technicalComplexity": 8,
+    "portfolioValue": 10,
+    "educationalValue": 9
+  },
+  "documentationScore": 26,
+  "priorityScore": 32,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

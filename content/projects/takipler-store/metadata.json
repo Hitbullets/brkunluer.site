@@ -1,0 +1,115 @@
+{
+  "aliases": [
+    "takipler.store"
+  ],
+  "client": "Bağımsız ürün",
+  "industry": "Sosyal medya servisleri",
+  "projectType": "Sipariş ve servis paneli",
+  "categories": [
+    "SaaS",
+    "Internal Tool"
+  ],
+  "currentStatus": "Yerel Next.js uygulama ve Vercel proje yapılandırması mevcut; production URL ve yayın doğrulaması Unknown.",
+  "timeline": "2026: dosya tarihleri ve Next.js 16.2.7 manifesti; kesin tarihçe Unknown.",
+  "purpose": "SMM servislerini listelemek, komisyon uygulamak ve siparişleri yönetmek.",
+  "problemBeingSolved": "Harici SMM paneli servislerini tek marka altında fiyatlandırma ve sipariş akışına dönüştürmek.",
+  "targetUsers": [
+    "Sosyal medya hizmeti alıcıları",
+    "Panel yöneticisi"
+  ],
+  "businessGoals": [
+    "Komisyonlu servis satışı",
+    "Sipariş takibi",
+    "Bakiye görünürlüğü"
+  ],
+  "technologyStack": [
+    "Next.js 16.2.7",
+    "React 19.2.4",
+    "TypeScript 5",
+    "Tailwind CSS 4"
+  ],
+  "frameworks": [
+    "Next.js App Router",
+    "React"
+  ],
+  "backend": "Next.js /api/smm proxy",
+  "database": "LocalStorage ile sipariş/ayar saklama; kalıcı sunucu veritabanı Unknown",
+  "hosting": "Vercel proje yapılandırması",
+  "cms": "Unknown",
+  "integrations": [
+    "SMM API"
+  ],
+  "designSystem": "Özel dashboard bileşenleri",
+  "brandLanguage": "Türkçe panel dili",
+  "colorPalette": "CSS değişkenlerinde koyu panel; tam token özeti Unknown",
+  "typography": "Syne sınıfı kodda; font kaynağı Unknown",
+  "responsiveStrategy": "Dashboard/sidebar düzeni; mobil doğrulama Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Servis listesini LocalStorage'da saklama",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Dashboard",
+    "Yeni sipariş",
+    "Servis listesi",
+    "Siparişler",
+    "Komisyon ayarı",
+    "Destek",
+    "Bakiye"
+  ],
+  "pages": [
+    "Tek uygulama kabuğunda altı panel görünümü"
+  ],
+  "architecture": "Client state + LocalStorage + Next.js API proxy.",
+  "interestingTechnicalDecisions": [
+    "Komisyonun istemci ayarı olarak saklanması",
+    "Servis/API durum göstergesi"
+  ],
+  "developmentChallenges": [
+    "API kimlik bilgisi güvenliği",
+    "Kalıcı sipariş verisi",
+    "Hata görünürlüğü"
+  ],
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Takipler-Store\\public",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "README yalnız varsayılan Next.js metni; ürün belgesi Unknown",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Takipler-Store"
+  ],
+  "projectName": "Takipler Store",
+  "slug": "takipler-store",
+  "sourceIds": [
+    "S090",
+    "S091",
+    "S092"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 6,
+    "technicalDepth": 7,
+    "designDocumentation": 5,
+    "screenshots": 2,
+    "deployment": 3,
+    "lessonsLearned": 1,
+    "architecture": 5,
+    "seo": 1,
+    "performance": 4,
+    "maintainability": 4
+  },
+  "priorityBreakdown": {
+    "businessValue": 19,
+    "technicalComplexity": 16,
+    "portfolioValue": 16,
+    "educationalValue": 14
+  },
+  "documentationScore": 38,
+  "priorityScore": 65,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

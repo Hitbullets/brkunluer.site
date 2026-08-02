@@ -1,0 +1,105 @@
+{
+  "aliases": [
+    "OldcityLove"
+  ],
+  "client": "Unknown",
+  "industry": "İlan / yetişkin içerik pazaryeri",
+  "projectType": "Frontend-only ilan platformu MVP",
+  "categories": [
+    "Marketplace",
+    "Experimental"
+  ],
+  "currentStatus": "Yerel frontend-only MVP; README backend, gerçek login ve admin olmadığını belirtiyor. Production Unknown.",
+  "timeline": "Eski proje arşivi; kesin tarih Unknown.",
+  "purpose": "Premium ilan listeleme ve profil deneyimini prototiplemek.",
+  "problemBeingSolved": "İlan keşfi ve premium görünürlüğün frontend akışını doğrulamak.",
+  "targetUsers": [
+    "İlan yayınlayanlar",
+    "İlan ziyaretçileri"
+  ],
+  "businessGoals": [
+    "Premium listeleme modeli doğrulaması"
+  ],
+  "technologyStack": [
+    "Next.js/React kaynakları"
+  ],
+  "frameworks": [
+    "Next.js",
+    "React"
+  ],
+  "backend": "Yok; mock",
+  "database": "Yok; mock",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "Uygulama kaynaklarında",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Frontend MVP",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "İlan listesi",
+    "Profil",
+    "Mock login",
+    "Mock admin"
+  ],
+  "pages": [
+    "Liste",
+    "İlan detay",
+    "Profil",
+    "Login/admin mock"
+  ],
+  "architecture": "Frontend-only Next.js MVP.",
+  "interestingTechnicalDecisions": "Backend sınırını README'de açıkça belirtme.",
+  "developmentChallenges": [
+    "Kimlik doğrulama ve moderasyon yok",
+    "Gerçek veri yok"
+  ],
+  "lessonsLearned": "Mock akışlar üretim özelliği olarak sayılmamalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform\\README.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform"
+  ],
+  "projectName": "Premium Listing Platform",
+  "slug": "premium-listing-platform",
+  "sourceIds": [
+    "S150",
+    "S151"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 5,
+    "technicalDepth": 4,
+    "designDocumentation": 5,
+    "screenshots": 4,
+    "deployment": 0,
+    "lessonsLearned": 4,
+    "architecture": 4,
+    "seo": 1,
+    "performance": 2,
+    "maintainability": 3
+  },
+  "priorityBreakdown": {
+    "businessValue": 11,
+    "technicalComplexity": 11,
+    "portfolioValue": 12,
+    "educationalValue": 10
+  },
+  "documentationScore": 32,
+  "priorityScore": 44,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

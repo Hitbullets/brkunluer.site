@@ -1,0 +1,140 @@
+{
+  "aliases": [
+    "Ink-OS",
+    "InkOS One"
+  ],
+  "client": "Bağımsız ürün",
+  "industry": "Tattoo teknolojisi / üretken yapay zekâ",
+  "projectType": "AI destekli web ürünü",
+  "categories": [
+    "AI Product",
+    "SaaS",
+    "Tattoo Studio"
+  ],
+  "currentStatus": "Haziran 2026 temel dokümanında çekirdek kod öncesi aşama; BRKUNLUER.SITE anlatısında çalışan MVP iddiası var. Çelişki çözülmedi ve güncel üretim doğrulanamadı.",
+  "timeline": "2026-06: dokümantasyon ve Phase -1 tamamlandı; sonraki MVP anlatısının tarihi Unknown.",
+  "purpose": "Kullanıcıların dövme fikrini görsel tasarıma ve stencil çıktısına dönüştürmesini sağlamak.",
+  "problemBeingSolved": "Dövme fikri keşfi, prompt geliştirme ve sanatçıya aktarılabilir stencil üretimini tek akışta toplamak.",
+  "targetUsers": [
+    "Dövme yaptırmak isteyenler",
+    "Dövme sanatçıları"
+  ],
+  "businessGoals": [
+    "B2C tasarım üretimi",
+    "Sonraki aşamada sanatçı araçları",
+    "Kredi/abonelik geliri"
+  ],
+  "technologyStack": [
+    "Plan: Next.js, TypeScript, Tailwind, shadcn/ui, Neon, Drizzle, Auth.js, Replicate, R2, Vercel, PostHog, Sentry, Stripe",
+    "Portföy anlatısı: React, Python servisleri, Google OAuth, Claude, OpenAI görsel modeli, tarayıcı Sobel"
+  ],
+  "frameworks": [
+    "Next.js planı",
+    "React anlatısı"
+  ],
+  "backend": "Plan ve anlatı arasında doğrulanmamış fark: Next Route Handlers / Python servisleri",
+  "database": "Plan: Neon PostgreSQL; gerçek durum Unknown",
+  "hosting": "Plan: Vercel + Cloudflare R2; gerçek durum Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "Google OAuth",
+    "Claude",
+    "OpenAI görsel üretimi",
+    "Replicate planı",
+    "PostHog landing"
+  ],
+  "designSystem": "Landing ve ürün belgelerinde ayrı tasarım akışları",
+  "brandLanguage": "Türkçe/uluslararası ürün dili; kanonik seçim Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Web tabanlı mobil/masaüstü ürün planı",
+  "seoStrategy": "Landing odaklı; ayrıntı Unknown",
+  "performanceOptimizations": "Tarayıcı tarafı stencil işleme portföy anlatısında",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Prompt geliştirme",
+    "AI görsel üretimi",
+    "Stencil",
+    "Galeri/geçmiş",
+    "Kredi sistemi planı",
+    "Waitlist landing"
+  ],
+  "pages": [
+    "Landing",
+    "Üretim stüdyosu",
+    "Galeri/geçmiş",
+    "Hesap"
+  ],
+  "architecture": "Dokümantasyon kökü ile ayrı landing uygulaması; planlanan ürün katmanları ve AI sağlayıcı soyutlaması.",
+  "interestingTechnicalDecisions": [
+    "Sobel işlemini tarayıcıya taşıma anlatısı",
+    "Sağlayıcıları değiştirilebilir tutma planı"
+  ],
+  "developmentChallenges": [
+    "Planlanan ve uygulandığı iddia edilen yığın arasındaki çelişki",
+    "Görsel maliyeti ve güvenlik",
+    "Stencil kalitesi"
+  ],
+  "lessonsLearned": "Plan, landing ve gerçek ürün çalışma durumları ayrı kanıtlanmalı.",
+  "screenshotsReferences": [
+    "BRKUNLUER.SITE/public/images/projects/inkos-*.png"
+  ],
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\public\\images\\projects"
+  ],
+  "gitRepository": "https://github.com/Hitbullets/InkOS.git",
+  "productionUrl": "https://www.inkosone.com (portföy frontmatter'ında; canlı doğrulama Unknown)",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\handoff\\CURRENT_STATE.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\architecture\\tech-stack.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\product\\vision.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "LoRA/ControlNet planı ARQEN STUDIO/PLAN MD DOSYALARI altında",
+  "relatedPrompts": "Ürün ve görsel iş akışı promptları Ink-OS docs ve ARQEN planlarında",
+  "relatedAiWorkflows": [
+    "Claude prompt geliştirme",
+    "OpenAI/Replicate görsel üretimi",
+    "LoRA/ControlNet araştırması"
+  ],
+  "relatedMethods": [
+    "AI Factory Planning Stack ile ilişki yalnız genel süreç düzeyinde; doğrudan proje bağı Unknown"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\InkOS-LoRA-ControlNet-Plan.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\content\\projects\\inkos.mdx"
+  ],
+  "projectName": "InkOS",
+  "slug": "inkos",
+  "sourceIds": [
+    "S005",
+    "S030",
+    "S031",
+    "S032",
+    "S033"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 9,
+    "technicalDepth": 9,
+    "designDocumentation": 8,
+    "screenshots": 8,
+    "deployment": 3,
+    "lessonsLearned": 7,
+    "architecture": 9,
+    "seo": 6,
+    "performance": 7,
+    "maintainability": 8
+  },
+  "priorityBreakdown": {
+    "businessValue": 24,
+    "technicalComplexity": 25,
+    "portfolioValue": 25,
+    "educationalValue": 25
+  },
+  "documentationScore": 74,
+  "priorityScore": 99,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

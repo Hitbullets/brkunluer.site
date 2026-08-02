@@ -1,0 +1,153 @@
+{
+  "aliases": [
+    "222les",
+    "SalonIQ Kasa",
+    "SalonIQ Staging",
+    "Saloniq APP Yedekler"
+  ],
+  "client": "Salon işletmeleri için ürün",
+  "industry": "Güzellik ve salon yönetimi",
+  "projectType": "Çok kiracılı SaaS",
+  "categories": [
+    "SaaS",
+    "Internal Tool",
+    "Corporate Product"
+  ],
+  "currentStatus": "Yerel kanonik belgede v2.2.90 MVP ve production kaydı var; dışarıdan güncel canlı doğrulama yapılamadı.",
+  "timeline": "2026-03: deployment belgesinde v2.2.90; sonraki T2/T3 dalgaları belgeli.",
+  "purpose": "Salonların randevu, müşteri, üyelik, stok, ödeme ve raporlama süreçlerini tek üründe yönetmek.",
+  "problemBeingSolved": "Parçalı salon operasyonlarını çok kiracılı, izlenebilir bir SaaS akışında birleştirmek.",
+  "targetUsers": [
+    "Salon sahipleri",
+    "Çalışanlar",
+    "Müşteriler",
+    "Platform yöneticileri"
+  ],
+  "businessGoals": [
+    "Abonelik geliri",
+    "Operasyon verimliliği",
+    "Online rezervasyon",
+    "Ödeme ve stok kontrolü"
+  ],
+  "technologyStack": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Node.js",
+    "Express",
+    "Supabase PostgreSQL",
+    "RLS",
+    "PayTR",
+    "PWA",
+    "Sentry"
+  ],
+  "frameworks": [
+    "React/Vite",
+    "Express"
+  ],
+  "backend": "Node.js/Express",
+  "database": "Supabase PostgreSQL; Row Level Security",
+  "hosting": "Belgeli yapı: Netlify frontend, Render backend, Supabase veri katmanı",
+  "cms": "Unknown",
+  "integrations": [
+    "PayTR",
+    "Supabase Realtime",
+    "Sentry",
+    "OCR/NLP ve AI hazırlıkları"
+  ],
+  "designSystem": "Uygulama ve landing bileşenleri; ayrıntılı token özeti Unknown",
+  "brandLanguage": "Türkçe SaaS ve operasyon dili",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Web uygulaması, public booking ve PWA akışları; ayrıntı kaynak kodda.",
+  "seoStrategy": "Public landing/booking bağlamı var; tam strateji Unknown",
+  "performanceOptimizations": [
+    "Monorepo ayrımı",
+    "Realtime + polling yedeği"
+  ],
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Randevu",
+    "Müşteri/üyelik",
+    "Kasa",
+    "Stok",
+    "Online rezervasyon",
+    "Ödeme",
+    "Raporlama",
+    "Çoklu tenant",
+    "Admin"
+  ],
+  "pages": [
+    "Uygulama paneli",
+    "Public booking",
+    "Landing",
+    "Admin"
+  ],
+  "architecture": "Frontend, server, landing ve araç paketlerinden oluşan monorepo; Supabase RLS ile tenant sınırı.",
+  "interestingTechnicalDecisions": [
+    "Gerçek zamanlı değişiklikler için Supabase + polling yedeği",
+    "PayTR ödeme katmanı",
+    "Sürüm ve dalga bazlı kanonik dokümantasyon"
+  ],
+  "developmentChallenges": [
+    "Çok kiracılı veri izolasyonu",
+    "Ödeme güvenliği",
+    "Stok-kasa tutarlılığı"
+  ],
+  "lessonsLearned": "Operasyonel durum, sürüm ve deployment kaydı tek kanonik belgede tutulmalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs ve uygulama varlıkları",
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Saloniq APP Yedekler"
+  ],
+  "gitRepository": [
+    "https://github.com/Hitbullets/SALONIQ.git",
+    "https://github.com/Hitbullets/Saloniq-Stagging.git"
+  ],
+  "productionUrl": "https://saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+  "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\operations\\DEPLOYMENT.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "AI/OCR/NLP hazırlıkları belgeli; üretim işlev durumu Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\222les\\CONTEXT-KASA-EK.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\_SalonIQ_Archive",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Saloniq APP Yedekler"
+  ],
+  "projectName": "SalonIQ",
+  "slug": "saloniq",
+  "sourceIds": [
+    "S020",
+    "S021",
+    "S022",
+    "S023"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 10,
+    "designDocumentation": 8,
+    "screenshots": 7,
+    "deployment": 9,
+    "lessonsLearned": 8,
+    "architecture": 10,
+    "seo": 6,
+    "performance": 8,
+    "maintainability": 10
+  },
+  "priorityBreakdown": {
+    "businessValue": 25,
+    "technicalComplexity": 25,
+    "portfolioValue": 25,
+    "educationalValue": 24
+  },
+  "documentationScore": 86,
+  "priorityScore": 99,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

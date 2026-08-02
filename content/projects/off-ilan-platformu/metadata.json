@@ -1,0 +1,123 @@
+{
+  "aliases": [
+    "off_site_proje",
+    "site-yetiskin-plan"
+  ],
+  "client": "Unknown",
+  "industry": "İlan / yetişkin içerik pazaryeri",
+  "projectType": "Tam yığın ilan platformu",
+  "categories": [
+    "Marketplace",
+    "SaaS"
+  ],
+  "currentStatus": "Yerel frontend, backend, admin, Docker ve Nginx kaynakları mevcut; production ve gerçek ödeme doğrulaması Unknown.",
+  "timeline": "2026 plan/source dönemi; kesin tarih Unknown.",
+  "purpose": "Admin kontrollü, kripto ödeme planlı ücretli ilan platformu kurmak.",
+  "problemBeingSolved": "İlan yayınlama, moderasyon, ödeme ve yönetimi tek platformda toplamak.",
+  "targetUsers": [
+    "İlan yayınlayanlar",
+    "İlan ziyaretçileri",
+    "Yöneticiler"
+  ],
+  "businessGoals": [
+    "Ücretli ilan geliri",
+    "Moderasyon",
+    "Premium görünürlük"
+  ],
+  "technologyStack": [
+    "Next.js 14",
+    "React 18",
+    "Tailwind",
+    "Express",
+    "PostgreSQL",
+    "React/Vite admin",
+    "Docker",
+    "Nginx"
+  ],
+  "frameworks": [
+    "Next.js",
+    "Express",
+    "Vite"
+  ],
+  "backend": "Express",
+  "database": "PostgreSQL",
+  "hosting": "Docker/Nginx planı; sağlayıcı Unknown",
+  "cms": "Özel admin paneli",
+  "integrations": [
+    "Kripto ödeme planı"
+  ],
+  "designSystem": "Frontend/admin uygulamaları",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Web ve admin arayüzleri",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "İlan",
+    "Profil",
+    "Admin",
+    "Moderasyon",
+    "Ödeme planı"
+  ],
+  "pages": [
+    "Frontend ilan akışları",
+    "Admin paneli"
+  ],
+  "architecture": "Ayrı frontend, Express backend ve Vite admin; Docker/Nginx dağıtım yapısı.",
+  "interestingTechnicalDecisions": [
+    "Admin'i ayrı uygulama tutma",
+    "Kripto ödeme modeli"
+  ],
+  "developmentChallenges": [
+    "Moderasyon",
+    "Ödeme güvenliği",
+    "Gizlilik ve yasal uyum"
+  ],
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje\\README.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\site-yetiskin-plan.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje"
+  ],
+  "projectName": "OFF İlan Platformu",
+  "slug": "off-ilan-platformu",
+  "sourceIds": [
+    "S160",
+    "S161"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 8,
+    "designDocumentation": 6,
+    "screenshots": 4,
+    "deployment": 1,
+    "lessonsLearned": 3,
+    "architecture": 7,
+    "seo": 2,
+    "performance": 4,
+    "maintainability": 6
+  },
+  "priorityBreakdown": {
+    "businessValue": 13,
+    "technicalComplexity": 20,
+    "portfolioValue": 13,
+    "educationalValue": 14
+  },
+  "documentationScore": 48,
+  "priorityScore": 60,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

@@ -1,0 +1,138 @@
+{
+  "aliases": [
+    "Altın Fiyat ve Portföy Takip Uygulaması"
+  ],
+  "client": "Bağımsız ürün",
+  "industry": "Finansal takip",
+  "projectType": "Mobil öncelikli PWA",
+  "categories": [
+    "SaaS",
+    "Finance",
+    "Experimental"
+  ],
+  "currentStatus": "Yerel tam uygulama ve README'de Vercel yayın kaydı mevcut; URL bu taramada canlı doğrulanamadı.",
+  "timeline": "2026: sıfır bütçeli MVP planı ve uygulama; kesin commit tarihçesi yerel Git nesnelerinden okunamadı.",
+  "purpose": "Türkiye altın fiyatlarını ve kişisel alım-satım portföy performansını takip etmek.",
+  "problemBeingSolved": "Kullanıcının gerçek işlem maliyetleriyle güncel/son doğrulanmış fiyatları dürüstçe birleştiren portföy görünümü eksikliği.",
+  "targetUsers": [
+    "Türkiye'deki altın yatırımcıları",
+    "Kişisel portföy takip kullanıcıları"
+  ],
+  "businessGoals": [
+    "Ücretsiz MVP doğrulaması",
+    "PWA kullanımı",
+    "Güvenilir fiyat sunumu"
+  ],
+  "technologyStack": [
+    "Next.js 13",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "MongoDB",
+    "Better Auth",
+    "Zod",
+    "Recharts",
+    "web-push"
+  ],
+  "frameworks": [
+    "Next.js App Router",
+    "React"
+  ],
+  "backend": "Next.js API ve cron işleri",
+  "database": "MongoDB Atlas Free",
+  "hosting": "Vercel Hobby",
+  "cms": "Unknown",
+  "integrations": [
+    "Çoklu fiyat sağlayıcı adaptörleri",
+    "Vercel Cron",
+    "Web Push"
+  ],
+  "designSystem": "shadcn/ui + Radix",
+  "brandLanguage": "Türkçe; finansal doğruluk ve şeffaflık",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Mobile-first PWA, alt navigasyon ve safe-area desteği",
+  "seoStrategy": "Landing metadata; ayrıntı Unknown",
+  "performanceOptimizations": [
+    "15–60 saniye dinamik polling",
+    "Son doğrulanmış fiyat önbelleği",
+    "Sağlayıcı fallback"
+  ],
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "7 altın türü",
+    "Fiyat durumu rozetleri",
+    "İşlem kaydı",
+    "Ortalama maliyet",
+    "Kâr/zarar",
+    "PWA",
+    "Push bildirim"
+  ],
+  "pages": [
+    "Landing",
+    "Dashboard",
+    "Fiyatlar",
+    "Portföy",
+    "İşlemler",
+    "Ayarlar"
+  ],
+  "architecture": "Sağlayıcı adaptörleri + doğrulama/yedek kaynak + son başarılı fiyat önbelleği; kullanıcı işlem verisi ayrı.",
+  "interestingTechnicalDecisions": [
+    "Eski veriyi anlık diye göstermeme kuralı",
+    "Sıfır bütçeli çoklu sağlayıcı",
+    "Teorik fiyatı etiketleme"
+  ],
+  "developmentChallenges": [
+    "Ücretsiz kaynakların kota/SLA riski",
+    "Finansal veri güncelliği",
+    "Push ve auth"
+  ],
+  "lessonsLearned": "Finans uygulamasında fiyatın kaynağı, piyasa zamanı ve doğrulama zamanı birlikte gösterilmeli.",
+  "screenshotsReferences": "README ekran görüntülerini yakında olarak işaretliyor; mevcut ekran görüntüsü Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\public",
+  "gitRepository": "https://github.com/Hitbullets/gold-tracker.git",
+  "productionUrl": "https://gold-tracker-rouge.vercel.app (README'de; canlı doğrulama Unknown)",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\README.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\docs\\Plan.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Altın fiyat sağlayıcıları ve veri güncellik araştırması Plan.md içinde",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": [
+    "Provider adapter ve dürüstlük kuralı"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER"
+  ],
+  "projectName": "Gold Tracker",
+  "slug": "gold-tracker",
+  "sourceIds": [
+    "S080",
+    "S081",
+    "S082"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 9,
+    "designDocumentation": 7,
+    "screenshots": 2,
+    "deployment": 6,
+    "lessonsLearned": 8,
+    "architecture": 9,
+    "seo": 4,
+    "performance": 9,
+    "maintainability": 8
+  },
+  "priorityBreakdown": {
+    "businessValue": 22,
+    "technicalComplexity": 23,
+    "portfolioValue": 23,
+    "educationalValue": 25
+  },
+  "documentationScore": 72,
+  "priorityScore": 93,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

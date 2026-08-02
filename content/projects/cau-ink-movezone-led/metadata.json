@@ -1,0 +1,98 @@
+{
+  "aliases": [
+    "MoveZone LED Ads"
+  ],
+  "client": "CAU INK / MoveZone",
+  "industry": "Açık hava dijital reklam / tattoo",
+  "projectType": "Motion reklam teslimi",
+  "categories": [
+    "Experimental",
+    "Client Work"
+  ],
+  "currentStatus": "Küratörlü arşivde teslim edilmiş iki LED motion çalışma olarak kayıtlı; birincil video dosyası kesin eşleştirmesi Unknown.",
+  "timeline": "Unknown",
+  "purpose": "CAU INK kampanya mesajlarını MoveZone LED ekran formatına uyarlamak.",
+  "problemBeingSolved": "Kısa sürede okunabilir, ekran oranına uygun yerel reklam üretmek.",
+  "targetUsers": [
+    "MoveZone ekran izleyicileri",
+    "Potansiyel CAU INK müşterileri"
+  ],
+  "businessGoals": [
+    "Yerel farkındalık",
+    "Randevu talebi"
+  ],
+  "technologyStack": "Motion/video üretim araçları Unknown",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "MoveZone LED ağı",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "CAU INK marka varlıkları",
+  "brandLanguage": "Türkçe; kısa reklam mesajı",
+  "colorPalette": "CAU INK kimliği",
+  "typography": "Unknown",
+  "responsiveStrategy": "LED ekran oranı; kesin çözünürlük Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Kısa loop/video teslimi; codec Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "İki LED reklam kreatifi (arşiv kaydı)"
+  ],
+  "pages": "Unknown",
+  "architecture": "Unknown",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": [
+    "Okunabilirlik",
+    "Ekran oranı",
+    "Kısa süre"
+  ],
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR",
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR"
+  ],
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Görsel/video üretim sürecinin ayrıntısı Unknown",
+  "relatedMethods": [
+    "CAU INK marka varlığı yeniden kullanımı"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR"
+  ],
+  "projectName": "CAU INK × MoveZone LED Reklamları",
+  "slug": "cau-ink-movezone-led",
+  "sourceIds": [
+    "S014",
+    "S190",
+    "S191"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 6,
+    "technicalDepth": 2,
+    "designDocumentation": 5,
+    "screenshots": 5,
+    "deployment": 4,
+    "lessonsLearned": 2,
+    "architecture": 1,
+    "seo": 0,
+    "performance": 2,
+    "maintainability": 2
+  },
+  "priorityBreakdown": {
+    "businessValue": 17,
+    "technicalComplexity": 9,
+    "portfolioValue": 16,
+    "educationalValue": 10
+  },
+  "documentationScore": 29,
+  "priorityScore": 52,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

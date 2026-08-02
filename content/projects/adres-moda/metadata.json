@@ -1,0 +1,155 @@
+{
+  "aliases": [
+    "Adress_Moda",
+    "addressmoda.com"
+  ],
+  "client": "İbrahim / AdresModa",
+  "industry": "Erkek giyim perakendesi",
+  "projectType": "E-ticaret sitesi",
+  "categories": [
+    "E-commerce",
+    "Corporate Website"
+  ],
+  "currentStatus": "Teklif, kurulum rehberi, tema planı ve ürün/varlık dosyaları mevcut; üretim tamamlanması ve canlı site Unknown.",
+  "timeline": "2026-03: yol haritası; 2026-04: Clotya tema uygulama planı.",
+  "purpose": "Balıkesir'deki fiziksel erkek giyim mağazasını çevrimiçi satış kanalına taşımak.",
+  "problemBeingSolved": "Ürün kataloğu, ödeme, kargo, WhatsApp iletişimi ve yerel/ürün SEO'sunu tek mağazada kurmak.",
+  "targetUsers": [
+    "Erkek giyim müşterileri",
+    "Balıkesir yerel müşterileri",
+    "Türkiye geneli çevrimiçi alıcılar"
+  ],
+  "businessGoals": [
+    "Online satış",
+    "Yerel mağaza görünürlüğü",
+    "Katalog yönetimi",
+    "Dönüşüm ölçümü"
+  ],
+  "technologyStack": [
+    "WordPress",
+    "WooCommerce",
+    "Elementor",
+    "Clotya",
+    "Rank Math"
+  ],
+  "frameworks": "WordPress tema/eklenti ekosistemi",
+  "backend": "WordPress/PHP",
+  "database": "WordPress veritabanı; sağlayıcı ayrıntısı Unknown",
+  "hosting": "Hostinger Business planı",
+  "cms": "WordPress",
+  "integrations": [
+    "WooCommerce",
+    "DHL eCommerce",
+    "AkBank/iyzico planı",
+    "WhatsApp API",
+    "GA4",
+    "Search Console"
+  ],
+  "designSystem": "Clotya v2 tema uyarlaması",
+  "brandLanguage": "Türkçe; güvenilir, premium erkek giyim",
+  "colorPalette": [
+    "#1A2B4A",
+    "#C9A84C",
+    "kırık beyaz tonları"
+  ],
+  "typography": [
+    "Open Sans",
+    "Playfair Display",
+    "Raleway"
+  ],
+  "responsiveStrategy": "Masaüstünde dört, mobilde iki kolon ürün ızgarası; tema responsive uyarlaması.",
+  "seoStrategy": [
+    "Rank Math",
+    "Ürün ve yerel şema",
+    "Search Console",
+    "GA4",
+    "kategori/ürün içerikleri"
+  ],
+  "performanceOptimizations": "Tema ve görsel optimizasyon kontrol listeleri; tamamlanma kanıtı Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Ürün kataloğu",
+    "Sepet/ödeme",
+    "Kargo",
+    "WhatsApp",
+    "Blog",
+    "Kampanyalar"
+  ],
+  "pages": [
+    "Ana sayfa",
+    "Mağaza",
+    "Kategori",
+    "Ürün",
+    "Sepet",
+    "Ödeme",
+    "Hakkımızda",
+    "İletişim",
+    "Blog",
+    "Yasal sayfalar"
+  ],
+  "architecture": "WordPress + WooCommerce + ticari tema/eklenti tabanlı e-ticaret.",
+  "interestingTechnicalDecisions": [
+    "Opsiyon C / Hostinger Business seçimi",
+    "Clotya temasını marka tokenlarıyla uyarlama"
+  ],
+  "developmentChallenges": [
+    "Ürün verisi ve görseller",
+    "Ödeme/kargo entegrasyonu",
+    "Kaynak belgede hassas bilgi bulunması"
+  ],
+  "lessonsLearned": "Teklif belgesi, uygulama kararı ve gerçek yayın kanıtı birbirinden ayrı tutulmalı; kaynaklardaki hassas bilgi yayımlanmamalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda içindeki tema ve ürün görselleri",
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda"
+  ],
+  "gitRepository": "Unknown",
+  "productionUrl": "https://adresmoda.com (belgeli hedef; canlı doğrulama Unknown)",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\AdresModa_Kurulum_Rehberi_v1.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\Tema-Uygulama-Yol-Haritası.txt"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Tema ve e-ticaret operasyon araştırması yol haritalarında",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": [
+    "WordPress/WooCommerce kurulum kontrol listesi"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\AdresModa_Kurulum_Rehberi_v1.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\Tema-Uygulama-Yol-Haritası.txt",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda"
+  ],
+  "projectName": "AdresModa",
+  "slug": "adres-moda",
+  "sourceIds": [
+    "S050",
+    "S051",
+    "S052",
+    "S053"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 7,
+    "designDocumentation": 9,
+    "screenshots": 9,
+    "deployment": 4,
+    "lessonsLearned": 7,
+    "architecture": 7,
+    "seo": 10,
+    "performance": 6,
+    "maintainability": 8
+  },
+  "priorityBreakdown": {
+    "businessValue": 24,
+    "technicalComplexity": 18,
+    "portfolioValue": 22,
+    "educationalValue": 20
+  },
+  "documentationScore": 77,
+  "priorityScore": 84,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

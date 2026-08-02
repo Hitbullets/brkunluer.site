@@ -1,0 +1,92 @@
+{
+  "aliases": "Unknown",
+  "client": "Unknown",
+  "industry": "Canlı açık artırma",
+  "projectType": "Gerçek zamanlı web ürün konsepti",
+  "categories": [
+    "SaaS",
+    "Marketplace",
+    "Experimental"
+  ],
+  "currentStatus": "Küratörlü arşivde WebSocket açık artırma spesifikasyonu kayıtlı; atıf yapılan birincil design/Stitch dosyaları yerelde bulunamadı.",
+  "timeline": "Unknown",
+  "purpose": "Gerçek zamanlı teklif verilen açık artırma deneyimi tasarlamak.",
+  "problemBeingSolved": "Teklif sırası, süre ve anlık durumun eşzamanlı yönetimi.",
+  "targetUsers": [
+    "Açık artırma katılımcıları",
+    "Müzayede yöneticileri"
+  ],
+  "businessGoals": "Unknown",
+  "technologyStack": [
+    "WebSocket (arşiv kaydı)"
+  ],
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "Unknown",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Canlı teklif",
+    "Sayaç",
+    "Oturum durumu"
+  ],
+  "pages": "Unknown",
+  "architecture": "Gerçek zamanlı WebSocket spesifikasyonu; birincil belge eksik.",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": [
+    "Eşzamanlılık",
+    "Bağlantı kopması",
+    "Birincil kaynak eksikliği"
+  ],
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "Unknown",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md"
+  ],
+  "projectName": "MEZAT",
+  "slug": "mezat",
+  "sourceIds": [
+    "S190",
+    "S191"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 5,
+    "technicalDepth": 4,
+    "designDocumentation": 2,
+    "screenshots": 0,
+    "deployment": 0,
+    "lessonsLearned": 1,
+    "architecture": 4,
+    "seo": 0,
+    "performance": 2,
+    "maintainability": 1
+  },
+  "priorityBreakdown": {
+    "businessValue": 14,
+    "technicalComplexity": 20,
+    "portfolioValue": 17,
+    "educationalValue": 18
+  },
+  "documentationScore": 19,
+  "priorityScore": 69,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}
