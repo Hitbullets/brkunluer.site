@@ -1,0 +1,81 @@
+{
+  "aliases": "Unknown",
+  "client": "Unknown",
+  "industry": "API altyapısı",
+  "projectType": "API gateway/proxy konsepti",
+  "categories": [
+    "SaaS",
+    "Internal Tool",
+    "Experimental"
+  ],
+  "currentStatus": "Yalnız küratörlü arşiv kaydı bulundu; bağımsız kaynak kod veya birincil belge bulunamadı.",
+  "timeline": "Unknown",
+  "purpose": "T0/T1/T2 katmanlarıyla API gateway/proxy ürünü tasarlamak.",
+  "problemBeingSolved": "API erişimi ve katmanlı servis yönetimi; ayrıntı Unknown.",
+  "targetUsers": "Unknown",
+  "businessGoals": "Unknown",
+  "technologyStack": "Unknown",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "Unknown",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "T0/T1/T2 katmanları (arşiv kaydı)"
+  ],
+  "pages": "Unknown",
+  "architecture": "Katmanlı gateway/proxy konsepti; ayrıntı birincil kaynakla doğrulanmadı.",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": "Birincil kaynak eksikliği.",
+  "lessonsLearned": "İkincil arşiv kaydı tek başına uygulama veya yayın kanıtı değildir.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "Unknown",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md"
+  ],
+  "projectName": "Yasui",
+  "slug": "yasui",
+  "sourceIds": [
+    "S190",
+    "S191"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 4,
+    "technicalDepth": 3,
+    "designDocumentation": 1,
+    "screenshots": 0,
+    "deployment": 0,
+    "lessonsLearned": 2,
+    "architecture": 3,
+    "seo": 0,
+    "performance": 1,
+    "maintainability": 1
+  },
+  "priorityBreakdown": {
+    "businessValue": 12,
+    "technicalComplexity": 14,
+    "portfolioValue": 12,
+    "educationalValue": 12
+  },
+  "documentationScore": 15,
+  "priorityScore": 50,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

@@ -1,0 +1,153 @@
+{
+  "aliases": [
+    "brkunluer.site",
+    "BRKUNLUER.SITE-KAYNAK"
+  ],
+  "client": "Burak Ünlüer",
+  "industry": "Kişisel marka / bilgi ürünleri",
+  "projectType": "Kişisel marka, portföy ve bilgi merkezi",
+  "categories": [
+    "Personal Brand",
+    "Portfolio",
+    "Educational"
+  ],
+  "currentStatus": "Yerel uygulama aktif geliştirmede; üretim URL'si yapılandırılmış, bu taramada canlı erişim doğrulanamadı.",
+  "timeline": "2026-08-02: mevcut Git geçmişindeki doğrulanabilen ilk ve son commit.",
+  "purpose": "Türkçe kişisel marka, projeler, makaleler, yöntemler ve dijital ürünleri tek sitede toplamak.",
+  "problemBeingSolved": "Dağınık profesyonel üretimi yayınlanabilir ve aranabilir bir bilgi mimarisinde birleştirmek.",
+  "targetUsers": [
+    "Potansiyel müşteriler",
+    "İşverenler",
+    "Geliştiriciler",
+    "Dijital ürün alıcıları"
+  ],
+  "businessGoals": [
+    "Portföy görünürlüğü",
+    "Uzmanlık kanıtı",
+    "İçerik ve ürün dağıtımı"
+  ],
+  "technologyStack": [
+    "Next.js 16",
+    "React 19",
+    "TypeScript 5",
+    "Tailwind CSS 4",
+    "MDX",
+    "Zod",
+    "Vercel Analytics"
+  ],
+  "frameworks": [
+    "Next.js App Router",
+    "React"
+  ],
+  "backend": "Next.js Route Handlers",
+  "database": "V1 yerel MDX; newsletter yerel saklama",
+  "hosting": "Vercel planı; Cloudflare DNS kararı",
+  "cms": "Git tabanlı MDX",
+  "integrations": [
+    "Vercel Analytics",
+    "Provider-bağımsız newsletter ve ödeme arayüzleri"
+  ],
+  "designSystem": "globals.css içindeki CSS değişkenleri ve Tailwind @theme inline",
+  "brandLanguage": "Türkçe; editoryal, doğrudan ve teknik",
+  "colorPalette": "CSS tasarım tokenlarında tanımlı",
+  "typography": "Geist",
+  "responsiveStrategy": "Mobil ve masaüstü App Router sayfaları; ayrıntı mevcut uygulama stillerinde.",
+  "seoStrategy": "Site config, metadata, robots ve sitemap; içerik tabanlı bilgi mimarisi.",
+  "performanceOptimizations": "Server Components varsayılanı ve yerel MDX okuma.",
+  "accessibilityNotes": "Repo belgelerinde kısmi QA kaydı var; tam güncel denetim Unknown.",
+  "majorFeatures": [
+    "Proje vitrini",
+    "Makaleler",
+    "Yöntem/ürün sayfaları",
+    "Etiket filtreleme",
+    "İletişim ve newsletter akışları"
+  ],
+  "pages": [
+    "/",
+    "/projeler",
+    "/makaleler",
+    "/yontemler",
+    "/hakkimda",
+    "/iletisim"
+  ],
+  "architecture": "App Router; Server Components varsayılan; içerik lib/content.ts üzerinden MDX dosyalarından yüklenir.",
+  "interestingTechnicalDecisions": [
+    "V1'de arama ve auth yok",
+    "CMS yerine depo içi MDX",
+    "Site kimliği lib/site.ts içinde tek kaynak"
+  ],
+  "developmentChallenges": "Gerçek portföy kanıtı az olduğu için uydurma içerikten kaçınma ve kaynakları birleştirme.",
+  "lessonsLearned": "Build/lint tek başına yayın ve tarayıcı doğrulaması değildir.",
+  "screenshotsReferences": [
+    "public/images/projects/inkos-*.png",
+    "public/images/covers"
+  ],
+  "assetLocations": [
+    "public/images",
+    "public/brand"
+  ],
+  "gitRepository": "https://github.com/Hitbullets/brkunluer.site.git",
+  "productionUrl": "https://brkunluer.site",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "docs/OVERVIEW.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CONTENT_GUIDE.md"
+  ],
+  "relatedBlogPosts": [
+    "content/articles/ai-factory-planning-stack.md",
+    "content/articles/ai-is-akislari-neden.md",
+    "content/articles/prompt-muhendisligi-rehberi.md"
+  ],
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": [
+    "AI Factory Planning Stack"
+  ],
+  "relatedMethods": [
+    "AI Factory System",
+    "AI Workflow Templates",
+    "Prompt Engineering Kit"
+  ],
+  "filesBelonging": [
+    "app",
+    "components",
+    "content",
+    "docs",
+    "lib",
+    "public",
+    "package.json",
+    "next.config.ts"
+  ],
+  "projectName": "BRKUNLUER.SITE",
+  "slug": "brkunluer-site",
+  "sourceIds": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 9,
+    "designDocumentation": 8,
+    "screenshots": 6,
+    "deployment": 5,
+    "lessonsLearned": 7,
+    "architecture": 10,
+    "seo": 9,
+    "performance": 8,
+    "maintainability": 9
+  },
+  "priorityBreakdown": {
+    "businessValue": 22,
+    "technicalComplexity": 21,
+    "portfolioValue": 25,
+    "educationalValue": 24
+  },
+  "documentationScore": 81,
+  "priorityScore": 92,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

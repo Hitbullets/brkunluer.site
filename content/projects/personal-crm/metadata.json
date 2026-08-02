@@ -1,0 +1,121 @@
+{
+  "aliases": [
+    "PersonelCRM"
+  ],
+  "client": "Bağımsız prototip",
+  "industry": "Kişisel üretkenlik / ilişki yönetimi",
+  "projectType": "Web uygulaması prototipi",
+  "categories": [
+    "Internal Tool",
+    "SaaS",
+    "Experimental"
+  ],
+  "currentStatus": "Yerel frontend/backend prototipi mevcut; auth ve kalıcı veri üretimde değil, yayın Unknown.",
+  "timeline": "Eski proje arşivi; kesin tarih Unknown.",
+  "purpose": "Kişisel ilişkileri, kişileri ve etkileşimleri hafif bir CRM'de takip etmek.",
+  "problemBeingSolved": "Kişisel iletişim bağlamının ve takiplerin dağınık kalması.",
+  "targetUsers": [
+    "Bireysel profesyoneller",
+    "Ağını takip eden kullanıcılar"
+  ],
+  "businessGoals": "Unknown",
+  "technologyStack": [
+    "React 18",
+    "TypeScript",
+    "Vite",
+    "Wouter",
+    "TanStack Query",
+    "Tailwind",
+    "shadcn/ui",
+    "Express",
+    "Drizzle/Neon hazırlığı"
+  ],
+  "frameworks": [
+    "React/Vite",
+    "Express"
+  ],
+  "backend": "Express/TypeScript",
+  "database": "Şu an in-memory; Drizzle/Neon hazırlığı",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "shadcn/ui; açık/koyu tema ve i18n",
+  "brandLanguage": "Çok dilli hazırlık",
+  "colorPalette": "Tasarım yönergelerinde",
+  "typography": [
+    "Inter",
+    "JetBrains Mono"
+  ],
+  "responsiveStrategy": "Responsive dashboard",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": [
+    "TanStack Query istemci veri katmanı"
+  ],
+  "accessibilityNotes": "Tasarım yönergesinde WCAG AA hedefi",
+  "majorFeatures": [
+    "Kişiler",
+    "İlişki notları",
+    "Takip",
+    "Tema",
+    "i18n"
+  ],
+  "pages": [
+    "Dashboard",
+    "Kişiler",
+    "Kişi detay",
+    "Ayarlar"
+  ],
+  "architecture": "React SPA + Express API; depolama arayüzü şu an in-memory.",
+  "interestingTechnicalDecisions": [
+    "Kalıcı veritabanı gelmeden storage interface",
+    "Wouter ile hafif routing"
+  ],
+  "developmentChallenges": [
+    "Auth yok",
+    "Kalıcı veri yok"
+  ],
+  "lessonsLearned": "Hazır veri arayüzü, prototipi sonraki veritabanına taşımayı kolaylaştırır; üretim durumu olarak sunulmamalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM\\replit.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM"
+  ],
+  "projectName": "Personal CRM",
+  "slug": "personal-crm",
+  "sourceIds": [
+    "S140",
+    "S141"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 7,
+    "designDocumentation": 7,
+    "screenshots": 5,
+    "deployment": 0,
+    "lessonsLearned": 5,
+    "architecture": 7,
+    "seo": 1,
+    "performance": 4,
+    "maintainability": 6
+  },
+  "priorityBreakdown": {
+    "businessValue": 13,
+    "technicalComplexity": 17,
+    "portfolioValue": 16,
+    "educationalValue": 18
+  },
+  "documentationScore": 49,
+  "priorityScore": 64,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

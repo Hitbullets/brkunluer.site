@@ -1,0 +1,110 @@
+{
+  "aliases": [
+    "Hasan Çimen web teklifi"
+  ],
+  "client": "Hasan Çimen / Karesi Periyodik Kontrol",
+  "industry": "İş güvenliği ve periyodik kontrol",
+  "projectType": "Kurumsal web sitesi teklifi",
+  "categories": [
+    "Corporate Website"
+  ],
+  "currentStatus": "İki teklif belgesi mevcut; uygulama, kaynak kod ve yayın kanıtı Unknown.",
+  "timeline": "2026: teklif dönemi; kesin tarih belge metadata incelemesi olmadan Unknown.",
+  "purpose": "Periyodik kontrol hizmetlerini, teklif talebini ve yerel uzmanlığı dijitalde sunmak.",
+  "problemBeingSolved": "Hizmetlerin anlaşılır sunumu ve arama/WhatsApp üzerinden müşteri talebi üretimi.",
+  "targetUsers": [
+    "İşletmeler",
+    "İSG sorumluları",
+    "Yerel kurumsal müşteriler"
+  ],
+  "businessGoals": [
+    "Teklif talebi",
+    "Yerel SEO",
+    "Kurumsal güven"
+  ],
+  "technologyStack": "Unknown",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "Planlanan WhatsApp",
+    "Planlanan Analytics/Search Console"
+  ],
+  "designSystem": "Teklif düzeyinde modern, güven veren kurumsal tasarım",
+  "brandLanguage": "Türkçe; teknik, güvenilir ve kurumsal",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Teklifte responsive",
+  "seoStrategy": [
+    "Yerel SEO",
+    "Hizmet sayfaları",
+    "Blog",
+    "sitemap",
+    "Search Console"
+  ],
+  "performanceOptimizations": "Teklifte performans hedefi; uygulama kanıtı Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Hizmet sayfaları",
+    "Teklif formu",
+    "WhatsApp",
+    "Blog",
+    "İletişim"
+  ],
+  "pages": [
+    "Ana sayfa",
+    "Hizmetler",
+    "Hizmet detay",
+    "Hakkımızda",
+    "Blog",
+    "İletişim"
+  ],
+  "architecture": "Unknown",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": "Unknown",
+  "lessonsLearned": "Teklif, tamamlanmış proje olarak sunulmamalı.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\TEKLİF DOSYALARI",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "Karesi/Hasan Çimen teklif DOCX dosyaları"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\TEKLİF DOSYALARI"
+  ],
+  "projectName": "Karesi Periyodik Kontrol",
+  "slug": "karesi-periyodik-kontrol",
+  "sourceIds": [
+    "S130"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 8,
+    "technicalDepth": 2,
+    "designDocumentation": 5,
+    "screenshots": 1,
+    "deployment": 0,
+    "lessonsLearned": 5,
+    "architecture": 2,
+    "seo": 8,
+    "performance": 3,
+    "maintainability": 3
+  },
+  "priorityBreakdown": {
+    "businessValue": 18,
+    "technicalComplexity": 7,
+    "portfolioValue": 14,
+    "educationalValue": 10
+  },
+  "documentationScore": 37,
+  "priorityScore": 49,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

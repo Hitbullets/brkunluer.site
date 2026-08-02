@@ -1,0 +1,110 @@
+{
+  "aliases": [
+    "ATALIER DIMORA TATTOO"
+  ],
+  "client": "Atelier Dimora",
+  "industry": "Dövme stüdyosu",
+  "projectType": "Kurumsal site yeniden tasarım prototipi",
+  "categories": [
+    "Tattoo Studio",
+    "Corporate Website",
+    "Experimental"
+  ],
+  "currentStatus": "Birden fazla masaüstü/mobil Stitch HTML prototipi mevcut; uygulama ve production durumu Unknown.",
+  "timeline": "2026: yeniden tasarım prototipleri; kesin tarih Unknown.",
+  "purpose": "Sanat galerisi konseptli dövme stüdyosu kimliğini ve randevu akışını tasarlamak.",
+  "problemBeingSolved": "Premium galeri hissi, sanatçı/hizmet sunumu ve rezervasyon CTA'sını tek deneyimde birleştirmek.",
+  "targetUsers": [
+    "Dövme müşterileri",
+    "Sanat galerisi estetiği arayanlar"
+  ],
+  "businessGoals": [
+    "Randevu talebi",
+    "Premium marka konumlandırması",
+    "Portföy sergileme"
+  ],
+  "technologyStack": [
+    "Stitch tarafından üretilmiş HTML/CSS prototipleri"
+  ],
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "WhatsApp",
+    "Instagram"
+  ],
+  "designSystem": "Monokrom, lüks galeri varyantları",
+  "brandLanguage": "Türkçe; sanatsal ve premium",
+  "colorPalette": [
+    "#f9f9f9",
+    "siyah",
+    "gri tonları"
+  ],
+  "typography": "Prototip dosyalarında web fontları; kanonik seçim Unknown",
+  "responsiveStrategy": "Masaüstü ve mobil ekran varyantları",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Hizmetler",
+    "Sanatçılar",
+    "Galeri",
+    "Rezervasyon formu",
+    "Başarı ekranı",
+    "WhatsApp/Instagram"
+  ],
+  "pages": [
+    "Ana sayfa",
+    "Hizmetler",
+    "Rezervasyon",
+    "Başarı"
+  ],
+  "architecture": "Birbirinden bağımsız statik tasarım prototipleri.",
+  "interestingTechnicalDecisions": "Aynı marka için koyu, açık, lüks ve mobil varyantlarla tasarım yönü araştırma.",
+  "developmentChallenges": "Prototipler arasından kanonik görsel sistem seçimi.",
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "HTML prototipleri",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Stitch ekran üretim talimatları dosya yapısında",
+  "relatedAiWorkflows": [
+    "Stitch UI üretimi"
+  ],
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO"
+  ],
+  "projectName": "Atelier Dimora",
+  "slug": "atelier-dimora",
+  "sourceIds": [
+    "S120"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 6,
+    "technicalDepth": 3,
+    "designDocumentation": 10,
+    "screenshots": 9,
+    "deployment": 1,
+    "lessonsLearned": 2,
+    "architecture": 3,
+    "seo": 1,
+    "performance": 2,
+    "maintainability": 3
+  },
+  "priorityBreakdown": {
+    "businessValue": 16,
+    "technicalComplexity": 9,
+    "portfolioValue": 20,
+    "educationalValue": 15
+  },
+  "documentationScore": 40,
+  "priorityScore": 60,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

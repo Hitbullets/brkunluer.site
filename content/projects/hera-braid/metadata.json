@@ -1,0 +1,112 @@
+{
+  "aliases": [
+    "LINK-BIO",
+    "Buse-HairBraid",
+    "Buse Durmaz link page"
+  ],
+  "client": "Buse Durmaz / HERA BRAID",
+  "industry": "Saç örgüsü ve kişisel bakım",
+  "projectType": "Tek sayfa link-in-bio",
+  "categories": [
+    "Personal Brand",
+    "Landing Page"
+  ],
+  "currentStatus": "Yerel HTML/CSS/JS uygulama ve gerçek marka/kartvizit varlıkları mevcut; canlı URL Unknown.",
+  "timeline": "2026: yerel README ve varlıklar; kesin tarih Unknown.",
+  "purpose": "Kartvizit QR kodundan sosyal medya ve iletişim kanallarına tek sayfalı geçiş vermek.",
+  "problemBeingSolved": "Instagram, WhatsApp, telefon ve konum bağlantılarını markalı, self-hosted tek hedefte toplamak.",
+  "targetUsers": [
+    "HERA BRAID müşterileri"
+  ],
+  "businessGoals": [
+    "İletişim dönüşümü",
+    "Sosyal profil erişimi",
+    "Kartvizit QR deneyimi"
+  ],
+  "technologyStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "frameworks": "Yok",
+  "backend": "Yok",
+  "database": "Yok",
+  "hosting": "Unknown",
+  "cms": "Yapılandırma dosyası / statik içerik",
+  "integrations": [
+    "Instagram",
+    "WhatsApp",
+    "Telefon",
+    "Konum",
+    "QR"
+  ],
+  "designSystem": "HERA BRAID marka ve kartvizit varlıkları",
+  "brandLanguage": "Türkçe; kişisel bakım ve doğrudan iletişim",
+  "colorPalette": "Marka varlıklarında; kodlanmış kanonik palet Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Mobil öncelikli tek sayfa",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Statik dosyalar",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Sosyal bağlantılar",
+    "WhatsApp",
+    "Telefon",
+    "Konum",
+    "QR hedefi"
+  ],
+  "pages": [
+    "Tek sayfa"
+  ],
+  "architecture": "Bağımlılıksız statik site.",
+  "interestingTechnicalDecisions": "Gerçek marka varlıkları ayrı klasörden, uygulama LINK-BIO klasöründen birleştirildi.",
+  "developmentChallenges": "Kartvizit ve web kimliğini tutarlı kılma.",
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse-HairBraid",
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse-HairBraid",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO\\assets"
+  ],
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO\\README.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse-HairBraid"
+  ],
+  "projectName": "HERA BRAID Link-in-Bio",
+  "slug": "hera-braid",
+  "sourceIds": [
+    "S110",
+    "S111"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 8,
+    "technicalDepth": 4,
+    "designDocumentation": 7,
+    "screenshots": 9,
+    "deployment": 1,
+    "lessonsLearned": 2,
+    "architecture": 4,
+    "seo": 2,
+    "performance": 5,
+    "maintainability": 5
+  },
+  "priorityBreakdown": {
+    "businessValue": 15,
+    "technicalComplexity": 8,
+    "portfolioValue": 16,
+    "educationalValue": 10
+  },
+  "documentationScore": 47,
+  "priorityScore": 49,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

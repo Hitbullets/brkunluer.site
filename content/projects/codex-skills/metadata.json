@@ -1,0 +1,102 @@
+{
+  "aliases": [
+    "Codex Skills Repo"
+  ],
+  "client": "Bağımsız geliştirici aracı",
+  "industry": "AI ajan geliştirme",
+  "projectType": "Skill kütüphanesi / açık kaynak depo",
+  "categories": [
+    "Open Source",
+    "Internal Tool",
+    "Educational"
+  ],
+  "currentStatus": "Yerel Git deposu mevcut; paketlerin güncel yayın durumu Unknown.",
+  "timeline": "Unknown",
+  "purpose": "Codex için tekrar kullanılabilir beceri paketlerini düzenlemek ve dağıtmak.",
+  "problemBeingSolved": "Ajan talimatlarının dağınık ve tekrar yazılır halde kalması.",
+  "targetUsers": [
+    "Codex kullanıcıları",
+    "AI ajan geliştiricileri"
+  ],
+  "businessGoals": [
+    "Tekrar kullanım",
+    "Standart çalışma kalitesi"
+  ],
+  "technologyStack": "Markdown beceri paketleri ve yardımcı scriptler",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "GitHub",
+  "cms": "Git deposu",
+  "integrations": [
+    "Codex"
+  ],
+  "designSystem": "Unknown",
+  "brandLanguage": "Talimat ve operasyon dili",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "SKILL.md paketleri",
+    "Yardımcı scriptler",
+    "Örnekler/şablonlar"
+  ],
+  "pages": "Unknown",
+  "architecture": "Her beceri için giriş talimatı ve isteğe bağlı script/örnek/şablon dizinleri.",
+  "interestingTechnicalDecisions": "Talimatları tekrar kullanılabilir paket sınırında tutma.",
+  "developmentChallenges": [
+    "Beceri kapsamının netliği",
+    "Sürümleme"
+  ],
+  "lessonsLearned": "Ajan davranışı da kod gibi sürümlenmeli ve kaynaklanmalı.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\codex-skills",
+  "gitRepository": "https://github.com/Hitbullets/codex-skills.git",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": [
+    "Codex skill çalıştırma"
+  ],
+  "relatedMethods": [
+    "SKILL.md tabanlı paketleme"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\codex-skills"
+  ],
+  "projectName": "codex-skills",
+  "slug": "codex-skills",
+  "sourceIds": [
+    "S210",
+    "S211"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 7,
+    "designDocumentation": 3,
+    "screenshots": 0,
+    "deployment": 2,
+    "lessonsLearned": 6,
+    "architecture": 7,
+    "seo": 1,
+    "performance": 3,
+    "maintainability": 8
+  },
+  "priorityBreakdown": {
+    "businessValue": 16,
+    "technicalComplexity": 18,
+    "portfolioValue": 19,
+    "educationalValue": 23
+  },
+  "documentationScore": 44,
+  "priorityScore": 76,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

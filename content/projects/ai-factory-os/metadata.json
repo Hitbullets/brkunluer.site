@@ -1,0 +1,123 @@
+{
+  "aliases": [
+    "AI Factory",
+    "AI Factory Planning Stack"
+  ],
+  "client": "Bağımsız ürün / geliştirici işletim sistemi",
+  "industry": "AI destekli yazılım geliştirme",
+  "projectType": "İç ürün ve süreç platformu",
+  "categories": [
+    "AI Product",
+    "Internal Tool",
+    "Educational",
+    "Open Source"
+  ],
+  "currentStatus": "MVP kapsamı ve mimari belgeli; yerel uygulama/dokümantasyon mevcut. Üretim yayın durumu Unknown.",
+  "timeline": "2026-07-22: kanonik MVP kapsamı güncellemesi; sonraki yerel geliştirme kayıtları mevcut.",
+  "purpose": "Fikirden araştırma, ürün tanımı ve mimari öneriye kadar ajanlı iş akışını insan onayıyla yönetmek.",
+  "problemBeingSolved": "AI ile ürün geliştirirken bağlam kaybı, plansız kodlama ve doğrulanamayan kararlar.",
+  "targetUsers": [
+    "Bağımsız geliştiriciler",
+    "Ürün ekipleri",
+    "AI ajanlarıyla çalışan ekipler"
+  ],
+  "businessGoals": [
+    "Tekrarlanabilir teslimat",
+    "Karar izlenebilirliği",
+    "Daha düşük üretim maliyeti"
+  ],
+  "technologyStack": "TypeScript tabanlı workspace ve web/iş akışı bileşenleri; kesin güncel manifest ayrıntıları kaynakta",
+  "frameworks": "Repo manifestleri ve docs; tek cümlelik kanonik framework özeti Unknown",
+  "backend": "Modüler monolit ve iş akışı/olay katmanı belgeleri",
+  "database": "Yerel geliştirme veri katmanı belgeli; üretim veritabanı kararı Unknown",
+  "hosting": "Unknown",
+  "cms": "GitHub kanonik dokümantasyon",
+  "integrations": "Ajanlar, approval gate ve dokümantasyon senkronizasyonu",
+  "designSystem": "Unknown",
+  "brandLanguage": "Mimari ve ürün sözleşmesi dili",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Transactional outbox ve kontrollü iş akışı kararları belgelerde",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Fikir girişi",
+    "Araştırma özeti",
+    "MVP spec",
+    "Mimari öneri",
+    "İnsan onay kapısı",
+    "Operasyonel kanıt"
+  ],
+  "pages": [
+    "/factory yerel dilim",
+    "Dokümantasyon kayıtları"
+  ],
+  "architecture": "Karar → Sözleşme → Uygulama → Doğrulama Kanıtı → Operasyonel Durum zinciri; modüler monolit yaklaşımı.",
+  "interestingTechnicalDecisions": [
+    "GitHub kanonik, Notion teslimat kaydı",
+    "İnsan onayı olmadan mimari ilerlememe",
+    "Transactional outbox"
+  ],
+  "developmentChallenges": [
+    "Ajanlar arası bağlam ve durum tutarlılığı",
+    "Belge ile kodun senkron kalması"
+  ],
+  "lessonsLearned": "Mimari karar, uygulama ve çalışma kanıtı aynı teslim zincirinde tutulmalı.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS",
+  "gitRepository": "https://github.com/Hitbullets/ai-factory-os.git",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\README.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\docs\\canonical\\MVP_SCOPE.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\docs"
+  ],
+  "relatedBlogPosts": [
+    "content/articles/ai-factory-planning-stack.md"
+  ],
+  "relatedResearch": "Araştırma özeti MVP çıktısı olarak tanımlı",
+  "relatedPrompts": "Ajan rol ve iş akışı talimatları repo belgelerinde",
+  "relatedAiWorkflows": [
+    "Idea → Research → Product → Human Approval → Architecture"
+  ],
+  "relatedMethods": [
+    "AI Factory System",
+    "AI Workflow Templates"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\content\\articles\\ai-factory-planning-stack.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\content\\methods\\ai-factory-system.mdx"
+  ],
+  "projectName": "AI Factory OS",
+  "slug": "ai-factory-os",
+  "sourceIds": [
+    "S040",
+    "S041",
+    "S042",
+    "S005"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 10,
+    "technicalDepth": 9,
+    "designDocumentation": 6,
+    "screenshots": 2,
+    "deployment": 3,
+    "lessonsLearned": 9,
+    "architecture": 10,
+    "seo": 2,
+    "performance": 7,
+    "maintainability": 10
+  },
+  "priorityBreakdown": {
+    "businessValue": 23,
+    "technicalComplexity": 25,
+    "portfolioValue": 25,
+    "educationalValue": 25
+  },
+  "documentationScore": 68,
+  "priorityScore": 98,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

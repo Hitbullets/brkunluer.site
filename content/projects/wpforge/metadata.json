@@ -1,0 +1,126 @@
+{
+  "aliases": "Unknown",
+  "client": "Bağımsız geliştirici aracı",
+  "industry": "WordPress geliştirme otomasyonu",
+  "projectType": "AI-first CLI",
+  "categories": [
+    "Internal Tool",
+    "Open Source",
+    "AI Product"
+  ],
+  "currentStatus": "Yerel Python kaynakları, mimari ve test klasörü mevcut; README 32 testin geçtiğini kaydediyor fakat bu taramada testler yeniden çalıştırılmadı.",
+  "timeline": "2026 yerel proje; kesin Git tarihçesi Unknown.",
+  "purpose": "Prompttan site planı çıkarıp WP-CLI ile standart WordPress sitesi üretmek.",
+  "problemBeingSolved": "WordPress kurulum, child theme, içerik yapısı, WooCommerce ve SEO işlerinin tekrarlı manuel kurulumu.",
+  "targetUsers": [
+    "WordPress geliştiricileri",
+    "Ajanslar",
+    "AI destekli site kurucuları"
+  ],
+  "businessGoals": [
+    "Teslim süresini azaltma",
+    "Tekrarlanabilir WordPress çıktısı"
+  ],
+  "technologyStack": [
+    "Python 3.11+",
+    "WP-CLI",
+    "Claude API",
+    "WordPress",
+    "WooCommerce"
+  ],
+  "frameworks": "Python CLI mimarisi",
+  "backend": "Yerel CLI",
+  "database": "Hedef WordPress veritabanı",
+  "hosting": "Hedef WordPress ortamı; araç için Unknown",
+  "cms": "WordPress",
+  "integrations": [
+    "Claude API",
+    "WP-CLI",
+    "WooCommerce",
+    "iyzico",
+    "Stripe",
+    "PayPal"
+  ],
+  "designSystem": "Child theme üretimi",
+  "brandLanguage": "Geliştirici/operasyon dili",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Üretilen temaya bağlı",
+  "seoStrategy": "SEO motoru ve eklenti uyumu",
+  "performanceOptimizations": "Dry-run ve standart çıktı; çalışma zamanı performansı Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Prompt parser",
+    "Site planı",
+    "WP executor",
+    "Theme engine",
+    "Structure engine",
+    "WooCommerce",
+    "Fix engine",
+    "Dry-run"
+  ],
+  "pages": "Araç hedef site yapısını üretir; kendi web sayfası yok",
+  "architecture": "Parser → site planı → motorlar → WP-CLI uygulama zinciri.",
+  "interestingTechnicalDecisions": [
+    "Standart WordPress çıktısı",
+    "Child theme",
+    "Dry-run",
+    "Motor bazlı yapı"
+  ],
+  "developmentChallenges": [
+    "Farklı hosting/tema ortamları",
+    "WP-CLI güvenliği",
+    "AI çıktısı doğrulama"
+  ],
+  "lessonsLearned": "AI üretimi, uygulanabilir plan ve deterministik yürütme katmanıyla sınırlandırılmalı.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\ARCHITECTURE.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "WordPress/WooCommerce otomasyonu",
+  "relatedPrompts": "Prompt parser girdileri",
+  "relatedAiWorkflows": [
+    "Prompt → Site Plan → WP-CLI"
+  ],
+  "relatedMethods": [
+    "Dry-run",
+    "Engine tabanlı üretim"
+  ],
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge"
+  ],
+  "projectName": "WPForge",
+  "slug": "wpforge",
+  "sourceIds": [
+    "S170",
+    "S171",
+    "S172"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 8,
+    "technicalDepth": 9,
+    "designDocumentation": 4,
+    "screenshots": 1,
+    "deployment": 1,
+    "lessonsLearned": 7,
+    "architecture": 9,
+    "seo": 7,
+    "performance": 6,
+    "maintainability": 9
+  },
+  "priorityBreakdown": {
+    "businessValue": 20,
+    "technicalComplexity": 23,
+    "portfolioValue": 22,
+    "educationalValue": 24
+  },
+  "documentationScore": 61,
+  "priorityScore": 89,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

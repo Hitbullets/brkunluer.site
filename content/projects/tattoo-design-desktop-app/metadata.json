@@ -1,0 +1,102 @@
+{
+  "aliases": [
+    "InkOS Desktop olasılığı"
+  ],
+  "client": "Unknown",
+  "industry": "Tattoo teknolojisi / üretken yapay zekâ",
+  "projectType": "Masaüstü uygulama konsepti",
+  "categories": [
+    "AI Product",
+    "Experimental"
+  ],
+  "currentStatus": "Yalnız küratörlü arşiv kaydı bulundu; InkOS ile birleşme kararı açık değil ve birincil kaynak kod bulunamadı.",
+  "timeline": "Unknown",
+  "purpose": "AI destekli tattoo tasarımını masaüstü uygulamada sunmak.",
+  "problemBeingSolved": "Unknown",
+  "targetUsers": [
+    "Dövme sanatçıları",
+    "Dövme müşterileri"
+  ],
+  "businessGoals": "Unknown",
+  "technologyStack": [
+    "Tauri",
+    "fal.ai",
+    "Cloudflare",
+    "Lemon Squeezy (arşiv kaydı)"
+  ],
+  "frameworks": [
+    "Tauri (arşiv kaydı)"
+  ],
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": [
+    "fal.ai",
+    "Lemon Squeezy"
+  ],
+  "designSystem": "Unknown",
+  "brandLanguage": "Unknown",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Masaüstü",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "AI tattoo tasarımı",
+    "Masaüstü istemci",
+    "Lisans/ödeme konsepti"
+  ],
+  "pages": "Unknown",
+  "architecture": "Tauri masaüstü + bulut AI servisleri konsepti.",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": [
+    "Birincil kaynak yok",
+    "InkOS ile ürün sınırı belirsiz"
+  ],
+  "lessonsLearned": "Açık birleşme kanıtı yoksa benzer ürünler otomatik birleştirilmemeli.",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "Unknown",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\05_Tattoo_Design_Desktop_App.md",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "InkOS LoRA/ControlNet araştırmasıyla alan ilişkisi var; doğrudan bağı Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": [
+    "fal.ai görsel üretimi (arşiv kaydı)"
+  ],
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\05_Tattoo_Design_Desktop_App.md"
+  ],
+  "projectName": "Tattoo Design Desktop App",
+  "slug": "tattoo-design-desktop-app",
+  "sourceIds": [
+    "S190",
+    "S191"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 4,
+    "technicalDepth": 3,
+    "designDocumentation": 2,
+    "screenshots": 0,
+    "deployment": 0,
+    "lessonsLearned": 2,
+    "architecture": 3,
+    "seo": 0,
+    "performance": 1,
+    "maintainability": 1
+  },
+  "priorityBreakdown": {
+    "businessValue": 13,
+    "technicalComplexity": 17,
+    "portfolioValue": 16,
+    "educationalValue": 15
+  },
+  "documentationScore": 16,
+  "priorityScore": 61,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

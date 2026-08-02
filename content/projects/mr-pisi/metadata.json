@@ -1,0 +1,136 @@
+{
+  "aliases": [
+    "Mr.Pisi Kedi Kumu",
+    "mr-pisi-web"
+  ],
+  "client": "Mr. Pisi",
+  "industry": "Evcil hayvan ürünleri",
+  "projectType": "Marka ve ürün landing sitesi",
+  "categories": [
+    "Corporate Website",
+    "Landing Page"
+  ],
+  "currentStatus": "Üç yerel Vite varyantı ve kapsamlı marka arşivi mevcut; web indeksinde site başlığı görüldü, güncel işlev ve yayın sürümü doğrulanmadı.",
+  "timeline": "2026: marka/dijital durum ve yayın kontrol listeleri; kesin tarih aralığı Unknown.",
+  "purpose": "Premium kedi kumu markasını ve ürün faydalarını tek sayfalı modern deneyimle sunmak.",
+  "problemBeingSolved": "Yeni markanın güven, hijyen, ürün farkı ve iletişim sinyallerini dijitalde kurmak.",
+  "targetUsers": [
+    "Kedi sahipleri",
+    "Evcil hayvan ürünü alıcıları",
+    "Bayiler"
+  ],
+  "businessGoals": [
+    "Marka bilinirliği",
+    "Ürün talebi",
+    "İletişim/form dönüşümü",
+    "SEO hazırlığı"
+  ],
+  "technologyStack": [
+    "React 18",
+    "Vite 5",
+    "TypeScript 5",
+    "Tailwind CSS 3",
+    "Google GenAI SDK"
+  ],
+  "frameworks": [
+    "React",
+    "Vite"
+  ],
+  "backend": "Statik/SPA; form ve AI servis bağlantısı belgelerde açık iş",
+  "database": "Unknown",
+  "hosting": "Vercel SPA rewrite yapılandırması",
+  "cms": "Unknown",
+  "integrations": [
+    "Google GenAI",
+    "Planlanan form/e-posta sağlayıcısı",
+    "Analytics planı"
+  ],
+  "designSystem": "Premium marka ve ambalaj varlıkları",
+  "brandLanguage": "Türkçe; premium, hijyen ve modernlik odaklı",
+  "colorPalette": "Marka dosyalarında; kanonik kod listesi Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Tek sayfa responsive React deneyimi",
+  "seoStrategy": [
+    "Product/LocalBusiness JSON-LD",
+    "Open Graph",
+    "sitemap",
+    "robots",
+    "Search Console"
+  ],
+  "performanceOptimizations": [
+    "WebP planı",
+    "Görsel optimizasyon kontrol listesi"
+  ],
+  "accessibilityNotes": "Alt metin kontrol listesinde; tamamlanma durumu Unknown",
+  "majorFeatures": [
+    "Ürün tanıtımı",
+    "Fayda anlatımı",
+    "AI kedi bakım asistanı",
+    "İletişim/form",
+    "Marka hikâyesi"
+  ],
+  "pages": [
+    "Tek sayfa landing"
+  ],
+  "architecture": "Vite tabanlı React SPA; üç yerel tasarım varyantı tek kanonik projede birleşti.",
+  "interestingTechnicalDecisions": [
+    "Vercel SPA rewrite",
+    "AI asistanı marka deneyimine ekleme"
+  ],
+  "developmentChallenges": [
+    "Gerçek ürün görsellerinin tamamlanması",
+    "Form ve KVKK",
+    "Varyantlar arasında kanonik sürüm seçimi"
+  ],
+  "lessonsLearned": "Marka/ambalaj hazırlığı ile web yayına hazırlığı ayrı ilerliyor; durum belgesi bunu görünür kılıyor.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu içindeki ekran ve ambalaj görselleri",
+  "assetLocations": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu"
+  ],
+  "gitRepository": "Unknown",
+  "productionUrl": "https://www.mrpisi.com",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MRPISI.COM -- TO DO LIST.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MR.Pisi\\DURUM BELGESİ.docx"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Ürün/marka ve SEO kontrol listeleri",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Google GenAI tabanlı kedi bakım asistanı",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MRPISI.COM -- TO DO LIST.docx",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MR.Pisi\\DURUM BELGESİ.docx"
+  ],
+  "projectName": "Mr. Pisi",
+  "slug": "mr-pisi",
+  "sourceIds": [
+    "S060",
+    "S061",
+    "S062",
+    "S063"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 9,
+    "technicalDepth": 7,
+    "designDocumentation": 9,
+    "screenshots": 10,
+    "deployment": 4,
+    "lessonsLearned": 6,
+    "architecture": 6,
+    "seo": 9,
+    "performance": 7,
+    "maintainability": 6
+  },
+  "priorityBreakdown": {
+    "businessValue": 22,
+    "technicalComplexity": 17,
+    "portfolioValue": 22,
+    "educationalValue": 18
+  },
+  "documentationScore": 73,
+  "priorityScore": 79,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

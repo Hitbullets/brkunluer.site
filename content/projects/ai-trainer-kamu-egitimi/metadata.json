@@ -1,0 +1,86 @@
+{
+  "aliases": [
+    "AI Trainer"
+  ],
+  "client": "Kamu eğitimi bağlamı; kurum Unknown",
+  "industry": "Eğitim",
+  "projectType": "Eğitim sunumu ve materyal paketi",
+  "categories": [
+    "Educational"
+  ],
+  "currentStatus": "Küratörlü arşivde 17 slayt ve ilişkili eğitim materyalleri kayıtlı; birincil dosya yolu bulunamadı.",
+  "timeline": "Unknown",
+  "purpose": "Kamu bağlamında temel yapay zekâ okuryazarlığı eğitimi vermek.",
+  "problemBeingSolved": "Teknik olmayan katılımcılara AI kavram ve kullanımını anlaşılır aktarmak.",
+  "targetUsers": [
+    "Kamu çalışanları / katılımcılar"
+  ],
+  "businessGoals": [
+    "Eğitim teslimi"
+  ],
+  "technologyStack": "Unknown",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "17 slaytlık eğitim anlatısı (arşiv kaydı)",
+  "brandLanguage": "Türkçe; eğitici",
+  "colorPalette": "Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "Unknown",
+  "seoStrategy": "Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "17 slayt",
+    "AI okuryazarlığı içeriği"
+  ],
+  "pages": "Unknown",
+  "architecture": "Unknown",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": "Birincil materyal yolu eksik.",
+  "lessonsLearned": "Unknown",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "Unknown",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\10_AI_Trainer_Kamu_Egitimi.md",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Eğitim içeriği araştırması; ayrıntı Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\10_AI_Trainer_Kamu_Egitimi.md"
+  ],
+  "projectName": "AI Trainer Kamu Eğitimi",
+  "slug": "ai-trainer-kamu-egitimi",
+  "sourceIds": [
+    "S190",
+    "S191"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 6,
+    "technicalDepth": 2,
+    "designDocumentation": 5,
+    "screenshots": 0,
+    "deployment": 2,
+    "lessonsLearned": 2,
+    "architecture": 1,
+    "seo": 0,
+    "performance": 1,
+    "maintainability": 2
+  },
+  "priorityBreakdown": {
+    "businessValue": 12,
+    "technicalComplexity": 7,
+    "portfolioValue": 13,
+    "educationalValue": 19
+  },
+  "documentationScore": 21,
+  "priorityScore": 51,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

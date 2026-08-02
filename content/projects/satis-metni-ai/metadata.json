@@ -1,0 +1,136 @@
+{
+  "aliases": [
+    "FABLE-MONEY-SYSTEM",
+    "e-ticaret-asistan"
+  ],
+  "client": "Bağımsız ürün",
+  "industry": "E-ticaret ve içerik üretimi",
+  "projectType": "Türkçe AI SaaS",
+  "categories": [
+    "SaaS",
+    "AI Product"
+  ],
+  "currentStatus": "Yerel Next.js uygulama, API, admin, veritabanı ve ödeme dosyaları mevcut; üretim yayını Unknown.",
+  "timeline": "2026: Plan, Stitch planı ve Phase 2 belgeleri; kesin başlangıç/bitiriş Unknown.",
+  "purpose": "E-ticaret satıcıları için Türkçe ürün ve satış metinlerini yapay zekâ ile üretmek.",
+  "problemBeingSolved": "Yüksek hacimli ürün kataloglarında tutarlı ve dönüşüm odaklı Türkçe metin üretme maliyeti.",
+  "targetUsers": [
+    "E-ticaret satıcıları",
+    "Pazarlama ekipleri",
+    "Ajanslar"
+  ],
+  "businessGoals": [
+    "Abonelik/kredi geliri",
+    "Toplu içerik üretimi",
+    "Kullanıcı edinimi"
+  ],
+  "technologyStack": [
+    "Next.js App Router",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Neon PostgreSQL",
+    "Drizzle",
+    "Vercel AI Gateway",
+    "Resend",
+    "PayTR"
+  ],
+  "frameworks": [
+    "Next.js",
+    "React"
+  ],
+  "backend": "Next.js Route Handlers",
+  "database": "Neon PostgreSQL / Drizzle",
+  "hosting": "Vercel yapılandırması; gerçek yayın Unknown",
+  "cms": "Uygulama içi blog/admin",
+  "integrations": [
+    "Vercel AI Gateway",
+    "Resend",
+    "PayTR",
+    "CSV içe aktarma"
+  ],
+  "designSystem": "StitchPlan ve uygulama bileşenleri",
+  "brandLanguage": "Türkçe; satış ve dönüşüm odaklı",
+  "colorPalette": "StitchPlan/uygulama stillerinde; özet kodlar Unknown",
+  "typography": "Unknown",
+  "responsiveStrategy": "SaaS dashboard ve pazarlama sayfaları",
+  "seoStrategy": "Blog ve çözüm sayfaları; tam strateji Unknown",
+  "performanceOptimizations": "Unknown",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Metin üretimi",
+    "Toplu CSV",
+    "Admin",
+    "Blog",
+    "Çözüm sayfaları",
+    "Fiyatlandırma",
+    "Abonelik",
+    "Referans sistemi"
+  ],
+  "pages": [
+    "Landing",
+    "Dashboard",
+    "Admin",
+    "Blog",
+    "Çözümler",
+    "Fiyatlandırma"
+  ],
+  "architecture": "Tek Next.js uygulamasında pazarlama, üretim API'leri, admin, veri ve ödeme katmanları.",
+  "interestingTechnicalDecisions": [
+    "FABLE klasör adını ürün adı SatışMetni AI altında birleştirme",
+    "Sağlayıcı geçidi üzerinden AI kullanımı"
+  ],
+  "developmentChallenges": [
+    "Üretim kalitesi",
+    "Kredi/abonelik ve ödeme",
+    "Toplu işlem maliyeti"
+  ],
+  "lessonsLearned": "Klasör kod adı ile ürün markası kanonik arşivde ayrı alias olarak tutulmalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM içindeki Stitch çıktıları",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\public",
+  "gitRepository": "https://github.com/Hitbullets/e-ticaret-asistan.git",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\Plan.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\PHASE2-PLAN.md",
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\StitchPlan.md"
+  ],
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "E-ticaret içerik ve fiyatlandırma planları",
+  "relatedPrompts": "Ürün metni üretim promptları Plan ve uygulama içinde",
+  "relatedAiWorkflows": [
+    "AI ürün açıklaması ve satış metni üretimi"
+  ],
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM"
+  ],
+  "projectName": "SatışMetni AI",
+  "slug": "satis-metni-ai",
+  "sourceIds": [
+    "S070",
+    "S071"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 9,
+    "technicalDepth": 9,
+    "designDocumentation": 8,
+    "screenshots": 6,
+    "deployment": 3,
+    "lessonsLearned": 6,
+    "architecture": 8,
+    "seo": 7,
+    "performance": 5,
+    "maintainability": 8
+  },
+  "priorityBreakdown": {
+    "businessValue": 24,
+    "technicalComplexity": 23,
+    "portfolioValue": 24,
+    "educationalValue": 23
+  },
+  "documentationScore": 69,
+  "priorityScore": 94,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}

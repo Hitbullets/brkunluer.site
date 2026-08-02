@@ -1,0 +1,114 @@
+{
+  "aliases": [
+    "YAPAYZEKA-KARSILASTIRMA",
+    "Yapay Zeka Modeli Karşılaştırması 2025"
+  ],
+  "client": "ByyHit / bağımsız içerik",
+  "industry": "Yapay zekâ araştırma ve eğitim",
+  "projectType": "Veri görselleştirmeli statik içerik sayfası",
+  "categories": [
+    "Educational",
+    "Experimental"
+  ],
+  "currentStatus": "Yerel index.html ve models.json mevcut; verilerin güncelliği ve üretim URL'si Unknown.",
+  "timeline": "Sayfa başlığında 2025; yerel arşivde 2026 taraması.",
+  "purpose": "Altı AI modelini kod kalitesi, ajan davranışı, hız ve güvenilirlik gibi ölçütlerle karşılaştırmak.",
+  "problemBeingSolved": "Model seçimi için dağınık değerlendirmeleri görsel tek sayfada toplamak.",
+  "targetUsers": [
+    "AI araçlarını karşılaştıran geliştiriciler",
+    "Teknik karar vericiler"
+  ],
+  "businessGoals": [
+    "Eğitici içerik",
+    "Uzmanlık görünürlüğü"
+  ],
+  "technologyStack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Chart.js 4.4.3",
+    "models.json"
+  ],
+  "frameworks": [
+    "Chart.js"
+  ],
+  "backend": "Yok",
+  "database": "models.json",
+  "hosting": "Unknown",
+  "cms": "Statik JSON",
+  "integrations": [
+    "Google Fonts",
+    "jsDelivr Chart.js"
+  ],
+  "designSystem": "Koyu veri dashboard'u",
+  "brandLanguage": "Türkçe; analitik ve teknik",
+  "colorPalette": [
+    "#080c14",
+    "#0d1220",
+    "#111827",
+    "#6c63ff"
+  ],
+  "typography": [
+    "Outfit",
+    "JetBrains Mono"
+  ],
+  "responsiveStrategy": "clamp ve responsive section düzeni",
+  "seoStrategy": "Title ve description",
+  "performanceOptimizations": "Tek HTML + yerel JSON; harici Chart.js CDN",
+  "accessibilityNotes": "Unknown",
+  "majorFeatures": [
+    "Altı model karşılaştırması",
+    "Grafikler",
+    "Kriter tabloları"
+  ],
+  "pages": [
+    "Tek sayfa"
+  ],
+  "architecture": "Statik HTML + JSON veri + Chart.js görselleştirme.",
+  "interestingTechnicalDecisions": "Veriyi models.json içinde sunumdan ayırma.",
+  "developmentChallenges": [
+    "Hızla eskiyen model verisi",
+    "Kriterlerin kaynaklandırılması"
+  ],
+  "lessonsLearned": "Model karşılaştırmaları tarih ve kaynak olmadan güncel gerçek gibi sunulmamalı.",
+  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
+  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
+  "gitRepository": "Unknown",
+  "productionUrl": "Unknown",
+  "demoUrl": "Unknown",
+  "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA\\models.json",
+  "relatedBlogPosts": "Unknown",
+  "relatedResearch": "Karşılaştırma verileri models.json içinde; dış kaynak referansları Unknown",
+  "relatedPrompts": "Unknown",
+  "relatedAiWorkflows": "Unknown",
+  "relatedMethods": "Unknown",
+  "filesBelonging": [
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA"
+  ],
+  "projectName": "Yapay Zekâ Model Karşılaştırması",
+  "slug": "yapay-zeka-model-karsilastirmasi",
+  "sourceIds": [
+    "S202"
+  ],
+  "documentationBreakdown": {
+    "businessContext": 7,
+    "technicalDepth": 5,
+    "designDocumentation": 8,
+    "screenshots": 3,
+    "deployment": 0,
+    "lessonsLearned": 5,
+    "architecture": 5,
+    "seo": 4,
+    "performance": 4,
+    "maintainability": 5
+  },
+  "priorityBreakdown": {
+    "businessValue": 10,
+    "technicalComplexity": 12,
+    "portfolioValue": 17,
+    "educationalValue": 20
+  },
+  "documentationScore": 46,
+  "priorityScore": 59,
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+}
