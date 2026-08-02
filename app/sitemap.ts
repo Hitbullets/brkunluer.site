@@ -36,7 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
-  const projectUrls = projects.map((project) => ({
+  const projectUrls = projects.filter((project) => project.recordType === 'case-study').map((project) => ({
     url: SiteConfig.url + '/portfolyo/' + project.slug,
     changeFrequency: 'monthly' as const,
     priority: 0.7,

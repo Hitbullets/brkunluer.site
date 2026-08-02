@@ -105,6 +105,10 @@
     "https://github.com/Hitbullets/Saloniq-Stagging.git"
   ],
   "productionUrl": "https://saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+  "coverImage": "/images/projects/covers/saloniq-mockup.png",
+  "coverSourceScreens": [
+    "content/projects/saloniq/assets/homepage-desktop.png"
+  ],
   "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",

@@ -8,7 +8,7 @@ Kanonik proje sayısı: **29**<br>
 
 Bu bilgi tabanı yalnız erişilebilir yerel dosyalar, Git yapılandırmaları ve ayrı olarak belirtilen canlı web kontrollerinden üretilmiştir. Birincil kanıt bulunmayan değerler `Unknown` olarak tutulur. Planlanan teknoloji ile uygulanmış teknoloji, belgeli yayın ile canlı doğrulama ve gerçek varlık ile AI destek görsel birbirine eşit sayılmaz. Kaynak dosyalarda görülen parola, anahtar, merchant kimliği ve benzeri hassas değerler bu arşive alınmamıştır.
 
-`content/projects/<slug>/` altındaki klasörler kanonik veritabanından üretilir. Mevcut `lib/content.ts` yalnız `content/projects` kökündeki doğrudan MD/MDX dosyalarını okuduğu için bu alt klasörler mevcut site rotalarını değiştirmez. [S006]
+`content/projects/<slug>/` altındaki klasörler kanonik veritabanından üretilir. `lib/content.ts` bu klasörlerdeki `metadata.json` kayıtlarını ayrı bir proje arşivi katmanı olarak yükler; kökteki yayımlanmış MDX vaka çalışmaları aynı slug için önceliğini korur. Arşiv detayları editoryal olarak tamamlanana kadar arama motorlarına kapalıdır. [S006]
 
 ## Öncelikli kanonik liste
 

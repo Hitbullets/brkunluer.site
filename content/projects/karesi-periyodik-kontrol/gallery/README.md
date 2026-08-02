@@ -1,5 +1,15 @@
 # Karesi Periyodik Kontrol — Galeri Referansları
 
+## Portfolyo kapağı
+
+Unknown
+
+## Kapak kaynak ekranları
+
+Unknown
+
+## Diğer ekran referansları
+
 Unknown [S130]
 
-Medya bu klasöre otomatik kopyalanmaz; sahiplik ve gerçek/AI destekli kaynak doğrulandıktan sonra seçilmelidir.
+Kapaklar kaynak ekran görüntülerinden cihaz mock-up kompozisyonu olarak üretilmiştir. Görsel kanıtı olmayan projelerde değer `Unknown` olarak kalır.

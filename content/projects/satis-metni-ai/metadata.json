@@ -90,6 +90,10 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\public",
   "gitRepository": "https://github.com/Hitbullets/e-ticaret-asistan.git",
   "productionUrl": "Unknown",
+  "coverImage": "/images/projects/covers/satis-metni-ai-mockup.png",
+  "coverSourceScreens": [
+    "content/projects/satis-metni-ai/assets/homepage-desktop.png"
+  ],
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\Plan.md",

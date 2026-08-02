@@ -88,6 +88,8 @@
   ],
   "gitRepository": "https://github.com/Hitbullets/brkunluer.site.git",
   "productionUrl": "https://brkunluer.site",
+  "coverImage": "Unknown",
+  "coverSourceScreens": "Unknown",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "docs/OVERVIEW.md",

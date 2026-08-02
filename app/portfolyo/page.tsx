@@ -5,52 +5,53 @@ import { getAllProjects } from '@/lib/content'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/portfolyo' },
-  title: 'AI Ürün Geliştirme Portföyü',
-  description: 'Burak Ünlüler tarafından geliştirilen seçili AI ürünlerini ve ayrıntılı vaka analizlerini inceleyin.',
+  title: 'Web Geliştirme Portföyü ve Proje Arşivi',
+  description: 'Burak Ünlüer’in web siteleri, SaaS ürünleri, AI projeleri, müşteri çalışmaları ve teknik arşiv kayıtları.',
 }
-
-const stack: Array<[string, string, string]> = [
-  ['Arayüz', 'React', 'Ürün arayüzü ve yaratıcı çalışma alanı'],
-  ['Servisler', 'Python', 'Üretim hattı ve arka uç servisleri'],
-  ['Kimlik', 'Google OAuth', 'Kullanıcı kimlik doğrulama akışı'],
-  ['Prompt', 'Claude', 'Fikirleri üretim komutuna dönüştürme'],
-  ['Görsel', 'OpenAI görüntü modeli', 'Dövme tasarımı üretimi'],
-  ['Tarayıcı', 'Sobel filtresi', 'Ek AI çağrısı olmadan stencil önizlemesi'],
-]
 
 export default async function PortfolioPage() {
   const projects = await getAllProjects()
+  const caseStudies = projects.filter((project) => project.recordType === 'case-study')
+  const archiveProjects = projects.filter((project) => project.recordType === 'archive')
+
   return (
     <>
       <section className='border-b border-border'>
         <Container className='py-20 sm:py-28'>
           <p className='editorial-kicker'>01 / Portföy</p>
           <div className='mt-7 grid gap-8 lg:grid-cols-12'>
-            <h1 className='text-display-lg lg:col-span-8'>Ürün kararlarının görünür olduğu projeler.</h1>
-            <p className='self-end text-body-lg text-muted-foreground lg:col-span-4'>Teknik yaklaşımı yalnızca teknoloji listesi olarak değil; problem, karar ve ürün sonucu ilişkisiyle anlatan vaka analizleri.</p>
+            <h1 className='text-display-lg lg:col-span-8'>Üretilen siteler, ürünler ve geride kalan teknik kararlar.</h1>
+            <div className='self-end lg:col-span-4'>
+              <p className='text-body-lg text-muted-foreground'>Tam vaka çalışmalarının yanında; kaynak dosyalardan yeniden oluşturulan, doğrulama sınırları açık proje arşivi.</p>
+              <div className='mt-8 grid grid-cols-2 gap-5 border-t border-border pt-5'>
+                <div><p className='text-heading-lg'>{projects.length}</p><p className='mt-1 text-sm text-muted-foreground'>Kanonik proje</p></div>
+                <div><p className='text-heading-lg'>{caseStudies.length}</p><p className='mt-1 text-sm text-muted-foreground'>Tam vaka çalışması</p></div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
 
-      <Container className='py-16 sm:py-24'>
-        {projects.length === 0 ? <p className='py-16 text-muted-foreground'>Henüz yayımlanmış proje bulunmuyor.</p> : <div className='grid gap-8'>{projects.map((project) => <ProjectCard key={project.slug} project={project} variant='featured' />)}</div>}
-      </Container>
+      {caseStudies.length > 0 && <Container className='py-16 sm:py-24'>
+        <div className='mb-10 max-w-2xl'>
+          <p className='editorial-kicker'>Seçili vaka çalışmaları</p>
+          <h2 className='mt-5 text-heading-lg'>Ürün kararlarının ayrıntılı anlatımı.</h2>
+        </div>
+        <div className='grid gap-8'>{caseStudies.map((project) => <ProjectCard key={project.slug} project={project} variant='featured' />)}</div>
+      </Container>}
 
-      {projects.some((project) => project.slug === 'inkos') && (
-        <section className='border-y border-border bg-card'>
-          <Container className='py-16 sm:py-24'>
-            <div className='grid gap-10 lg:grid-cols-12'>
-              <div className='lg:col-span-4'><p className='editorial-kicker'>Teknoloji dizini</p><h2 className='mt-5 text-heading-lg'>InkOS sistem özeti</h2><p className='mt-4 text-sm leading-6 text-muted-foreground'>Projede doğrulanmış katmanların, kullanılan teknoloji ve sistemdeki rolüyle birlikte özeti.</p></div>
-              <div className='overflow-x-auto lg:col-span-8'>
-                <table className='w-full border-collapse text-left text-sm'>
-                  <thead><tr className='border-y border-border font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground'><th className='py-4 pr-5'>Katman</th><th className='py-4 pr-5'>Teknoloji</th><th className='py-4'>Sistemdeki rol</th></tr></thead>
-                  <tbody>{stack.map(([layer, technology, role]) => <tr key={layer} className='border-b border-border'><td className='py-5 pr-5 font-medium'>{layer}</td><td className='py-5 pr-5 font-mono text-xs text-accent'>{technology}</td><td className='py-5 text-muted-foreground'>{role}</td></tr>)}</tbody>
-                </table>
-              </div>
+      <section className='border-y border-border bg-card'>
+        <Container className='py-16 sm:py-24'>
+          <div className='mb-12 grid gap-6 lg:grid-cols-12'>
+            <div className='lg:col-span-7'>
+              <p className='editorial-kicker'>Master proje arşivi</p>
+              <h2 className='mt-5 text-heading-lg'>{archiveProjects.length} ek proje kaydı.</h2>
             </div>
-          </Container>
-        </section>
-      )}
+            <p className='self-end text-sm leading-6 text-muted-foreground lg:col-span-4 lg:col-start-9'>Bu bölüm; üretim sitelerini, prototipleri, teklifleri, iç araçları ve deneysel çalışmaları aynı kanıt standardıyla gösterir. Belirsiz bilgiler Unknown olarak kalır.</p>
+          </div>
+          {archiveProjects.length === 0 ? <p className='py-12 text-muted-foreground'>Arşiv kaydı bulunmuyor.</p> : <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>{archiveProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}</div>}
+        </Container>
+      </section>
     </>
   )
 }

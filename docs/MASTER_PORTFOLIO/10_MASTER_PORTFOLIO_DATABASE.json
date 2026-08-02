@@ -40,6 +40,8 @@
     "assetLocations",
     "gitRepository",
     "productionUrl",
+    "coverImage",
+    "coverSourceScreens",
     "demoUrl",
     "relatedDocumentation",
     "relatedBlogPosts",
@@ -601,6 +603,8 @@
       ],
       "gitRepository": "https://github.com/Hitbullets/brkunluer.site.git",
       "productionUrl": "https://brkunluer.site",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "docs/OVERVIEW.md",
@@ -772,6 +776,10 @@
       ],
       "gitRepository": "https://github.com/Hitbullets/cau-ink-gallery.git",
       "productionUrl": "https://cauink.com",
+      "coverImage": "/images/projects/covers/cau-ink-mockup.png",
+      "coverSourceScreens": [
+        "content/projects/cau-ink/assets/homepage-desktop.png"
+      ],
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
@@ -936,6 +944,10 @@
         "https://github.com/Hitbullets/Saloniq-Stagging.git"
       ],
       "productionUrl": "https://saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+      "coverImage": "/images/projects/covers/saloniq-mockup.png",
+      "coverSourceScreens": [
+        "content/projects/saloniq/assets/homepage-desktop.png"
+      ],
       "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
@@ -1068,6 +1080,10 @@
       ],
       "gitRepository": "https://github.com/Hitbullets/InkOS.git",
       "productionUrl": "https://www.inkosone.com (portföy frontmatter'ında; canlı doğrulama Unknown)",
+      "coverImage": "/images/projects/covers/inkos-mockup.png",
+      "coverSourceScreens": [
+        "content/projects/inkos/assets/product-interface-desktop.png"
+      ],
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\handoff\\CURRENT_STATE.md",
@@ -1190,6 +1206,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS",
       "gitRepository": "https://github.com/Hitbullets/ai-factory-os.git",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\README.md",
@@ -1348,6 +1366,8 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "https://adresmoda.com (belgeli hedef; canlı doğrulama Unknown)",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
@@ -1487,6 +1507,8 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "https://www.mrpisi.com",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MRPISI.COM -- TO DO LIST.docx",
@@ -1623,6 +1645,10 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\public",
       "gitRepository": "https://github.com/Hitbullets/e-ticaret-asistan.git",
       "productionUrl": "Unknown",
+      "coverImage": "/images/projects/covers/satis-metni-ai-mockup.png",
+      "coverSourceScreens": [
+        "content/projects/satis-metni-ai/assets/homepage-desktop.png"
+      ],
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\Plan.md",
@@ -1760,6 +1786,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\public",
       "gitRepository": "https://github.com/Hitbullets/gold-tracker.git",
       "productionUrl": "https://gold-tracker-rouge.vercel.app (README'de; canlı doğrulama Unknown)",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\README.md",
@@ -1879,6 +1907,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Takipler-Store\\public",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "README yalnız varsayılan Next.js metni; ürün belgesi Unknown",
       "relatedBlogPosts": "Unknown",
@@ -1984,6 +2014,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo\\3Demo_context.md"
@@ -2094,6 +2126,8 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO\\README.md"
@@ -2205,6 +2239,11 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "/images/projects/covers/atelier-dimora-mockup.png",
+      "coverSourceScreens": [
+        "content/projects/atelier-dimora/assets/homepage-desktop.png",
+        "content/projects/atelier-dimora/assets/homepage-mobile.png"
+      ],
       "demoUrl": "Unknown",
       "relatedDocumentation": "HTML prototipleri",
       "relatedBlogPosts": "Unknown",
@@ -2314,6 +2353,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\TEKLİF DOSYALARI",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "Karesi/Hasan Çimen teklif DOCX dosyaları"
@@ -2433,6 +2474,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM\\replit.md"
@@ -2537,6 +2580,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform\\README.md"
@@ -2658,6 +2703,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje\\README.md",
@@ -2767,6 +2814,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA\\README.md"
@@ -2849,6 +2898,8 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md",
       "relatedBlogPosts": "Unknown",
@@ -2935,6 +2986,8 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md",
       "relatedBlogPosts": "Unknown",
@@ -3026,6 +3079,8 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md",
       "relatedBlogPosts": "Unknown",
@@ -3142,6 +3197,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
@@ -3246,6 +3303,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\codex-skills",
       "gitRepository": "https://github.com/Hitbullets/codex-skills.git",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md"
@@ -3351,6 +3410,8 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\05_Tattoo_Design_Desktop_App.md",
       "relatedBlogPosts": "Unknown",
@@ -3446,6 +3507,8 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
       "relatedBlogPosts": "Unknown",
@@ -3535,6 +3598,8 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\10_AI_Trainer_Kamu_Egitimi.md",
       "relatedBlogPosts": "Unknown",
@@ -3625,6 +3690,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "Unknown",
       "relatedBlogPosts": "Unknown",
@@ -3733,6 +3800,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\8-mart",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "Unknown",
       "relatedBlogPosts": "Unknown",
@@ -3846,6 +3915,8 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
+      "coverImage": "Unknown",
+      "coverSourceScreens": "Unknown",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA\\models.json",
       "relatedBlogPosts": "Unknown",

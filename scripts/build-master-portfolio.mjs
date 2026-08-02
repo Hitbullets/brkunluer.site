@@ -80,6 +80,7 @@ const defaults = {
   accessibilityNotes: U, majorFeatures: U, pages: U, architecture: U,
   interestingTechnicalDecisions: U, developmentChallenges: U, lessonsLearned: U,
   screenshotsReferences: U, assetLocations: U, gitRepository: U, productionUrl: U,
+  coverImage: U, coverSourceScreens: U,
   demoUrl: U, relatedDocumentation: U, relatedBlogPosts: U, relatedResearch: U,
   relatedPrompts: U, relatedAiWorkflows: U, relatedMethods: U, filesBelonging: U,
 };
@@ -223,6 +224,36 @@ const projects = [
   }),
 ];
 
+const coverCatalog = {
+  "cau-ink": {
+    coverImage: "/images/projects/covers/cau-ink-mockup.png",
+    coverSourceScreens: ["content/projects/cau-ink/assets/homepage-desktop.png"],
+  },
+  saloniq: {
+    coverImage: "/images/projects/covers/saloniq-mockup.png",
+    coverSourceScreens: ["content/projects/saloniq/assets/homepage-desktop.png"],
+  },
+  inkos: {
+    coverImage: "/images/projects/covers/inkos-mockup.png",
+    coverSourceScreens: ["content/projects/inkos/assets/product-interface-desktop.png"],
+  },
+  "satis-metni-ai": {
+    coverImage: "/images/projects/covers/satis-metni-ai-mockup.png",
+    coverSourceScreens: ["content/projects/satis-metni-ai/assets/homepage-desktop.png"],
+  },
+  "atelier-dimora": {
+    coverImage: "/images/projects/covers/atelier-dimora-mockup.png",
+    coverSourceScreens: [
+      "content/projects/atelier-dimora/assets/homepage-desktop.png",
+      "content/projects/atelier-dimora/assets/homepage-mobile.png",
+    ],
+  },
+};
+
+for (const item of projects) {
+  Object.assign(item, coverCatalog[item.slug] ?? {});
+}
+
 const mergeRegister = [
   { canonical: "CAU INK", merged: ["CAU_INK", "CAU_INK_STITCH", "CAU_INK_WHITE_DEMO", "CAU_INK_MEDICAL", "CAU INK Gallery v2", "Tattoo-Demo", "CAU_INK_REDESING-1"], evidence: ["S010", "S011", "S012", "S014", "S015"] },
   { canonical: "SalonIQ", merged: ["SALONIQ_APP", "_SalonIQ_Archive", "Saloniq APP Yedekler", "222les / KasaPage"], evidence: ["S020", "S021", "S022", "S023"] },
@@ -277,7 +308,7 @@ Kanonik proje sayısı: **${projects.length}**<br>
 
 Bu bilgi tabanı yalnız erişilebilir yerel dosyalar, Git yapılandırmaları ve ayrı olarak belirtilen canlı web kontrollerinden üretilmiştir. Birincil kanıt bulunmayan değerler \`Unknown\` olarak tutulur. Planlanan teknoloji ile uygulanmış teknoloji, belgeli yayın ile canlı doğrulama ve gerçek varlık ile AI destek görsel birbirine eşit sayılmaz. Kaynak dosyalarda görülen parola, anahtar, merchant kimliği ve benzeri hassas değerler bu arşive alınmamıştır.
 
-\`content/projects/<slug>/\` altındaki klasörler kanonik veritabanından üretilir. Mevcut \`lib/content.ts\` yalnız \`content/projects\` kökündeki doğrudan MD/MDX dosyalarını okuduğu için bu alt klasörler mevcut site rotalarını değiştirmez. [S006]
+\`content/projects/<slug>/\` altındaki klasörler kanonik veritabanından üretilir. \`lib/content.ts\` bu klasörlerdeki \`metadata.json\` kayıtlarını ayrı bir proje arşivi katmanı olarak yükler; kökteki yayımlanmış MDX vaka çalışmaları aynı slug için önceliğini korur. Arşiv detayları editoryal olarak tamamlanana kadar arama motorlarına kapalıdır. [S006]
 
 ## Öncelikli kanonik liste
 
@@ -450,13 +481,13 @@ ${candidateRows}
 AdresModa ve SalonIQ kaynaklarında operasyonel veya hassas olabilecek değerler görüldü. Bu arşiv bu değerleri bilerek kopyalamaz. Paylaşım öncesinde kaynak belgelerden sır/şifre/merchant kimliği temizlenmeli ve gerekiyorsa anahtarlar döndürülmelidir. [S021] [S051]
 `;
 
-const assetRows = projects.map((p) => `| ${p.projectName} | ${cell(p.screenshotsReferences)} | ${cell(p.assetLocations)} | ${p.screenshotsReferences === U ? "Eksik" : "Kayıtlı; tekil dosya eşleştirmesi gerekebilir"} | ${refs(p.sourceIds)} |`).join("\n");
+const assetRows = projects.map((p) => `| ${p.projectName} | ${cell(p.coverImage)} | ${cell(p.coverSourceScreens)} | ${cell(p.screenshotsReferences)} | ${cell(p.assetLocations)} | ${p.screenshotsReferences === U ? "Eksik" : "Kayıtlı; tekil dosya eşleştirmesi gerekebilir"} | ${refs(p.sourceIds)} |`).join("\n");
 const assetDoc = `# Varlık İndeksi
 
 Varlıklar bu arşive kopyalanmamıştır; orijinal konumlar referanslanmıştır. Böylece büyük medya klasörleri çoğaltılmaz ve gerçek müşteri varlıklarıyla AI destek görseller birbirine karışmaz.
 
-| Proje | Ekran görüntüsü referansı | Varlık kökü | Durum | Kanıt |
-|---|---|---|---|---|
+| Proje | Portfolyo kapağı | Kapak kaynak ekranı | Ekran görüntüsü referansı | Varlık kökü | Durum | Kanıt |
+|---|---|---|---|---|---|---|
 ${assetRows}
 
 ## Varlık kullanım kuralları
@@ -552,7 +583,7 @@ Tüm alanlar için [merkezi veritabanına](../../../docs/MASTER_PORTFOLIO/10_MAS
   write(join(root, "architecture.md"), `# ${p.projectName} — Mimari\n\n## Mimari özet\n\n${mdValue(p.architecture)} ${evidence}\n\n## Teknik kararlar\n\n${Array.isArray(p.interestingTechnicalDecisions) ? p.interestingTechnicalDecisions.map((item) => `- ${item}`).join("\n") : p.interestingTechnicalDecisions}\n\n## Zorluklar\n\n${Array.isArray(p.developmentChallenges) ? p.developmentChallenges.map((item) => `- ${item}`).join("\n") : p.developmentChallenges}`);
   write(join(root, "tech-stack.md"), `# ${p.projectName} — Teknoloji Yığını\n\n| Katman | Değer |\n|---|---|\n| Teknoloji yığını | ${cell(p.technologyStack)} |\n| Framework | ${cell(p.frameworks)} |\n| Backend | ${cell(p.backend)} |\n| Veritabanı | ${cell(p.database)} |\n| Hosting | ${cell(p.hosting)} |\n| CMS | ${cell(p.cms)} |\n| Entegrasyonlar | ${cell(p.integrations)} |\n\nKanıt: ${evidence}`);
   write(join(root, "lessons-learned.md"), `# ${p.projectName} — Çıkarılan Dersler\n\n${mdValue(p.lessonsLearned)} ${evidence}\n\n## Performans\n\n${mdValue(p.performanceOptimizations)}\n\n## Erişilebilirlik\n\n${mdValue(p.accessibilityNotes)}\n\n## Bakım notu\n\nBu dosya kanıt güncellendiğinde merkezi veritabanı üzerinden yeniden üretilmelidir.`);
-  write(join(root, "gallery", "README.md"), `# ${p.projectName} — Galeri Referansları\n\n${mdValue(p.screenshotsReferences)} ${evidence}\n\nMedya bu klasöre otomatik kopyalanmaz; sahiplik ve gerçek/AI destekli kaynak doğrulandıktan sonra seçilmelidir.`);
+  write(join(root, "gallery", "README.md"), `# ${p.projectName} — Galeri Referansları\n\n## Portfolyo kapağı\n\n${mdValue(p.coverImage)}\n\n## Kapak kaynak ekranları\n\n${mdValue(p.coverSourceScreens)}\n\n## Diğer ekran referansları\n\n${mdValue(p.screenshotsReferences)} ${evidence}\n\nKapaklar kaynak ekran görüntülerinden cihaz mock-up kompozisyonu olarak üretilmiştir. Görsel kanıtı olmayan projelerde değer \`Unknown\` olarak kalır.`);
   write(join(root, "assets", "README.md"), `# ${p.projectName} — Varlık Referansları\n\n${mdValue(p.assetLocations)} ${evidence}\n\n## Projeye ait dosya kökleri\n\n${Array.isArray(p.filesBelonging) ? p.filesBelonging.map((item) => `- \`${item}\``).join("\n") : p.filesBelonging}`);
 }
 

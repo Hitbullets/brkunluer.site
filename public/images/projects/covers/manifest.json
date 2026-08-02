@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03",
+  "generator": "OpenAI image generation, image-edit mode",
+  "policy": "Cihaz ve stüdyo sahnesi üretildi; ekran içeriği doğrulanmış yerel proje görsellerinden kaynaklandı. Ayrı mobil kaynak bulunmayan projelerde telefon ekranı aynı masaüstü kaynağının dar kompozisyonudur.",
+  "covers": [
+    {
+      "slug": "cau-ink",
+      "output": "/images/projects/covers/cau-ink-mockup.png",
+      "outputSha256": "513FF1D13D5E059C764908B1FA715BB18BA606E9D34ACECBDEA3EE58131C7A11",
+      "sources": [
+        {
+          "path": "content/projects/cau-ink/assets/homepage-desktop.png",
+          "sha256": "BDC085FA6E7A0FCC5883B78553E05825359E6FDA6AEFE72224E26AB1199040DF"
+        }
+      ],
+      "promptSummary": "CAU & INK ana sayfasını siyah masaüstü ve telefon mock-up kompozisyonuna yerleştiren, siyah-beyaz-koyu kırmızı sinematik portfolyo kapağı."
+    },
+    {
+      "slug": "inkos",
+      "output": "/images/projects/covers/inkos-mockup.png",
+      "outputSha256": "3BC9764BC3C7B24336709FC317C79C7B50F3B24840A261AE7789B1C1D7263FED",
+      "sources": [
+        {
+          "path": "content/projects/inkos/assets/product-interface-desktop.png",
+          "sha256": "F4F17401755C9E52321B04594B374B5BE27A5A558E4EEF65214444B264CD9CE4"
+        }
+      ],
+      "promptSummary": "Gerçek InkOS ürün arayüzünü siyah masaüstü ve telefon mock-up kompozisyonunda, grafit zemin ve kontrollü mor ışıkla sunan portfolyo kapağı."
+    },
+    {
+      "slug": "saloniq",
+      "output": "/images/projects/covers/saloniq-mockup.png",
+      "outputSha256": "1B9599660B32FA8B9FAFCF750C48DC87F70E9CC185B2236DD4FEE051FD8FB3E5",
+      "sources": [
+        {
+          "path": "content/projects/saloniq/assets/homepage-desktop.png",
+          "sha256": "AA78F76EA3A4C0302E6E92C13B73599E089CB388926A478EDEE3E178FC8ECD1A",
+          "note": "Yerel landing derlemesinden alınan gerçek ekran; tarayıcı dışa aktarımı aynı görünümü 2x2 tekrarlar. Kapakta tek tam görünüm kullanıldı."
+        }
+      ],
+      "promptSummary": "SalonIQ ana sayfasını koyu masaüstü ve telefon mock-up kompozisyonunda, kontrollü mor SaaS ışığıyla sunan portfolyo kapağı."
+    },
+    {
+      "slug": "satis-metni-ai",
+      "output": "/images/projects/covers/satis-metni-ai-mockup.png",
+      "outputSha256": "92B86AA2C9ED19FD855966C3605E924E7FD0B60EB8090EC2E381F308541C6C45",
+      "sources": [
+        {
+          "path": "content/projects/satis-metni-ai/assets/homepage-desktop.png",
+          "sha256": "1CB3F32F4072D37813E14A3E26DF48649E161500C0E82F115E63215FAC78F975"
+        }
+      ],
+      "promptSummary": "SatışMetni AI ana sayfasını koyu masaüstü ve telefon mock-up kompozisyonunda, mercan vurgu ışığıyla sunan portfolyo kapağı."
+    },
+    {
+      "slug": "atelier-dimora",
+      "output": "/images/projects/covers/atelier-dimora-mockup.png",
+      "outputSha256": "AFB91CFD78AD4C7723DF01FDE862A9CB484A46576DE5D42D93398FE74328958F",
+      "sources": [
+        {
+          "path": "content/projects/atelier-dimora/assets/homepage-desktop.png",
+          "sha256": "0DFCCECF36EA9FD88EAFE9681467BCE91F83F99CB2D36F320CDE739B377B778D"
+        },
+        {
+          "path": "content/projects/atelier-dimora/assets/homepage-mobile.png",
+          "sha256": "E9F266103F7E69E819184E3984F91B407462111613B9E094AF3EC24FE1F21C02"
+        }
+      ],
+      "promptSummary": "Atelier Dimora'nın gerçek masaüstü ve mobil ana sayfa ekranlarını sıcak taş tonlu editoryal cihaz mock-up kompozisyonunda sunan portfolyo kapağı."
+    }
+  ]
+}
