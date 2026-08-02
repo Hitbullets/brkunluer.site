@@ -11,8 +11,8 @@ export function Container({ className, size = "default", children, ...props }: C
         "mx-auto w-full px-4 sm:px-6 lg:px-8",
         {
           "max-w-[640px]": size === "narrow",
-          "max-w-[1024px]": size === "default",
-          "max-w-[1280px]": size === "wide",
+          "max-w-[1240px]": size === "default",
+          "max-w-[1440px]": size === "wide",
           "max-w-full": size === "full",
         },
         className,

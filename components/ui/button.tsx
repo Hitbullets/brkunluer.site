@@ -4,31 +4,31 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all duration-300 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[3px] border text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
   {
     variants: {
       variant: {
         primary:
-          'rounded-full bg-primary text-primary-foreground shadow-md shadow-brand-700/20 hover:bg-brand-800 hover:shadow-lg hover:shadow-brand-700/30 dark:hover:bg-brand-300 active:bg-brand-900 dark:active:bg-brand-200',
+          'border-primary bg-primary text-primary-foreground hover:bg-brand-800 hover:border-brand-800 dark:hover:bg-brand-400 dark:hover:border-brand-400',
         secondary:
-          'rounded-full bg-secondary text-secondary-foreground shadow-sm hover:shadow-md hover:bg-secondary/80 active:bg-secondary',
+          'border-secondary bg-secondary text-secondary-foreground hover:border-foreground/30',
         outline:
-          'rounded-full border-2 border-border bg-background hover:border-brand-600/30 hover:bg-secondary/50 active:bg-secondary',
+          'border-border bg-transparent hover:border-foreground hover:bg-secondary/60',
         ghost:
-          'rounded-full text-muted-foreground hover:text-foreground hover:bg-secondary/70 active:bg-secondary',
+          'border-transparent text-muted-foreground hover:text-foreground hover:bg-secondary/70',
         link:
-          'text-brand-600 underline-offset-4 hover:underline underline-offset-4',
+          'border-transparent px-0 text-brand-700 underline-offset-4 hover:underline dark:text-brand-400',
         destructive:
-          'rounded-full bg-destructive text-destructive-foreground shadow-sm hover:shadow-md hover:bg-destructive/90 active:bg-destructive',
+          'border-destructive bg-destructive text-destructive-foreground hover:bg-destructive/90',
       },
       size: {
         default: 'h-10 px-5 py-2',
-        sm: 'h-8 rounded-full px-4 text-xs',
+        sm: 'h-8 px-4 text-xs',
         lg: 'h-11 px-7',
         xl: 'h-12 px-9 text-base',
-        icon: 'h-10 w-10 rounded-full',
-        'icon-sm': 'h-8 w-8 rounded-full',
-        'icon-lg': 'h-12 w-12 rounded-full',
+        icon: 'h-10 w-10 p-0',
+        'icon-sm': 'h-8 w-8 p-0',
+        'icon-lg': 'h-12 w-12 p-0',
       },
     },
     defaultVariants: {

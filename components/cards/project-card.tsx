@@ -1,77 +1,12 @@
-﻿import Link from 'next/link'
-import { ImageWrapper } from "@/components/ui/image-wrapper"
-import { Badge } from '@/components/ui/badge'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import Image from 'next/image'
+import Link from 'next/link'
 import type { Project } from '@/lib/types'
 
-interface Props {
-  project: Project
-  variant?: 'default' | 'featured'
-}
-
-export function ProjectCard({ project, variant = 'default' }: Props) {
-  if (variant === 'featured') {
-    return (
-      <Link href={'/portfolyo/' + project.slug} className='group block h-full'>
-        <Card variant='feature' interactive className='overflow-hidden h-full'>
-          {project.coverImage && (
-            <div className='relative h-56 w-full overflow-hidden'>
-              <ImageWrapper src={project.coverImage} alt={project.title} fill className='object-cover transition-transform duration-500 group-hover:scale-105' sizes='(max-width: 768px) 100vw, 50vw'  />
-            </div>
-          )}
-          <CardHeader>
-            <div className='flex flex-wrap items-center gap-2 mb-2'>
-              <span className='text-xs text-muted-foreground'>{project.year}</span>
-              <div className='flex flex-wrap gap-1.5'>
-                {project.tags.slice(0, 2).map((tag) => (
-                  <Badge key={tag} variant='secondary' className='text-xs'>{tag}</Badge>
-                ))}
-              </div>
-            </div>
-            <CardTitle className='text-heading-sm'>{project.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className='text-body-sm text-muted-foreground line-clamp-2'>{project.tagline}</p>
-          </CardContent>
-        </Card>
-      </Link>
-    )
-  }
-
+export function ProjectCard({ project, variant = 'default' }: { project: Project; variant?: 'default' | 'featured' }) {
   return (
-    <Link href={'/portfolyo/' + project.slug} className='group block h-full'>
-      <Card variant='feature' interactive className='overflow-hidden h-full'>
-        {project.coverImage && (
-          <div className='relative h-48 w-full overflow-hidden'>
-            <ImageWrapper
-              src={project.coverImage}
-              alt={project.title}
-              fill
-              className='object-cover transition-transform duration-500 group-hover:scale-105'
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-             />
-          </div>
-        )}
-
-        <CardHeader>
-          <div className='flex flex-wrap items-center gap-2 mb-2'>
-            <span className='text-xs text-muted-foreground'>{project.year}</span>
-            {project.client && (
-              <Badge variant='secondary' className='text-xs'>{project.client}</Badge>
-            )}
-          </div>
-          <CardTitle className='text-heading-sm line-clamp-2'>{project.title}</CardTitle>
-        </CardHeader>
-
-        <CardContent>
-          <p className='text-body-sm text-muted-foreground line-clamp-2'>{project.tagline}</p>
-          <div className='mt-3 flex flex-wrap gap-1.5'>
-            {project.tags.slice(0, 3).map((tag) => (
-              <Badge key={tag} variant='outline' className='text-xs'>{tag}</Badge>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+    <Link href={`/portfolyo/${project.slug}`} className={`group grid overflow-hidden border border-border bg-card ${variant === 'featured' ? 'lg:grid-cols-12' : ''}`}>
+      {project.coverImage && <div className={`relative min-h-[280px] overflow-hidden ${variant === 'featured' ? 'lg:col-span-8 lg:min-h-[540px]' : 'aspect-[16/10]'}`}><Image src={project.coverImage} alt={`${project.title} proje kapak görseli`} fill className='object-cover transition-transform duration-700 group-hover:scale-[1.015]' sizes={variant === 'featured' ? '(max-width: 1024px) 100vw, 66vw' : '(max-width: 768px) 100vw, 33vw'} /></div>}
+      <div className={`flex flex-col justify-between border-t border-border p-7 ${variant === 'featured' ? 'lg:col-span-4 lg:border-l lg:border-t-0 lg:p-9' : ''}`}><div><p className='editorial-index'>{project.year} / {project.client || 'Bağımsız proje'}</p><h2 className='mt-5 text-heading-lg group-hover:text-accent'>{project.title}</h2><p className='mt-4 leading-7 text-muted-foreground'>{project.tagline}</p></div><div className='mt-10'><div className='flex flex-wrap gap-2'>{project.tags.map((tag) => <span key={tag} className='border border-border px-2 py-1 font-mono text-[10px] uppercase tracking-wider'>{tag}</span>)}</div><p className='mt-7 text-sm font-medium text-accent'>Vaka analizini aç →</p></div></div>
     </Link>
   )
 }

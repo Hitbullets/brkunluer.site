@@ -117,7 +117,7 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
             {(previousArticle || nextArticle) && (
               <>
                 <Separator className='my-8' />
-                <nav className='grid grid-cols-2 gap-4' aria-label='Yazılar Arası Gezinme'>
+                <nav className='grid grid-cols-2 gap-4' aria-label='Yayınlar arası gezinme'>
                   {previousArticle ? (
                     <Link
                       href={'/yazilar/' + previousArticle.slug}

@@ -39,7 +39,7 @@ export default function NotFound() {
           </Link>
         </Button>
         <Button asChild variant='ghost' size='lg'>
-          <Link href='/yazilar'>Yazıları Keşfet</Link>
+          <Link href='/yazilar'>Yayınları Keşfet</Link>
         </Button>
       </div>
 

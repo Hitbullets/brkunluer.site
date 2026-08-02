@@ -16,7 +16,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ title, description, action, className }: SectionHeaderProps) {
   return (
-    <div className={cn("mb-8", className)}>
+    <div className={cn("mb-10 border-b border-border pb-5", className)}>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
           <h2 className="text-heading-lg font-semibold tracking-tight">{title}</h2>
@@ -41,9 +41,9 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description, badge, className }: PageHeaderProps) {
   return (
-    <header className={cn("mb-12", className)}>
+    <header className={cn("mb-12 border-b border-border pb-8", className)}>
       {badge && (
-        <span className="inline-flex items-center rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground mb-4">
+        <span className="editorial-kicker mb-4">
           {badge}
         </span>
       )}

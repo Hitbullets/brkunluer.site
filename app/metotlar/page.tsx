@@ -1,37 +1,17 @@
-import { Metadata } from "next"
-import { Container, Grid } from "@/components/layout/container"
-import { MethodCard } from "@/components/cards/method-card"
-import { PageHeader } from "@/components/ui/section-header"
-import { getAllMethods } from "@/lib/content"
+import { Metadata } from 'next'
+import { Container } from '@/components/layout/container'
+import { MethodCard } from '@/components/cards/method-card'
+import { ModuleCover } from '@/components/ui/editorial-graphics'
+import { getAllMethods } from '@/lib/content'
 
-export const metadata: Metadata = {
-  alternates: { canonical: '/metotlar' },
-  title: "AI Metotları ve İş Akışı Şablonları",
-  description: "AI iş akışları, otomasyon ve sistem tasarımı için uygulanabilir metotları, şablonları ve dijital ürünleri keşfedin.",
-}
+export const metadata: Metadata = { alternates: { canonical: '/metotlar' }, title: 'AI Factory Sistem Kitaplığı', description: 'AI iş akışları, prompt sistemleri ve değerlendirme için uygulanabilir kitleri ve şablonları inceleyin.' }
 
 export default async function MethodsPage() {
   const methods = await getAllMethods()
-
   return (
-    <Container className="py-16 sm:py-20 lg:py-24">
-      <PageHeader
-        title="AI Metotları ve Şablonları"
-        description="Üretkenliği artıran hazır sistemleri, iş akışı şablonlarını ve dijital ürünleri inceleyin."
-        badge="Dijital Ürünler"
-      />
-
-      {methods.length === 0 ? (
-        <div className="text-center py-16">
-          <p className="text-muted-foreground mb-6">Yakında yeni metotlar eklenecek.</p>
-        </div>
-      ) : (
-        <Grid cols={{ sm: 1, md: 2, lg: 3 }} gap={6}>
-          {methods.map((method) => (
-            <MethodCard key={method.slug} method={method} />
-          ))}
-        </Grid>
-      )}
-    </Container>
+    <>
+      <section className='border-b border-border'><Container className='py-20 sm:py-28'><p className='editorial-kicker'>AI Factory / Sistem Kitaplığı</p><div className='mt-7 grid gap-8 lg:grid-cols-12'><h1 className='text-display-lg lg:col-span-8'>Üretime doğrudan bağlanan sistem parçaları.</h1><p className='self-end text-body-lg text-muted-foreground lg:col-span-4'>Prompt kitleri, iş akışı şablonları ve değerlendirme modülleri; tek seferlik ipuçları değil, uygulanabilir çalışma düzenleri.</p></div></Container></section>
+      <Container className='py-16 sm:py-24'><div className='mb-12 grid gap-4 sm:grid-cols-3'><ModuleCover variant='prompt' /><ModuleCover variant='workflow' /><ModuleCover variant='evaluation' /></div>{methods.length === 0 ? <p className='py-16 text-muted-foreground'>Henüz yayımlanmış sistem bulunmuyor.</p> : <div className='grid gap-7 md:grid-cols-2 lg:grid-cols-3'>{methods.map((method) => <MethodCard key={method.slug} method={method} />)}</div>}</Container>
+    </>
   )
 }

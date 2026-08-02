@@ -33,7 +33,7 @@ export default function ThankYouPage() {
           </Link>
         </Button>
         <Button asChild variant='outline' size='lg'>
-          <Link href='/yazilar'>Yazıları Oku</Link>
+          <Link href='/yazilar'>Yayınları Oku</Link>
         </Button>
       </div>
 
