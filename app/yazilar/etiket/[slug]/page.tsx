@@ -58,7 +58,13 @@ export default async function TaggedArticlesPage({ params }: PageProps<'/yazilar
           <Link
             key={tag.slug}
             href={`/yazilar/etiket/${tag.slug}`}
-            className='inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-colors border-border bg-background text-foreground hover:bg-secondary'
+            aria-current={tag.slug === slug ? 'page' : undefined}
+            className={cn(
+              'inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-colors',
+              tag.slug === slug
+                ? 'border-foreground bg-foreground text-background'
+                : 'border-border bg-background text-foreground hover:bg-secondary',
+            )}
           >
             {tag.name} <Badge variant='secondary' className='ml-2'>{tag.count}</Badge>
           </Link>

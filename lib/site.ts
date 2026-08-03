@@ -3,7 +3,7 @@ export const SiteConfig = {
   shortName: 'brkunluer',
   title: 'Burak Ünlüer | AI Ürün Geliştirici ve AI Factory Kurucusu',
   description:
-    'Burak Ünlüer; AI ürün geliştirme, ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve AI Factory üzerine projeler, metotlar ve içerikler üretir.',
+    'AI ürün geliştirme, ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve AI Factory üzerine projeler, metotlar ve içerikler üretiyorum.',
   url: 'https://brkunluer.site',
   ogImage: '/og/default.png',
   keywords: [

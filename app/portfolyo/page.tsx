@@ -8,7 +8,7 @@ const showcaseSlugs = ['cau-ink', 'saloniq', 'ai-factory-os', 'adres-moda']
 export const metadata: Metadata = {
   alternates: { canonical: '/portfolyo' },
   title: 'Burak Ünlüer Portföyü | Web, SaaS ve AI Ürün Çalışmaları',
-  description: 'Burak Ünlüer’in web sitesi, e-ticaret, SaaS, AI ürün mimarisi, otomasyon ve prompt engineering çalışmalarından seçilmiş portföyü.',
+  description: 'Web sitesi, e-ticaret, SaaS, AI ürün mimarisi, otomasyon ve prompt engineering çalışmalarından seçtiğim portföyüm.',
 }
 
 export default async function PortfolioPage() {
@@ -25,9 +25,9 @@ export default async function PortfolioPage() {
         <Container className='py-20 sm:py-28'>
           <p className='editorial-kicker'>01 / Portföy</p>
           <div className='mt-7 grid gap-8 lg:grid-cols-12'>
-            <h1 className='text-display-lg lg:col-span-8'>Web deneyimleri, SaaS ürünleri ve AI tabanlı iş sistemleri.</h1>
+            <h1 className='text-display-lg lg:col-span-8'>Web deneyimleri, SaaS ürünleri ve AI tabanlı iş sistemleri geliştiriyorum.</h1>
             <div className='self-end lg:col-span-4'>
-              <p className='text-body-lg text-muted-foreground'>Burak Ünlüer portföyü; müşteri web siteleri, e-ticaret çalışmaları, işletme yönetimi SaaS ürünleri, OpenAI tabanlı ürün mimarileri ve sektöre özel otomasyon sistemlerinden seçilmiş çalışmaları gösterir.</p>
+              <p className='text-body-lg text-muted-foreground'>Bu portföyde; geliştirdiğim müşteri web sitelerini, e-ticaret çalışmalarını, işletme yönetimi SaaS ürünlerini, OpenAI tabanlı ürün mimarilerini ve sektöre özel otomasyon sistemlerini bir araya getiriyorum.</p>
               <div className='mt-8 grid grid-cols-2 gap-5 border-t border-border pt-5'>
                 <div><p className='text-heading-lg'>{showcaseProjects.length}</p><p className='mt-1 text-sm text-muted-foreground'>Vitrin çalışması</p></div>
                 <div><p className='text-heading-lg'>20+</p><p className='mt-1 text-sm text-muted-foreground'>Otomasyon aracı</p></div>
@@ -40,8 +40,8 @@ export default async function PortfolioPage() {
       <Container className='py-16 sm:py-24'>
         <div className='mb-10 max-w-2xl'>
           <p className='editorial-kicker'>Vitrin çalışmaları</p>
-          <h2 className='mt-5 text-heading-lg'>İşverene ilk gösterilecek güçlü işler.</h2>
-          <p className='mt-5 text-body text-muted-foreground'>Bu bölümde yalnızca gerçek ekran, net kapsam veya güçlü ürün/mimari anlatımı olan çalışmalar öne çıkarılır.</p>
+          <h2 className='mt-5 text-heading-lg'>İlk bakışta ne ürettiğimi gösteren güçlü işler.</h2>
+          <p className='mt-5 text-body text-muted-foreground'>Bu bölümde yalnızca gerçek ekranlarla, net kapsamla veya güçlü bir ürün ve mimari anlatımıyla destekleyebildiğim çalışmalarımı öne çıkarıyorum.</p>
         </div>
         <div className='grid gap-8'>{showcaseProjects.map((project) => <ProjectCard key={project.slug} project={project} variant='featured' />)}</div>
       </Container>
@@ -73,9 +73,9 @@ export default async function PortfolioPage() {
           <div className='mb-12 grid gap-6 lg:grid-cols-12'>
             <div className='lg:col-span-7'>
               <p className='editorial-kicker'>Aktif geliştirme</p>
-              <h2 className='mt-5 text-heading-lg'>Üzerinde çalışılan ürün ve platformlar.</h2>
+              <h2 className='mt-5 text-heading-lg'>Üzerinde çalıştığım ürün ve platformlar.</h2>
             </div>
-            <p className='self-end text-sm leading-6 text-muted-foreground lg:col-span-4 lg:col-start-9'>Bu kayıtlar tamamlanmış vitrin işi gibi sunulmaz; kapsam, ekranlar ve teknik doğrulama netleştikçe vaka çalışmasına dönüştürülür.</p>
+            <p className='self-end text-sm leading-6 text-muted-foreground lg:col-span-4 lg:col-start-9'>Bu kayıtları tamamlanmış vitrin işleri gibi sunmuyorum; kapsamı, ekranları ve teknik doğrulamayı netleştirdikçe vaka çalışmalarına dönüştürüyorum.</p>
           </div>
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>{activeProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}</div>
         </Container>
@@ -88,7 +88,7 @@ export default async function PortfolioPage() {
               <p className='editorial-kicker'>Proje arşivi</p>
               <h2 className='mt-5 text-heading-lg'>{archiveProjects.length} ek kayıt.</h2>
             </div>
-            <p className='self-end text-sm leading-6 text-muted-foreground lg:col-span-4 lg:col-start-9'>Bu bölüm üretim işleri, prototipler, teklif çalışmaları, iç araçlar ve deneysel kayıtları daha düşük öncelikle listeler. Eksik alanlar doğrulandıkça güncellenir.</p>
+            <p className='self-end text-sm leading-6 text-muted-foreground lg:col-span-4 lg:col-start-9'>Bu bölümde üretim işlerimi, prototiplerimi, teklif çalışmalarımı, iç araçlarımı ve deneysel kayıtlarımı daha düşük öncelikle listeliyorum. Eksik alanları doğruladıkça güncelliyorum.</p>
           </div>
           {archiveProjects.length === 0 ? <p className='py-12 text-muted-foreground'>Arşiv kaydı bulunmuyor.</p> : <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>{archiveProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}</div>}
         </Container>

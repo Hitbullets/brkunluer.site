@@ -8,15 +8,15 @@
   ],
   "client": "Salon işletmeleri için ürün",
   "industry": "Güzellik ve salon yönetimi",
-  "projectType": "Yapay zeka destekli i?letme y?netimi ve ak?ll? randevu SaaS uygulamas?",
+  "projectType": "Yapay zekâ destekli işletme yönetimi ve akıllı randevu SaaS uygulaması",
   "categories": [
     "SaaS",
-    "AI ??letme Y?netimi",
-    "Ak?ll? Randevu"
+    "AI İşletme Yönetimi",
+    "Akıllı Randevu"
   ],
-  "currentStatus": "MVP ve production kay?tlar? belgeli; ?r?n salon operasyonlar?, randevu, kasa, stok ve m??teri y?netimi ekseninde geli?tirildi.",
+  "currentStatus": "MVP ve production kayıtları belgeli; ürün salon operasyonları, randevu, kasa, stok ve müşteri yönetimi ekseninde geliştirildi.",
   "timeline": "2026-03: deployment belgesinde v2.2.90; sonraki T2/T3 dalgaları belgeli.",
-  "purpose": "Salon i?letmelerinin randevu, m??teri, ?yelik, stok, ?deme ve raporlama s?re?lerini tek SaaS ?r?n?nde y?netmek.",
+  "purpose": "Salon işletmelerinin randevu, müşteri, üyelik, stok, ödeme ve raporlama süreçlerini tek SaaS ürününde yönetmek.",
   "problemBeingSolved": "Parçalı salon operasyonlarını çok kiracılı, izlenebilir bir SaaS akışında birleştirmek.",
   "targetUsers": [
     "Salon sahipleri",
@@ -164,7 +164,7 @@
   "coverPromptSummary": "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
   "portfolioTier": "showcase",
-  "portfolioSummary": "SalonIQ; g?zellik ve hizmet i?letmeleri i?in randevu, m??teri, kasa, stok, ?yelik ve raporlama ak??lar?n? tek panelde toplayan SaaS ?r?n?d?r.",
-  "portfolioRole": "?r?n kapsam?, ?ok kirac?l? mimari, operasyon ekranlar?, ?deme/stok ak??? ve AI destekli geli?tirme planlamas?.",
-  "evidenceSummary": "?r?n kapsam?, deployment kay?tlar?, monorepo yap?s? ve uygulama bile?enleri belgeli."
+  "portfolioSummary": "SalonIQ; güzellik ve hizmet işletmeleri için randevu, müşteri, kasa, stok, üyelik ve raporlama akışlarını tek panelde toplayan SaaS ürünüdür.",
+  "portfolioRole": "Ürün kapsamı, çok kiracılı mimari, operasyon ekranları, ödeme/stok akışı ve AI destekli geliştirme planlaması.",
+  "evidenceSummary": "Ürün kapsamı, deployment kayıtları, monorepo yapısı ve uygulama bileşenleri belgeli."
 }

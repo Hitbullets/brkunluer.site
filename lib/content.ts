@@ -9,6 +9,7 @@ import {
   projectSchema,
   type PortfolioArchiveProjectInput,
 } from "./validations"
+import { slugify } from "./utils"
 
 const contentDir = path.join(process.cwd(), "content")
 const markdownFilePattern = /\.(md|mdx)$/
@@ -342,12 +343,12 @@ async function loadProjects(): Promise<Project[]> {
 }
 
 async function computeAllTags(): Promise<TagInfo[]> {
-  const [articles, projects] = await Promise.all([loadArticles(), loadProjects()])
+  const articles = await loadArticles()
 
   const tagMap = new Map<string, number>()
 
-  for (const item of [...articles, ...projects]) {
-    for (const tag of item.tags) {
+  for (const article of articles) {
+    for (const tag of article.tags) {
       tagMap.set(tag, (tagMap.get(tag) || 0) + 1)
     }
   }
@@ -355,7 +356,7 @@ async function computeAllTags(): Promise<TagInfo[]> {
   return Array.from(tagMap.entries())
     .map(([name, count]) => ({
       name,
-      slug: name.toLowerCase().replace(/\s+/g, "-"),
+      slug: slugify(name),
       count,
     }))
     .sort((a, b) => b.count - a.count)
@@ -373,7 +374,7 @@ export async function getAllArticles(): Promise<Article[]> {
 export async function getArticlesByTag(tagSlug: string): Promise<Article[]> {
   const articles = await loadArticles()
   return articles.filter((a) =>
-    a.tags.some((t) => t.toLowerCase().replace(/\s+/g, "-") === tagSlug),
+    a.tags.some((tag) => slugify(tag) === tagSlug),
   )
 }
 
