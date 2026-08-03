@@ -155,5 +155,6 @@
   },
   "documentationScore": 81,
   "priorityScore": 92,
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "archive"
 }

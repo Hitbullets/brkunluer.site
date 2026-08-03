@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { EditorialMark } from '@/components/ui/editorial-graphics'
 import { SiteConfig } from '@/lib/site'
 
-export const metadata: Metadata = { alternates: { canonical: '/hakkinda' }, title: 'Burak Ünlüler Hakkında', description: SiteConfig.author.bio }
+export const metadata: Metadata = { alternates: { canonical: '/hakkinda' }, title: 'Burak Ünlüer Hakkında', description: SiteConfig.author.bio }
 
 const expertise: Array<[string, string]> = [
   ['AI ürün geliştirme', 'Fikir, model davranışı, arayüz ve doğrulama katmanlarını tek ürün döngüsünde birleştirme.'],
@@ -30,7 +30,7 @@ export default function AboutPage() {
 
       <Container className='py-16 sm:py-24'>
         <div className='grid gap-8 lg:grid-cols-12'>
-          <div className='relative min-h-[620px] overflow-hidden border border-border lg:col-span-5'><Image src='/images/portraits/burak-portrait-wide.jpeg' alt='Burak Ünlüler, dış mekânda portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' priority /></div>
+          <div className='relative min-h-[620px] overflow-hidden border border-border lg:col-span-5'><Image src='/images/portraits/burak-portrait-wide.jpeg' alt='Burak Ünlüer, dış mekânda portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' priority /></div>
           <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'>
             <div className='space-y-6 text-body-lg text-muted-foreground'><p>Tek bir unvanla kendimi tanımlamayı tercih etmiyorum. Yazılım geliştirmek kadar fikirleri sorgulamak, problemi doğru çerçevelemek ve insanların gerçekten kullanmak isteyeceği ürünler oluşturmakla ilgileniyorum.</p><p>Yapay zekâ, otomasyon ve modern web teknolojilerini; hızlı prototip üretmenin ötesinde, ölçülebilir ve tekrar kullanılabilir sistemler kurmak için kullanıyorum.</p><p>Çalışma yaklaşımım net: önce bağlamı görünür kılmak, ardından en küçük doğru sistemi kurmak ve gerçek kullanımdan gelen verilerle geliştirmek.</p></div>
             <div className='mt-12 grid grid-cols-2 border-y border-border font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground sm:grid-cols-4'><span className='py-4'>Eskişehir / TR</span><span className='py-4'>AI + Ürün</span><span className='py-4'>Sistem tasarımı</span><span className='py-4'>Bağımsız</span></div>

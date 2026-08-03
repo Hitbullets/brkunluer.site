@@ -67,7 +67,7 @@
   "lessonsLearned": "Teklif, tamamlanmış proje olarak sunulmamalı.",
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\TEKLİF DOSYALARI",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/karesi-periyodik-kontrol-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -114,5 +114,8 @@
   "documentationScore": 37,
   "priorityScore": 49,
   "coverPromptSummary": "Belgelenmiş periyodik kontrol hizmet sunumu ve teklif akışından türetilen kurumsal web cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

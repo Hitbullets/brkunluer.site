@@ -10,16 +10,16 @@
   ],
   "client": "CAU INK / Ahsen",
   "industry": "Dövme, piercing ve lazer dövme silme",
-  "projectType": "Kurumsal stüdyo sitesi ve galeri",
+  "projectType": "Web sitesi tasar?m? ?al??mas?",
   "categories": [
-    "Tattoo Studio",
-    "Corporate Website",
-    "Portfolio"
+    "Web Sitesi",
+    "Marka Deneyimi",
+    "Randevu Ak???"
   ],
-  "currentStatus": "Üretim sitesi 2026-08-02 web taramasında erişildi; yerel klasörlerde birden fazla tarihsel yeniden tasarım bulunuyor.",
+  "currentStatus": "Canl? web sitesi eri?ilebilir; portf?y kayd? ger?ek ekran g?r?nt?leri ve yerel proje ar?iviyle destekleniyor.",
   "timeline": "2022: canlı sitede marka başlangıcı; 2026: statik, Stitch/Next.js ve Gallery v2 revizyonları.",
-  "purpose": "CAU INK hizmetlerini, sanatçı kimliğini, galeriyi ve randevu akışını sunmak.",
-  "problemBeingSolved": "Yerel stüdyonun güven, hijyen, uzmanlık ve iş kalitesi sinyallerini dijital randevu talebine dönüştürmek.",
+  "purpose": "CAU INK i?in marka g?veni, hizmet anlat?m?, galeri ve randevu d?n???m?n? tek bir web deneyiminde birle?tirmek.",
+  "problemBeingSolved": "D?vme, piercing ve lazer d?vme silme hizmetlerinde g?ven, hijyen, sanat?? kimli?i ve randevu talebini dijitalde netle?tirmek.",
   "targetUsers": [
     "Balıkesir'de dövme arayanlar",
     "Piercing müşterileri",
@@ -107,17 +107,17 @@
   ],
   "gitRepository": "https://github.com/Hitbullets/cau-ink-gallery.git",
   "productionUrl": "https://cauink.com",
-  "coverImage": "/images/projects/covers/cau-ink-mockup.png",
+  "coverImage": "/images/projects/covers/cau-ink-live-hero.png",
   "coverSourceScreens": [
-    "content/projects/cau-ink/assets/homepage-desktop.png"
+    "content/projects/cau-ink/assets/live-full-page.png"
   ],
-  "coverProvenance": "verified-source-screen",
+  "coverProvenance": "verified-live-screen",
   "coverSources": [
     "S010",
     "S014"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Canl? site ?zerinden incelenebilir.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\ARCHITECTURE.md",
@@ -174,5 +174,9 @@
   "documentationScore": 94,
   "priorityScore": 99,
   "coverPromptSummary": "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "showcase",
+  "portfolioSummary": "Bal?kesir merkezli CAU INK i?in hizmetleri, sanat?? kimli?ini, sosyal kan?t? ve randevu aksiyonunu koyu, premium ve d?n???m odakl? bir web sitesinde toplad?m.",
+  "portfolioRole": "Web sitesi tasar?m?, i?erik hiyerar?isi, galeri/randevu ak???, responsive deneyim ve g?rsel y?nlendirme.",
+  "evidenceSummary": "Canl? ekran g?r?nt?leri, ?retim URL'si ve yerel proje ar?ivi mevcut."
 }

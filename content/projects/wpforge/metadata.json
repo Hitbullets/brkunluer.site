@@ -2,13 +2,13 @@
   "aliases": "Unknown",
   "client": "Bağımsız geliştirici aracı",
   "industry": "WordPress geliştirme otomasyonu",
-  "projectType": "AI-first CLI",
+  "projectType": "Aktif geli?tirme s?recindeki AI-first WordPress ?retim arac?",
   "categories": [
     "Internal Tool",
     "Open Source",
     "AI Product"
   ],
-  "currentStatus": "Yerel Python kaynakları, mimari ve test klasörü mevcut; README 32 testin geçtiğini kaydediyor fakat bu taramada testler yeniden çalıştırılmadı.",
+  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
   "timeline": "2026 yerel proje; kesin Git tarihçesi Unknown.",
   "purpose": "Prompttan site planı çıkarıp WP-CLI ile standart WordPress sitesi üretmek.",
   "problemBeingSolved": "WordPress kurulum, child theme, içerik yapısı, WooCommerce ve SEO işlerinin tekrarlı manuel kurulumu.",
@@ -75,8 +75,8 @@
   "lessonsLearned": "AI üretimi, uygulanabilir plan ve deterministik yürütme katmanıyla sınırlandırılmalı.",
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
-  "gitRepository": "Unknown",
-  "productionUrl": "Unknown",
+  "gitRepository": "Private Repository",
+  "productionUrl": "Aktif geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/wpforge-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -86,7 +86,7 @@
     "S172"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Proje detaylar? haz?rlan?yor.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\ARCHITECTURE.md"
@@ -132,5 +132,10 @@
   "documentationScore": 61,
   "priorityScore": 89,
   "coverPromptSummary": "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioSummary": "Prompttan site plan? ??kar?p WP-CLI ile standart WordPress kurulumlar? ?retmeyi hedefleyen geli?tirici arac? aktif geli?tirme s?recindedir.",
+  "portfolioTier": "active-development",
+  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

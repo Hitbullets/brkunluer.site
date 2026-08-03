@@ -1,9 +1,9 @@
 export const SiteConfig = {
-  name: 'Burak Ünlüler',
+  name: 'Burak Ünlüer',
   shortName: 'brkunluer',
-  title: 'Burak Ünlüler | AI Ürün Geliştirici ve AI Factory Kurucusu',
+  title: 'Burak Ünlüer | AI Ürün Geliştirici ve AI Factory Kurucusu',
   description:
-    'Burak Ünlüler; AI ürün geliştirme, ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve AI Factory üzerine projeler, metotlar ve içerikler üretir.',
+    'Burak Ünlüer; AI ürün geliştirme, ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve AI Factory üzerine projeler, metotlar ve içerikler üretir.',
   url: 'https://brkunluer.site',
   ogImage: '/og/default.png',
   keywords: [
@@ -22,7 +22,7 @@ export const SiteConfig = {
     'workflow design',
   ],
   author: {
-    name: 'Burak Ünlüler',
+    name: 'Burak Ünlüer',
     role: 'AI Ürün Geliştirici ve AI Factory Kurucusu',
     bio: 'Tekrarlanabilir AI ürün geliştirme sistemleri kuruyorum. AI Factory ile bireylerin ve ekiplerin yapay zekâ destekli ürünlerini daha hızlı, ölçülebilir ve sürdürülebilir biçimde geliştirmesine yardımcı oluyorum.',
     email: 'mail@brkunluer.site',

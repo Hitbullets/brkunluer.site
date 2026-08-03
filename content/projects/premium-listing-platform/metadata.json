@@ -4,12 +4,12 @@
   ],
   "client": "Unknown",
   "industry": "İlan / yetişkin içerik pazaryeri",
-  "projectType": "Frontend-only ilan platformu MVP",
+  "projectType": "Aktif geli?tirme s?recindeki premium ilan platformu MVP",
   "categories": [
     "Marketplace",
     "Experimental"
   ],
-  "currentStatus": "Yerel frontend-only MVP; README backend, gerçek login ve admin olmadığını belirtiyor. Production Unknown.",
+  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
   "timeline": "Eski proje arşivi; kesin tarih Unknown.",
   "purpose": "Premium ilan listeleme ve profil deneyimini prototiplemek.",
   "problemBeingSolved": "İlan keşfi ve premium görünürlüğün frontend akışını doğrulamak.",
@@ -61,8 +61,8 @@
   "lessonsLearned": "Mock akışlar üretim özelliği olarak sayılmamalı.",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
-  "gitRepository": "Unknown",
-  "productionUrl": "Unknown",
+  "gitRepository": "Private Repository",
+  "productionUrl": "Aktif geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/premium-listing-platform-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -71,7 +71,7 @@
     "S151"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Proje detaylar? haz?rlan?yor.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform\\README.md"
   ],
@@ -110,5 +110,10 @@
   "documentationScore": 32,
   "priorityScore": 44,
   "coverPromptSummary": "Belgelenmiş premium listeleme ve profil keşfi MVP'sini nötr görsellerle temsil eden cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioSummary": "Premium ilan listeleme, profil ke?fi ve vitrin deneyimi ?zerine kurulan frontend MVP aktif geli?tirme s?recindedir.",
+  "portfolioTier": "active-development",
+  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

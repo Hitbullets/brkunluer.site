@@ -77,7 +77,7 @@
   "lessonsLearned": "Hazır veri arayüzü, prototipi sonraki veritabanına taşımayı kolaylaştırır; üretim durumu olarak sunulmamalı.",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/personal-crm-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -126,5 +126,8 @@
   "documentationScore": 49,
   "priorityScore": 64,
   "coverPromptSummary": "Kişi, ilişki ve etkileşim takibi işlevlerinden türetilen kişisel CRM cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

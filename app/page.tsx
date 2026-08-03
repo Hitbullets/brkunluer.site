@@ -90,7 +90,7 @@ export default async function Home() {
       <section className='border-b border-border'>
         <Container className='py-20 sm:py-28'>
           <div className='grid gap-10 lg:grid-cols-12'>
-            <div className='relative min-h-[520px] overflow-hidden lg:col-span-5'><Image src='/images/portraits/burak-portrait-close.jpeg' alt='Burak Ünlüler, çalışma ortamında portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' /></div>
+            <div className='relative min-h-[520px] overflow-hidden lg:col-span-5'><Image src='/images/portraits/burak-portrait-close.jpeg' alt='Burak Ünlüer, çalışma ortamında portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' /></div>
             <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'><div><p className='editorial-kicker'>04 / Hakkımda</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>2015 civarında oyun sunucuları için paket geliştirmeleri ve bootstack geçişleriyle başlayan üretim pratiğim, 2022’de ilk profesyonel projeyle ürün geliştirme odağına taşındı.</p></div><div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Biyografiyi ve çalışma yaklaşımını oku →</Link></div></div>
           </div>
         </Container>

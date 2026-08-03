@@ -65,7 +65,7 @@
   "lessonsLearned": "Kırılgan web otomasyonu mümkünse resmi API'nin arkasında yedek olmalı.",
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/google-business-profile-service-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -114,5 +114,8 @@
   "documentationScore": 46,
   "priorityScore": 64,
   "coverPromptSummary": "Paylaşım URL'sinden Place ID ve yapılandırılmış veri çıkarma akışını temsil eden web aracı mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

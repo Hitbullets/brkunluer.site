@@ -4,13 +4,13 @@
   ],
   "client": "Unknown",
   "industry": "LLM/API altyapısı",
-  "projectType": "LLM provider ve API gateway/proxy konsepti",
+  "projectType": "Aktif geli?tirme s?recindeki LLM provider ve API gateway mod?l?",
   "categories": [
     "SaaS",
     "Internal Tool",
     "Experimental"
   ],
-  "currentStatus": "Yalnız küratörlü arşiv kaydı bulundu; bağımsız kaynak kod veya birincil belge bulunamadı.",
+  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
   "timeline": "Unknown",
   "purpose": "T0/T1/T2 katmanlarıyla API gateway/proxy ürünü tasarlamak.",
   "problemBeingSolved": "API erişimi ve katmanlı servis yönetimi; ayrıntı Unknown.",
@@ -41,8 +41,8 @@
   "lessonsLearned": "İkincil arşiv kaydı tek başına uygulama veya yayın kanıtı değildir.",
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
-  "gitRepository": "Unknown",
-  "productionUrl": "Unknown",
+  "gitRepository": "Private Repository",
+  "productionUrl": "Aktif geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/yasui-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -52,7 +52,7 @@
     "S220"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Proje detaylar? haz?rlan?yor.",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md",
   "relatedBlogPosts": "Unknown",
   "relatedResearch": "Unknown",
@@ -90,5 +90,10 @@
   "documentationScore": 15,
   "priorityScore": 50,
   "coverPromptSummary": "Belgelenmiş LLM/API gateway, maliyet ve abuse kontrolü ile T0 Trial, T1 Verified, T2 Power User katmanlarını temsil eden cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioSummary": "LLM sa?lay?c? eri?imi, maliyet katman? ve API ge?idi yakla??m? ?zerine geli?tirilen altyap? konsepti aktif geli?tirme s?recindedir.",
+  "portfolioTier": "active-development",
+  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

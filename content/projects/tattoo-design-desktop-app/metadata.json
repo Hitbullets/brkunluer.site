@@ -58,7 +58,7 @@
   "lessonsLearned": "Açık birleşme kanıtı yoksa benzer ürünler otomatik birleştirilmemeli.",
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
@@ -104,5 +104,8 @@
   },
   "documentationScore": 16,
   "priorityScore": 61,
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

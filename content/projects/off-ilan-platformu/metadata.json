@@ -4,12 +4,12 @@
   ],
   "client": "Unknown",
   "industry": "Emlak ve otomotiv ilan yönetimi",
-  "projectType": "İlan otomasyonu",
+  "projectType": "Aktif geli?tirme s?recindeki ilan otomasyon platformu",
   "categories": [
     "SaaS",
     "Internal Tool"
   ],
-  "currentStatus": "Ürün kimliği portföy sahibi tarafından düzeltildi; uygulama ve yayın durumu Unknown.",
+  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
   "timeline": "Unknown",
   "purpose": "Emlak ve oto galerileri için ilan hazırlama ve yönetim süreçlerini otomatikleştirmek.",
   "problemBeingSolved": "Emlak ve oto galeri ilan operasyonlarındaki tekrarlı hazırlık ve takip adımlarını azaltmak.",
@@ -43,8 +43,8 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
-  "gitRepository": "Unknown",
-  "productionUrl": "Unknown",
+  "gitRepository": "Private Repository",
+  "productionUrl": "Aktif geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/off-ilan-platformu-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "owner-brief-informed-concept",
@@ -52,7 +52,7 @@
     "S220"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Proje detaylar? haz?rlan?yor.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\docs\\MASTER_PORTFOLIO\\USER_CORRECTIONS_2026-08-03.md"
   ],
@@ -62,7 +62,7 @@
   "relatedAiWorkflows": "Unknown",
   "relatedMethods": "Unknown",
   "filesBelonging": "Unknown",
-  "projectName": "Emlak/Oto Galeri İlan Otomasyonları",
+  "projectName": "Emlak/Oto Galeri ?lan Otomasyonlar?",
   "slug": "off-ilan-platformu",
   "sourceIds": [
     "S220"
@@ -88,5 +88,10 @@
   "documentationScore": 10,
   "priorityScore": 71,
   "coverPromptSummary": "Portföy sahibinin düzelttiği emlak ve oto galeri ilan otomasyonu kapsamını temsil eden B2B cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioSummary": "Emlak ve oto galerileri i?in ilan haz?rlama, kanal uyarlama ve operasyon takibini merkezile?tiren otomasyon platformu aktif geli?tirme s?recindedir.",
+  "portfolioTier": "active-development",
+  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

@@ -2,13 +2,13 @@
   "aliases": "Unknown",
   "client": "Unknown",
   "industry": "Canlı açık artırma",
-  "projectType": "Gerçek zamanlı web ürün konsepti",
+  "projectType": "Aktif geli?tirme s?recindeki ger?ek zamanl? mezat platformu",
   "categories": [
     "SaaS",
     "Marketplace",
     "Experimental"
   ],
-  "currentStatus": "Küratörlü arşivde WebSocket açık artırma spesifikasyonu kayıtlı; atıf yapılan birincil design/Stitch dosyaları yerelde bulunamadı.",
+  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
   "timeline": "Unknown",
   "purpose": "Gerçek zamanlı teklif verilen açık artırma deneyimi tasarlamak.",
   "problemBeingSolved": "Teklif sırası, süre ve anlık durumun eşzamanlı yönetimi.",
@@ -50,8 +50,8 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
-  "gitRepository": "Unknown",
-  "productionUrl": "Unknown",
+  "gitRepository": "Private Repository",
+  "productionUrl": "Aktif geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/mezat-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -60,7 +60,7 @@
     "S191"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Proje detaylar? haz?rlan?yor.",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md",
   "relatedBlogPosts": "Unknown",
   "relatedResearch": "Unknown",
@@ -70,7 +70,7 @@
   "filesBelonging": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md"
   ],
-  "projectName": "MEZAT",
+  "projectName": "Online Mezat Platform",
   "slug": "mezat",
   "sourceIds": [
     "S190",
@@ -97,5 +97,10 @@
   "documentationScore": 19,
   "priorityScore": 69,
   "coverPromptSummary": "Belgelenmiş WebSocket, canlı teklif ve anti-snipe işlevlerinden türetilen MEZAT cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioSummary": "Ger?ek zamanl? teklif, a??k art?rma ak??? ve y?netim paneli yakla??m? ?zerine tasarlanan online mezat platformu aktif geli?tirme s?recindedir.",
+  "portfolioTier": "active-development",
+  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

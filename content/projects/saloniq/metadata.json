@@ -8,15 +8,15 @@
   ],
   "client": "Salon işletmeleri için ürün",
   "industry": "Güzellik ve salon yönetimi",
-  "projectType": "Çok kiracılı SaaS",
+  "projectType": "Yapay zeka destekli i?letme y?netimi ve ak?ll? randevu SaaS uygulamas?",
   "categories": [
     "SaaS",
-    "Internal Tool",
-    "Corporate Product"
+    "AI ??letme Y?netimi",
+    "Ak?ll? Randevu"
   ],
-  "currentStatus": "Yerel kanonik belgede v2.2.90 MVP ve production kaydı var; dışarıdan güncel canlı doğrulama yapılamadı.",
+  "currentStatus": "MVP ve production kay?tlar? belgeli; ?r?n salon operasyonlar?, randevu, kasa, stok ve m??teri y?netimi ekseninde geli?tirildi.",
   "timeline": "2026-03: deployment belgesinde v2.2.90; sonraki T2/T3 dalgaları belgeli.",
-  "purpose": "Salonların randevu, müşteri, üyelik, stok, ödeme ve raporlama süreçlerini tek üründe yönetmek.",
+  "purpose": "Salon i?letmelerinin randevu, m??teri, ?yelik, stok, ?deme ve raporlama s?re?lerini tek SaaS ?r?n?nde y?netmek.",
   "problemBeingSolved": "Parçalı salon operasyonlarını çok kiracılı, izlenebilir bir SaaS akışında birleştirmek.",
   "targetUsers": [
     "Salon sahipleri",
@@ -105,7 +105,7 @@
     "https://github.com/Hitbullets/SALONIQ.git",
     "https://github.com/Hitbullets/Saloniq-Stagging.git"
   ],
-  "productionUrl": "https://saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+  "productionUrl": "https://saloniq.app",
   "coverImage": "/images/projects/covers/saloniq-mockup.png",
   "coverSourceScreens": [
     "content/projects/saloniq/assets/homepage-desktop.png"
@@ -116,7 +116,7 @@
     "S022"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
+  "demoUrl": "https://app.saloniq.app",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\operations\\DEPLOYMENT.md"
@@ -132,7 +132,7 @@
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\_SalonIQ_Archive",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Saloniq APP Yedekler"
   ],
-  "projectName": "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
+  "projectName": "SalonIQ App",
   "slug": "saloniq",
   "sourceIds": [
     "S020",
@@ -162,5 +162,9 @@
   "documentationScore": 86,
   "priorityScore": 99,
   "coverPromptSummary": "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "showcase",
+  "portfolioSummary": "SalonIQ; g?zellik ve hizmet i?letmeleri i?in randevu, m??teri, kasa, stok, ?yelik ve raporlama ak??lar?n? tek panelde toplayan SaaS ?r?n?d?r.",
+  "portfolioRole": "?r?n kapsam?, ?ok kirac?l? mimari, operasyon ekranlar?, ?deme/stok ak??? ve AI destekli geli?tirme planlamas?.",
+  "evidenceSummary": "?r?n kapsam?, deployment kay?tlar?, monorepo yap?s? ve uygulama bile?enleri belgeli."
 }

@@ -44,7 +44,7 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/ai-trainer-kamu-egitimi-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -91,5 +91,8 @@
   "documentationScore": 21,
   "priorityScore": 51,
   "coverPromptSummary": "Belgelenmiş 17 slaytlık kamu AI okuryazarlığı eğitimi ve Ocean Gradient paletinden türetilen sunum mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

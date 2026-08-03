@@ -103,7 +103,7 @@ export async function ArticleDetail({ article, serializedBody, previousArticle, 
                   href='/hakkinda'
                   className='inline-block mt-2 text-sm text-brand-600 dark:text-brand-400 hover:underline'
                 >
-                  Burak Ünlüler Hakkında &rarr;
+                  Burak Ünlüer Hakkında &rarr;
                 </Link>
               </div>
             </div>
