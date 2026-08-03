@@ -1,8 +1,8 @@
-# HERA BRAID Link-in-Bio — Mimari
+# Hair Designer Buse Durmaz — Mimari
 
 ## Mimari özet
 
-Bağımlılıksız statik site. [S110] [S111]
+Bağımlılıksız statik site. [S110] [S111] [S220]
 
 ## Teknik kararlar
 

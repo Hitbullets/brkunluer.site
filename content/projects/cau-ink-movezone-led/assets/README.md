@@ -1,6 +1,6 @@
-# CAU INK × MoveZone LED Reklamları — Varlık Referansları
+# CAU INK x MOVEZONE REKLAM ÇALIŞMALARI — Varlık Referansları
 
-C:\Users\Burak\Documents\ByyHit Works\GENEL PROJE DOSYALARI\CAU-INK-DOSYALAR [S014] [S190] [S191]
+C:\Users\Burak\Documents\ByyHit Works\GENEL PROJE DOSYALARI\CAU-INK-DOSYALAR [S014] [S190] [S191] [S220]
 
 ## Projeye ait dosya kökleri
 

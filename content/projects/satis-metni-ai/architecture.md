@@ -1,8 +1,8 @@
-# SatışMetni AI — Mimari
+# AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler — Mimari
 
 ## Mimari özet
 
-Tek Next.js uygulamasında pazarlama, üretim API'leri, admin, veri ve ödeme katmanları. [S070] [S071]
+Tek Next.js uygulamasında pazarlama, üretim API'leri, admin, veri ve ödeme katmanları. [S070] [S071] [S220]
 
 ## Teknik kararlar
 

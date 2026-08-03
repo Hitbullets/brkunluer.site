@@ -111,6 +111,12 @@
   "coverSourceScreens": [
     "content/projects/cau-ink/assets/homepage-desktop.png"
   ],
+  "coverProvenance": "verified-source-screen",
+  "coverSources": [
+    "S010",
+    "S014"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
@@ -167,5 +173,6 @@
   },
   "documentationScore": 94,
   "priorityScore": 99,
+  "coverPromptSummary": "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

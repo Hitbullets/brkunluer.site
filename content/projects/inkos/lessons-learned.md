@@ -1,6 +1,6 @@
-# InkOS — Çıkarılan Dersler
+# InkOS | AI Tattoo Creator — Çıkarılan Dersler
 
-Plan, landing ve gerçek ürün çalışma durumları ayrı kanıtlanmalı. [S005] [S030] [S031] [S032] [S033]
+Plan, landing ve gerçek ürün çalışma durumları ayrı kanıtlanmalı. [S005] [S030] [S031] [S032] [S033] [S220]
 
 ## Performans
 

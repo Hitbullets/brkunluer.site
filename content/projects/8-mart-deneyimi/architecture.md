@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Bağımlılıksız statik HTML/CSS/JS ve durum bazlı ekranlar. [S201]
+Bağımlılıksız statik HTML/CSS/JS ve durum bazlı ekranlar. [S201] [S220]
 
 ## Teknik kararlar
 

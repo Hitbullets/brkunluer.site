@@ -1,7 +1,7 @@
-# OFF İlan Platformu — Zaman Çizelgesi
+# Emlak/Oto Galeri İlan Otomasyonları — Zaman Çizelgesi
 
-2026 plan/source dönemi; kesin tarih Unknown. [S160] [S161]
+Unknown [S220]
 
 ## Durum
 
-Yerel frontend, backend, admin, Docker ve Nginx kaynakları mevcut; production ve gerçek ödeme doğrulaması Unknown. [S160] [S161]
+Ürün kimliği portföy sahibi tarafından düzeltildi; uygulama ve yayın durumu Unknown. [S220]

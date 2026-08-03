@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-App Router; Server Components varsayılan; içerik lib/content.ts üzerinden MDX dosyalarından yüklenir. [S001] [S002] [S003] [S004] [S005] [S006]
+App Router; Server Components varsayılan; içerik lib/content.ts üzerinden MDX dosyalarından yüklenir. [S001] [S002] [S003] [S004] [S005] [S006] [S220]
 
 ## Teknik kararlar
 

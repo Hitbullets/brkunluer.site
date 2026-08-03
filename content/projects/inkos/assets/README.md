@@ -1,6 +1,6 @@
-# InkOS — Varlık Referansları
+# InkOS | AI Tattoo Creator — Varlık Referansları
 
-C:\Users\Burak\Documents\ByyHit Works\Ink-OS, C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\BRKUNLUER.SITE\public\images\projects [S005] [S030] [S031] [S032] [S033]
+C:\Users\Burak\Documents\ByyHit Works\Ink-OS, C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\BRKUNLUER.SITE\public\images\projects [S005] [S030] [S031] [S032] [S033] [S220]
 
 ## Projeye ait dosya kökleri
 

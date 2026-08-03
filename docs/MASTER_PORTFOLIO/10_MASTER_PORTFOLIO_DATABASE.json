@@ -42,6 +42,9 @@
     "productionUrl",
     "coverImage",
     "coverSourceScreens",
+    "coverProvenance",
+    "coverSources",
+    "portfolioVisibility",
     "demoUrl",
     "relatedDocumentation",
     "relatedBlogPosts",
@@ -94,8 +97,9 @@
       ]
     },
     {
-      "canonical": "SalonIQ",
+      "canonical": "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
       "merged": [
+        "SalonIQ",
         "SALONIQ_APP",
         "_SalonIQ_Archive",
         "Saloniq APP Yedekler",
@@ -105,29 +109,34 @@
         "S020",
         "S021",
         "S022",
-        "S023"
+        "S023",
+        "S220"
       ]
     },
     {
-      "canonical": "SatışMetni AI",
+      "canonical": "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler",
       "merged": [
+        "SatışMetni AI",
         "FABLE-MONEY-SYSTEM",
         "e-ticaret-asistan"
       ],
       "evidence": [
         "S070",
-        "S071"
+        "S071",
+        "S220"
       ]
     },
     {
-      "canonical": "HERA BRAID Link-in-Bio",
+      "canonical": "Hair Designer Buse Durmaz",
       "merged": [
+        "HERA BRAID Link-in-Bio",
         "LINK-BIO",
         "Buse-HairBraid"
       ],
       "evidence": [
         "S110",
-        "S111"
+        "S111",
+        "S220"
       ]
     },
     {
@@ -179,11 +188,12 @@
     },
     {
       "from": "CAU INK",
-      "to": "CAU INK × MoveZone LED Reklamları",
+      "to": "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI",
       "relation": "LED reklam çalışması CAU INK marka ve kampanya varlıklarını kullanıyor.",
       "evidence": [
         "S014",
-        "S191"
+        "S191",
+        "S220"
       ]
     },
     {
@@ -510,6 +520,10 @@
     "S211": {
       "path": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md",
       "note": "codex-skills arşiv kaydı"
+    },
+    "S220": {
+      "path": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\docs\\MASTER_PORTFOLIO\\USER_CORRECTIONS_2026-08-03.md",
+      "note": "Portföy sahibinin başlık, görünürlük ve kapak talimatı"
     }
   },
   "projects": [
@@ -605,6 +619,9 @@
       "productionUrl": "https://brkunluer.site",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "docs/OVERVIEW.md",
@@ -644,7 +661,8 @@
         "S003",
         "S004",
         "S005",
-        "S006"
+        "S006",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 10,
@@ -780,6 +798,12 @@
       "coverSourceScreens": [
         "content/projects/cau-ink/assets/homepage-desktop.png"
       ],
+      "coverProvenance": "verified-source-screen",
+      "coverSources": [
+        "S010",
+        "S014"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
@@ -835,10 +859,12 @@
         "educationalValue": 24
       },
       "documentationScore": 94,
-      "priorityScore": 99
+      "priorityScore": 99,
+      "coverPromptSummary": "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak."
     },
     {
       "aliases": [
+        "SalonIQ",
         "222les",
         "SalonIQ Kasa",
         "SalonIQ Staging",
@@ -948,6 +974,12 @@
       "coverSourceScreens": [
         "content/projects/saloniq/assets/homepage-desktop.png"
       ],
+      "coverProvenance": "verified-source-screen",
+      "coverSources": [
+        "S020",
+        "S022"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
@@ -964,13 +996,14 @@
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\_SalonIQ_Archive",
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Saloniq APP Yedekler"
       ],
-      "projectName": "SalonIQ",
+      "projectName": "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
       "slug": "saloniq",
       "sourceIds": [
         "S020",
         "S021",
         "S022",
-        "S023"
+        "S023",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 10,
@@ -991,10 +1024,12 @@
         "educationalValue": 24
       },
       "documentationScore": 86,
-      "priorityScore": 99
+      "priorityScore": 99,
+      "coverPromptSummary": "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak."
     },
     {
       "aliases": [
+        "InkOS",
         "Ink-OS",
         "InkOS One"
       ],
@@ -1084,6 +1119,12 @@
       "coverSourceScreens": [
         "content/projects/inkos/assets/product-interface-desktop.png"
       ],
+      "coverProvenance": "verified-source-screen",
+      "coverSources": [
+        "S030",
+        "S033"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\handoff\\CURRENT_STATE.md",
@@ -1106,14 +1147,15 @@
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\InkOS-LoRA-ControlNet-Plan.md",
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\content\\projects\\inkos.mdx"
       ],
-      "projectName": "InkOS",
+      "projectName": "InkOS | AI Tattoo Creator",
       "slug": "inkos",
       "sourceIds": [
         "S005",
         "S030",
         "S031",
         "S032",
-        "S033"
+        "S033",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 9,
@@ -1134,7 +1176,8 @@
         "educationalValue": 25
       },
       "documentationScore": 74,
-      "priorityScore": 99
+      "priorityScore": 99,
+      "coverPromptSummary": "Gerçek InkOS ürün arayüzünü masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak."
     },
     {
       "aliases": [
@@ -1206,8 +1249,15 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS",
       "gitRepository": "https://github.com/Hitbullets/ai-factory-os.git",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/ai-factory-os-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S040",
+        "S041",
+        "S042"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\README.md",
@@ -1258,7 +1308,8 @@
         "educationalValue": 25
       },
       "documentationScore": 68,
-      "priorityScore": 98
+      "priorityScore": 98,
+      "coverPromptSummary": "Belgelenmiş fikir, araştırma, ürün tanımı, mimari ve insan onayı akışını gösteren AI Factory OS cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -1366,8 +1417,16 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "https://adresmoda.com (belgeli hedef; canlı doğrulama Unknown)",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/adres-moda-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "source-assets-and-documents",
+      "coverSources": [
+        "S050",
+        "S051",
+        "S052",
+        "S053"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
@@ -1414,7 +1473,8 @@
         "educationalValue": 20
       },
       "documentationScore": 77,
-      "priorityScore": 84
+      "priorityScore": 84,
+      "coverPromptSummary": "AdresModa marka ve moda varlıklarını kullanan masaüstü ve mobil e-ticaret kapak kompozisyonu."
     },
     {
       "aliases": [
@@ -1507,8 +1567,15 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "https://www.mrpisi.com",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/mr-pisi-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "source-assets-and-documents",
+      "coverSources": [
+        "S060",
+        "S061",
+        "S062"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu\\MRPISI.COM -- TO DO LIST.docx",
@@ -1551,10 +1618,12 @@
         "educationalValue": 18
       },
       "documentationScore": 73,
-      "priorityScore": 79
+      "priorityScore": 79,
+      "coverPromptSummary": "Gerçek Mr. Pisi ambalaj varlığını ürün kahramanı olarak kullanan cihaz mock-up kapağı."
     },
     {
       "aliases": [
+        "SatışMetni AI",
         "FABLE-MONEY-SYSTEM",
         "e-ticaret-asistan"
       ],
@@ -1649,6 +1718,12 @@
       "coverSourceScreens": [
         "content/projects/satis-metni-ai/assets/homepage-desktop.png"
       ],
+      "coverProvenance": "verified-source-screen",
+      "coverSources": [
+        "S070",
+        "S071"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\Plan.md",
@@ -1665,11 +1740,12 @@
       "filesBelonging": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM"
       ],
-      "projectName": "SatışMetni AI",
+      "projectName": "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler",
       "slug": "satis-metni-ai",
       "sourceIds": [
         "S070",
-        "S071"
+        "S071",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 9,
@@ -1690,7 +1766,8 @@
         "educationalValue": 23
       },
       "documentationScore": 69,
-      "priorityScore": 94
+      "priorityScore": 94,
+      "coverPromptSummary": "Gerçek AI Satış Metni ana sayfasını masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak."
     },
     {
       "aliases": [
@@ -1786,8 +1863,15 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\public",
       "gitRepository": "https://github.com/Hitbullets/gold-tracker.git",
       "productionUrl": "https://gold-tracker-rouge.vercel.app (README'de; canlı doğrulama Unknown)",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/gold-tracker-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S080",
+        "S081",
+        "S082"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\README.md",
@@ -1829,7 +1913,8 @@
         "educationalValue": 25
       },
       "documentationScore": 72,
-      "priorityScore": 93
+      "priorityScore": 93,
+      "coverPromptSummary": "Belgelenmiş altın fiyatı ve kişisel portföy takibi işlevlerinden türetilen finans dashboard cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -1909,6 +1994,9 @@
       "productionUrl": "Unknown",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": "README yalnız varsayılan Next.js metni; ürün belgesi Unknown",
       "relatedBlogPosts": "Unknown",
@@ -1924,7 +2012,8 @@
       "sourceIds": [
         "S090",
         "S091",
-        "S092"
+        "S092",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 6,
@@ -2016,6 +2105,9 @@
       "productionUrl": "Unknown",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo\\3Demo_context.md"
@@ -2032,7 +2124,8 @@
       "slug": "3dikili",
       "sourceIds": [
         "S100",
-        "S101"
+        "S101",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 8,
@@ -2057,6 +2150,7 @@
     },
     {
       "aliases": [
+        "HERA BRAID Link-in-Bio",
         "LINK-BIO",
         "Buse-HairBraid",
         "Buse Durmaz link page"
@@ -2126,8 +2220,15 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/hera-braid-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "source-assets-and-documents",
+      "coverSources": [
+        "S110",
+        "S111",
+        "S220"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO\\README.md"
@@ -2141,11 +2242,12 @@
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO",
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse-HairBraid"
       ],
-      "projectName": "HERA BRAID Link-in-Bio",
+      "projectName": "Hair Designer Buse Durmaz",
       "slug": "hera-braid",
       "sourceIds": [
         "S110",
-        "S111"
+        "S111",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 8,
@@ -2166,7 +2268,8 @@
         "educationalValue": 10
       },
       "documentationScore": 47,
-      "priorityScore": 49
+      "priorityScore": 49,
+      "coverPromptSummary": "Buse Durmaz'ın gerçek HERA BRAID kartvizit kimliğinden türetilen, iletişim bilgisi içermeyen link-in-bio cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -2244,6 +2347,11 @@
         "content/projects/atelier-dimora/assets/homepage-desktop.png",
         "content/projects/atelier-dimora/assets/homepage-mobile.png"
       ],
+      "coverProvenance": "verified-source-screen",
+      "coverSources": [
+        "S120"
+      ],
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": "HTML prototipleri",
       "relatedBlogPosts": "Unknown",
@@ -2259,7 +2367,8 @@
       "projectName": "Atelier Dimora",
       "slug": "atelier-dimora",
       "sourceIds": [
-        "S120"
+        "S120",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 6,
@@ -2280,7 +2389,8 @@
         "educationalValue": 15
       },
       "documentationScore": 40,
-      "priorityScore": 60
+      "priorityScore": 60,
+      "coverPromptSummary": "Gerçek Atelier Dimora masaüstü ve mobil ana sayfa ekranlarını cihaz mock-up kompozisyonunda sunan arşiv kapağı."
     },
     {
       "aliases": [
@@ -2353,8 +2463,13 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\TEKLİF DOSYALARI",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/karesi-periyodik-kontrol-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S130"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "Karesi/Hasan Çimen teklif DOCX dosyaları"
@@ -2391,7 +2506,8 @@
         "educationalValue": 10
       },
       "documentationScore": 37,
-      "priorityScore": 49
+      "priorityScore": 49,
+      "coverPromptSummary": "Belgelenmiş periyodik kontrol hizmet sunumu ve teklif akışından türetilen kurumsal web cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -2474,8 +2590,14 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/personal-crm-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S140",
+        "S141"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM\\replit.md"
@@ -2513,7 +2635,8 @@
         "educationalValue": 18
       },
       "documentationScore": 49,
-      "priorityScore": 64
+      "priorityScore": 64,
+      "coverPromptSummary": "Kişi, ilişki ve etkileşim takibi işlevlerinden türetilen kişisel CRM cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -2580,8 +2703,14 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/premium-listing-platform-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S150",
+        "S151"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform\\README.md"
@@ -2619,131 +2748,99 @@
         "educationalValue": 10
       },
       "documentationScore": 32,
-      "priorityScore": 44
+      "priorityScore": 44,
+      "coverPromptSummary": "Belgelenmiş premium listeleme ve profil keşfi MVP'sini nötr görsellerle temsil eden cihaz mock-up'ı."
     },
     {
       "aliases": [
-        "off_site_proje",
-        "site-yetiskin-plan"
+        "OFF İlan Platformu"
       ],
       "client": "Unknown",
-      "industry": "İlan / yetişkin içerik pazaryeri",
-      "projectType": "Tam yığın ilan platformu",
+      "industry": "Emlak ve otomotiv ilan yönetimi",
+      "projectType": "İlan otomasyonu",
       "categories": [
-        "Marketplace",
-        "SaaS"
+        "SaaS",
+        "Internal Tool"
       ],
-      "currentStatus": "Yerel frontend, backend, admin, Docker ve Nginx kaynakları mevcut; production ve gerçek ödeme doğrulaması Unknown.",
-      "timeline": "2026 plan/source dönemi; kesin tarih Unknown.",
-      "purpose": "Admin kontrollü, kripto ödeme planlı ücretli ilan platformu kurmak.",
-      "problemBeingSolved": "İlan yayınlama, moderasyon, ödeme ve yönetimi tek platformda toplamak.",
+      "currentStatus": "Ürün kimliği portföy sahibi tarafından düzeltildi; uygulama ve yayın durumu Unknown.",
+      "timeline": "Unknown",
+      "purpose": "Emlak ve oto galerileri için ilan hazırlama ve yönetim süreçlerini otomatikleştirmek.",
+      "problemBeingSolved": "Emlak ve oto galeri ilan operasyonlarındaki tekrarlı hazırlık ve takip adımlarını azaltmak.",
       "targetUsers": [
-        "İlan yayınlayanlar",
-        "İlan ziyaretçileri",
-        "Yöneticiler"
+        "Emlak işletmeleri",
+        "Oto galerileri"
       ],
-      "businessGoals": [
-        "Ücretli ilan geliri",
-        "Moderasyon",
-        "Premium görünürlük"
-      ],
-      "technologyStack": [
-        "Next.js 14",
-        "React 18",
-        "Tailwind",
-        "Express",
-        "PostgreSQL",
-        "React/Vite admin",
-        "Docker",
-        "Nginx"
-      ],
-      "frameworks": [
-        "Next.js",
-        "Express",
-        "Vite"
-      ],
-      "backend": "Express",
-      "database": "PostgreSQL",
-      "hosting": "Docker/Nginx planı; sağlayıcı Unknown",
-      "cms": "Özel admin paneli",
-      "integrations": [
-        "Kripto ödeme planı"
-      ],
-      "designSystem": "Frontend/admin uygulamaları",
+      "businessGoals": "Unknown",
+      "technologyStack": "Unknown",
+      "frameworks": "Unknown",
+      "backend": "Unknown",
+      "database": "Unknown",
+      "hosting": "Unknown",
+      "cms": "Unknown",
+      "integrations": "Unknown",
+      "designSystem": "Unknown",
       "brandLanguage": "Unknown",
       "colorPalette": "Unknown",
       "typography": "Unknown",
-      "responsiveStrategy": "Web ve admin arayüzleri",
+      "responsiveStrategy": "Unknown",
       "seoStrategy": "Unknown",
       "performanceOptimizations": "Unknown",
       "accessibilityNotes": "Unknown",
       "majorFeatures": [
-        "İlan",
-        "Profil",
-        "Admin",
-        "Moderasyon",
-        "Ödeme planı"
+        "İlan hazırlama ve yönetim otomasyonu"
       ],
-      "pages": [
-        "Frontend ilan akışları",
-        "Admin paneli"
-      ],
-      "architecture": "Ayrı frontend, Express backend ve Vite admin; Docker/Nginx dağıtım yapısı.",
-      "interestingTechnicalDecisions": [
-        "Admin'i ayrı uygulama tutma",
-        "Kripto ödeme modeli"
-      ],
-      "developmentChallenges": [
-        "Moderasyon",
-        "Ödeme güvenliği",
-        "Gizlilik ve yasal uyum"
-      ],
+      "pages": "Unknown",
+      "architecture": "Unknown",
+      "interestingTechnicalDecisions": "Unknown",
+      "developmentChallenges": "Unknown",
       "lessonsLearned": "Unknown",
-      "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
-      "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
+      "screenshotsReferences": "Unknown",
+      "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/off-ilan-platformu-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "owner-brief-informed-concept",
+      "coverSources": [
+        "S220"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
-        "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje\\README.md",
-        "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\site-yetiskin-plan.md"
+        "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\docs\\MASTER_PORTFOLIO\\USER_CORRECTIONS_2026-08-03.md"
       ],
       "relatedBlogPosts": "Unknown",
       "relatedResearch": "Unknown",
       "relatedPrompts": "Unknown",
       "relatedAiWorkflows": "Unknown",
       "relatedMethods": "Unknown",
-      "filesBelonging": [
-        "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje"
-      ],
-      "projectName": "OFF İlan Platformu",
+      "filesBelonging": "Unknown",
+      "projectName": "Emlak/Oto Galeri İlan Otomasyonları",
       "slug": "off-ilan-platformu",
       "sourceIds": [
-        "S160",
-        "S161"
+        "S220"
       ],
       "documentationBreakdown": {
-        "businessContext": 7,
-        "technicalDepth": 8,
-        "designDocumentation": 6,
-        "screenshots": 4,
-        "deployment": 1,
-        "lessonsLearned": 3,
-        "architecture": 7,
-        "seo": 2,
-        "performance": 4,
-        "maintainability": 6
+        "businessContext": 5,
+        "technicalDepth": 1,
+        "designDocumentation": 1,
+        "screenshots": 0,
+        "deployment": 0,
+        "lessonsLearned": 1,
+        "architecture": 1,
+        "seo": 0,
+        "performance": 0,
+        "maintainability": 1
       },
       "priorityBreakdown": {
-        "businessValue": 13,
-        "technicalComplexity": 20,
-        "portfolioValue": 13,
-        "educationalValue": 14
+        "businessValue": 20,
+        "technicalComplexity": 16,
+        "portfolioValue": 19,
+        "educationalValue": 16
       },
-      "documentationScore": 48,
-      "priorityScore": 60
+      "documentationScore": 10,
+      "priorityScore": 71,
+      "coverPromptSummary": "Portföy sahibinin düzelttiği emlak ve oto galeri ilan otomasyonu kapsamını temsil eden B2B cihaz mock-up'ı."
     },
     {
       "aliases": [
@@ -2814,8 +2911,14 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/google-business-profile-service-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S180",
+        "S181"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA\\README.md"
@@ -2853,13 +2956,16 @@
         "educationalValue": 20
       },
       "documentationScore": 46,
-      "priorityScore": 64
+      "priorityScore": 64,
+      "coverPromptSummary": "Paylaşım URL'sinden Place ID ve yapılandırılmış veri çıkarma akışını temsil eden web aracı mock-up'ı."
     },
     {
-      "aliases": "Unknown",
+      "aliases": [
+        "Yasui"
+      ],
       "client": "Unknown",
-      "industry": "API altyapısı",
-      "projectType": "API gateway/proxy konsepti",
+      "industry": "LLM/API altyapısı",
+      "projectType": "LLM provider ve API gateway/proxy konsepti",
       "categories": [
         "SaaS",
         "Internal Tool",
@@ -2898,8 +3004,15 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/yasui-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md",
       "relatedBlogPosts": "Unknown",
@@ -2910,11 +3023,12 @@
       "filesBelonging": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md"
       ],
-      "projectName": "Yasui",
+      "projectName": "Yasui LLM Provider",
       "slug": "yasui",
       "sourceIds": [
         "S190",
-        "S191"
+        "S191",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 4,
@@ -2935,10 +3049,13 @@
         "educationalValue": 12
       },
       "documentationScore": 15,
-      "priorityScore": 50
+      "priorityScore": 50,
+      "coverPromptSummary": "Belgelenmiş LLM/API gateway, maliyet ve abuse kontrolü ile T0 Trial, T1 Verified, T2 Power User katmanlarını temsil eden cihaz mock-up'ı."
     },
     {
-      "aliases": "Unknown",
+      "aliases": [
+        "StageKey"
+      ],
       "client": "Unknown",
       "industry": "Müzik / dijital varlık pazaryeri",
       "projectType": "Web + masaüstü ürün konsepti",
@@ -2986,8 +3103,15 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/stagekey-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md",
       "relatedBlogPosts": "Unknown",
@@ -2998,11 +3122,12 @@
       "filesBelonging": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md"
       ],
-      "projectName": "StageKey",
+      "projectName": "STAGE KEY - Müzisyen Kit Box",
       "slug": "stagekey",
       "sourceIds": [
         "S190",
-        "S191"
+        "S191",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 5,
@@ -3023,7 +3148,8 @@
         "educationalValue": 15
       },
       "documentationScore": 17,
-      "priorityScore": 60
+      "priorityScore": 60,
+      "coverPromptSummary": "Belgelenmiş üç panelli ses kiti arayüzü, amber vurgu ve loader/pazaryeri kapsamından türetilen cihaz mock-up'ı."
     },
     {
       "aliases": "Unknown",
@@ -3079,8 +3205,14 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/mezat-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S190",
+        "S191"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md",
       "relatedBlogPosts": "Unknown",
@@ -3116,7 +3248,8 @@
         "educationalValue": 18
       },
       "documentationScore": 19,
-      "priorityScore": 69
+      "priorityScore": 69,
+      "coverPromptSummary": "Belgelenmiş WebSocket, canlı teklif ve anti-snipe işlevlerinden türetilen MEZAT cihaz mock-up'ı."
     },
     {
       "aliases": "Unknown",
@@ -3197,8 +3330,15 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/wpforge-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S170",
+        "S171",
+        "S172"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
@@ -3243,7 +3383,8 @@
         "educationalValue": 24
       },
       "documentationScore": 61,
-      "priorityScore": 89
+      "priorityScore": 89,
+      "coverPromptSummary": "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı."
     },
     {
       "aliases": [
@@ -3303,8 +3444,14 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\codex-skills",
       "gitRepository": "https://github.com/Hitbullets/codex-skills.git",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/codex-skills-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S210",
+        "S211"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": [
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md"
@@ -3346,7 +3493,8 @@
         "educationalValue": 23
       },
       "documentationScore": 44,
-      "priorityScore": 76
+      "priorityScore": 76,
+      "coverPromptSummary": "Codex beceri paketlerinin katalog, dosya ve doğrulama görünümünü temsil eden geliştirici platformu mock-up'ı."
     },
     {
       "aliases": [
@@ -3412,6 +3560,9 @@
       "productionUrl": "Unknown",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\05_Tattoo_Design_Desktop_App.md",
       "relatedBlogPosts": "Unknown",
@@ -3428,7 +3579,8 @@
       "slug": "tattoo-design-desktop-app",
       "sourceIds": [
         "S190",
-        "S191"
+        "S191",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 4,
@@ -3453,6 +3605,7 @@
     },
     {
       "aliases": [
+        "CAU INK × MoveZone LED Reklamları",
         "MoveZone LED Ads"
       ],
       "client": "CAU INK / MoveZone",
@@ -3507,8 +3660,16 @@
       ],
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/cau-ink-movezone-led-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "source-assets-and-documents",
+      "coverSources": [
+        "S014",
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
       "relatedBlogPosts": "Unknown",
@@ -3522,12 +3683,13 @@
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
         "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR"
       ],
-      "projectName": "CAU INK × MoveZone LED Reklamları",
+      "projectName": "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI",
       "slug": "cau-ink-movezone-led",
       "sourceIds": [
         "S014",
         "S190",
-        "S191"
+        "S191",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 6,
@@ -3548,7 +3710,8 @@
         "educationalValue": 10
       },
       "documentationScore": 29,
-      "priorityScore": 52
+      "priorityScore": 52,
+      "coverPromptSummary": "Gerçek CAU INK kimliği ve belgelenmiş 15 saniyelik dikey LED reklam kapsamını kullanan reklam üretim kapağı."
     },
     {
       "aliases": [
@@ -3598,8 +3761,14 @@
       "assetLocations": "Unknown",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/ai-trainer-kamu-egitimi-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S190",
+        "S191"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\10_AI_Trainer_Kamu_Egitimi.md",
       "relatedBlogPosts": "Unknown",
@@ -3635,7 +3804,8 @@
         "educationalValue": 19
       },
       "documentationScore": 21,
-      "priorityScore": 51
+      "priorityScore": 51,
+      "coverPromptSummary": "Belgelenmiş 17 slaytlık kamu AI okuryazarlığı eğitimi ve Ocean Gradient paletinden türetilen sunum mock-up'ı."
     },
     {
       "aliases": [
@@ -3692,6 +3862,9 @@
       "productionUrl": "Unknown",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": "Unknown",
       "relatedBlogPosts": "Unknown",
@@ -3705,7 +3878,8 @@
       "projectName": "Buse Birthday Web Experience",
       "slug": "buse-birthday",
       "sourceIds": [
-        "S200"
+        "S200",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 5,
@@ -3802,6 +3976,9 @@
       "productionUrl": "Unknown",
       "coverImage": "Unknown",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "Unknown",
+      "coverSources": "Unknown",
+      "portfolioVisibility": "hidden",
       "demoUrl": "Unknown",
       "relatedDocumentation": "Unknown",
       "relatedBlogPosts": "Unknown",
@@ -3815,7 +3992,8 @@
       "projectName": "8 Mart Dünya Kadınlar Günü Deneyimi",
       "slug": "8-mart-deneyimi",
       "sourceIds": [
-        "S201"
+        "S201",
+        "S220"
       ],
       "documentationBreakdown": {
         "businessContext": 7,
@@ -3915,8 +4093,13 @@
       "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
       "gitRepository": "Unknown",
       "productionUrl": "Unknown",
-      "coverImage": "Unknown",
+      "coverImage": "/images/projects/covers/yapay-zeka-model-karsilastirmasi-mockup.png",
       "coverSourceScreens": "Unknown",
+      "coverProvenance": "document-informed-concept",
+      "coverSources": [
+        "S202"
+      ],
+      "portfolioVisibility": "visible",
       "demoUrl": "Unknown",
       "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA\\models.json",
       "relatedBlogPosts": "Unknown",
@@ -3951,7 +4134,8 @@
         "educationalValue": 20
       },
       "documentationScore": 46,
-      "priorityScore": 59
+      "priorityScore": 59,
+      "coverPromptSummary": "Belgelenmiş altı model, kriter tablosu ve grafik yapısından türetilen karşılaştırma cihaz mock-up'ı."
     }
   ]
 }

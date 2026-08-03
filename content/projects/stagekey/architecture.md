@@ -1,8 +1,8 @@
-# StageKey — Mimari
+# STAGE KEY - Müzisyen Kit Box — Mimari
 
 ## Mimari özet
 
-Web marketplace + Tauri istemci konsepti. [S190] [S191]
+Web marketplace + Tauri istemci konsepti. [S190] [S191] [S220]
 
 ## Teknik kararlar
 

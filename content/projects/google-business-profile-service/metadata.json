@@ -67,8 +67,14 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/google-business-profile-service-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S180",
+    "S181"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\GOOGLE_DATA\\README.md"
@@ -107,5 +113,6 @@
   },
   "documentationScore": 46,
   "priorityScore": 64,
+  "coverPromptSummary": "Paylaşım URL'sinden Place ID ve yapılandırılmış veri çıkarma akışını temsil eden web aracı mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

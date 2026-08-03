@@ -1,6 +1,6 @@
-# Yasui — Çıkarılan Dersler
+# Yasui LLM Provider — Çıkarılan Dersler
 
-İkincil arşiv kaydı tek başına uygulama veya yayın kanıtı değildir. [S190] [S191]
+İkincil arşiv kaydı tek başına uygulama veya yayın kanıtı değildir. [S190] [S191] [S220]
 
 ## Performans
 

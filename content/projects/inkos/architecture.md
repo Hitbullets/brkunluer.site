@@ -1,8 +1,8 @@
-# InkOS — Mimari
+# InkOS | AI Tattoo Creator — Mimari
 
 ## Mimari özet
 
-Dokümantasyon kökü ile ayrı landing uygulaması; planlanan ürün katmanları ve AI sağlayıcı soyutlaması. [S005] [S030] [S031] [S032] [S033]
+Dokümantasyon kökü ile ayrı landing uygulaması; planlanan ürün katmanları ve AI sağlayıcı soyutlaması. [S005] [S030] [S031] [S032] [S033] [S220]
 
 ## Teknik kararlar
 

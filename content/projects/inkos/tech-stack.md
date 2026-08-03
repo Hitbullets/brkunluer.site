@@ -1,4 +1,4 @@
-# InkOS — Teknoloji Yığını
+# InkOS | AI Tattoo Creator — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | Google OAuth, Claude, OpenAI görsel üretimi, Replicate planı, PostHog landing |
 
-Kanıt: [S005] [S030] [S031] [S032] [S033]
+Kanıt: [S005] [S030] [S031] [S032] [S033] [S220]

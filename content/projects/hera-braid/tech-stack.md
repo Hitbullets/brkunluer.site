@@ -1,4 +1,4 @@
-# HERA BRAID Link-in-Bio — Teknoloji Yığını
+# Hair Designer Buse Durmaz — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Yapılandırma dosyası / statik içerik |
 | Entegrasyonlar | Instagram, WhatsApp, Telefon, Konum, QR |
 
-Kanıt: [S110] [S111]
+Kanıt: [S110] [S111] [S220]

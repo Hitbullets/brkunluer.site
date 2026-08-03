@@ -1,6 +1,6 @@
-# HERA BRAID Link-in-Bio — Çıkarılan Dersler
+# Hair Designer Buse Durmaz — Çıkarılan Dersler
 
-Unknown [S110] [S111]
+Unknown [S110] [S111] [S220]
 
 ## Performans
 

@@ -1,5 +1,6 @@
 {
   "aliases": [
+    "SatışMetni AI",
     "FABLE-MONEY-SYSTEM",
     "e-ticaret-asistan"
   ],
@@ -94,6 +95,12 @@
   "coverSourceScreens": [
     "content/projects/satis-metni-ai/assets/homepage-desktop.png"
   ],
+  "coverProvenance": "verified-source-screen",
+  "coverSources": [
+    "S070",
+    "S071"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM\\Plan.md",
@@ -110,11 +117,12 @@
   "filesBelonging": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\FABLE-MONEY-SYSTEM"
   ],
-  "projectName": "SatışMetni AI",
+  "projectName": "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler",
   "slug": "satis-metni-ai",
   "sourceIds": [
     "S070",
-    "S071"
+    "S071",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 9,
@@ -136,5 +144,6 @@
   },
   "documentationScore": 69,
   "priorityScore": 94,
+  "coverPromptSummary": "Gerçek AI Satış Metni ana sayfasını masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

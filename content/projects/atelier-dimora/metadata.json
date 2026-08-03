@@ -74,6 +74,11 @@
     "content/projects/atelier-dimora/assets/homepage-desktop.png",
     "content/projects/atelier-dimora/assets/homepage-mobile.png"
   ],
+  "coverProvenance": "verified-source-screen",
+  "coverSources": [
+    "S120"
+  ],
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": "HTML prototipleri",
   "relatedBlogPosts": "Unknown",
@@ -89,7 +94,8 @@
   "projectName": "Atelier Dimora",
   "slug": "atelier-dimora",
   "sourceIds": [
-    "S120"
+    "S120",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 6,
@@ -111,5 +117,6 @@
   },
   "documentationScore": 40,
   "priorityScore": 60,
+  "coverPromptSummary": "Gerçek Atelier Dimora masaüstü ve mobil ana sayfa ekranlarını cihaz mock-up kompozisyonunda sunan arşiv kapağı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

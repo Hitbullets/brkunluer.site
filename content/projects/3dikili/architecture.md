@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Frontend-only Vite demosu. [S100] [S101]
+Frontend-only Vite demosu. [S100] [S101] [S220]
 
 ## Teknik kararlar
 

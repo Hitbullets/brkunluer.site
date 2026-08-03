@@ -75,8 +75,13 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/yapay-zeka-model-karsilastirmasi-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S202"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA\\models.json",
   "relatedBlogPosts": "Unknown",
@@ -112,5 +117,6 @@
   },
   "documentationScore": 46,
   "priorityScore": 59,
+  "coverPromptSummary": "Belgelenmiş altı model, kriter tablosu ve grafik yapısından türetilen karşılaştırma cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

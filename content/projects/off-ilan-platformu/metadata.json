@@ -1,125 +1,92 @@
 {
   "aliases": [
-    "off_site_proje",
-    "site-yetiskin-plan"
+    "OFF İlan Platformu"
   ],
   "client": "Unknown",
-  "industry": "İlan / yetişkin içerik pazaryeri",
-  "projectType": "Tam yığın ilan platformu",
+  "industry": "Emlak ve otomotiv ilan yönetimi",
+  "projectType": "İlan otomasyonu",
   "categories": [
-    "Marketplace",
-    "SaaS"
+    "SaaS",
+    "Internal Tool"
   ],
-  "currentStatus": "Yerel frontend, backend, admin, Docker ve Nginx kaynakları mevcut; production ve gerçek ödeme doğrulaması Unknown.",
-  "timeline": "2026 plan/source dönemi; kesin tarih Unknown.",
-  "purpose": "Admin kontrollü, kripto ödeme planlı ücretli ilan platformu kurmak.",
-  "problemBeingSolved": "İlan yayınlama, moderasyon, ödeme ve yönetimi tek platformda toplamak.",
+  "currentStatus": "Ürün kimliği portföy sahibi tarafından düzeltildi; uygulama ve yayın durumu Unknown.",
+  "timeline": "Unknown",
+  "purpose": "Emlak ve oto galerileri için ilan hazırlama ve yönetim süreçlerini otomatikleştirmek.",
+  "problemBeingSolved": "Emlak ve oto galeri ilan operasyonlarındaki tekrarlı hazırlık ve takip adımlarını azaltmak.",
   "targetUsers": [
-    "İlan yayınlayanlar",
-    "İlan ziyaretçileri",
-    "Yöneticiler"
+    "Emlak işletmeleri",
+    "Oto galerileri"
   ],
-  "businessGoals": [
-    "Ücretli ilan geliri",
-    "Moderasyon",
-    "Premium görünürlük"
-  ],
-  "technologyStack": [
-    "Next.js 14",
-    "React 18",
-    "Tailwind",
-    "Express",
-    "PostgreSQL",
-    "React/Vite admin",
-    "Docker",
-    "Nginx"
-  ],
-  "frameworks": [
-    "Next.js",
-    "Express",
-    "Vite"
-  ],
-  "backend": "Express",
-  "database": "PostgreSQL",
-  "hosting": "Docker/Nginx planı; sağlayıcı Unknown",
-  "cms": "Özel admin paneli",
-  "integrations": [
-    "Kripto ödeme planı"
-  ],
-  "designSystem": "Frontend/admin uygulamaları",
+  "businessGoals": "Unknown",
+  "technologyStack": "Unknown",
+  "frameworks": "Unknown",
+  "backend": "Unknown",
+  "database": "Unknown",
+  "hosting": "Unknown",
+  "cms": "Unknown",
+  "integrations": "Unknown",
+  "designSystem": "Unknown",
   "brandLanguage": "Unknown",
   "colorPalette": "Unknown",
   "typography": "Unknown",
-  "responsiveStrategy": "Web ve admin arayüzleri",
+  "responsiveStrategy": "Unknown",
   "seoStrategy": "Unknown",
   "performanceOptimizations": "Unknown",
   "accessibilityNotes": "Unknown",
   "majorFeatures": [
-    "İlan",
-    "Profil",
-    "Admin",
-    "Moderasyon",
-    "Ödeme planı"
+    "İlan hazırlama ve yönetim otomasyonu"
   ],
-  "pages": [
-    "Frontend ilan akışları",
-    "Admin paneli"
-  ],
-  "architecture": "Ayrı frontend, Express backend ve Vite admin; Docker/Nginx dağıtım yapısı.",
-  "interestingTechnicalDecisions": [
-    "Admin'i ayrı uygulama tutma",
-    "Kripto ödeme modeli"
-  ],
-  "developmentChallenges": [
-    "Moderasyon",
-    "Ödeme güvenliği",
-    "Gizlilik ve yasal uyum"
-  ],
+  "pages": "Unknown",
+  "architecture": "Unknown",
+  "interestingTechnicalDecisions": "Unknown",
+  "developmentChallenges": "Unknown",
   "lessonsLearned": "Unknown",
-  "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
-  "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje",
+  "screenshotsReferences": "Unknown",
+  "assetLocations": "Unknown",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/off-ilan-platformu-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "owner-brief-informed-concept",
+  "coverSources": [
+    "S220"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
-    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje\\README.md",
-    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\site-yetiskin-plan.md"
+    "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\docs\\MASTER_PORTFOLIO\\USER_CORRECTIONS_2026-08-03.md"
   ],
   "relatedBlogPosts": "Unknown",
   "relatedResearch": "Unknown",
   "relatedPrompts": "Unknown",
   "relatedAiWorkflows": "Unknown",
   "relatedMethods": "Unknown",
-  "filesBelonging": [
-    "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\OFF-PROJELER\\off_site_proje"
-  ],
-  "projectName": "OFF İlan Platformu",
+  "filesBelonging": "Unknown",
+  "projectName": "Emlak/Oto Galeri İlan Otomasyonları",
   "slug": "off-ilan-platformu",
   "sourceIds": [
-    "S160",
-    "S161"
+    "S220"
   ],
   "documentationBreakdown": {
-    "businessContext": 7,
-    "technicalDepth": 8,
-    "designDocumentation": 6,
-    "screenshots": 4,
-    "deployment": 1,
-    "lessonsLearned": 3,
-    "architecture": 7,
-    "seo": 2,
-    "performance": 4,
-    "maintainability": 6
+    "businessContext": 5,
+    "technicalDepth": 1,
+    "designDocumentation": 1,
+    "screenshots": 0,
+    "deployment": 0,
+    "lessonsLearned": 1,
+    "architecture": 1,
+    "seo": 0,
+    "performance": 0,
+    "maintainability": 1
   },
   "priorityBreakdown": {
-    "businessValue": 13,
-    "technicalComplexity": 20,
-    "portfolioValue": 13,
-    "educationalValue": 14
+    "businessValue": 20,
+    "technicalComplexity": 16,
+    "portfolioValue": 19,
+    "educationalValue": 16
   },
-  "documentationScore": 48,
-  "priorityScore": 60,
+  "documentationScore": 10,
+  "priorityScore": 71,
+  "coverPromptSummary": "Portföy sahibinin düzelttiği emlak ve oto galeri ilan otomasyonu kapsamını temsil eden B2B cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

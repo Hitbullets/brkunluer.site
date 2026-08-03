@@ -1,8 +1,16 @@
-# CAU INK × MoveZone LED Reklamları — Galeri Referansları
+# CAU INK x MOVEZONE REKLAM ÇALIŞMALARI — Galeri Referansları
 
 ## Portfolyo kapağı
 
-Unknown
+/images/projects/covers/cau-ink-movezone-led-mockup.png
+
+## Kapak kökeni
+
+source-assets-and-documents
+
+## Kapak kaynakları
+
+S014, S190, S191, S220
 
 ## Kapak kaynak ekranları
 
@@ -10,6 +18,6 @@ Unknown
 
 ## Diğer ekran referansları
 
-C:\Users\Burak\Documents\ByyHit Works\GENEL PROJE DOSYALARI\CAU-INK-DOSYALAR [S014] [S190] [S191]
+C:\Users\Burak\Documents\ByyHit Works\GENEL PROJE DOSYALARI\CAU-INK-DOSYALAR [S014] [S190] [S191] [S220]
 
-Kapaklar kaynak ekran görüntülerinden cihaz mock-up kompozisyonu olarak üretilmiştir. Görsel kanıtı olmayan projelerde değer `Unknown` olarak kalır.
+`verified-source-screen` gerçek proje ekranını, `source-assets-and-documents` marka varlığı ve belge desteğini, `document-informed-concept` ile `owner-brief-informed-concept` ise gerçek üretim ekranı olduğu iddia edilmeyen AI destekli editoryal mock-up'ı belirtir.

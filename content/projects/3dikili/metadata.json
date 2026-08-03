@@ -67,6 +67,9 @@
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo\\3Demo_context.md"
@@ -83,7 +86,8 @@
   "slug": "3dikili",
   "sourceIds": [
     "S100",
-    "S101"
+    "S101",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 8,

@@ -1,4 +1,5 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 
 const U = "Unknown";
@@ -69,6 +70,7 @@ const sources = {
   S202: { path: `${workspace}\\YAPAYZEKA-KARSILASTIRMA`, note: "Yapay zekâ model karşılaştırma sayfası ve veri dosyası" },
   S210: { path: `${workspace}\\codex-skills`, note: "codex-skills yerel Git deposu" },
   S211: { path: `${workspace}\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md`, note: "codex-skills arşiv kaydı" },
+  S220: { path: `${workspace}\\brkunluer.pro\\BRKUNLUER.SITE\\docs\\MASTER_PORTFOLIO\\USER_CORRECTIONS_2026-08-03.md`, note: "Portföy sahibinin başlık, görünürlük ve kapak talimatı" },
 };
 
 const defaults = {
@@ -80,7 +82,8 @@ const defaults = {
   accessibilityNotes: U, majorFeatures: U, pages: U, architecture: U,
   interestingTechnicalDecisions: U, developmentChallenges: U, lessonsLearned: U,
   screenshotsReferences: U, assetLocations: U, gitRepository: U, productionUrl: U,
-  coverImage: U, coverSourceScreens: U,
+  coverImage: U, coverSourceScreens: U, coverProvenance: U, coverSources: U,
+  portfolioVisibility: "visible",
   demoUrl: U, relatedDocumentation: U, relatedBlogPosts: U, relatedResearch: U,
   relatedPrompts: U, relatedAiWorkflows: U, relatedMethods: U, filesBelonging: U,
 };
@@ -224,22 +227,129 @@ const projects = [
   }),
 ];
 
+const userCorrections = {
+  saloniq: {
+    projectName: "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
+    aliases: ["SalonIQ", "222les", "SalonIQ Kasa", "SalonIQ Staging", "Saloniq APP Yedekler"],
+  },
+  inkos: {
+    projectName: "InkOS | AI Tattoo Creator",
+    aliases: ["InkOS", "Ink-OS", "InkOS One"],
+  },
+  "satis-metni-ai": {
+    projectName: "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler",
+    aliases: ["SatışMetni AI", "FABLE-MONEY-SYSTEM", "e-ticaret-asistan"],
+  },
+  "hera-braid": {
+    projectName: "Hair Designer Buse Durmaz",
+    aliases: ["HERA BRAID Link-in-Bio", "LINK-BIO", "Buse-HairBraid", "Buse Durmaz link page"],
+  },
+  yasui: {
+    projectName: "Yasui LLM Provider",
+    aliases: ["Yasui"],
+    industry: "LLM/API altyapısı",
+    projectType: "LLM provider ve API gateway/proxy konsepti",
+  },
+  stagekey: {
+    projectName: "STAGE KEY - Müzisyen Kit Box",
+    aliases: ["StageKey"],
+  },
+  "cau-ink-movezone-led": {
+    projectName: "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI",
+    aliases: ["CAU INK × MoveZone LED Reklamları", "MoveZone LED Ads"],
+  },
+  "off-ilan-platformu": {
+    projectName: "Emlak/Oto Galeri İlan Otomasyonları",
+    aliases: ["OFF İlan Platformu"],
+    client: U,
+    industry: "Emlak ve otomotiv ilan yönetimi",
+    projectType: "İlan otomasyonu",
+    categories: ["SaaS", "Internal Tool"],
+    currentStatus: "Ürün kimliği portföy sahibi tarafından düzeltildi; uygulama ve yayın durumu Unknown.",
+    timeline: U,
+    purpose: "Emlak ve oto galerileri için ilan hazırlama ve yönetim süreçlerini otomatikleştirmek.",
+    problemBeingSolved: "Emlak ve oto galeri ilan operasyonlarındaki tekrarlı hazırlık ve takip adımlarını azaltmak.",
+    targetUsers: ["Emlak işletmeleri", "Oto galerileri"],
+    businessGoals: U,
+    technologyStack: U,
+    frameworks: U,
+    backend: U,
+    database: U,
+    hosting: U,
+    cms: U,
+    integrations: U,
+    designSystem: U,
+    brandLanguage: U,
+    colorPalette: U,
+    typography: U,
+    responsiveStrategy: U,
+    seoStrategy: U,
+    performanceOptimizations: U,
+    accessibilityNotes: U,
+    majorFeatures: ["İlan hazırlama ve yönetim otomasyonu"],
+    pages: U,
+    architecture: U,
+    interestingTechnicalDecisions: U,
+    developmentChallenges: U,
+    lessonsLearned: U,
+    screenshotsReferences: U,
+    assetLocations: U,
+    gitRepository: U,
+    productionUrl: U,
+    demoUrl: U,
+    relatedDocumentation: [sources.S220.path],
+    relatedResearch: U,
+    relatedPrompts: U,
+    relatedAiWorkflows: U,
+    relatedMethods: U,
+    filesBelonging: U,
+    sourceIds: ["S220"],
+    documentationBreakdown: score(5, 1, 1, 0, 0, 1, 1, 0, 0, 1),
+    priorityBreakdown: priority(20, 16, 19, 16),
+  },
+};
+
+for (const [slug, correction] of Object.entries(userCorrections)) {
+  const item = projects.find((projectItem) => projectItem.slug === slug);
+  if (!item) continue;
+  Object.assign(item, correction);
+  item.sourceIds = [...new Set([...(correction.sourceIds ?? item.sourceIds), "S220"])];
+  item.documentationScore = Object.values(item.documentationBreakdown).reduce((total, value) => total + value, 0);
+  item.priorityScore = Object.values(item.priorityBreakdown).reduce((total, value) => total + value, 0);
+}
+
 const coverCatalog = {
   "cau-ink": {
     coverImage: "/images/projects/covers/cau-ink-mockup.png",
     coverSourceScreens: ["content/projects/cau-ink/assets/homepage-desktop.png"],
+    coverProvenance: "verified-source-screen",
+    coverSources: ["S010", "S014"],
+    sourceFiles: ["content/projects/cau-ink/assets/homepage-desktop.png"],
+    promptSummary: "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak.",
   },
   saloniq: {
     coverImage: "/images/projects/covers/saloniq-mockup.png",
     coverSourceScreens: ["content/projects/saloniq/assets/homepage-desktop.png"],
+    coverProvenance: "verified-source-screen",
+    coverSources: ["S020", "S022"],
+    sourceFiles: ["content/projects/saloniq/assets/homepage-desktop.png"],
+    promptSummary: "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak.",
   },
   inkos: {
     coverImage: "/images/projects/covers/inkos-mockup.png",
     coverSourceScreens: ["content/projects/inkos/assets/product-interface-desktop.png"],
+    coverProvenance: "verified-source-screen",
+    coverSources: ["S030", "S033"],
+    sourceFiles: ["content/projects/inkos/assets/product-interface-desktop.png"],
+    promptSummary: "Gerçek InkOS ürün arayüzünü masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak.",
   },
   "satis-metni-ai": {
     coverImage: "/images/projects/covers/satis-metni-ai-mockup.png",
     coverSourceScreens: ["content/projects/satis-metni-ai/assets/homepage-desktop.png"],
+    coverProvenance: "verified-source-screen",
+    coverSources: ["S070", "S071"],
+    sourceFiles: ["content/projects/satis-metni-ai/assets/homepage-desktop.png"],
+    promptSummary: "Gerçek AI Satış Metni ana sayfasını masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak.",
   },
   "atelier-dimora": {
     coverImage: "/images/projects/covers/atelier-dimora-mockup.png",
@@ -247,18 +357,60 @@ const coverCatalog = {
       "content/projects/atelier-dimora/assets/homepage-desktop.png",
       "content/projects/atelier-dimora/assets/homepage-mobile.png",
     ],
+    coverProvenance: "verified-source-screen",
+    coverSources: ["S120"],
+    sourceFiles: ["content/projects/atelier-dimora/assets/homepage-desktop.png", "content/projects/atelier-dimora/assets/homepage-mobile.png"],
+    promptSummary: "Gerçek Atelier Dimora masaüstü ve mobil ana sayfa ekranlarını cihaz mock-up kompozisyonunda sunan arşiv kapağı.",
   },
+  "ai-factory-os": { coverImage: "/images/projects/covers/ai-factory-os-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S040", "S041", "S042"], promptSummary: "Belgelenmiş fikir, araştırma, ürün tanımı, mimari ve insan onayı akışını gösteren AI Factory OS cihaz mock-up'ı." },
+  "adres-moda": { coverImage: "/images/projects/covers/adres-moda-mockup.png", coverProvenance: "source-assets-and-documents", coverSources: ["S050", "S051", "S052", "S053"], sourceFiles: ["content/projects/adres-moda/assets/brand-fashion-source.png", "content/projects/adres-moda/assets/logo-source.png"], promptSummary: "AdresModa marka ve moda varlıklarını kullanan masaüstü ve mobil e-ticaret kapak kompozisyonu." },
+  "mr-pisi": { coverImage: "/images/projects/covers/mr-pisi-mockup.png", coverProvenance: "source-assets-and-documents", coverSources: ["S060", "S061", "S062"], sourceFiles: ["content/projects/mr-pisi/assets/packaging-source.png"], promptSummary: "Gerçek Mr. Pisi ambalaj varlığını ürün kahramanı olarak kullanan cihaz mock-up kapağı." },
+  "gold-tracker": { coverImage: "/images/projects/covers/gold-tracker-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S080", "S081", "S082"], promptSummary: "Belgelenmiş altın fiyatı ve kişisel portföy takibi işlevlerinden türetilen finans dashboard cihaz mock-up'ı." },
+  wpforge: { coverImage: "/images/projects/covers/wpforge-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S170", "S171", "S172"], promptSummary: "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı." },
+  "codex-skills": { coverImage: "/images/projects/covers/codex-skills-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S210", "S211"], promptSummary: "Codex beceri paketlerinin katalog, dosya ve doğrulama görünümünü temsil eden geliştirici platformu mock-up'ı." },
+  mezat: { coverImage: "/images/projects/covers/mezat-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S190", "S191"], promptSummary: "Belgelenmiş WebSocket, canlı teklif ve anti-snipe işlevlerinden türetilen MEZAT cihaz mock-up'ı." },
+  "google-business-profile-service": { coverImage: "/images/projects/covers/google-business-profile-service-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S180", "S181"], promptSummary: "Paylaşım URL'sinden Place ID ve yapılandırılmış veri çıkarma akışını temsil eden web aracı mock-up'ı." },
+  "personal-crm": { coverImage: "/images/projects/covers/personal-crm-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S140", "S141"], promptSummary: "Kişi, ilişki ve etkileşim takibi işlevlerinden türetilen kişisel CRM cihaz mock-up'ı." },
+  "premium-listing-platform": { coverImage: "/images/projects/covers/premium-listing-platform-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S150", "S151"], promptSummary: "Belgelenmiş premium listeleme ve profil keşfi MVP'sini nötr görsellerle temsil eden cihaz mock-up'ı." },
+  "off-ilan-platformu": { coverImage: "/images/projects/covers/off-ilan-platformu-mockup.png", coverProvenance: "owner-brief-informed-concept", coverSources: ["S220"], promptSummary: "Portföy sahibinin düzelttiği emlak ve oto galeri ilan otomasyonu kapsamını temsil eden B2B cihaz mock-up'ı." },
+  stagekey: { coverImage: "/images/projects/covers/stagekey-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S190", "S191", "S220"], promptSummary: "Belgelenmiş üç panelli ses kiti arayüzü, amber vurgu ve loader/pazaryeri kapsamından türetilen cihaz mock-up'ı." },
+  yasui: { coverImage: "/images/projects/covers/yasui-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S190", "S191", "S220"], promptSummary: "Belgelenmiş LLM/API gateway, maliyet ve abuse kontrolü ile T0 Trial, T1 Verified, T2 Power User katmanlarını temsil eden cihaz mock-up'ı." },
+  "cau-ink-movezone-led": { coverImage: "/images/projects/covers/cau-ink-movezone-led-mockup.png", coverProvenance: "source-assets-and-documents", coverSources: ["S014", "S190", "S191", "S220"], sourceFiles: ["content/projects/cau-ink-movezone-led/assets/cau-ink-logo-source.webp"], promptSummary: "Gerçek CAU INK kimliği ve belgelenmiş 15 saniyelik dikey LED reklam kapsamını kullanan reklam üretim kapağı." },
+  "ai-trainer-kamu-egitimi": { coverImage: "/images/projects/covers/ai-trainer-kamu-egitimi-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S190", "S191"], promptSummary: "Belgelenmiş 17 slaytlık kamu AI okuryazarlığı eğitimi ve Ocean Gradient paletinden türetilen sunum mock-up'ı." },
+  "yapay-zeka-model-karsilastirmasi": { coverImage: "/images/projects/covers/yapay-zeka-model-karsilastirmasi-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S202"], promptSummary: "Belgelenmiş altı model, kriter tablosu ve grafik yapısından türetilen karşılaştırma cihaz mock-up'ı." },
+  "hera-braid": { coverImage: "/images/projects/covers/hera-braid-mockup.png", coverProvenance: "source-assets-and-documents", coverSources: ["S110", "S111", "S220"], promptSummary: "Buse Durmaz'ın gerçek HERA BRAID kartvizit kimliğinden türetilen, iletişim bilgisi içermeyen link-in-bio cihaz mock-up'ı." },
+  "karesi-periyodik-kontrol": { coverImage: "/images/projects/covers/karesi-periyodik-kontrol-mockup.png", coverProvenance: "document-informed-concept", coverSources: ["S130"], promptSummary: "Belgelenmiş periyodik kontrol hizmet sunumu ve teklif akışından türetilen kurumsal web cihaz mock-up'ı." },
 };
 
+const hiddenPortfolioSlugs = new Set([
+  "atelier-dimora",
+  "brkunluer-site",
+  "takipler-store",
+  "tattoo-design-desktop-app",
+  "8-mart-deneyimi",
+  "buse-birthday",
+  "3dikili",
+]);
+
 for (const item of projects) {
-  Object.assign(item, coverCatalog[item.slug] ?? {});
+  const cover = coverCatalog[item.slug];
+  if (cover) {
+    const publicCover = Object.fromEntries(
+      Object.entries(cover).filter(([key]) => key !== "sourceFiles" && key !== "promptSummary"),
+    );
+    Object.assign(item, publicCover, { coverPromptSummary: cover.promptSummary });
+  }
+  item.portfolioVisibility = hiddenPortfolioSlugs.has(item.slug) ? "hidden" : "visible";
+  if (item.portfolioVisibility === "hidden") {
+    item.sourceIds = [...new Set([...item.sourceIds, "S220"])];
+  }
 }
 
 const mergeRegister = [
   { canonical: "CAU INK", merged: ["CAU_INK", "CAU_INK_STITCH", "CAU_INK_WHITE_DEMO", "CAU_INK_MEDICAL", "CAU INK Gallery v2", "Tattoo-Demo", "CAU_INK_REDESING-1"], evidence: ["S010", "S011", "S012", "S014", "S015"] },
-  { canonical: "SalonIQ", merged: ["SALONIQ_APP", "_SalonIQ_Archive", "Saloniq APP Yedekler", "222les / KasaPage"], evidence: ["S020", "S021", "S022", "S023"] },
-  { canonical: "SatışMetni AI", merged: ["FABLE-MONEY-SYSTEM", "e-ticaret-asistan"], evidence: ["S070", "S071"] },
-  { canonical: "HERA BRAID Link-in-Bio", merged: ["LINK-BIO", "Buse-HairBraid"], evidence: ["S110", "S111"] },
+  { canonical: "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi", merged: ["SalonIQ", "SALONIQ_APP", "_SalonIQ_Archive", "Saloniq APP Yedekler", "222les / KasaPage"], evidence: ["S020", "S021", "S022", "S023", "S220"] },
+  { canonical: "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler", merged: ["SatışMetni AI", "FABLE-MONEY-SYSTEM", "e-ticaret-asistan"], evidence: ["S070", "S071", "S220"] },
+  { canonical: "Hair Designer Buse Durmaz", merged: ["HERA BRAID Link-in-Bio", "LINK-BIO", "Buse-HairBraid"], evidence: ["S110", "S111", "S220"] },
   { canonical: "BRKUNLUER.SITE", merged: ["BRKUNLUER.SITE", "BRKUNLUER.SITE-KAYNAK"], evidence: ["S001", "S002", "S003"] },
   { canonical: "Mr. Pisi", merged: ["mr.-pisi---premium-kedi-kumu", "mr.-pisi---premium-kedi-kumu (1)", "mr.-pisi---premium-kedi-kumu (2)", "MR.Pisi"], evidence: ["S060", "S061", "S062"] },
 ];
@@ -266,7 +418,7 @@ const mergeRegister = [
 const relationships = [
   { from: "AI Factory OS", to: "BRKUNLUER.SITE", relation: "AI Factory Planning Stack makalesi ve AI Factory System yöntem sayfası bu sitede yayımlanıyor.", evidence: ["S005", "S040", "S041"] },
   { from: "InkOS", to: "BRKUNLUER.SITE", relation: "InkOS, mevcut sitenin proje içeriği ve ekran varlıklarıyla temsil ediliyor.", evidence: ["S005", "S033"] },
-  { from: "CAU INK", to: "CAU INK × MoveZone LED Reklamları", relation: "LED reklam çalışması CAU INK marka ve kampanya varlıklarını kullanıyor.", evidence: ["S014", "S191"] },
+  { from: "CAU INK", to: "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI", relation: "LED reklam çalışması CAU INK marka ve kampanya varlıklarını kullanıyor.", evidence: ["S014", "S191", "S220"] },
   { from: "CAU INK", to: "Atelier Dimora", relation: "Yalnız aynı tattoo-studio problem alanında tasarım çalışmalarıdır; doğrudan kod/teknik yeniden kullanım kanıtı yoktur.", evidence: ["S010", "S120"] },
   { from: "InkOS", to: "Tattoo Design Desktop App", relation: "Aynı tattoo-AI alanındadır; arşiv birleşme ihtimalini açık bırakır, bu nedenle ayrı kayıt tutulur.", evidence: ["S032", "S191"] },
   { from: "AdresModa", to: "WPForge", relation: "Her ikisi WordPress/WooCommerce teslimat alanındadır; WPForge'un AdresModa'da kullanıldığına dair doğrudan kanıt yoktur.", evidence: ["S051", "S052", "S170", "S171"] },
@@ -290,6 +442,7 @@ const write = (path, content) => {
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, `${content.trim()}\n`, "utf8");
 };
+const sha256 = (filePath) => createHash("sha256").update(readFileSync(filePath)).digest("hex").toUpperCase();
 
 const projectByPriority = [...projects].sort((a, b) => b.priorityScore - a.priorityScore || b.documentationScore - a.documentationScore);
 const projectByDocs = [...projects].sort((a, b) => b.documentationScore - a.documentationScore || b.priorityScore - a.priorityScore);
@@ -481,13 +634,13 @@ ${candidateRows}
 AdresModa ve SalonIQ kaynaklarında operasyonel veya hassas olabilecek değerler görüldü. Bu arşiv bu değerleri bilerek kopyalamaz. Paylaşım öncesinde kaynak belgelerden sır/şifre/merchant kimliği temizlenmeli ve gerekiyorsa anahtarlar döndürülmelidir. [S021] [S051]
 `;
 
-const assetRows = projects.map((p) => `| ${p.projectName} | ${cell(p.coverImage)} | ${cell(p.coverSourceScreens)} | ${cell(p.screenshotsReferences)} | ${cell(p.assetLocations)} | ${p.screenshotsReferences === U ? "Eksik" : "Kayıtlı; tekil dosya eşleştirmesi gerekebilir"} | ${refs(p.sourceIds)} |`).join("\n");
+const assetRows = projects.map((p) => `| ${p.projectName} | ${cell(p.portfolioVisibility)} | ${cell(p.coverImage)} | ${cell(p.coverProvenance)} | ${cell(p.coverSourceScreens)} | ${cell(p.screenshotsReferences)} | ${cell(p.assetLocations)} | ${refs(p.sourceIds)} |`).join("\n");
 const assetDoc = `# Varlık İndeksi
 
-Varlıklar bu arşive kopyalanmamıştır; orijinal konumlar referanslanmıştır. Böylece büyük medya klasörleri çoğaltılmaz ve gerçek müşteri varlıklarıyla AI destek görseller birbirine karışmaz.
+Portfolyo kapakları repo içinde tutulur; büyük orijinal medya arşivleri ise çoğaltılmadan referanslanır. Gerçek ekran, kaynak marka varlığı ve belge temelli AI konsepti birbirinden \`coverProvenance\` alanıyla ayrılır.
 
-| Proje | Portfolyo kapağı | Kapak kaynak ekranı | Ekran görüntüsü referansı | Varlık kökü | Durum | Kanıt |
-|---|---|---|---|---|---|---|
+| Proje | Portfolyo görünürlüğü | Portfolyo kapağı | Kapak kökeni | Kapak kaynak ekranı | Ekran görüntüsü referansı | Varlık kökü | Kanıt |
+|---|---|---|---|---|---|---|---|
 ${assetRows}
 
 ## Varlık kullanım kuralları
@@ -583,8 +736,35 @@ Tüm alanlar için [merkezi veritabanına](../../../docs/MASTER_PORTFOLIO/10_MAS
   write(join(root, "architecture.md"), `# ${p.projectName} — Mimari\n\n## Mimari özet\n\n${mdValue(p.architecture)} ${evidence}\n\n## Teknik kararlar\n\n${Array.isArray(p.interestingTechnicalDecisions) ? p.interestingTechnicalDecisions.map((item) => `- ${item}`).join("\n") : p.interestingTechnicalDecisions}\n\n## Zorluklar\n\n${Array.isArray(p.developmentChallenges) ? p.developmentChallenges.map((item) => `- ${item}`).join("\n") : p.developmentChallenges}`);
   write(join(root, "tech-stack.md"), `# ${p.projectName} — Teknoloji Yığını\n\n| Katman | Değer |\n|---|---|\n| Teknoloji yığını | ${cell(p.technologyStack)} |\n| Framework | ${cell(p.frameworks)} |\n| Backend | ${cell(p.backend)} |\n| Veritabanı | ${cell(p.database)} |\n| Hosting | ${cell(p.hosting)} |\n| CMS | ${cell(p.cms)} |\n| Entegrasyonlar | ${cell(p.integrations)} |\n\nKanıt: ${evidence}`);
   write(join(root, "lessons-learned.md"), `# ${p.projectName} — Çıkarılan Dersler\n\n${mdValue(p.lessonsLearned)} ${evidence}\n\n## Performans\n\n${mdValue(p.performanceOptimizations)}\n\n## Erişilebilirlik\n\n${mdValue(p.accessibilityNotes)}\n\n## Bakım notu\n\nBu dosya kanıt güncellendiğinde merkezi veritabanı üzerinden yeniden üretilmelidir.`);
-  write(join(root, "gallery", "README.md"), `# ${p.projectName} — Galeri Referansları\n\n## Portfolyo kapağı\n\n${mdValue(p.coverImage)}\n\n## Kapak kaynak ekranları\n\n${mdValue(p.coverSourceScreens)}\n\n## Diğer ekran referansları\n\n${mdValue(p.screenshotsReferences)} ${evidence}\n\nKapaklar kaynak ekran görüntülerinden cihaz mock-up kompozisyonu olarak üretilmiştir. Görsel kanıtı olmayan projelerde değer \`Unknown\` olarak kalır.`);
+  write(join(root, "gallery", "README.md"), `# ${p.projectName} — Galeri Referansları\n\n## Portfolyo kapağı\n\n${mdValue(p.coverImage)}\n\n## Kapak kökeni\n\n${mdValue(p.coverProvenance)}\n\n## Kapak kaynakları\n\n${mdValue(p.coverSources)}\n\n## Kapak kaynak ekranları\n\n${mdValue(p.coverSourceScreens)}\n\n## Diğer ekran referansları\n\n${mdValue(p.screenshotsReferences)} ${evidence}\n\n\`verified-source-screen\` gerçek proje ekranını, \`source-assets-and-documents\` marka varlığı ve belge desteğini, \`document-informed-concept\` ile \`owner-brief-informed-concept\` ise gerçek üretim ekranı olduğu iddia edilmeyen AI destekli editoryal mock-up'ı belirtir.`);
   write(join(root, "assets", "README.md"), `# ${p.projectName} — Varlık Referansları\n\n${mdValue(p.assetLocations)} ${evidence}\n\n## Projeye ait dosya kökleri\n\n${Array.isArray(p.filesBelonging) ? p.filesBelonging.map((item) => `- \`${item}\``).join("\n") : p.filesBelonging}`);
 }
+
+const coverManifest = {
+  schemaVersion: 2,
+  generatedAt: snapshotDate,
+  generator: "OpenAI built-in image generation; generation and targeted edit modes",
+  policy: "Yayımlanan projelerin tamamında kapak bulunur. Gerçek ekranlar, kaynak marka varlıkları ve belge temelli AI konseptleri ayrı köken etiketleriyle kaydedilir; konsept kapaklar gerçek üretim ekranı sayılmaz.",
+  covers: Object.entries(coverCatalog).map(([slug, cover]) => {
+    const projectItem = projects.find((item) => item.slug === slug);
+    const outputPath = join(process.cwd(), "public", cover.coverImage.replace(/^\//, "").replaceAll("/", "\\"));
+    return {
+      slug,
+      title: projectItem?.projectName ?? slug,
+      portfolioVisibility: projectItem?.portfolioVisibility ?? "visible",
+      output: cover.coverImage,
+      outputSha256: existsSync(outputPath) ? sha256(outputPath) : U,
+      provenance: cover.coverProvenance,
+      sourceIds: cover.coverSources,
+      sources: (cover.sourceFiles ?? []).map((sourceFile) => {
+        const sourcePath = join(process.cwd(), sourceFile.replaceAll("/", "\\"));
+        return { path: sourceFile, sha256: existsSync(sourcePath) ? sha256(sourcePath) : U };
+      }),
+      promptSummary: cover.promptSummary,
+    };
+  }),
+};
+
+write(join("public", "images", "projects", "covers", "manifest.json"), JSON.stringify(coverManifest, null, 2));
 
 console.log(`Master portfolio generated: ${projects.length} projects, ${Object.keys(sources).length} sources.`);

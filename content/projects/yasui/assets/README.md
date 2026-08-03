@@ -1,6 +1,6 @@
-# Yasui — Varlık Referansları
+# Yasui LLM Provider — Varlık Referansları
 
-Unknown [S190] [S191]
+Unknown [S190] [S191] [S220]
 
 ## Projeye ait dosya kökleri
 

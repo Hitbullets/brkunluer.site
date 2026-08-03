@@ -104,8 +104,16 @@
   ],
   "gitRepository": "Unknown",
   "productionUrl": "https://adresmoda.com (belgeli hedef; canlı doğrulama Unknown)",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/adres-moda-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "source-assets-and-documents",
+  "coverSources": [
+    "S050",
+    "S051",
+    "S052",
+    "S053"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
@@ -153,5 +161,6 @@
   },
   "documentationScore": 77,
   "priorityScore": 84,
+  "coverPromptSummary": "AdresModa marka ve moda varlıklarını kullanan masaüstü ve mobil e-ticaret kapak kompozisyonu.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

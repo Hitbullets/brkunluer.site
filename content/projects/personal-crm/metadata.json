@@ -79,8 +79,14 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/personal-crm-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S140",
+    "S141"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\PersonelCRM\\replit.md"
@@ -119,5 +125,6 @@
   },
   "documentationScore": 49,
   "priorityScore": 64,
+  "coverPromptSummary": "Kişi, ilişki ve etkileşim takibi işlevlerinden türetilen kişisel CRM cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

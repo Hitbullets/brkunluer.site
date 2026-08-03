@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Tauri masaüstü + bulut AI servisleri konsepti. [S190] [S191]
+Tauri masaüstü + bulut AI servisleri konsepti. [S190] [S191] [S220]
 
 ## Teknik kararlar
 

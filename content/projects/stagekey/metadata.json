@@ -1,5 +1,7 @@
 {
-  "aliases": "Unknown",
+  "aliases": [
+    "StageKey"
+  ],
   "client": "Unknown",
   "industry": "Müzik / dijital varlık pazaryeri",
   "projectType": "Web + masaüstü ürün konsepti",
@@ -47,8 +49,15 @@
   "assetLocations": "Unknown",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/stagekey-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S190",
+    "S191",
+    "S220"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md",
   "relatedBlogPosts": "Unknown",
@@ -59,11 +68,12 @@
   "filesBelonging": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md"
   ],
-  "projectName": "StageKey",
+  "projectName": "STAGE KEY - Müzisyen Kit Box",
   "slug": "stagekey",
   "sourceIds": [
     "S190",
-    "S191"
+    "S191",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 5,
@@ -85,5 +95,6 @@
   },
   "documentationScore": 17,
   "priorityScore": 60,
+  "coverPromptSummary": "Belgelenmiş üç panelli ses kiti arayüzü, amber vurgu ve loader/pazaryeri kapsamından türetilen cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

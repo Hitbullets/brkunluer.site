@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | SMM API |
 
-Kanıt: [S090] [S091] [S092]
+Kanıt: [S090] [S091] [S092] [S220]

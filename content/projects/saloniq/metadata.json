@@ -1,5 +1,6 @@
 {
   "aliases": [
+    "SalonIQ",
     "222les",
     "SalonIQ Kasa",
     "SalonIQ Staging",
@@ -109,6 +110,12 @@
   "coverSourceScreens": [
     "content/projects/saloniq/assets/homepage-desktop.png"
   ],
+  "coverProvenance": "verified-source-screen",
+  "coverSources": [
+    "S020",
+    "S022"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "https://app.saloniq.app (yerel deployment belgesinde; canlı doğrulama Unknown)",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\SALONIQ_APP\\docs\\core\\MASTER-CONTEXT-AND-VERSION.md",
@@ -125,13 +132,14 @@
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\_SalonIQ_Archive",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Saloniq APP Yedekler"
   ],
-  "projectName": "SalonIQ",
+  "projectName": "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
   "slug": "saloniq",
   "sourceIds": [
     "S020",
     "S021",
     "S022",
-    "S023"
+    "S023",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 10,
@@ -153,5 +161,6 @@
   },
   "documentationScore": 86,
   "priorityScore": 99,
+  "coverPromptSummary": "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

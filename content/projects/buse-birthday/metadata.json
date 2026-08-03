@@ -53,6 +53,9 @@
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": "Unknown",
   "relatedBlogPosts": "Unknown",
@@ -66,7 +69,8 @@
   "projectName": "Buse Birthday Web Experience",
   "slug": "buse-birthday",
   "sourceIds": [
-    "S200"
+    "S200",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 5,

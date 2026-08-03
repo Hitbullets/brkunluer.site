@@ -1,6 +1,6 @@
 # Tattoo Design Desktop App — Varlık Referansları
 
-Unknown [S190] [S191]
+Unknown [S190] [S191] [S220]
 
 ## Projeye ait dosya kökleri
 

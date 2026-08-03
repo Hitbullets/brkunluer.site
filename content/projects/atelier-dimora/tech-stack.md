@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | WhatsApp, Instagram |
 
-Kanıt: [S120]
+Kanıt: [S120] [S220]
