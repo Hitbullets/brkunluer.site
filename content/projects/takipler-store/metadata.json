@@ -72,7 +72,7 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\Takipler-Store\\public",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
@@ -117,5 +117,8 @@
   },
   "documentationScore": 38,
   "priorityScore": 65,
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

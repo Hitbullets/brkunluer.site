@@ -28,9 +28,9 @@ export function Header() {
     <header className='sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md'>
       <nav className='mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8' aria-label='Ana menü'>
         <div className='flex h-16 items-center justify-between'>
-          <Link href='/' className='group flex items-center gap-3' aria-label='Burak Ünlüler ana sayfa'>
+          <Link href='/' className='group flex items-center gap-3' aria-label='Burak Ünlüer ana sayfa'>
             <span className='grid h-7 w-7 place-items-center border border-foreground font-mono text-[10px] font-semibold transition-colors group-hover:bg-foreground group-hover:text-background'>BÜ</span>
-            <span className='text-sm font-semibold tracking-[-0.02em]'>Burak Ünlüler</span>
+            <span className='text-sm font-semibold tracking-[-0.02em]'>Burak Ünlüer</span>
           </Link>
 
           <div className='hidden items-center gap-1 md:flex'>

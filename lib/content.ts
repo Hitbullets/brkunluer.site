@@ -70,53 +70,121 @@ async function loadMethods(): Promise<Method[]> {
 }
 
 const unknownValue = "Unknown"
+const pendingDetail = "Proje detayları hazırlanıyor. Doğrulanmış bilgi eklendikçe bu bölüm güncellenecek."
+const privateRepositoryNote =
+  "Private Repository olarak geliştirilmiştir. İstenildiği takdirde GitHub üzerinden erişim izni verilir."
 
-const isKnown = (value: string) => value.trim().length > 0 && value !== unknownValue
+const isKnown = (value: string) =>
+  value.trim().length > 0 && value.trim() !== unknownValue
 
 const asList = (value: string | string[]): string[] =>
-  Array.isArray(value) ? value : isKnown(value) ? [value] : []
+  Array.isArray(value) ? value.filter((item) => isKnown(item)) : isKnown(value) ? [value] : []
 
 const asMarkdown = (value: string | string[]): string => {
   const values = asList(value)
-  if (values.length === 0) return unknownValue
+  if (values.length === 0) return pendingDetail
   if (values.length === 1) return values.at(0) ?? unknownValue
   return values.map((item) => `- ${item}`).join("\n")
 }
 
 const asInline = (value: string | string[]): string => {
   const values = asList(value)
-  return values.length > 0 ? values.join(", ") : unknownValue
+  return values.length > 0 ? values.join(", ") : "Hazırlanıyor"
 }
+
+const cleanText = (value: string): string =>
+  value
+    .replace(/\bProduction Unknown\b/g, "yayın durumu hazırlanıyor")
+    .replace(/\bcanlı doğrulama Unknown\b/gi, "canlı doğrulama hazırlanıyor")
+    .replace(/\bUnknown\b/g, "detay hazırlanıyor")
+
+const cleanClient = (value: string): string =>
+  cleanText(value)
+    .replace(/;\s*kurum detay hazırlanıyor/gi, "")
+    .replace(/\/\s*detay hazırlanıyor/gi, "")
+    .trim()
+
+const firstUrl = (value: string | undefined): string | undefined => {
+  if (!value || !isKnown(value)) return undefined
+  const match = value.match(/https?:\/\/[^\s)]+/)
+  return match?.[0]
+}
+
+const asRepositoryUrl = (value: unknown): string | undefined => {
+  const values = Array.isArray(value) ? value : [value]
+  return values.find((item): item is string => typeof item === "string" && /^https?:\/\//.test(item))
+}
+
+const tagLabels: Record<string, string> = {
+  "AI Product": "AI Ürün",
+  "Client Work": "Müşteri İşi",
+  "Corporate Product": "Kurumsal Ürün",
+  "Corporate Website": "Kurumsal Web",
+  "E-commerce": "E-ticaret",
+  Educational: "Eğitim",
+  Experimental: "Deneysel",
+  Finance: "Finans",
+  "Internal Tool": "İç Araç",
+  "Landing Page": "Landing",
+  Marketplace: "Pazaryeri",
+  "Open Source": "Açık Kaynak",
+  "Personal Brand": "Kişisel Marka",
+  Portfolio: "Portfolyo",
+  "Tattoo Studio": "Stüdyo Sitesi",
+}
+
+const normalizeTags = (tags: string[]): string[] => tags.map((tag) => tagLabels[tag] ?? tag)
 
 const extractYear = (timeline: string): number | undefined => {
   const match = timeline.match(/\b(?:19|20)\d{2}\b/)
   return match ? Number(match[0]) : undefined
 }
 
-const buildArchiveBody = (project: PortfolioArchiveProjectInput): string => `
-## Proje özeti
+const buildArchiveBody = (project: PortfolioArchiveProjectInput): string => {
+  if (project.portfolioTier === "active-development") {
+    return `
+## Geliştirme durumu
 
-${project.purpose}
+${project.portfolioSummary ?? project.purpose}
+
+Bu çalışma aktif geliştirme sürecindedir. Teknik kapsam, ekranlar ve doğrulama kanıtları netleştikçe bu kayıt vaka çalışmasına dönüştürülecek.
+
+## Planlanan kapsam
+
+${asMarkdown(project.majorFeatures)}
+
+## Teknik yön
+
+${asMarkdown(project.technologyStack)}
+
+## Kaynak erişimi
+
+${project.repositoryAccessNote ?? privateRepositoryNote}
+`
+  }
+
+  return `
+## Çalışmanın kapsamı
+
+${project.portfolioSummary ?? project.purpose}
+
+## Benim rolüm
+
+${project.portfolioRole ?? pendingDetail}
 
 ## Çözülen problem
 
 ${project.problemBeingSolved}
 
-## Hedef kullanıcılar
-
-${asMarkdown(project.targetUsers)}
-
-## İş hedefleri
-
-${asMarkdown(project.businessGoals)}
-
-## Başlıca özellikler
+## Öne çıkan çıktı
 
 ${asMarkdown(project.majorFeatures)}
 
-## Sayfalar ve deneyim alanları
+## Kullanıcı ve iş hedefi
 
-${asMarkdown(project.pages)}
+${asMarkdown(project.targetUsers)}
+
+${asMarkdown(project.businessGoals)}
 
 ## Teknoloji yığını
 
@@ -131,11 +199,9 @@ ${asMarkdown(project.technologyStack)}
 - CMS: ${asInline(project.cms)}
 - Entegrasyonlar: ${asInline(project.integrations)}
 
-## Mimari
+## Mimari ve teknik kararlar
 
 ${asMarkdown(project.architecture)}
-
-## Teknik kararlar
 
 ${asMarkdown(project.interestingTechnicalDecisions)}
 
@@ -145,17 +211,13 @@ ${asMarkdown(project.interestingTechnicalDecisions)}
 - Marka dili: ${asInline(project.brandLanguage)}
 - Responsive yaklaşım: ${asInline(project.responsiveStrategy)}
 
-## SEO, performans ve erişilebilirlik
+## Doğrulama ve kaynak
 
-- SEO: ${asInline(project.seoStrategy)}
-- Performans: ${asInline(project.performanceOptimizations)}
-- Erişilebilirlik: ${asInline(project.accessibilityNotes)}
+${project.evidenceSummary ?? project.currentStatus}
 
-## Geliştirme zorlukları
+${project.repositoryAccessNote ? `### Kaynak erişimi\n\n${project.repositoryAccessNote}` : ""}
 
-${asMarkdown(project.developmentChallenges)}
-
-## Çıkarılan dersler
+## Çıkarılan ders
 
 ${asMarkdown(project.lessonsLearned)}
 
@@ -163,8 +225,9 @@ ${asMarkdown(project.lessonsLearned)}
 
 ${project.currentStatus}
 
-Bu sayfa erişilebilir proje dosyalarından yeniden oluşturulmuş bir arşiv kaydıdır. Kanıtlanamayan bilgiler **Unknown** olarak korunur; teklif, plan veya prototip kayıtları tamamlanmış üretim işi olarak sunulmaz.
+Bu sayfa erişilebilir proje dosyalarından yeniden oluşturulmuş bir arşiv kaydıdır. Kanıtlanamayan alanlar tamamlanmış üretim işi gibi sunulmaz; eksik detaylar doğrulandıkça güncellenir.
 `
+}
 
 async function loadCaseStudyProjects(): Promise<Project[]> {
   const projectsDir = path.join(contentDir, "projects")
@@ -210,27 +273,41 @@ async function loadArchiveProjects(): Promise<Project[]> {
       JSON.parse(fs.readFileSync(metadataPath, "utf-8")),
     )
     if (parsed.portfolioVisibility === "hidden") continue
-    const categories = asList(parsed.categories)
+    const categories = normalizeTags(asList(parsed.categories))
+    const repositoryUrl = asRepositoryUrl(parsed.gitRepository)
+    const liveUrl = firstUrl(parsed.productionUrl) ?? firstUrl(parsed.demoUrl)
+    const repositoryAccess = parsed.repositoryAccess ?? (repositoryUrl ? "public" : "private")
 
     projects.push({
       type: "project",
       recordType: "archive",
       title: parsed.projectName,
       slug: parsed.slug,
-      client: isKnown(parsed.client) ? parsed.client : undefined,
+      client: isKnown(parsed.client) ? cleanClient(parsed.client) : undefined,
       year: extractYear(parsed.timeline) ?? 0,
-      tagline: parsed.purpose,
+      tagline: cleanText(parsed.portfolioSummary && isKnown(parsed.portfolioSummary) ? parsed.portfolioSummary : parsed.purpose),
       coverImage: typeof parsed.coverImage === "string" && isKnown(parsed.coverImage) ? parsed.coverImage : "",
       tags: categories.length > 0 ? categories : [parsed.projectType],
+      liveUrl,
       status: "published",
-      body: buildArchiveBody(parsed),
+      body: cleanText(buildArchiveBody(parsed)),
+      portfolioTier: parsed.portfolioTier ?? "archive",
+      portfolioSummary: parsed.portfolioSummary,
+      portfolioRole: parsed.portfolioRole,
+      evidenceSummary: parsed.evidenceSummary,
+      repositoryAccess,
+      repositoryAccessNote: parsed.repositoryAccessNote ?? (repositoryAccess === "private" ? privateRepositoryNote : undefined),
+      repositoryUrl,
       archive: {
-        currentStatus: parsed.currentStatus,
+        currentStatus: cleanText(parsed.currentStatus),
         projectType: parsed.projectType,
         industry: parsed.industry,
         documentationScore: parsed.documentationScore,
         priorityScore: parsed.priorityScore,
         sourceCount: parsed.sourceIds.length,
+        productionUrl: cleanText(parsed.productionUrl),
+        demoUrl: cleanText(parsed.demoUrl),
+        coverProvenance: parsed.coverProvenance,
       },
     })
   }
@@ -249,6 +326,13 @@ async function loadProjects(): Promise<Project[]> {
   const enrichedCaseStudies = caseStudies.map((project) => ({
     ...project,
     archive: archiveBySlug.get(project.slug)?.archive,
+    portfolioTier: archiveBySlug.get(project.slug)?.portfolioTier ?? "archive",
+    portfolioSummary: archiveBySlug.get(project.slug)?.portfolioSummary,
+    portfolioRole: archiveBySlug.get(project.slug)?.portfolioRole,
+    evidenceSummary: archiveBySlug.get(project.slug)?.evidenceSummary,
+    repositoryAccess: archiveBySlug.get(project.slug)?.repositoryAccess,
+    repositoryAccessNote: archiveBySlug.get(project.slug)?.repositoryAccessNote,
+    repositoryUrl: archiveBySlug.get(project.slug)?.repositoryUrl,
   }))
   const remainingArchive = archiveProjects
     .filter((project) => !caseStudySlugs.has(project.slug))

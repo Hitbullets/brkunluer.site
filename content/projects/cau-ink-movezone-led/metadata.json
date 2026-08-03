@@ -53,7 +53,7 @@
   "assetLocations": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR"
   ],
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/cau-ink-movezone-led-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -107,5 +107,8 @@
   "documentationScore": 29,
   "priorityScore": 52,
   "coverPromptSummary": "Gerçek CAU INK kimliği ve belgelenmiş 15 saniyelik dikey LED reklam kapsamını kullanan reklam üretim kapağı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

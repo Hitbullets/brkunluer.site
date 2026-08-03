@@ -5,14 +5,15 @@
   ],
   "client": "İbrahim / AdresModa",
   "industry": "Erkek giyim perakendesi",
-  "projectType": "E-ticaret sitesi",
+  "projectType": "WordPress ve WooCommerce e-ticaret web sitesi ?al??mas?",
   "categories": [
-    "E-commerce",
-    "Corporate Website"
+    "E-ticaret",
+    "WordPress",
+    "WooCommerce"
   ],
-  "currentStatus": "Teklif, kurulum rehberi, tema planı ve ürün/varlık dosyaları mevcut; üretim tamamlanması ve canlı site Unknown.",
+  "currentStatus": "WordPress/WooCommerce ma?aza yap?s?, tasar?m y?n? ve e-ticaret ak??? haz?rlanm??t?r; yay?n ve y?netim eri?imi proje sahibinin operasyonuna ba?l?d?r.",
   "timeline": "2026-03: yol haritası; 2026-04: Clotya tema uygulama planı.",
-  "purpose": "Balıkesir'deki fiziksel erkek giyim mağazasını çevrimiçi satış kanalına taşımak.",
+  "purpose": "Bal?kesir merkezli erkek giyim ma?azas?n? ?r?n katalo?u, kampanya, ?deme, kargo ve ileti?im ak??lar? olan ?evrimi?i sat?? kanal?na ta??mak.",
   "problemBeingSolved": "Ürün kataloğu, ödeme, kargo, WhatsApp iletişimi ve yerel/ürün SEO'sunu tek mağazada kurmak.",
   "targetUsers": [
     "Erkek giyim müşterileri",
@@ -102,11 +103,13 @@
   "assetLocations": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda"
   ],
-  "gitRepository": "Unknown",
-  "productionUrl": "https://adresmoda.com (belgeli hedef; canlı doğrulama Unknown)",
-  "coverImage": "/images/projects/covers/adres-moda-mockup.png",
-  "coverSourceScreens": "Unknown",
-  "coverProvenance": "source-assets-and-documents",
+  "gitRepository": "Private Repository",
+  "productionUrl": "https://adresmoda.com",
+  "coverImage": "/images/projects/covers/adres-moda-live-hero.png",
+  "coverSourceScreens": [
+    "content/projects/adres-moda/assets/live-full-page.png"
+  ],
+  "coverProvenance": "verified-live-screen",
   "coverSources": [
     "S050",
     "S051",
@@ -114,7 +117,7 @@
     "S053"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Canl? ma?aza ve y?netim eri?imi proje sahibinin yay?n durumuna ba?l?d?r.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\ibrahim_Adress_Moda_roadmap.docx",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Adress_Moda\\AdresModa_Kurulum_Rehberi_v1.docx",
@@ -162,5 +165,11 @@
   "documentationScore": 77,
   "priorityScore": 84,
   "coverPromptSummary": "AdresModa marka ve moda varlıklarını kullanan masaüstü ve mobil e-ticaret kapak kompozisyonu.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "showcase",
+  "portfolioSummary": "AdresModa i?in WordPress/WooCommerce tabanl?, moda g?rsel dili g??l?, kategori ve ?r?n ke?fi net bir e-ticaret sitesi ?al??mas? haz?rland?.",
+  "portfolioRole": "WordPress kurulum plan?, WooCommerce ak???, tema uyarlamas?, kategori/?r?n deneyimi, SEO ve ma?aza ileti?im kurgusu.",
+  "evidenceSummary": "Ger?ek ma?aza ekran g?r?nt?leri, kurulum rehberi, tema plan? ve ?r?n/varl?k dosyalar? mevcut.",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
 }

@@ -26,7 +26,7 @@ export function Footer() {
 
         <div className='grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4'>
           <div>
-            <Link href='/' className='text-lg font-semibold'>Burak Ünlüler</Link>
+            <Link href='/' className='text-lg font-semibold'>Burak Ünlüer</Link>
             <p className='mt-3 max-w-xs text-sm leading-6 text-white/55'>{SiteConfig.author.bio}</p>
           </div>
           <FooterGroup title='Dizin' links={[
@@ -44,7 +44,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <p className='border-t border-white/20 pt-6 font-mono text-[10px] uppercase tracking-[0.14em] text-white/40'>© {year} Burak Ünlüler / Eskişehir, Türkiye</p>
+        <p className='border-t border-white/20 pt-6 font-mono text-[10px] uppercase tracking-[0.14em] text-white/40'>© {year} Burak Ünlüer / Eskişehir, Türkiye</p>
       </Container>
     </footer>
   )

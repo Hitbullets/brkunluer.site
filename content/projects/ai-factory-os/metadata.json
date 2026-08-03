@@ -5,17 +5,16 @@
   ],
   "client": "Bağımsız ürün / geliştirici işletim sistemi",
   "industry": "AI destekli yazılım geliştirme",
-  "projectType": "İç ürün ve süreç platformu",
+  "projectType": "OpenAI tabanl? ?r?n mimarisi ve giri?im tasar?m mod?l?",
   "categories": [
-    "AI Product",
-    "Internal Tool",
-    "Educational",
-    "Open Source"
+    "AI ?r?n",
+    "Mimari Sistem",
+    "Startup Planlama"
   ],
-  "currentStatus": "MVP kapsamı ve mimari belgeli; yerel uygulama/dokümantasyon mevcut. Üretim yayın durumu Unknown.",
+  "currentStatus": "Aktif ?r?n geli?tirme ve mimari dok?mantasyon tamamland?; ba??ms?z bar?nd?r?lan AI modeli hedefi i?in ?al??ma s?r?yor.",
   "timeline": "2026-07-22: kanonik MVP kapsamı güncellemesi; sonraki yerel geliştirme kayıtları mevcut.",
-  "purpose": "Fikirden araştırma, ürün tanımı ve mimari öneriye kadar ajanlı iş akışını insan onayıyla yönetmek.",
-  "problemBeingSolved": "AI ile ürün geliştirirken bağlam kaybı, plansız kodlama ve doğrulanamayan kararlar.",
+  "purpose": "Spesifik bir giri?im veya startup fikrini ara?t?rma, ?r?n kapsam?, mimari karar ve uygulanabilir yol haritas?na d?n??t?rmek.",
+  "problemBeingSolved": "AI ile ?r?n geli?tirirken ba?lam kayb?, plans?z kodlama, zay?f mimari kararlar ve do?rulanamayan ?r?n varsay?mlar?n? azaltmak.",
   "targetUsers": [
     "Bağımsız geliştiriciler",
     "Ürün ekipleri",
@@ -67,7 +66,7 @@
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS",
   "gitRepository": "https://github.com/Hitbullets/ai-factory-os.git",
-  "productionUrl": "Unknown",
+  "productionUrl": "Ba??ms?z bar?nd?rma hedefiyle aktif ?r?n geli?tirme s?recinde.",
   "coverImage": "/images/projects/covers/ai-factory-os-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -77,7 +76,7 @@
     "S042"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Unknown",
+  "demoUrl": "Geli?tirme ve mimari do?rulama kay?tlar? ?zerinden incelenir.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\README.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\AI-FACTORY-OS\\docs\\canonical\\MVP_SCOPE.md",
@@ -129,5 +128,9 @@
   "documentationScore": 68,
   "priorityScore": 98,
   "coverPromptSummary": "Belgelenmiş fikir, araştırma, ürün tanımı, mimari ve insan onayı akışını gösteren AI Factory OS cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "showcase",
+  "portfolioSummary": "AI Factory OS, belirli bir alandaki giri?im fikrini en u? kullan?m senaryolar?na kadar d???nerek ?r?n mimarisine d?n??t?ren, OpenAI tabanl? ve kendi ??kt?lar?ndan ??renmesi hedeflenen bir mod?ld?r.",
+  "portfolioRole": "?r?n d???nme sistemi, ajan ak???, mimari karar zinciri, do?rulama kap?lar? ve insan onayl? geli?tirme modeli.",
+  "evidenceSummary": "MVP kapsam?, mimari belgeler, karar zinciri ve yerel geli?tirme kay?tlar? mevcut."
 }

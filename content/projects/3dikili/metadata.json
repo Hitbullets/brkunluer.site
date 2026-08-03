@@ -63,7 +63,7 @@
   "lessonsLearned": "Teklif demosunun yapamadıkları dokümantasyonda açık olmalı.",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo içindeki teklif/görsel ekleri",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\3dikili-demo",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
@@ -109,5 +109,8 @@
   },
   "documentationScore": 49,
   "priorityScore": 62,
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

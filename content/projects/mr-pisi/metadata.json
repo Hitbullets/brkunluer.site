@@ -87,7 +87,7 @@
   "assetLocations": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Mr.Pisi Kedi Kumu"
   ],
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "https://www.mrpisi.com",
   "coverImage": "/images/projects/covers/mr-pisi-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -142,5 +142,8 @@
   "documentationScore": 73,
   "priorityScore": 79,
   "coverPromptSummary": "Gerçek Mr. Pisi ambalaj varlığını ürün kahramanı olarak kullanan cihaz mock-up kapağı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

@@ -49,7 +49,7 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse_Birthday",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
@@ -92,5 +92,8 @@
   },
   "documentationScore": 26,
   "priorityScore": 32,
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

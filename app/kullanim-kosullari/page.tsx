@@ -25,7 +25,7 @@ export default function TermsPage() {
         </section>
         <section>
           <h2>İçeriklerin Kullanımı</h2>
-          <p>Sitedeki yazılar, görseller, şablonlar ve diğer materyaller aksi belirtilmedikçe Burak Ünlüler&apos;e aittir. İçerikler kişisel ve ticari olmayan amaçlarla incelenebilir; izinsiz çoğaltılamaz, yeniden yayımlanamaz veya satılamaz.</p>
+          <p>Sitedeki yazılar, görseller, şablonlar ve diğer materyaller aksi belirtilmedikçe Burak Ünlüer&apos;e aittir. İçerikler kişisel ve ticari olmayan amaçlarla incelenebilir; izinsiz çoğaltılamaz, yeniden yayımlanamaz veya satılamaz.</p>
         </section>
         <section>
           <h2>Dijital Ürünler ve Hizmetler</h2>

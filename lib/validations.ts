@@ -85,6 +85,12 @@ export const portfolioArchiveProjectSchema = z.object({
   coverSourceScreens: archiveValueSchema.optional(),
   coverProvenance: z.string().optional(),
   coverSources: archiveValueSchema.optional(),
+  portfolioTier: z.enum(["showcase", "active-development", "archive"]).optional(),
+  portfolioSummary: z.string().optional(),
+  portfolioRole: z.string().optional(),
+  evidenceSummary: z.string().optional(),
+  repositoryAccess: z.enum(["public", "private", "unlisted"]).optional(),
+  repositoryAccessNote: z.string().optional(),
   portfolioVisibility: z.enum(["visible", "hidden"]).default("visible"),
 }).passthrough()
 

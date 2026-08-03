@@ -107,5 +107,6 @@
   "documentationScore": 44,
   "priorityScore": 76,
   "coverPromptSummary": "Codex beceri paketlerinin katalog, dosya ve doğrulama görünümünü temsil eden geliştirici platformu mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "portfolioTier": "archive"
 }

@@ -6,6 +6,10 @@ export type ProjectStatus = "published" | "draft"
 
 export type ProjectRecordType = "case-study" | "archive"
 
+export type PortfolioTier = "showcase" | "active-development" | "archive"
+
+export type RepositoryAccess = "public" | "private" | "unlisted"
+
 export type Currency = "TRY" | "USD"
 
 export interface ArticleBase {
@@ -55,6 +59,13 @@ export interface ProjectBase {
   liveUrl?: string
   status: ProjectStatus
   recordType: ProjectRecordType
+  portfolioTier?: PortfolioTier
+  portfolioSummary?: string
+  portfolioRole?: string
+  evidenceSummary?: string
+  repositoryAccess?: RepositoryAccess
+  repositoryAccessNote?: string
+  repositoryUrl?: string
 }
 
 export interface Project extends ProjectBase {
@@ -68,6 +79,9 @@ export interface Project extends ProjectBase {
     documentationScore: number
     priorityScore: number
     sourceCount: number
+    productionUrl?: string
+    demoUrl?: string
+    coverProvenance?: string
   }
 }
 

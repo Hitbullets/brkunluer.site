@@ -73,7 +73,7 @@
   "lessonsLearned": "Model karşılaştırmaları tarih ve kaynak olmadan güncel gerçek gibi sunulmamalı.",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\YAPAYZEKA-KARSILASTIRMA",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/yapay-zeka-model-karsilastirmasi-mockup.png",
   "coverSourceScreens": "Unknown",
@@ -118,5 +118,8 @@
   "documentationScore": 46,
   "priorityScore": 59,
   "coverPromptSummary": "Belgelenmiş altı model, kriter tablosu ve grafik yapısından türetilen karşılaştırma cihaz mock-up'ı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }

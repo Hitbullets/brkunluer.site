@@ -67,7 +67,7 @@
   "lessonsLearned": "Unknown",
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\REDESING ÇALIŞMALAR\\ATALIER DIMORA TATTOO",
-  "gitRepository": "Unknown",
+  "gitRepository": "Private Repository",
   "productionUrl": "Unknown",
   "coverImage": "/images/projects/covers/atelier-dimora-mockup.png",
   "coverSourceScreens": [
@@ -118,5 +118,8 @@
   "documentationScore": 40,
   "priorityScore": 60,
   "coverPromptSummary": "Gerçek Atelier Dimora masaüstü ve mobil ana sayfa ekranlarını cihaz mock-up kompozisyonunda sunan arşiv kapağı.",
-  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
+  "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
+  "repositoryAccess": "private",
+  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir.",
+  "portfolioTier": "archive"
 }
