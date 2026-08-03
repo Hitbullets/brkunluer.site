@@ -1,5 +1,6 @@
 {
   "aliases": [
+    "InkOS",
     "Ink-OS",
     "InkOS One"
   ],
@@ -89,6 +90,12 @@
   "coverSourceScreens": [
     "content/projects/inkos/assets/product-interface-desktop.png"
   ],
+  "coverProvenance": "verified-source-screen",
+  "coverSources": [
+    "S030",
+    "S033"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Ink-OS\\docs\\handoff\\CURRENT_STATE.md",
@@ -111,14 +118,15 @@
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\ARQEN STUDIO\\PLAN MD DOSYALARI\\InkOS-LoRA-ControlNet-Plan.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\BRKUNLUER.SITE\\content\\projects\\inkos.mdx"
   ],
-  "projectName": "InkOS",
+  "projectName": "InkOS | AI Tattoo Creator",
   "slug": "inkos",
   "sourceIds": [
     "S005",
     "S030",
     "S031",
     "S032",
-    "S033"
+    "S033",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 9,
@@ -140,5 +148,6 @@
   },
   "documentationScore": 74,
   "priorityScore": 99,
+  "coverPromptSummary": "Gerçek InkOS ürün arayüzünü masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

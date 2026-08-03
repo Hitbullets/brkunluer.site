@@ -76,6 +76,9 @@
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": "README yalnız varsayılan Next.js metni; ürün belgesi Unknown",
   "relatedBlogPosts": "Unknown",
@@ -91,7 +94,8 @@
   "sourceIds": [
     "S090",
     "S091",
-    "S092"
+    "S092",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 6,

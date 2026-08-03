@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Self-contained statik HTML. [S200]
+Self-contained statik HTML. [S200] [S220]
 
 ## Teknik kararlar
 

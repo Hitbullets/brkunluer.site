@@ -72,6 +72,9 @@
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": "Unknown",
   "relatedBlogPosts": "Unknown",
@@ -85,7 +88,8 @@
   "projectName": "8 Mart Dünya Kadınlar Günü Deneyimi",
   "slug": "8-mart-deneyimi",
   "sourceIds": [
-    "S201"
+    "S201",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 7,

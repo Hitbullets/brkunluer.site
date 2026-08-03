@@ -1,4 +1,4 @@
-# StageKey — Teknoloji Yığını
+# STAGE KEY - Müzisyen Kit Box — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | Unknown |
 
-Kanıt: [S190] [S191]
+Kanıt: [S190] [S191] [S220]

@@ -1,6 +1,6 @@
 # Atelier Dimora — Çıkarılan Dersler
 
-Unknown [S120]
+Unknown [S120] [S220]
 
 ## Performans
 

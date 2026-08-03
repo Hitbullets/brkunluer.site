@@ -1,6 +1,6 @@
 # Tattoo Design Desktop App — Çıkarılan Dersler
 
-Açık birleşme kanıtı yoksa benzer ürünler otomatik birleştirilmemeli. [S190] [S191]
+Açık birleşme kanıtı yoksa benzer ürünler otomatik birleştirilmemeli. [S190] [S191] [S220]
 
 ## Performans
 

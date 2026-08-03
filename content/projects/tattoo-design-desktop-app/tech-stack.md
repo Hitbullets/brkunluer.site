@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | fal.ai, Lemon Squeezy |
 
-Kanıt: [S190] [S191]
+Kanıt: [S190] [S191] [S220]

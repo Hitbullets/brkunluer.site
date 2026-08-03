@@ -1,5 +1,6 @@
 {
   "aliases": [
+    "HERA BRAID Link-in-Bio",
     "LINK-BIO",
     "Buse-HairBraid",
     "Buse Durmaz link page"
@@ -69,8 +70,15 @@
   ],
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/hera-braid-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "source-assets-and-documents",
+  "coverSources": [
+    "S110",
+    "S111",
+    "S220"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO\\README.md"
@@ -84,11 +92,12 @@
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\LINK-BIO",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Buse-HairBraid"
   ],
-  "projectName": "HERA BRAID Link-in-Bio",
+  "projectName": "Hair Designer Buse Durmaz",
   "slug": "hera-braid",
   "sourceIds": [
     "S110",
-    "S111"
+    "S111",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 8,
@@ -110,5 +119,6 @@
   },
   "documentationScore": 47,
   "priorityScore": 49,
+  "coverPromptSummary": "Buse Durmaz'ın gerçek HERA BRAID kartvizit kimliğinden türetilen, iletişim bilgisi içermeyen link-in-bio cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

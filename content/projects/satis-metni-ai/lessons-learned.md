@@ -1,6 +1,6 @@
-# SatışMetni AI — Çıkarılan Dersler
+# AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler — Çıkarılan Dersler
 
-Klasör kod adı ile ürün markası kanonik arşivde ayrı alias olarak tutulmalı. [S070] [S071]
+Klasör kod adı ile ürün markası kanonik arşivde ayrı alias olarak tutulmalı. [S070] [S071] [S220]
 
 ## Performans
 

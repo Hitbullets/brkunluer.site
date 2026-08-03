@@ -209,6 +209,7 @@ async function loadArchiveProjects(): Promise<Project[]> {
     const parsed = portfolioArchiveProjectSchema.parse(
       JSON.parse(fs.readFileSync(metadataPath, "utf-8")),
     )
+    if (parsed.portfolioVisibility === "hidden") continue
     const categories = asList(parsed.categories)
 
     projects.push({

@@ -1,6 +1,6 @@
 # BRKUNLUER.SITE — Çıkarılan Dersler
 
-Build/lint tek başına yayın ve tarayıcı doğrulaması değildir. [S001] [S002] [S003] [S004] [S005] [S006]
+Build/lint tek başına yayın ve tarayıcı doğrulaması değildir. [S001] [S002] [S003] [S004] [S005] [S006] [S220]
 
 ## Performans
 

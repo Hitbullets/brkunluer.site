@@ -62,6 +62,9 @@
   "productionUrl": "Unknown",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\05_Tattoo_Design_Desktop_App.md",
   "relatedBlogPosts": "Unknown",
@@ -78,7 +81,8 @@
   "slug": "tattoo-design-desktop-app",
   "sourceIds": [
     "S190",
-    "S191"
+    "S191",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 4,

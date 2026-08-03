@@ -1,62 +1,95 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-03",
-  "generator": "OpenAI image generation, image-edit mode",
-  "policy": "Cihaz ve stüdyo sahnesi üretildi; ekran içeriği doğrulanmış yerel proje görsellerinden kaynaklandı. Ayrı mobil kaynak bulunmayan projelerde telefon ekranı aynı masaüstü kaynağının dar kompozisyonudur.",
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-02",
+  "generator": "OpenAI built-in image generation; generation and targeted edit modes",
+  "policy": "Yayımlanan projelerin tamamında kapak bulunur. Gerçek ekranlar, kaynak marka varlıkları ve belge temelli AI konseptleri ayrı köken etiketleriyle kaydedilir; konsept kapaklar gerçek üretim ekranı sayılmaz.",
   "covers": [
     {
       "slug": "cau-ink",
+      "title": "CAU INK",
+      "portfolioVisibility": "visible",
       "output": "/images/projects/covers/cau-ink-mockup.png",
       "outputSha256": "513FF1D13D5E059C764908B1FA715BB18BA606E9D34ACECBDEA3EE58131C7A11",
+      "provenance": "verified-source-screen",
+      "sourceIds": [
+        "S010",
+        "S014"
+      ],
       "sources": [
         {
           "path": "content/projects/cau-ink/assets/homepage-desktop.png",
           "sha256": "BDC085FA6E7A0FCC5883B78553E05825359E6FDA6AEFE72224E26AB1199040DF"
         }
       ],
-      "promptSummary": "CAU & INK ana sayfasını siyah masaüstü ve telefon mock-up kompozisyonuna yerleştiren, siyah-beyaz-koyu kırmızı sinematik portfolyo kapağı."
+      "promptSummary": "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak."
+    },
+    {
+      "slug": "saloniq",
+      "title": "SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/saloniq-mockup.png",
+      "outputSha256": "1B9599660B32FA8B9FAFCF750C48DC87F70E9CC185B2236DD4FEE051FD8FB3E5",
+      "provenance": "verified-source-screen",
+      "sourceIds": [
+        "S020",
+        "S022"
+      ],
+      "sources": [
+        {
+          "path": "content/projects/saloniq/assets/homepage-desktop.png",
+          "sha256": "AA78F76EA3A4C0302E6E92C13B73599E089CB388926A478EDEE3E178FC8ECD1A"
+        }
+      ],
+      "promptSummary": "Gerçek SalonIQ landing ekranını koyu masaüstü ve telefon mock-up kompozisyonunda sunan kapak."
     },
     {
       "slug": "inkos",
+      "title": "InkOS | AI Tattoo Creator",
+      "portfolioVisibility": "visible",
       "output": "/images/projects/covers/inkos-mockup.png",
       "outputSha256": "3BC9764BC3C7B24336709FC317C79C7B50F3B24840A261AE7789B1C1D7263FED",
+      "provenance": "verified-source-screen",
+      "sourceIds": [
+        "S030",
+        "S033"
+      ],
       "sources": [
         {
           "path": "content/projects/inkos/assets/product-interface-desktop.png",
           "sha256": "F4F17401755C9E52321B04594B374B5BE27A5A558E4EEF65214444B264CD9CE4"
         }
       ],
-      "promptSummary": "Gerçek InkOS ürün arayüzünü siyah masaüstü ve telefon mock-up kompozisyonunda, grafit zemin ve kontrollü mor ışıkla sunan portfolyo kapağı."
-    },
-    {
-      "slug": "saloniq",
-      "output": "/images/projects/covers/saloniq-mockup.png",
-      "outputSha256": "1B9599660B32FA8B9FAFCF750C48DC87F70E9CC185B2236DD4FEE051FD8FB3E5",
-      "sources": [
-        {
-          "path": "content/projects/saloniq/assets/homepage-desktop.png",
-          "sha256": "AA78F76EA3A4C0302E6E92C13B73599E089CB388926A478EDEE3E178FC8ECD1A",
-          "note": "Yerel landing derlemesinden alınan gerçek ekran; tarayıcı dışa aktarımı aynı görünümü 2x2 tekrarlar. Kapakta tek tam görünüm kullanıldı."
-        }
-      ],
-      "promptSummary": "SalonIQ ana sayfasını koyu masaüstü ve telefon mock-up kompozisyonunda, kontrollü mor SaaS ışığıyla sunan portfolyo kapağı."
+      "promptSummary": "Gerçek InkOS ürün arayüzünü masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak."
     },
     {
       "slug": "satis-metni-ai",
+      "title": "AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler",
+      "portfolioVisibility": "visible",
       "output": "/images/projects/covers/satis-metni-ai-mockup.png",
       "outputSha256": "92B86AA2C9ED19FD855966C3605E924E7FD0B60EB8090EC2E381F308541C6C45",
+      "provenance": "verified-source-screen",
+      "sourceIds": [
+        "S070",
+        "S071"
+      ],
       "sources": [
         {
           "path": "content/projects/satis-metni-ai/assets/homepage-desktop.png",
           "sha256": "1CB3F32F4072D37813E14A3E26DF48649E161500C0E82F115E63215FAC78F975"
         }
       ],
-      "promptSummary": "SatışMetni AI ana sayfasını koyu masaüstü ve telefon mock-up kompozisyonunda, mercan vurgu ışığıyla sunan portfolyo kapağı."
+      "promptSummary": "Gerçek AI Satış Metni ana sayfasını masaüstü ve mobil cihaz mock-up kompozisyonunda sunan kapak."
     },
     {
       "slug": "atelier-dimora",
+      "title": "Atelier Dimora",
+      "portfolioVisibility": "hidden",
       "output": "/images/projects/covers/atelier-dimora-mockup.png",
       "outputSha256": "AFB91CFD78AD4C7723DF01FDE862A9CB484A46576DE5D42D93398FE74328958F",
+      "provenance": "verified-source-screen",
+      "sourceIds": [
+        "S120"
+      ],
       "sources": [
         {
           "path": "content/projects/atelier-dimora/assets/homepage-desktop.png",
@@ -67,7 +100,286 @@
           "sha256": "E9F266103F7E69E819184E3984F91B407462111613B9E094AF3EC24FE1F21C02"
         }
       ],
-      "promptSummary": "Atelier Dimora'nın gerçek masaüstü ve mobil ana sayfa ekranlarını sıcak taş tonlu editoryal cihaz mock-up kompozisyonunda sunan portfolyo kapağı."
+      "promptSummary": "Gerçek Atelier Dimora masaüstü ve mobil ana sayfa ekranlarını cihaz mock-up kompozisyonunda sunan arşiv kapağı."
+    },
+    {
+      "slug": "ai-factory-os",
+      "title": "AI Factory OS",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/ai-factory-os-mockup.png",
+      "outputSha256": "F7933A6FB345744D9F978B32DAA8716E25E94516FE20ADA417D1BD058B88D391",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S040",
+        "S041",
+        "S042"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş fikir, araştırma, ürün tanımı, mimari ve insan onayı akışını gösteren AI Factory OS cihaz mock-up'ı."
+    },
+    {
+      "slug": "adres-moda",
+      "title": "AdresModa",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/adres-moda-mockup.png",
+      "outputSha256": "5A8B57B67B339636162F8B4F06FBE79213EDAC9C3669CB8FE32ABE45E7783BDA",
+      "provenance": "source-assets-and-documents",
+      "sourceIds": [
+        "S050",
+        "S051",
+        "S052",
+        "S053"
+      ],
+      "sources": [
+        {
+          "path": "content/projects/adres-moda/assets/brand-fashion-source.png",
+          "sha256": "5B412810C17AAFAF0C56ECA32F8157727339D3CE4DA4B592C7A38F5EB55780D1"
+        },
+        {
+          "path": "content/projects/adres-moda/assets/logo-source.png",
+          "sha256": "30E35E3400492C178E04FC43A175FC018DB5E6168A948D40EC32CF7F6D2DEF96"
+        }
+      ],
+      "promptSummary": "AdresModa marka ve moda varlıklarını kullanan masaüstü ve mobil e-ticaret kapak kompozisyonu."
+    },
+    {
+      "slug": "mr-pisi",
+      "title": "Mr. Pisi",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/mr-pisi-mockup.png",
+      "outputSha256": "F07BFAA7F7AC989238774F041B51687605B750B1D470D26B847A4C5B79A57955",
+      "provenance": "source-assets-and-documents",
+      "sourceIds": [
+        "S060",
+        "S061",
+        "S062"
+      ],
+      "sources": [
+        {
+          "path": "content/projects/mr-pisi/assets/packaging-source.png",
+          "sha256": "51BAE752F0976796664B09C54214F8E1805F7E7AA65F5F0CB72C0C0AE68BF6EA"
+        }
+      ],
+      "promptSummary": "Gerçek Mr. Pisi ambalaj varlığını ürün kahramanı olarak kullanan cihaz mock-up kapağı."
+    },
+    {
+      "slug": "gold-tracker",
+      "title": "Gold Tracker",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/gold-tracker-mockup.png",
+      "outputSha256": "F95CC1A1385B115724E58F4B4217D84CABFE46A4CBC1B84C21B3671AB730E958",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S080",
+        "S081",
+        "S082"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş altın fiyatı ve kişisel portföy takibi işlevlerinden türetilen finans dashboard cihaz mock-up'ı."
+    },
+    {
+      "slug": "wpforge",
+      "title": "WPForge",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/wpforge-mockup.png",
+      "outputSha256": "DF4CF6E220730F7A27A3BBAE49B0ABD954F2F194A1257C62090DD4746269D3C2",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S170",
+        "S171",
+        "S172"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı."
+    },
+    {
+      "slug": "codex-skills",
+      "title": "codex-skills",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/codex-skills-mockup.png",
+      "outputSha256": "7F0D41AA4089E3FCC92207AB74A90C6FA20FEBAE0399C9F2167AE92EE1B51BFE",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S210",
+        "S211"
+      ],
+      "sources": [],
+      "promptSummary": "Codex beceri paketlerinin katalog, dosya ve doğrulama görünümünü temsil eden geliştirici platformu mock-up'ı."
+    },
+    {
+      "slug": "mezat",
+      "title": "MEZAT",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/mezat-mockup.png",
+      "outputSha256": "AABD281EDD43EEA53FB972D1307C81679A2480951E34F4BBC88887D6CDC85C7C",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S190",
+        "S191"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş WebSocket, canlı teklif ve anti-snipe işlevlerinden türetilen MEZAT cihaz mock-up'ı."
+    },
+    {
+      "slug": "google-business-profile-service",
+      "title": "Google Business Profile Data Service",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/google-business-profile-service-mockup.png",
+      "outputSha256": "4A6A8FF983314E1C24C4A3FAC93D5F108123BA5FE8578D4743EC940FD0854CF9",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S180",
+        "S181"
+      ],
+      "sources": [],
+      "promptSummary": "Paylaşım URL'sinden Place ID ve yapılandırılmış veri çıkarma akışını temsil eden web aracı mock-up'ı."
+    },
+    {
+      "slug": "personal-crm",
+      "title": "Personal CRM",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/personal-crm-mockup.png",
+      "outputSha256": "61178380B45BA07AC2D6B538CC88A21C581C75EEB2F080AF75C828FEF2F02957",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S140",
+        "S141"
+      ],
+      "sources": [],
+      "promptSummary": "Kişi, ilişki ve etkileşim takibi işlevlerinden türetilen kişisel CRM cihaz mock-up'ı."
+    },
+    {
+      "slug": "premium-listing-platform",
+      "title": "Premium Listing Platform",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/premium-listing-platform-mockup.png",
+      "outputSha256": "6BEE69E65319C589566A14C7BA55C6BAFD5D802457CFB43DBF4E199F7B54377D",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S150",
+        "S151"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş premium listeleme ve profil keşfi MVP'sini nötr görsellerle temsil eden cihaz mock-up'ı."
+    },
+    {
+      "slug": "off-ilan-platformu",
+      "title": "Emlak/Oto Galeri İlan Otomasyonları",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/off-ilan-platformu-mockup.png",
+      "outputSha256": "8EAB45035DB012E7691BB83589F74A0FFF23C9E1B2579243C09FE390AC9B9476",
+      "provenance": "owner-brief-informed-concept",
+      "sourceIds": [
+        "S220"
+      ],
+      "sources": [],
+      "promptSummary": "Portföy sahibinin düzelttiği emlak ve oto galeri ilan otomasyonu kapsamını temsil eden B2B cihaz mock-up'ı."
+    },
+    {
+      "slug": "stagekey",
+      "title": "STAGE KEY - Müzisyen Kit Box",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/stagekey-mockup.png",
+      "outputSha256": "0CFC86AFB312C48E9BA507C3CEE5EEC39DA55875D05945658C9CB19AFEC4365A",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş üç panelli ses kiti arayüzü, amber vurgu ve loader/pazaryeri kapsamından türetilen cihaz mock-up'ı."
+    },
+    {
+      "slug": "yasui",
+      "title": "Yasui LLM Provider",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/yasui-mockup.png",
+      "outputSha256": "5D967467341158D00F193CED0D390F138F5C7F2C175829745CD5882A86F70D3C",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş LLM/API gateway, maliyet ve abuse kontrolü ile T0 Trial, T1 Verified, T2 Power User katmanlarını temsil eden cihaz mock-up'ı."
+    },
+    {
+      "slug": "cau-ink-movezone-led",
+      "title": "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/cau-ink-movezone-led-mockup.png",
+      "outputSha256": "BB01516F3D109AF19EAD9F8462FBD075CF493F2D87D03CF5BB67D64252716A20",
+      "provenance": "source-assets-and-documents",
+      "sourceIds": [
+        "S014",
+        "S190",
+        "S191",
+        "S220"
+      ],
+      "sources": [
+        {
+          "path": "content/projects/cau-ink-movezone-led/assets/cau-ink-logo-source.webp",
+          "sha256": "E265CCA3AB2A2A918DE1D2417BD3B9D805F9C15CA840D1D51ED9DEB1E5A6DCA2"
+        }
+      ],
+      "promptSummary": "Gerçek CAU INK kimliği ve belgelenmiş 15 saniyelik dikey LED reklam kapsamını kullanan reklam üretim kapağı."
+    },
+    {
+      "slug": "ai-trainer-kamu-egitimi",
+      "title": "AI Trainer Kamu Eğitimi",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/ai-trainer-kamu-egitimi-mockup.png",
+      "outputSha256": "8829104929A55F0EC83C5EF65C45A293901494CD8CA8104360D059C1E54BCDC9",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S190",
+        "S191"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş 17 slaytlık kamu AI okuryazarlığı eğitimi ve Ocean Gradient paletinden türetilen sunum mock-up'ı."
+    },
+    {
+      "slug": "yapay-zeka-model-karsilastirmasi",
+      "title": "Yapay Zekâ Model Karşılaştırması",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/yapay-zeka-model-karsilastirmasi-mockup.png",
+      "outputSha256": "262DA6FE27BB12DDFC07DE74BFCA00AC1EE5AE6FDB948E68F613407F2EC13139",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S202"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş altı model, kriter tablosu ve grafik yapısından türetilen karşılaştırma cihaz mock-up'ı."
+    },
+    {
+      "slug": "hera-braid",
+      "title": "Hair Designer Buse Durmaz",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/hera-braid-mockup.png",
+      "outputSha256": "A7E594969CD7F19BCBE04ECDED72BE433A6D1CE575F548A9DFB03114F8E982DD",
+      "provenance": "source-assets-and-documents",
+      "sourceIds": [
+        "S110",
+        "S111",
+        "S220"
+      ],
+      "sources": [],
+      "promptSummary": "Buse Durmaz'ın gerçek HERA BRAID kartvizit kimliğinden türetilen, iletişim bilgisi içermeyen link-in-bio cihaz mock-up'ı."
+    },
+    {
+      "slug": "karesi-periyodik-kontrol",
+      "title": "Karesi Periyodik Kontrol",
+      "portfolioVisibility": "visible",
+      "output": "/images/projects/covers/karesi-periyodik-kontrol-mockup.png",
+      "outputSha256": "570FED52BB565C042A3EB29B5BD758CAA57316FDF35D7A1A9B8F1F0597155036",
+      "provenance": "document-informed-concept",
+      "sourceIds": [
+        "S130"
+      ],
+      "sources": [],
+      "promptSummary": "Belgelenmiş periyodik kontrol hizmet sunumu ve teklif akışından türetilen kurumsal web cihaz mock-up'ı."
     }
   ]
 }

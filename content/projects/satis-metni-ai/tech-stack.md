@@ -1,4 +1,4 @@
-# SatışMetni AI — Teknoloji Yığını
+# AI Satış Metni | Yapay Zeka ile Profesyonel Başlık & Metinler — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Uygulama içi blog/admin |
 | Entegrasyonlar | Vercel AI Gateway, Resend, PayTR, CSV içe aktarma |
 
-Kanıt: [S070] [S071]
+Kanıt: [S070] [S071] [S220]

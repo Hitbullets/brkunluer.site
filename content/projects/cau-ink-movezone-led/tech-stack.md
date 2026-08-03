@@ -1,4 +1,4 @@
-# CAU INK × MoveZone LED Reklamları — Teknoloji Yığını
+# CAU INK x MOVEZONE REKLAM ÇALIŞMALARI — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | Unknown |
 
-Kanıt: [S014] [S190] [S191]
+Kanıt: [S014] [S190] [S191] [S220]

@@ -1,5 +1,6 @@
 {
   "aliases": [
+    "CAU INK × MoveZone LED Reklamları",
     "MoveZone LED Ads"
   ],
   "client": "CAU INK / MoveZone",
@@ -54,8 +55,16 @@
   ],
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/cau-ink-movezone-led-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "source-assets-and-documents",
+  "coverSources": [
+    "S014",
+    "S190",
+    "S191",
+    "S220"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
   "relatedBlogPosts": "Unknown",
@@ -69,12 +78,13 @@
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\09_CAU_INK_MoveZone_LED_Ads.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\GENEL PROJE DOSYALARI\\CAU-INK-DOSYALAR"
   ],
-  "projectName": "CAU INK × MoveZone LED Reklamları",
+  "projectName": "CAU INK x MOVEZONE REKLAM ÇALIŞMALARI",
   "slug": "cau-ink-movezone-led",
   "sourceIds": [
     "S014",
     "S190",
-    "S191"
+    "S191",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 6,
@@ -96,5 +106,6 @@
   },
   "documentationScore": 29,
   "priorityScore": 52,
+  "coverPromptSummary": "Gerçek CAU INK kimliği ve belgelenmiş 15 saniyelik dikey LED reklam kapsamını kullanan reklam üretim kapağı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

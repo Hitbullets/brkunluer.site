@@ -1,13 +1,13 @@
-# OFF İlan Platformu — Teknoloji Yığını
+# Emlak/Oto Galeri İlan Otomasyonları — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
-| Teknoloji yığını | Next.js 14, React 18, Tailwind, Express, PostgreSQL, React/Vite admin, Docker, Nginx |
-| Framework | Next.js, Express, Vite |
-| Backend | Express |
-| Veritabanı | PostgreSQL |
-| Hosting | Docker/Nginx planı; sağlayıcı Unknown |
-| CMS | Özel admin paneli |
-| Entegrasyonlar | Kripto ödeme planı |
+| Teknoloji yığını | Unknown |
+| Framework | Unknown |
+| Backend | Unknown |
+| Veritabanı | Unknown |
+| Hosting | Unknown |
+| CMS | Unknown |
+| Entegrasyonlar | Unknown |
 
-Kanıt: [S160] [S161]
+Kanıt: [S220]

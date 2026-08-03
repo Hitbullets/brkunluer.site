@@ -1,8 +1,8 @@
-# SalonIQ — Mimari
+# SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi — Mimari
 
 ## Mimari özet
 
-Frontend, server, landing ve araç paketlerinden oluşan monorepo; Supabase RLS ile tenant sınırı. [S020] [S021] [S022] [S023]
+Frontend, server, landing ve araç paketlerinden oluşan monorepo; Supabase RLS ile tenant sınırı. [S020] [S021] [S022] [S023] [S220]
 
 ## Teknik kararlar
 

@@ -92,8 +92,15 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\public",
   "gitRepository": "https://github.com/Hitbullets/gold-tracker.git",
   "productionUrl": "https://gold-tracker-rouge.vercel.app (README'de; canlı doğrulama Unknown)",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/gold-tracker-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S080",
+    "S081",
+    "S082"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\FİKİR\\GOLD TRACKER\\README.md",
@@ -136,5 +143,6 @@
   },
   "documentationScore": 72,
   "priorityScore": 93,
+  "coverPromptSummary": "Belgelenmiş altın fiyatı ve kişisel portföy takibi işlevlerinden türetilen finans dashboard cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

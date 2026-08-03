@@ -90,6 +90,9 @@
   "productionUrl": "https://brkunluer.site",
   "coverImage": "Unknown",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "Unknown",
+  "coverSources": "Unknown",
+  "portfolioVisibility": "hidden",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "docs/OVERVIEW.md",
@@ -129,7 +132,8 @@
     "S003",
     "S004",
     "S005",
-    "S006"
+    "S006",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 10,

@@ -1,6 +1,6 @@
-# SalonIQ — Varlık Referansları
+# SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi — Varlık Referansları
 
-C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\SALONIQ_APP, C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\Saloniq APP Yedekler [S020] [S021] [S022] [S023]
+C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\SALONIQ_APP, C:\Users\Burak\Documents\ByyHit Works\brkunluer.pro\Saloniq APP Yedekler [S020] [S021] [S022] [S023] [S220]
 
 ## Projeye ait dosya kökleri
 

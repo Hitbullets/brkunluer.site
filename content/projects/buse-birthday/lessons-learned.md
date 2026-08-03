@@ -1,6 +1,6 @@
 # Buse Birthday Web Experience — Çıkarılan Dersler
 
-Unknown [S200]
+Unknown [S200] [S220]
 
 ## Performans
 

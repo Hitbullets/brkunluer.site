@@ -77,8 +77,15 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/wpforge-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S170",
+    "S171",
+    "S172"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
@@ -124,5 +131,6 @@
   },
   "documentationScore": 61,
   "priorityScore": 89,
+  "coverPromptSummary": "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

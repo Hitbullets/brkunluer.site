@@ -56,8 +56,14 @@
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\codex-skills",
   "gitRepository": "https://github.com/Hitbullets/codex-skills.git",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/codex-skills-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S210",
+    "S211"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\11_codex_skills_repo.md"
@@ -100,5 +106,6 @@
   },
   "documentationScore": 44,
   "priorityScore": 76,
+  "coverPromptSummary": "Codex beceri paketlerinin katalog, dosya ve doğrulama görünümünü temsil eden geliştirici platformu mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

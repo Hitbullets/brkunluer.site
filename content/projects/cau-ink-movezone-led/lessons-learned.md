@@ -1,6 +1,6 @@
-# CAU INK × MoveZone LED Reklamları — Çıkarılan Dersler
+# CAU INK x MOVEZONE REKLAM ÇALIŞMALARI — Çıkarılan Dersler
 
-Unknown [S014] [S190] [S191]
+Unknown [S014] [S190] [S191] [S220]
 
 ## Performans
 

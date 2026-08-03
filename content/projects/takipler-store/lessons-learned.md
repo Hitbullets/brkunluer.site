@@ -1,6 +1,6 @@
 # Takipler Store — Çıkarılan Dersler
 
-Unknown [S090] [S091] [S092]
+Unknown [S090] [S091] [S092] [S220]
 
 ## Performans
 

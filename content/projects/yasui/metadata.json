@@ -1,8 +1,10 @@
 {
-  "aliases": "Unknown",
+  "aliases": [
+    "Yasui"
+  ],
   "client": "Unknown",
-  "industry": "API altyapısı",
-  "projectType": "API gateway/proxy konsepti",
+  "industry": "LLM/API altyapısı",
+  "projectType": "LLM provider ve API gateway/proxy konsepti",
   "categories": [
     "SaaS",
     "Internal Tool",
@@ -41,8 +43,15 @@
   "assetLocations": "Unknown",
   "gitRepository": "Unknown",
   "productionUrl": "Unknown",
-  "coverImage": "Unknown",
+  "coverImage": "/images/projects/covers/yasui-mockup.png",
   "coverSourceScreens": "Unknown",
+  "coverProvenance": "document-informed-concept",
+  "coverSources": [
+    "S190",
+    "S191",
+    "S220"
+  ],
+  "portfolioVisibility": "visible",
   "demoUrl": "Unknown",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md",
   "relatedBlogPosts": "Unknown",
@@ -53,11 +62,12 @@
   "filesBelonging": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\03_Yasui.md"
   ],
-  "projectName": "Yasui",
+  "projectName": "Yasui LLM Provider",
   "slug": "yasui",
   "sourceIds": [
     "S190",
-    "S191"
+    "S191",
+    "S220"
   ],
   "documentationBreakdown": {
     "businessContext": 4,
@@ -79,5 +89,6 @@
   },
   "documentationScore": 15,
   "priorityScore": 50,
+  "coverPromptSummary": "Belgelenmiş LLM/API gateway, maliyet ve abuse kontrolü ile T0 Trial, T1 Verified, T2 Power User katmanlarını temsil eden cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json"
 }

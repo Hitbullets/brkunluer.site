@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Client state + LocalStorage + Next.js API proxy. [S090] [S091] [S092]
+Client state + LocalStorage + Next.js API proxy. [S090] [S091] [S092] [S220]
 
 ## Teknik kararlar
 

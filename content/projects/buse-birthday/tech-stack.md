@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | Unknown |
 
-Kanıt: [S200]
+Kanıt: [S200] [S220]

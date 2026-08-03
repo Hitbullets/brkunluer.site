@@ -1,6 +1,6 @@
 # 3Dikili — Çıkarılan Dersler
 
-Teklif demosunun yapamadıkları dokümantasyonda açık olmalı. [S100] [S101]
+Teklif demosunun yapamadıkları dokümantasyonda açık olmalı. [S100] [S101] [S220]
 
 ## Performans
 

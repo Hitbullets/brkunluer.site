@@ -1,6 +1,6 @@
-# StageKey — Varlık Referansları
+# STAGE KEY - Müzisyen Kit Box — Varlık Referansları
 
-Unknown [S190] [S191]
+Unknown [S190] [S191] [S220]
 
 ## Projeye ait dosya kökleri
 

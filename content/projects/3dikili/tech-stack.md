@@ -10,4 +10,4 @@
 | CMS | Hedef WordPress/WooCommerce; demoda yok |
 | Entegrasyonlar | Unknown |
 
-Kanıt: [S100] [S101]
+Kanıt: [S100] [S101] [S220]

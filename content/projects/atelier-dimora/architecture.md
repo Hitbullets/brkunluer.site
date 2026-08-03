@@ -2,7 +2,7 @@
 
 ## Mimari özet
 
-Birbirinden bağımsız statik tasarım prototipleri. [S120]
+Birbirinden bağımsız statik tasarım prototipleri. [S120] [S220]
 
 ## Teknik kararlar
 

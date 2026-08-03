@@ -1,6 +1,6 @@
-# SalonIQ — Çıkarılan Dersler
+# SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi — Çıkarılan Dersler
 
-Operasyonel durum, sürüm ve deployment kaydı tek kanonik belgede tutulmalı. [S020] [S021] [S022] [S023]
+Operasyonel durum, sürüm ve deployment kaydı tek kanonik belgede tutulmalı. [S020] [S021] [S022] [S023] [S220]
 
 ## Performans
 

@@ -1,7 +1,7 @@
-# InkOS — Zaman Çizelgesi
+# InkOS | AI Tattoo Creator — Zaman Çizelgesi
 
-2026-06: dokümantasyon ve Phase -1 tamamlandı; sonraki MVP anlatısının tarihi Unknown. [S005] [S030] [S031] [S032] [S033]
+2026-06: dokümantasyon ve Phase -1 tamamlandı; sonraki MVP anlatısının tarihi Unknown. [S005] [S030] [S031] [S032] [S033] [S220]
 
 ## Durum
 
-Haziran 2026 temel dokümanında çekirdek kod öncesi aşama; BRKUNLUER.SITE anlatısında çalışan MVP iddiası var. Çelişki çözülmedi ve güncel üretim doğrulanamadı. [S005] [S030] [S031] [S032] [S033]
+Haziran 2026 temel dokümanında çekirdek kod öncesi aşama; BRKUNLUER.SITE anlatısında çalışan MVP iddiası var. Çelişki çözülmedi ve güncel üretim doğrulanamadı. [S005] [S030] [S031] [S032] [S033] [S220]

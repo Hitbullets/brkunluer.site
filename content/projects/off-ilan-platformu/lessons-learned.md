@@ -1,6 +1,6 @@
-# OFF İlan Platformu — Çıkarılan Dersler
+# Emlak/Oto Galeri İlan Otomasyonları — Çıkarılan Dersler
 
-Unknown [S160] [S161]
+Unknown [S220]
 
 ## Performans
 

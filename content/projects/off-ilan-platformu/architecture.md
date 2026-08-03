@@ -1,16 +1,13 @@
-# OFF İlan Platformu — Mimari
+# Emlak/Oto Galeri İlan Otomasyonları — Mimari
 
 ## Mimari özet
 
-Ayrı frontend, Express backend ve Vite admin; Docker/Nginx dağıtım yapısı. [S160] [S161]
+Unknown [S220]
 
 ## Teknik kararlar
 
-- Admin'i ayrı uygulama tutma
-- Kripto ödeme modeli
+Unknown
 
 ## Zorluklar
 
-- Moderasyon
-- Ödeme güvenliği
-- Gizlilik ve yasal uyum
+Unknown

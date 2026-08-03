@@ -1,4 +1,4 @@
-# SalonIQ — Teknoloji Yığını
+# SalonIQ App | Online Rezervasyon & Akıllı İşyeri Yönetimi — Teknoloji Yığını
 
 | Katman | Değer |
 |---|---|
@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | PayTR, Supabase Realtime, Sentry, OCR/NLP ve AI hazırlıkları |
 
-Kanıt: [S020] [S021] [S022] [S023]
+Kanıt: [S020] [S021] [S022] [S023] [S220]

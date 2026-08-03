@@ -1,6 +1,6 @@
 # BRKUNLUER.SITE — Varlık Referansları
 
-public/images, public/brand [S001] [S002] [S003] [S004] [S005] [S006]
+public/images, public/brand [S001] [S002] [S003] [S004] [S005] [S006] [S220]
 
 ## Projeye ait dosya kökleri
 

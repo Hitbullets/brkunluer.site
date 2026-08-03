@@ -10,4 +10,4 @@
 | CMS | Unknown |
 | Entegrasyonlar | Google Fonts |
 
-Kanıt: [S201]
+Kanıt: [S201] [S220]

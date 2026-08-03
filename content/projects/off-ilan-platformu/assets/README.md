@@ -1,7 +1,7 @@
-# OFF İlan Platformu — Varlık Referansları
+# Emlak/Oto Galeri İlan Otomasyonları — Varlık Referansları
 
-C:\Users\Burak\Documents\ByyHit Works\ARQEN STUDIO\OFF-PROJELER\off_site_proje [S160] [S161]
+Unknown [S220]
 
 ## Projeye ait dosya kökleri
 
-- `C:\Users\Burak\Documents\ByyHit Works\ARQEN STUDIO\OFF-PROJELER\off_site_proje`
+Unknown

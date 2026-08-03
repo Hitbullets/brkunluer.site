@@ -83,6 +83,9 @@ export const portfolioArchiveProjectSchema = z.object({
   sourceIds: z.array(z.string()),
   coverImage: z.string().optional(),
   coverSourceScreens: archiveValueSchema.optional(),
+  coverProvenance: z.string().optional(),
+  coverSources: archiveValueSchema.optional(),
+  portfolioVisibility: z.enum(["visible", "hidden"]).default("visible"),
 }).passthrough()
 
 export const newsletterSchema = z.object({

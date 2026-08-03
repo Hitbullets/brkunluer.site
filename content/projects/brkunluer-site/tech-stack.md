@@ -10,4 +10,4 @@
 | CMS | Git tabanlı MDX |
 | Entegrasyonlar | Vercel Analytics, Provider-bağımsız newsletter ve ödeme arayüzleri |
 
-Kanıt: [S001] [S002] [S003] [S004] [S005] [S006]
+Kanıt: [S001] [S002] [S003] [S004] [S005] [S006] [S220]
