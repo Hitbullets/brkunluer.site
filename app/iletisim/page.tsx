@@ -3,7 +3,7 @@ import { Container } from '@/components/layout/container'
 import { ContactForm } from '@/components/forms/contact-form'
 import { SiteConfig } from '@/lib/site'
 
-export const metadata: Metadata = { alternates: { canonical: '/iletisim' }, title: 'İletişim', description: 'AI ürün geliştirme, iş akışı otomasyonu ve teknik ürün projeleri için Burak Ünlüer ile iletişime geçin.' }
+export const metadata: Metadata = { alternates: { canonical: '/iletisim' }, title: 'İletişim', description: 'AI ürün geliştirme, iş akışı otomasyonu ve teknik ürün projeleri için benimle iletişime geçin.' }
 
 const links: Array<[string, string, string]> = [
   ['E-posta', SiteConfig.author.email, `mailto:${SiteConfig.author.email}`],
