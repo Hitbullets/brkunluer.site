@@ -2,13 +2,13 @@
   "aliases": "Unknown",
   "client": "Unknown",
   "industry": "Canlı açık artırma",
-  "projectType": "Aktif geli?tirme s?recindeki ger?ek zamanl? mezat platformu",
+  "projectType": "Aktif geliştirme sürecindeki gerçek zamanlı mezat platformu",
   "categories": [
     "SaaS",
     "Marketplace",
     "Experimental"
   ],
-  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
+  "currentStatus": "Aktif geliştirme sürecinde. Proje detayları, teknik kapsam ve doğrulama kanıtları hazırlanıyor.",
   "timeline": "Unknown",
   "purpose": "Gerçek zamanlı teklif verilen açık artırma deneyimi tasarlamak.",
   "problemBeingSolved": "Teklif sırası, süre ve anlık durumun eşzamanlı yönetimi.",
@@ -51,7 +51,7 @@
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
   "gitRepository": "Private Repository",
-  "productionUrl": "Aktif geli?tirme s?recinde.",
+  "productionUrl": "Aktif geliştirme sürecinde.",
   "coverImage": "/images/projects/covers/mezat-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -60,7 +60,7 @@
     "S191"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Proje detaylar? haz?rlan?yor.",
+  "demoUrl": "Proje detayları hazırlanıyor.",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\08_MEZAT.md",
   "relatedBlogPosts": "Unknown",
   "relatedResearch": "Unknown",
@@ -98,9 +98,9 @@
   "priorityScore": 69,
   "coverPromptSummary": "Belgelenmiş WebSocket, canlı teklif ve anti-snipe işlevlerinden türetilen MEZAT cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
-  "portfolioSummary": "Ger?ek zamanl? teklif, a??k art?rma ak??? ve y?netim paneli yakla??m? ?zerine tasarlanan online mezat platformu aktif geli?tirme s?recindedir.",
+  "portfolioSummary": "Gerçek zamanlı teklif, açık artırma akışı ve yönetim paneli yaklaşımı üzerine tasarlanan online mezat platformu aktif geliştirme sürecindedir.",
   "portfolioTier": "active-development",
-  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "evidenceSummary": "Kapsam ve teknik notlar hazırlanıyor; tamamlandıkça vaka anlatımı genişletilecek.",
   "repositoryAccess": "private",
-  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
+  "repositoryAccessNote": "Private Repository olarak geliştirilmiştir. İstenildiği takdirde GitHub üzerinden erişim izni verilir."
 }

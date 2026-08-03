@@ -4,12 +4,12 @@
   ],
   "client": "Unknown",
   "industry": "Müzik / dijital varlık pazaryeri",
-  "projectType": "Aktif geli?tirme s?recindeki m?zisyen kit ve dijital varl?k platformu",
+  "projectType": "Aktif geliştirme sürecindeki müzisyen kit ve dijital varlık platformu",
   "categories": [
     "Marketplace",
     "Experimental"
   ],
-  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
+  "currentStatus": "Aktif geliştirme sürecinde. Proje detayları, teknik kapsam ve doğrulama kanıtları hazırlanıyor.",
   "timeline": "Unknown",
   "purpose": "Ses paketleri için pazaryeri ve Tauri masaüstü deneyimi tasarlamak.",
   "problemBeingSolved": "Müzik üreticilerinin ses paketlerini keşfetmesi ve masaüstünde kullanması.",
@@ -48,7 +48,7 @@
   "screenshotsReferences": "Unknown",
   "assetLocations": "Unknown",
   "gitRepository": "Private Repository",
-  "productionUrl": "Aktif geli?tirme s?recinde.",
+  "productionUrl": "Aktif geliştirme sürecinde.",
   "coverImage": "/images/projects/covers/stagekey-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -58,7 +58,7 @@
     "S220"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Proje detaylar? haz?rlan?yor.",
+  "demoUrl": "Proje detayları hazırlanıyor.",
   "relatedDocumentation": "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md",
   "relatedBlogPosts": "Unknown",
   "relatedResearch": "Unknown",
@@ -68,7 +68,7 @@
   "filesBelonging": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\Projeler-Kaynak\\Kaynak-1\\knowledge\\projects\\07_StageKey.md"
   ],
-  "projectName": "STAGE KEY - M?zisyen Kit Box",
+  "projectName": "STAGE KEY - Müzisyen Kit Box",
   "slug": "stagekey",
   "sourceIds": [
     "S190",
@@ -97,9 +97,9 @@
   "priorityScore": 60,
   "coverPromptSummary": "Belgelenmiş üç panelli ses kiti arayüzü, amber vurgu ve loader/pazaryeri kapsamından türetilen cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
-  "portfolioSummary": "Ses paketi, m?zisyen kiti ve dijital varl?k pazaryeri deneyimi i?in web ve masa?st? ?r?n fikri aktif geli?tirme s?recindedir.",
+  "portfolioSummary": "Ses paketi, müzisyen kiti ve dijital varlık pazaryeri deneyimi için web ve masaüstü ürün fikri aktif geliştirme sürecindedir.",
   "portfolioTier": "active-development",
-  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "evidenceSummary": "Kapsam ve teknik notlar hazırlanıyor; tamamlandıkça vaka anlatımı genişletilecek.",
   "repositoryAccess": "private",
-  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
+  "repositoryAccessNote": "Private Repository olarak geliştirilmiştir. İstenildiği takdirde GitHub üzerinden erişim izni verilir."
 }

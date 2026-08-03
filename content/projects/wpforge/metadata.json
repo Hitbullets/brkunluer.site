@@ -2,13 +2,13 @@
   "aliases": "Unknown",
   "client": "Bağımsız geliştirici aracı",
   "industry": "WordPress geliştirme otomasyonu",
-  "projectType": "Aktif geli?tirme s?recindeki AI-first WordPress ?retim arac?",
+  "projectType": "Aktif geliştirme sürecindeki AI-first WordPress üretim aracı",
   "categories": [
     "Internal Tool",
     "Open Source",
     "AI Product"
   ],
-  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
+  "currentStatus": "Aktif geliştirme sürecinde. Proje detayları, teknik kapsam ve doğrulama kanıtları hazırlanıyor.",
   "timeline": "2026 yerel proje; kesin Git tarihçesi Unknown.",
   "purpose": "Prompttan site planı çıkarıp WP-CLI ile standart WordPress sitesi üretmek.",
   "problemBeingSolved": "WordPress kurulum, child theme, içerik yapısı, WooCommerce ve SEO işlerinin tekrarlı manuel kurulumu.",
@@ -76,7 +76,7 @@
   "screenshotsReferences": "Unknown",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge",
   "gitRepository": "Private Repository",
-  "productionUrl": "Aktif geli?tirme s?recinde.",
+  "productionUrl": "Aktif geliştirme sürecinde.",
   "coverImage": "/images/projects/covers/wpforge-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -86,7 +86,7 @@
     "S172"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Proje detaylar? haz?rlan?yor.",
+  "demoUrl": "Proje detayları hazırlanıyor.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\README.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\WPForge\\ARCHITECTURE.md"
@@ -133,9 +133,9 @@
   "priorityScore": 89,
   "coverPromptSummary": "Belgelenmiş prompttan site planına ve WP-CLI üretimine uzanan WPForge akışını gösteren geliştirici aracı mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
-  "portfolioSummary": "Prompttan site plan? ??kar?p WP-CLI ile standart WordPress kurulumlar? ?retmeyi hedefleyen geli?tirici arac? aktif geli?tirme s?recindedir.",
+  "portfolioSummary": "Prompttan site planı çıkarıp WP-CLI ile standart WordPress kurulumları üretmeyi hedefleyen geliştirici aracı aktif geliştirme sürecindedir.",
   "portfolioTier": "active-development",
-  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "evidenceSummary": "Kapsam ve teknik notlar hazırlanıyor; tamamlandıkça vaka anlatımı genişletilecek.",
   "repositoryAccess": "private",
-  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
+  "repositoryAccessNote": "Private Repository olarak geliştirilmiştir. İstenildiği takdirde GitHub üzerinden erişim izni verilir."
 }

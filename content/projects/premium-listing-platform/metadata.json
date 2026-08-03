@@ -4,12 +4,12 @@
   ],
   "client": "Unknown",
   "industry": "İlan / yetişkin içerik pazaryeri",
-  "projectType": "Aktif geli?tirme s?recindeki premium ilan platformu MVP",
+  "projectType": "Aktif geliştirme sürecindeki premium ilan platformu MVP",
   "categories": [
     "Marketplace",
     "Experimental"
   ],
-  "currentStatus": "Aktif geli?tirme s?recinde. Proje detaylar?, teknik kapsam ve do?rulama kan?tlar? haz?rlan?yor.",
+  "currentStatus": "Aktif geliştirme sürecinde. Proje detayları, teknik kapsam ve doğrulama kanıtları hazırlanıyor.",
   "timeline": "Eski proje arşivi; kesin tarih Unknown.",
   "purpose": "Premium ilan listeleme ve profil deneyimini prototiplemek.",
   "problemBeingSolved": "İlan keşfi ve premium görünürlüğün frontend akışını doğrulamak.",
@@ -62,7 +62,7 @@
   "screenshotsReferences": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
   "assetLocations": "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform",
   "gitRepository": "Private Repository",
-  "productionUrl": "Aktif geli?tirme s?recinde.",
+  "productionUrl": "Aktif geliştirme sürecinde.",
   "coverImage": "/images/projects/covers/premium-listing-platform-mockup.png",
   "coverSourceScreens": "Unknown",
   "coverProvenance": "document-informed-concept",
@@ -71,7 +71,7 @@
     "S151"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Proje detaylar? haz?rlan?yor.",
+  "demoUrl": "Proje detayları hazırlanıyor.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\OLD.PROJECT\\OldcityLove\\premium-listing-platform\\README.md"
   ],
@@ -111,9 +111,9 @@
   "priorityScore": 44,
   "coverPromptSummary": "Belgelenmiş premium listeleme ve profil keşfi MVP'sini nötr görsellerle temsil eden cihaz mock-up'ı.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
-  "portfolioSummary": "Premium ilan listeleme, profil ke?fi ve vitrin deneyimi ?zerine kurulan frontend MVP aktif geli?tirme s?recindedir.",
+  "portfolioSummary": "Premium ilan listeleme, profil keşfi ve vitrin deneyimi üzerine kurulan frontend MVP aktif geliştirme sürecindedir.",
   "portfolioTier": "active-development",
-  "evidenceSummary": "Kapsam ve teknik notlar haz?rlan?yor; tamamland?k?a vaka anlat?m? geni?letilecek.",
+  "evidenceSummary": "Kapsam ve teknik notlar hazırlanıyor; tamamlandıkça vaka anlatımı genişletilecek.",
   "repositoryAccess": "private",
-  "repositoryAccessNote": "Private Repository olarak geli?tirilmi?tir. ?stenildi?i takdirde GitHub ?zerinden eri?im izni verilir."
+  "repositoryAccessNote": "Private Repository olarak geliştirilmiştir. İstenildiği takdirde GitHub üzerinden erişim izni verilir."
 }

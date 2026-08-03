@@ -10,16 +10,16 @@
   ],
   "client": "CAU INK / Ahsen",
   "industry": "Dövme, piercing ve lazer dövme silme",
-  "projectType": "Web sitesi tasar?m? ?al??mas?",
+  "projectType": "Web sitesi tasarımı çalışması",
   "categories": [
     "Web Sitesi",
     "Marka Deneyimi",
     "Randevu Akışı"
   ],
-  "currentStatus": "Canl? web sitesi eri?ilebilir; portf?y kayd? ger?ek ekran g?r?nt?leri ve yerel proje ar?iviyle destekleniyor.",
+  "currentStatus": "Canlı web sitesi erişilebilir; portföy kaydı gerçek ekran görüntüleri ve yerel proje arşiviyle destekleniyor.",
   "timeline": "2022: canlı sitede marka başlangıcı; 2026: statik, Stitch/Next.js ve Gallery v2 revizyonları.",
-  "purpose": "CAU INK i?in marka g?veni, hizmet anlat?m?, galeri ve randevu d?n???m?n? tek bir web deneyiminde birle?tirmek.",
-  "problemBeingSolved": "D?vme, piercing ve lazer d?vme silme hizmetlerinde g?ven, hijyen, sanat?? kimli?i ve randevu talebini dijitalde netle?tirmek.",
+  "purpose": "CAU INK için marka güveni, hizmet anlatımı, galeri ve randevu dönüşümünü tek bir web deneyiminde birleştirmek.",
+  "problemBeingSolved": "Dövme, piercing ve lazer dövme silme hizmetlerinde güven, hijyen, sanatçı kimliği ve randevu talebini dijitalde netleştirmek.",
   "targetUsers": [
     "Balıkesir'de dövme arayanlar",
     "Piercing müşterileri",
@@ -117,7 +117,7 @@
     "S014"
   ],
   "portfolioVisibility": "visible",
-  "demoUrl": "Canl? site ?zerinden incelenebilir.",
+  "demoUrl": "Canlı site üzerinden incelenebilir.",
   "relatedDocumentation": [
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\PROJECT_MEMORY.md",
     "C:\\Users\\Burak\\Documents\\ByyHit Works\\brkunluer.pro\\CAU_INK_STITCH\\ARCHITECTURE.md",
@@ -176,7 +176,7 @@
   "coverPromptSummary": "Gerçek CAU INK ana sayfasını masaüstü ve mobil cihaz kompozisyonunda sunan kapak.",
   "canonicalDatabase": "../../../docs/MASTER_PORTFOLIO/10_MASTER_PORTFOLIO_DATABASE.json",
   "portfolioTier": "showcase",
-  "portfolioSummary": "Bal?kesir merkezli CAU INK i?in hizmetleri, sanat?? kimli?ini, sosyal kan?t? ve randevu aksiyonunu koyu, premium ve d?n???m odakl? bir web sitesinde toplad?m.",
-  "portfolioRole": "Web sitesi tasar?m?, i?erik hiyerar?isi, galeri/randevu ak???, responsive deneyim ve g?rsel y?nlendirme.",
-  "evidenceSummary": "Canl? ekran g?r?nt?leri, ?retim URL'si ve yerel proje ar?ivi mevcut."
+  "portfolioSummary": "Balıkesir merkezli CAU INK için hizmetleri, sanatçı kimliğini, sosyal kanıtı ve randevu aksiyonunu koyu, premium ve dönüşüm odaklı bir web sitesinde topladım.",
+  "portfolioRole": "Web sitesi tasarımı, içerik hiyerarşisi, galeri/randevu akışı, responsive deneyim ve görsel yönlendirme.",
+  "evidenceSummary": "Canlı ekran görüntüleri, üretim URL'si ve yerel proje arşivi mevcut."
 }
