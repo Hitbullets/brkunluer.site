@@ -193,7 +193,7 @@
 
 .focus-ring { @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background; }
 .scrollbar-thin { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
-.bg-hero, .bg-atmosphere-dark, .bg-atmosphere-deep, .bg-atmosphere-warm, .bg-atmosphere-studio { background: #1c1a17; }
+.bg-hero, .bg-atmosphere-dark, .bg-atmosphere-deep, .bg-atmosphere-warm, .bg-atmosphere-studio { background: #173b35; }
 .bg-noise, .vignette, .vignette-light, .ambient-glow-top, .ambient-glow-left, .ambient-glow-center, .ambient-spotlight, .light-leak, .section-divider-glow { position: relative; }
 .card-glow { box-shadow: none; }
 .placeholder-gradient { background: var(--muted); border: 1px solid var(--border); }
