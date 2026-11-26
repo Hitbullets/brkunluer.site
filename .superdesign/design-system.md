@@ -62,10 +62,12 @@ Yasaklar: mor, elektrik mavisi, cyan/teal, neon yeşil, çok renkli gradyan, aur
 
 ## Hareket
 
-- Giriş: 500–700ms, `cubic-bezier(0.16, 1, 0.3, 1)`, 16–24px dikey kayma ve opacity.
+- Ana sayfada hero ve çalışma akışı sahnesi, kaydırma ilerledikçe perspektif ve katman derinliği değiştirir.
+- Kaydırma tetikleyicileri dönüşüm değerlerini bir karede günceller; sürekli dekoratif efekt veya otomatik marquee kullanılmaz.
+- Bölüm girişleri bir kez görünür; proje eğimi yalnızca işaretçiyle çalışır ve mobilde kapanır.
 - Hover: 180–300ms; başlık/ok oksit olur, görsel en fazla `scale(1.015)`.
-- Scroll tabanlı sürekli parıltı, ışık taraması, ambient pulse, otomatik marquee ve özel fare imleci yok.
 - `prefers-reduced-motion` tam desteklenir; içerik hiçbir zaman animasyona bağımlı olmaz.
+
 
 ## Sayfa Sözleşmeleri
 

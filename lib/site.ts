@@ -28,10 +28,9 @@ export const SiteConfig = {
     email: 'mail@brkunluer.site',
   },
   nav: [
-    { label: 'Ürünler', href: '/portfolyo' },
+    { label: 'Portföy', href: '/portfolyo' },
     { label: 'AI Factory', href: '/ai-factory' },
-    { label: '3 Günlük Sprint', href: '/ai-is-akisi-sprinti' },
-    { label: 'Saha Notları', href: '/yazilar' },
+    { label: 'Yayınlar', href: '/yazilar' },
     { label: 'Hakkımda', href: '/hakkinda' },
     { label: 'İletişim', href: '/iletisim' },
   ],
