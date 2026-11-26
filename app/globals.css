@@ -2039,3 +2039,50 @@
     opacity: 1 !important;
   }
 }
+
+
+.motion-process {
+  background: #171613;
+  color: #F0ECE3;
+}
+
+.dark .motion-process {
+  background: #25221D;
+  color: #F0ECE3;
+}
+
+.motion-process .motion-section-index {
+  color: #B9B2A8;
+}
+
+.motion-process-intro > p:last-child,
+.motion-process-row p {
+  color: rgb(240 236 227 / 68%);
+}
+
+.motion-process-list,
+.motion-process-row {
+  border-color: rgb(240 236 227 / 24%);
+}
+
+.motion-process-number {
+  color: rgb(240 236 227 / 48%);
+}
+
+.motion-process-visual {
+  border-color: rgb(240 236 227 / 27%);
+  background: rgb(240 236 227 / 7%);
+}
+
+.motion-model-caption,
+.motion-model-note {
+  color: rgb(240 236 227 / 56%);
+}
+
+.motion-model-plane {
+  border-color: rgb(240 236 227 / 22%);
+}
+
+.motion-model-progress {
+  background: rgb(240 236 227 / 20%);
+}
