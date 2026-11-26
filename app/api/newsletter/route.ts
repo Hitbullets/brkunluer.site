@@ -1,24 +1,52 @@
 import { NextResponse } from "next/server"
 import { newsletterSchema } from "@/lib/validations"
+import { subscribeToNewsletter } from "@/lib/newsletter"
 
 export const dynamic = "force-dynamic"
 
 export async function POST(request: Request) {
-  try {
-    const data = await request.json()
-    const validation = newsletterSchema.safeParse(data)
+  let data: unknown
 
-    if (!validation.success) {
+  try {
+    data = await request.json()
+  } catch {
+    return NextResponse.json({ error: "Geçersiz istek." }, { status: 400 })
+  }
+
+  const validation = newsletterSchema.safeParse(data)
+
+  if (!validation.success) {
+    return NextResponse.json(
+      { error: validation.error.issues[0]?.message || "Geçersiz e-posta" },
+      { status: 400 },
+    )
+  }
+
+  try {
+    const result = await subscribeToNewsletter(validation.data.email.trim().toLowerCase())
+
+    if (result === "not_configured") {
       return NextResponse.json(
-        { error: validation.error.issues[0]?.message || "Geçersiz e-posta" },
-        { status: 400 },
+        { error: "Yayınlara e-posta ile kayıt şu anda kapalı." },
+        { status: 503 },
       )
     }
 
-    console.log("[newsletter] subscribe:", validation.data.email)
+    if (result === "failed") {
+      return NextResponse.json(
+        { error: "Kaydınız şu anda tamamlanamadı. Biraz sonra yeniden deneyin." },
+        { status: 502 },
+      )
+    }
 
-    return NextResponse.json({ success: true, message: "Bülten kaydınız tamamlandı." })
+    return NextResponse.json({
+      success: true,
+      message: "Yayın duyuruları için kaydınız tamamlandı.",
+    })
   } catch {
-    return NextResponse.json({ error: "Bir hata oluştu. Lütfen tekrar deneyin." }, { status: 500 })
+    return NextResponse.json(
+      { error: "Kaydınız şu anda tamamlanamadı. Biraz sonra yeniden deneyin." },
+      { status: 502 },
+    )
   }
 }

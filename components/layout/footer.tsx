@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { SiteConfig } from '@/lib/site'
 import { Container } from '@/components/layout/container'
 import { NewsletterForm } from '@/components/forms/newsletter-form'
+import { isNewsletterConfigured } from '@/lib/newsletter'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -21,8 +22,8 @@ export function Footer() {
           </div>
           <div className='lg:col-span-5 lg:pt-4'>
             <p className='font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground'>Yayınlar</p>
-            <p className='mt-4 max-w-md text-sm leading-6 text-foreground/65'>AI ürün geliştirme, ajan sistemleri ve iş akışı tasarımı üzerine yeni notları e-postayla takip edin.</p>
-            <NewsletterForm className='mt-6 max-w-md' />
+            <p className='mt-4 max-w-md text-sm leading-6 text-foreground/65'>AI ürün geliştirme, ajan sistemleri ve iş akışı tasarımı üzerine yeni notlar.</p>
+            <NewsletterForm active={isNewsletterConfigured()} className='mt-6 max-w-md' />
           </div>
         </div>
 

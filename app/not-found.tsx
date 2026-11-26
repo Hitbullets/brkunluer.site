@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/layout/container'
 import { NewsletterForm } from '@/components/forms/newsletter-form'
+import { isNewsletterConfigured } from '@/lib/newsletter'
 import { Search, Home, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
 }
 
 export default function NotFound() {
+  const newsletterActive = isNewsletterConfigured()
+
   return (
     <section className="relative overflow-hidden bg-atmosphere-dark ambient-glow-center vignette min-h-screen flex items-center justify-center"><Container className="flex flex-col items-center justify-center gap-8 text-center py-24 z-10 relative">
       <div className='flex items-center justify-center gap-4'>
@@ -44,10 +47,10 @@ export default function NotFound() {
       </div>
 
       <div className='w-full max-w-md'>
-        <NewsletterForm />
-        <p className='mt-3 text-caption text-muted-foreground'>
-          Haftalık AI iş akışı rehberleri. İstediğiniz zaman abonelikten ayrılabilirsiniz.
-        </p>
+        <NewsletterForm active={newsletterActive} />
+        {newsletterActive && (
+          <p className='mt-3 text-caption text-muted-foreground'>Yeni yayın duyurularını e-postayla alın.</p>
+        )}
       </div>
     </Container></section>
   )
