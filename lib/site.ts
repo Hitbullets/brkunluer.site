@@ -1,9 +1,9 @@
 export const SiteConfig = {
   name: 'Burak Ünlüer',
   shortName: 'brkunluer',
-  title: 'Burak Ünlüer | AI Ürün Geliştirici ve AI Factory Kurucusu',
+  title: 'Burak Ünlüer | AI Factory ve İş Akışı Stüdyosu',
   description:
-    'AI ürün geliştirme, ajan mühendisliği, prompt sistemleri, iş akışı otomasyonu ve AI Factory üzerine projeler, metotlar ve içerikler üretiyorum.',
+    'Tekrarlanan işleri insan kontrollü AI akışlarına ve çalışan dijital ürünlere dönüştürüyorum. AI Factory, ürün geliştirme ve iş akışı tasarımı.',
   url: 'https://brkunluer.site',
   ogImage: '/og/default.png',
   keywords: [
@@ -23,15 +23,15 @@ export const SiteConfig = {
   ],
   author: {
     name: 'Burak Ünlüer',
-    role: 'AI Ürün Geliştirici ve AI Factory Kurucusu',
-    bio: 'Tekrarlanabilir AI ürün geliştirme sistemleri kuruyorum. AI Factory ile bireylerin ve ekiplerin yapay zekâ destekli ürünlerini daha hızlı, ölçülebilir ve sürdürülebilir biçimde geliştirmesine yardımcı oluyorum.',
+    role: 'AI Ürün Geliştirici / Sistem Kurucu',
+    bio: 'İş akışlarını netleştirip insan kontrolüyle çalışan AI prototiplerine ve dijital ürünlere dönüştürüyorum.',
     email: 'mail@brkunluer.site',
   },
   nav: [
-    { label: 'Portföy', href: '/portfolyo' },
+    { label: 'Ürünler', href: '/portfolyo' },
     { label: 'AI Factory', href: '/ai-factory' },
-    { label: 'İş Akışı Sprinti', href: '/ai-is-akisi-sprinti' },
-    { label: 'Yayınlar', href: '/yazilar' },
+    { label: '3 Günlük Sprint', href: '/ai-is-akisi-sprinti' },
+    { label: 'Saha Notları', href: '/yazilar' },
     { label: 'Hakkımda', href: '/hakkinda' },
     { label: 'İletişim', href: '/iletisim' },
   ],
