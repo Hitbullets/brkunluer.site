@@ -22,7 +22,7 @@ export function Footer() {
           </div>
           <div className='lg:col-span-5 lg:pt-4'>
             <p className='font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground'>Yayınlar</p>
-            <p className='mt-4 max-w-md text-sm leading-6 text-foreground/65'>AI ürün geliştirme, ajan sistemleri ve iş akışı tasarımı üzerine yeni notları e-postayla takip edin.</p>
+            <p className='mt-4 max-w-md text-sm leading-6 text-foreground/65'>AI ürün geliştirme, ajan sistemleri ve iş akışı tasarımı üzerine yeni notlar.</p>
             <NewsletterForm active={isNewsletterConfigured()} className='mt-6 max-w-md' />
           </div>
         </div>
