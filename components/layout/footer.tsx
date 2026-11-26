@@ -7,19 +7,21 @@ import { NewsletterForm } from '@/components/forms/newsletter-form'
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className='editorial-dark border-t border-white/15'>
+    <footer className='studio-footer border-t border-white/10'>
       <Container className='py-16 sm:py-24'>
-        <div className='grid gap-12 border-b border-white/20 pb-16 lg:grid-cols-12'>
+        <div className='studio-footer-top grid gap-12 border-b pb-16 lg:grid-cols-12'>
           <div className='lg:col-span-7'>
-            <p className='editorial-kicker !text-white/55'>Yeni sistemler ve saha notları</p>
-            <h2 className='mt-6 max-w-3xl text-heading-xl'>Fikirden çalışan ürüne uzanan süreçleri birlikte tasarlayalım.</h2>
-            <Link href='/iletisim' className='mt-8 inline-flex items-center gap-2 border-b border-[#d66a4c] pb-1 text-sm text-[#d66a4c]'>
-              Projeni anlat <ArrowUpRight className='h-4 w-4' />
+            <p className='editorial-kicker !text-white/55'>AI Factory / yeni iş akışı</p>
+            <h2 className='mt-6 max-w-3xl font-display text-[clamp(2.75rem,5vw,5rem)] leading-[.95] tracking-[-.035em]'>
+              Tek bir işi seçelim. Çalışan bir sisteme dönüştürelim.
+            </h2>
+            <Link href='/ai-is-akisi-sprinti' className='factory-cta mt-8 inline-flex items-center gap-3 rounded-full px-5 py-3 text-sm font-semibold transition-transform hover:translate-x-1'>
+              3 günlük sprinti keşfet <ArrowUpRight className='h-4 w-4' />
             </Link>
           </div>
-          <div className='lg:col-span-5'>
-            <p className='font-mono text-[11px] uppercase tracking-[0.14em] text-white/50'>Yayın notları</p>
-            <p className='mt-4 max-w-md text-sm leading-6 text-white/65'>AI ürün geliştirme, ajan sistemleri ve ürün deneyimi üzerine yeni yayınları e-postayla takip edin.</p>
+          <div className='lg:col-span-5 lg:pt-4'>
+            <p className='font-mono text-[11px] uppercase tracking-[0.14em] text-white/50'>Saha notları</p>
+            <p className='mt-4 max-w-md text-sm leading-6 text-white/65'>AI ürün geliştirme, ajan sistemleri ve iş akışı tasarımı üzerine yeni notları e-postayla takip edin.</p>
             <NewsletterForm className='mt-6 max-w-md' />
           </div>
         </div>
@@ -29,8 +31,8 @@ export function Footer() {
             <Link href='/' className='text-lg font-semibold'>Burak Ünlüer</Link>
             <p className='mt-3 max-w-xs text-sm leading-6 text-white/55'>{SiteConfig.author.bio}</p>
           </div>
-          <FooterGroup title='Dizin' links={[
-            ['Portföy', '/portfolyo'], ['AI Factory', '/ai-factory'], ['Sistem Kitaplığı', '/metotlar'], ['Yayınlar', '/yazilar'],
+          <FooterGroup title='Üretim' links={[
+            ['Ürünler', '/portfolyo'], ['AI Factory', '/ai-factory'], ['Sistem Kitaplığı', '/metotlar'], ['Saha Notları', '/yazilar'],
           ]} />
           <FooterGroup title='Bilgi' links={[
             ['Hakkımda', '/hakkinda'], ['İletişim', '/iletisim'], ['Gizlilik', '/gizlilik'], ['Kullanım Koşulları', '/kullanim-kosullari'],

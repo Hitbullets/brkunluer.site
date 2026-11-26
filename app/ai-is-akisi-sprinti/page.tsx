@@ -68,16 +68,16 @@ const questions = [
 export default function AIWorkflowSprintPage() {
   return (
     <>
-      <section className='editorial-dark border-b border-white/15'>
+      <section className='studio-sprint-hero border-b border-white/10'>
         <Container className='grid gap-12 py-20 lg:grid-cols-12 lg:items-center lg:py-28'>
           <div className='lg:col-span-7'>
             <p className='editorial-kicker !text-white/55'>Ürünleştirilmiş hizmet / AI Factory</p>
-            <h1 className='mt-7 max-w-4xl text-display-lg'>Bir işi önce netleştir. Sonra AI ile hızlandır.</h1>
+            <h1 className='mt-7 max-w-4xl text-display-lg'>Bir işi önce netleştir.<span className='studio-highlight mt-2 block'>Sonra AI ile hızlandır.</span></h1>
             <p className='mt-7 max-w-2xl text-body-lg text-white/65'>
               Ekibinizin tekrar ettiği tek bir işi seçelim. Girdiyi, karar adımlarını ve beklenen çıktıyı netleştirip üç iş gününde insan kontrolü olan bir AI prototipi hazırlayayım.
             </p>
             <div className='mt-9 flex flex-wrap gap-3'>
-              <Button asChild size='lg'>
+              <Button asChild size='lg' className='studio-button-primary'>
                 <a href={inquiryHref}>Ücretsiz ön görüşme iste <ArrowRight /></a>
               </Button>
               <Button asChild size='lg' variant='outline' className='border-white/25 text-white hover:bg-white/10'>
@@ -88,15 +88,15 @@ export default function AIWorkflowSprintPage() {
               <span>Tek süreç</span><span>3 iş günü</span><span>İnsan onayı</span><span>Devir rehberi</span>
             </div>
           </div>
-          <figure className='border border-white/20 bg-white/[0.03] p-6 sm:p-8 lg:col-span-5' aria-label='Temsili AI iş akışı'>
+          <figure className='studio-flow-panel p-6 sm:p-8 lg:col-span-5' aria-label='Temsili AI iş akışı'>
             <figcaption className='flex items-center justify-between gap-3 border-b border-white/15 pb-4 font-mono text-[10px] uppercase tracking-[0.12em] text-white/50'>
               <span>Örnek akış / temsili</span>
-              <span className='text-[#d6aa95]'>İnsan kontrolü dahil</span>
+              <span className='studio-human-tag'>İnsan kontrolü dahil</span>
             </figcaption>
             <ol className='mt-6 space-y-5'>
               {flow.map((item, index) => (
                 <li key={item.label} className='grid grid-cols-[2rem_1fr] gap-4'>
-                  <span className='grid h-8 w-8 place-items-center border border-white/25 font-mono text-[10px] text-white/65'>{String(index + 1).padStart(2, '0')}</span>
+                  <span className='studio-flow-index'>{String(index + 1).padStart(2, '0')}</span>
                   <div className='border-b border-white/10 pb-4'>
                     <p className='font-mono text-[10px] uppercase tracking-[0.12em] text-white/45'>{item.label}</p>
                     <p className='mt-1 font-medium'>{item.title}</p>
@@ -105,7 +105,7 @@ export default function AIWorkflowSprintPage() {
                 </li>
               ))}
             </ol>
-            <p className='mt-5 border-l-2 border-[#d66a4c] pl-4 text-sm leading-6 text-white/60'>
+            <p className='mt-5 border-l-2 border-[#c8ff61] pl-4 text-sm leading-6 text-white/60'>
               İlk prototip sentetik veya paylaşmaya yetkili olduğunuz örnek verilerle hazırlanır. Gerçek müşteri verisi ve erişim anahtarı göndermeyin.
             </p>
           </figure>
