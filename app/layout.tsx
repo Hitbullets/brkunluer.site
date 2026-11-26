@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Instrument_Serif } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/layout/theme-provider'
 import { Header } from '@/components/layout/header'
@@ -17,6 +17,14 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
+  display: 'swap',
+})
+
+const instrumentSerif = Instrument_Serif({
+  variable: '--font-instrument-serif',
+  subsets: ['latin', 'latin-ext'],
+  weight: '400',
+  style: ['normal', 'italic'],
   display: 'swap',
 })
 
@@ -59,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='tr' suppressHydrationWarning>
-      <body className={`${geistSans.className} ${geistMono.variable} min-h-dvh flex flex-col antialiased`}>
+      <body className={`${geistSans.className} ${geistMono.variable} ${instrumentSerif.variable} min-h-dvh flex flex-col antialiased`}>
         <PersonJsonLd />
         <WebSiteJsonLd />
         <ThemeProvider
