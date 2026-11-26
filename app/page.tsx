@@ -26,17 +26,42 @@ export default async function Home() {
 
   return (
     <>
-      <section className='studio-manifesto-section border-b border-border'>
-        <Container className='grid gap-10 py-20 sm:py-28 lg:grid-cols-12 lg:items-center'>
-          <div className='studio-about-visual relative min-h-[360px] overflow-hidden lg:col-span-5'>
-            <div className='studio-about-grid' aria-hidden='true' />
-            <span className='studio-about-initial'>BÜ</span>
-            <p className='studio-about-caption'>BURAK ÜNLÜER / PRODUCT BUILDER</p>
-            <span className='studio-about-index'>ESKİŞEHİR · 2026</span>
+      <section className='studio-hero relative overflow-hidden border-b border-white/10'>
+        <div className='studio-grid pointer-events-none absolute inset-0' aria-hidden='true' />
+        <Container className='relative grid min-h-[calc(100svh-4.75rem)] items-center gap-10 py-14 sm:py-20 lg:grid-cols-12 lg:gap-6 lg:py-24'>
+          <div className='studio-hero-copy relative z-10 lg:col-span-7'>
+            <p className='editorial-kicker studio-kicker'>AI workflow studio / Eskişehir</p>
+            <h1 className='studio-title mt-8 max-w-4xl font-display text-[clamp(4.1rem,8vw,7.65rem)] leading-[.82] tracking-[-.055em]'>
+              Tekrarlayan işi<br />
+              <span className='studio-highlight'>AI akışına</span><br />
+              <span className='studio-serif'>çeviriyorum.</span>
+            </h1>
+            <p className='mt-8 max-w-xl text-body-lg text-white/65'>
+              İş akışını netleştiriyor, insan kontrolü olan bir prototipe dönüştürüyor ve ekibinize anlaşılır biçimde devrediyorum.
+            </p>
+            <div className='mt-9 flex flex-wrap gap-3'>
+              <Button asChild size='lg' className='studio-button-primary'><Link href='/ai-is-akisi-sprinti'>3 günlük pilotu keşfet <ArrowRight /></Link></Button>
+              <Button asChild size='lg' variant='outline' className='studio-button-outline'><Link href='/portfolyo'>Ürün ve proje arşivi <ArrowUpRight /></Link></Button>
+            </div>
+            <div className='studio-proof-line mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-white/15 pt-5 font-mono text-[9px] uppercase tracking-[0.13em] text-white/55 sm:text-[10px]'>
+              <span>Tek süreç</span><span>İnsan onayı</span><span>Kapsamı belli pilot</span>
+            </div>
           </div>
-          <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'>
-            <div><p className='editorial-kicker'>Kurucu / üretici</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>Oyun sunucuları için teknik üretimle başlayan pratiğimi; web, SaaS ve AI tabanlı ürün geliştirme yönünde sürdürüyorum. Her işte problemi, kullanıcı adımını ve çalışan sistemi aynı çerçevede ele alıyorum.</p></div>
-            <div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Çalışma yaklaşımımı oku <ArrowRight className='ml-1 inline h-4 w-4' /></Link></div>
+          <div className='studio-hero-art relative isolate min-h-[430px] sm:min-h-[520px] lg:col-span-5'>
+            <div className='studio-orbit-ring studio-orbit-ring-one' aria-hidden='true' />
+            <div className='studio-orbit-ring studio-orbit-ring-two' aria-hidden='true' />
+            <div className='studio-photo-frame'>
+              <Image src='/images/portraits/burak-portrait-close.jpeg' alt='Burak Ünlüer, AI iş akışları üzerine çalışan ürün geliştirici' fill priority className='object-cover object-[50%_28%]' sizes='(max-width: 1024px) 90vw, 42vw' />
+            </div>
+            <div className='studio-sticker' aria-hidden='true'><span>BU</span><small>PRODUCT<br />BUILDER</small></div>
+            <div className='studio-console'>
+              <div className='studio-console-head'><span>AKIŞ HARİTASI / 01</span><span className='studio-console-pulse'>CANLI TASLAK</span></div>
+              <div className='studio-console-row'><span>01</span><span>GİRDİ</span><i /></div>
+              <div className='studio-console-row'><span>02</span><span>AI İŞLEMİ</span><i /></div>
+              <div className='studio-console-row studio-console-row-human'><span>03</span><span>İNSAN ONAYI</span><b>GEREKLİ</b></div>
+              <div className='studio-console-row'><span>04</span><span>ÇIKTI</span><i /></div>
+            </div>
+            <p className='studio-coordinate'>SÜREÇ / SİSTEM / SONUÇ</p>
           </div>
         </Container>
       </section>
@@ -113,10 +138,18 @@ export default async function Home() {
         </Container>
       </section>
 
-      <section className='border-b border-border'>
-        <Container className='grid gap-10 py-20 sm:py-28 lg:grid-cols-12'>
-          <div className='relative min-h-[400px] overflow-hidden border border-border sm:min-h-[540px] lg:col-span-5'><Image src='/images/portraits/burak-portrait-close.jpeg' alt='Burak Ünlüer, çalışma ortamında portre' fill className='object-cover' sizes='(max-width: 1024px) 100vw, 42vw' /></div>
-          <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'><div><p className='editorial-kicker'>Kurucu / üretici</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>Oyun sunucuları için teknik üretimle başlayan pratiğimi; web, SaaS ve AI tabanlı ürün geliştirme yönünde sürdürüyorum. Her işte problemi, kullanıcı adımını ve çalışan sistemi aynı çerçevede ele alıyorum.</p></div><div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Çalışma yaklaşımımı oku <ArrowRight className='ml-1 inline h-4 w-4' /></Link></div></div>
+      <section className='studio-manifesto-section border-b border-border'>
+        <Container className='grid gap-10 py-20 sm:py-28 lg:grid-cols-12 lg:items-center'>
+          <div className='studio-about-visual relative min-h-[360px] overflow-hidden lg:col-span-5'>
+            <div className='studio-about-grid' aria-hidden='true' />
+            <span className='studio-about-initial'>BÜ</span>
+            <p className='studio-about-caption'>BURAK ÜNLÜER / PRODUCT BUILDER</p>
+            <span className='studio-about-index'>ESKİŞEHİR · 2026</span>
+          </div>
+          <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'>
+            <div><p className='editorial-kicker'>Kurucu / üretici</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>Oyun sunucuları için teknik üretimle başlayan pratiğimi; web, SaaS ve AI tabanlı ürün geliştirme yönünde sürdürüyorum. Her işte problemi, kullanıcı adımını ve çalışan sistemi aynı çerçevede ele alıyorum.</p></div>
+            <div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Çalışma yaklaşımımı oku <ArrowRight className='ml-1 inline h-4 w-4' /></Link></div>
+          </div>
         </Container>
       </section>
 
