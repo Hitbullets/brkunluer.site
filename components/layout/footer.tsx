@@ -7,9 +7,9 @@ import { NewsletterForm } from '@/components/forms/newsletter-form'
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className='editorial-dark border-t border-white/15'>
+    <footer className='studio-footer border-t border-white/10'>
       <Container className='py-16 sm:py-24'>
-        <div className='grid gap-12 border-b border-white/20 pb-16 lg:grid-cols-12'>
+        <div className='studio-footer-top grid gap-12 border-b pb-16 lg:grid-cols-12'>
           <div className='lg:col-span-7'>
             <p className='editorial-kicker !text-white/55'>AI Factory / yeni iş akışı</p>
             <h2 className='mt-6 max-w-3xl font-display text-[clamp(2.75rem,5vw,5rem)] leading-[.95] tracking-[-.035em]'>

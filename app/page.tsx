@@ -26,59 +26,26 @@ export default async function Home() {
 
   return (
     <>
-      <section className='factory-hero relative overflow-hidden border-b border-border'>
-        <div className='factory-grid pointer-events-none absolute inset-0 opacity-70' aria-hidden='true' />
-        <Container className='relative grid min-h-[calc(100svh-4.75rem)] items-center gap-12 py-16 sm:py-20 lg:grid-cols-12 lg:py-24'>
-          <div className='factory-enter relative z-10 lg:col-span-7'>
-            <p className='editorial-kicker'>AI workflow studio / Eskişehir</p>
-            <h1 className='mt-8 max-w-4xl font-display text-[clamp(3.55rem,7vw,7.1rem)] leading-[.88] tracking-[-.045em]'>
-              Tekrarlayan işi<br />
-              <span className='italic text-accent'>çalışan AI</span><br />
-              akışına çeviriyorum.
-            </h1>
-            <p className='mt-8 max-w-2xl text-body-lg text-muted-foreground'>
-              İş akışını netleştiriyor, insan kontrolü olan bir prototipe dönüştürüyor ve ekibinize anlaşılır biçimde devrediyorum.
-            </p>
-            <div className='mt-9 flex flex-wrap gap-3'>
-              <Button asChild size='lg'><Link href='/ai-is-akisi-sprinti'>3 günlük pilotu keşfet <ArrowRight /></Link></Button>
-              <Button asChild size='lg' variant='outline'><Link href='/portfolyo'>Ürün ve proje arşivi <ArrowUpRight /></Link></Button>
-            </div>
-            <p className='mt-5 font-mono text-[10px] uppercase tracking-[0.13em] text-muted-foreground'>Tek süreç / insan onayı / kapsamı belli pilot</p>
+      <section className='studio-manifesto-section border-b border-border'>
+        <Container className='grid gap-10 py-20 sm:py-28 lg:grid-cols-12 lg:items-center'>
+          <div className='studio-about-visual relative min-h-[360px] overflow-hidden lg:col-span-5'>
+            <div className='studio-about-grid' aria-hidden='true' />
+            <span className='studio-about-initial'>BÜ</span>
+            <p className='studio-about-caption'>BURAK ÜNLÜER / PRODUCT BUILDER</p>
+            <span className='studio-about-index'>ESKİŞEHİR · 2026</span>
           </div>
-
-          <figure className='factory-panel factory-enter-delay relative z-10 border border-border p-5 sm:p-7 lg:col-span-5'>
-            <figcaption className='flex items-center justify-between gap-4 border-b border-border pb-4 font-mono text-[9px] uppercase tracking-[0.15em] text-muted-foreground sm:text-[10px]'>
-              <span>Factory map / 01</span>
-              <span className='inline-flex items-center gap-2 text-foreground'><span className='h-2 w-2 rounded-full bg-accent' /> İnsan kontrollü</span>
-            </figcaption>
-            <div className='mt-2'>
-              <div className='factory-step grid grid-cols-[2.5rem_1fr] gap-4 py-5'>
-                <span className='factory-step-index'>01</span>
-                <div><p className='editorial-index'>GİRDİ</p><p className='mt-1 font-medium'>Talep / brief / mevcut bilgi</p><p className='mt-1 text-sm text-muted-foreground'>İşin bugün nasıl yapıldığını tanımla.</p></div>
-              </div>
-              <div className='factory-step grid grid-cols-[2.5rem_1fr] gap-4 py-5'>
-                <span className='factory-step-index'>02</span>
-                <div><p className='editorial-index'>AI ADIMI</p><p className='mt-1 font-medium'>Sınıflandır / taslakla / özetle</p><p className='mt-1 text-sm text-muted-foreground'>Tek bir işi sınırları belli biçimde ele al.</p></div>
-              </div>
-              <div className='factory-step grid grid-cols-[2.5rem_1fr] gap-4 py-5'>
-                <span className='factory-step-index'>03</span>
-                <div><p className='editorial-index'>İNSAN KONTROLÜ</p><p className='mt-1 font-medium'>Gözden geçir / düzelt / onayla</p><p className='mt-1 text-sm text-muted-foreground'>Kararı ekipte, akışı görünür tut.</p></div>
-              </div>
-              <div className='factory-step grid grid-cols-[2.5rem_1fr] gap-4 py-5'>
-                <span className='factory-step-index'>04</span>
-                <div><p className='editorial-index'>ÇIKTI</p><p className='mt-1 font-medium'>Kullanıma hazır çalışma</p><p className='mt-1 text-sm text-muted-foreground'>Rehber ve sonraki adımlarla devret.</p></div>
-              </div>
-            </div>
-            <p className='border-t border-border pt-4 font-mono text-[9px] uppercase tracking-[0.13em] text-muted-foreground'>Girdi → işlem → doğrulama → çıktı</p>
-          </figure>
+          <div className='flex flex-col justify-between lg:col-span-7 lg:pl-10'>
+            <div><p className='editorial-kicker'>Kurucu / üretici</p><h2 className='mt-6 text-heading-xl'>Ürün, sistem ve deneyim arasında çalışıyorum.</h2><p className='mt-7 max-w-2xl text-body-lg text-muted-foreground'>Oyun sunucuları için teknik üretimle başlayan pratiğimi; web, SaaS ve AI tabanlı ürün geliştirme yönünde sürdürüyorum. Her işte problemi, kullanıcı adımını ve çalışan sistemi aynı çerçevede ele alıyorum.</p></div>
+            <div className='mt-12 border-t border-border pt-6'><Link href='/hakkinda' className='editorial-link text-sm'>Çalışma yaklaşımımı oku <ArrowRight className='ml-1 inline h-4 w-4' /></Link></div>
+          </div>
         </Container>
       </section>
 
-      <section className='editorial-dark border-b border-white/15'>
-        <Container className='grid gap-8 py-10 sm:grid-cols-3 sm:gap-6 sm:py-12'>
-          <div><p className='font-mono text-[10px] uppercase tracking-[0.15em] text-white/50'>Pilot kapsamı</p><p className='mt-2 text-xl font-medium'>Tek iş akışı</p></div>
-          <div className='border-t border-white/20 pt-5 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0'><p className='font-mono text-[10px] uppercase tracking-[0.15em] text-white/50'>Süre</p><p className='mt-2 text-xl font-medium'>3 iş günü</p></div>
-          <div className='border-t border-white/20 pt-5 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0'><p className='font-mono text-[10px] uppercase tracking-[0.15em] text-white/50'>Başlangıç fiyatı</p><p className='mt-2 text-xl font-medium'>₺9.900</p></div>
+      <section className='studio-signal-row border-b border-[#10131a]/15'>
+        <Container className='grid gap-6 py-8 sm:grid-cols-3 sm:gap-0 sm:py-9'>
+          <div><p>01 / KAPSAM</p><strong>Tek iş akışı</strong></div>
+          <div><p>02 / TAKVİM</p><strong>3 iş günü</strong></div>
+          <div><p>03 / GÜVEN</p><strong>İnsan kontrolü</strong></div>
         </Container>
       </section>
 
@@ -90,7 +57,7 @@ export default async function Home() {
             <p className='mt-5 max-w-xl leading-7 text-muted-foreground'>Ücretsiz 20 dakikalık görüşmede uygun bir süreç seçelim. Uygunsa kapsamı, teslimatları ve vergi koşulunu yazılı netleştirelim.</p>
             <Link href='/ai-is-akisi-sprinti' className='editorial-link mt-7 inline-flex items-center gap-2 text-sm font-semibold'>Sprint kapsamını incele <ArrowRight className='h-4 w-4' /></Link>
           </div>
-          <div className='factory-panel border border-border p-6 sm:p-8 lg:col-span-7'>
+          <div className='studio-offer-panel border border-border p-6 sm:p-8 lg:col-span-7'>
             <div className='grid gap-5 sm:grid-cols-3'>
               {stages.map((stage) => (
                 <article key={stage.number} className='border-t border-border pt-4'>
@@ -112,7 +79,7 @@ export default async function Home() {
               <div><p className='editorial-kicker'>Sahadan seçki / 01</p><h2 className='mt-4 text-heading-xl'>Fikirden çalışan deneyime.</h2></div>
               <Link href='/portfolyo' className='editorial-link hidden text-sm sm:block'>Tüm üretimler <ArrowUpRight className='ml-1 inline h-4 w-4' /></Link>
             </div>
-            <Link href={`/portfolyo/${featuredProject.slug}`} className='group factory-panel grid overflow-hidden border border-border lg:grid-cols-12'>
+            <Link href={`/portfolyo/${featuredProject.slug}`} className='group studio-project-card grid overflow-hidden border border-border lg:grid-cols-12'>
               <div className='relative min-h-[300px] overflow-hidden lg:col-span-8 lg:min-h-[540px]'>
                 <Image src={featuredProject.coverImage} alt={`${featuredProject.title} proje kapak görseli`} fill className='object-cover transition-transform duration-700 group-hover:scale-[1.02]' sizes='(max-width: 1024px) 100vw, 66vw' priority />
               </div>
