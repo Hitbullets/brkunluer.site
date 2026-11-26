@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <p className='mt-4 text-body-lg text-muted-foreground'>
           Bu politika, brkunluer.site üzerinde hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar.
         </p>
-        <p className='mt-3 text-sm text-muted-foreground'>Son güncelleme: <time dateTime='2026-07-21'>21 Temmuz 2026</time></p>
+        <p className='mt-3 text-sm text-muted-foreground'>Son güncelleme: <time dateTime='2026-11-26'>26 Kasım 2026</time></p>
       </header>
 
       <div className='prose-custom space-y-10'>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2>Hizmet Sağlayıcılar</h2>
-          <p>Site Vercel altyapısında barındırılır. İletişim iletilerinin gönderiminde Resend kullanılabilir. Bu sağlayıcılar, hizmeti sunmak için gerekli verileri kendi gizlilik koşulları kapsamında işleyebilir.</p>
+          <p>Site Vercel altyapısında barındırılır. İletişim iletilerinin gönderimi ve e-posta yayın listesinin yönetiminde Resend kullanılabilir. Bu sağlayıcılar, hizmeti sunmak için gerekli verileri kendi gizlilik koşulları kapsamında işleyebilir.</p>
         </section>
         <section>
           <h2>Saklama ve Güvenlik</h2>

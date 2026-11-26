@@ -95,7 +95,8 @@ export const portfolioArchiveProjectSchema = z.object({
 }).passthrough()
 
 export const newsletterSchema = z.object({
-  email: z.string().email("Geçerli bir e-posta adresi girin").min(1, "E-posta zorunlu"),
+  email: z.string().trim().min(1, "E-posta zorunlu").email("Geçerli bir e-posta adresi girin").max(320, "E-posta adresi çok uzun"),
+  consent: z.boolean().refine((consent) => consent, "Yayın bildirimleri için onay vermelisiniz"),
 })
 
 export const contactSchema = z.object({

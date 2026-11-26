@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## E-posta yayınları
+
+Footer kayıt formu, Resend üzerindeki bir Contact kaydını oluşturur ve belirlenen segmente ekler. Var olan bir adres yeniden kayıt olursa, açık onayla abonelik durumu güncellenir. Form yalnızca aşağıdaki değişkenler ayarlı olduğunda açılır:
+
+- `RESEND_API_KEY`: Resend API anahtarı. Bunu yerel geliştirmede `.env.local` dosyasına, canlı ortamda Vercel Project Settings > Environment Variables bölümüne ekleyin.
+- `RESEND_NEWSLETTER_SEGMENT_ID`: Resend panelinde oluşturulan yayın segmentinin kimliği.
+
+Vercel'de Production ortamına iki değişkeni ekledikten sonra yeni bir deployment oluşturun. Değişkenler eksikse form kapalı durumunu gösterir; API de kayıt varmış gibi başarı dönmez. Formdan kayıt almak e-posta göndermez veya yayınları takvime bağlamaz; yayınlar ayrıca Resend üzerinden oluşturulup gönderilir.
