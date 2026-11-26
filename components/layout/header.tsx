@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useSyncExternalStore } from 'react'
-import { Menu, Moon, Sun, X } from 'lucide-react'
+import { ArrowRight, Menu, Moon, Sun, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { SiteConfig } from '@/lib/site'
 import { Button } from '@/components/ui/button'
@@ -26,21 +26,27 @@ export function Header() {
 
   return (
     <header className='sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md'>
-      <nav className='mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8' aria-label='Ana menü'>
-        <div className='flex h-16 items-center justify-between'>
-          <Link href='/' className='group flex items-center gap-3' aria-label='Burak Ünlüer ana sayfa'>
-            <span className='grid h-7 w-7 place-items-center border border-foreground font-mono text-[10px] font-semibold transition-colors group-hover:bg-foreground group-hover:text-background'>BÜ</span>
-            <span className='text-sm font-semibold tracking-[-0.02em]'>Burak Ünlüer</span>
+      <nav className='mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8' aria-label='Ana menü'>
+        <div className='flex h-[4.75rem] items-center justify-between gap-5'>
+          <Link href='/' className='group flex shrink-0 items-center gap-3' aria-label='Burak Ünlüer ana sayfa'>
+            <span className='grid h-10 w-10 place-items-center rounded-full bg-accent font-display text-lg text-accent-foreground transition-transform group-hover:rotate-[-8deg]'>BÜ</span>
+            <span>
+              <span className='block text-sm font-semibold tracking-[-0.02em]'>Burak Ünlüer</span>
+              <span className='mt-0.5 block font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground'>AI Factory / Studio</span>
+            </span>
           </Link>
 
-          <div className='hidden items-center gap-1 md:flex'>
+          <div className='hidden items-center gap-1 xl:flex'>
             {SiteConfig.nav.map((item) => <NavLink key={item.href} href={item.href}>{item.label}</NavLink>)}
-            <Button variant='ghost' size='icon-sm' aria-label={themeLabel} onClick={() => setTheme(isDark ? 'light' : 'dark')} className='ml-2'>
+            <Link href='/ai-is-akisi-sprinti' className='ml-3 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2.5 text-xs font-semibold text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground'>
+              Sprinti keşfet <ArrowRight className='h-3.5 w-3.5' />
+            </Link>
+            <Button variant='ghost' size='icon-sm' aria-label={themeLabel} onClick={() => setTheme(isDark ? 'light' : 'dark')} className='ml-1'>
               {isDark ? <Sun /> : <Moon />}
             </Button>
           </div>
 
-          <div className='flex items-center gap-1 md:hidden'>
+          <div className='flex items-center gap-1 xl:hidden'>
             <Button variant='ghost' size='icon-sm' aria-label={themeLabel} onClick={() => setTheme(isDark ? 'light' : 'dark')}>
               {isDark ? <Sun /> : <Moon />}
             </Button>
@@ -52,11 +58,14 @@ export function Header() {
       </nav>
 
       {mobileOpen && (
-        <div className='border-t border-border bg-background md:hidden'>
-          <div className='mx-auto max-w-[1240px] space-y-1 px-4 py-4'>
+        <div className='border-t border-border bg-background xl:hidden'>
+          <div className='mx-auto max-w-[1320px] space-y-1 px-4 py-4 sm:px-6 lg:px-8'>
             {SiteConfig.nav.map((item) => (
               <MobileNavLink key={item.href} href={item.href} onClick={() => setMobileOpen(false)}>{item.label}</MobileNavLink>
             ))}
+            <Link href='/ai-is-akisi-sprinti' onClick={() => setMobileOpen(false)} className='mt-3 flex items-center justify-between rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground'>
+              3 günlük AI İş Akışı Sprinti <ArrowRight className='h-4 w-4' />
+            </Link>
           </div>
         </div>
       )}
