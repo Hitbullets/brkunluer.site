@@ -30,6 +30,7 @@ export const SiteConfig = {
   nav: [
     { label: 'Portföy', href: '/portfolyo' },
     { label: 'AI Factory', href: '/ai-factory' },
+    { label: 'İş Akışı Sprinti', href: '/ai-is-akisi-sprinti' },
     { label: 'Yayınlar', href: '/yazilar' },
     { label: 'Hakkımda', href: '/hakkinda' },
     { label: 'İletişim', href: '/iletisim' },

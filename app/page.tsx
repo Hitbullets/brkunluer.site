@@ -32,6 +32,7 @@ export default async function Home() {
             <div className='mt-10 flex flex-wrap gap-3'>
               <Button asChild size='lg'><Link href='/portfolyo'>Portföyü incele <ArrowRight /></Link></Button>
               <Button asChild size='lg' variant='outline'><Link href='/ai-factory'>AI Factory</Link></Button>
+              <Button asChild size='lg' variant='outline'><Link href='/ai-is-akisi-sprinti'>İş Akışı Sprinti <ArrowRight /></Link></Button>
             </div>
           </div>
           <div className='relative border-t border-border pt-6 lg:col-span-4'>
