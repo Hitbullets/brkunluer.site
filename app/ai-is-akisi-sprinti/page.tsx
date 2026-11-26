@@ -88,7 +88,7 @@ export default function AIWorkflowSprintPage() {
               <span>Tek süreç</span><span>3 iş günü</span><span>İnsan onayı</span><span>Devir rehberi</span>
             </div>
           </div>
-          <figure className='border border-white/20 bg-white/[0.03] p-6 sm:p-8' aria-label='Temsili AI iş akışı'>
+          <figure className='border border-white/20 bg-white/[0.03] p-6 sm:p-8 lg:col-span-5' aria-label='Temsili AI iş akışı'>
             <figcaption className='flex items-center justify-between gap-3 border-b border-white/15 pb-4 font-mono text-[10px] uppercase tracking-[0.12em] text-white/50'>
               <span>Örnek akış / temsili</span>
               <span className='text-[#d6aa95]'>İnsan kontrolü dahil</span>
